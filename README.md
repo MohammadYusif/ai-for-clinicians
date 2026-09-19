@@ -2,7 +2,7 @@
 
 **Physician AI Literacy** · three days, two hours a day · English
 
-Course site: **<https://mohammadyusif.github.io/ai-for-clinicians/>** (live once GitHub Pages is enabled for this repository)
+Course site: **<https://mohammadyusif.github.io/ai-for-clinicians/>**
 
 A practical, hands-on course for doctors on using AI tools well in daily practice, documentation, and teaching. Most participants already have a chatbot open between patients; the course makes that deliberate instead of accidental. The site holds the teaching, the prompts, the labs, and the reference cards.
 
@@ -47,9 +47,10 @@ quarto render && python tools/check_links.py   # every internal link and #fragme
 
 ## Publishing
 
-The workflow runs every check and renders the site on each push. It deploys to GitHub Pages only while the
-repository is public: make it public, set **Settings → Pages → Source** to **GitHub Actions**, then push or run
-the workflow by hand.
+The workflow runs every check and renders the site on each push, then deploys it to GitHub Pages. Pages is set
+to the **GitHub Actions** source (Settings → Pages), and the deploy steps run only while the repository is
+public. A change to a page, the theme, `tools/` or `course/timing.json` deploys on push; anything else can be
+deployed by running the workflow by hand.
 
 ## The three rules
 

@@ -249,8 +249,11 @@ abstract yourself: its text could not be opened when this was written, so 42.2 o
 brief's figures, not independently checked here (a search result confirmed the paper exists, is a prospective
 single-arm pilot, and used a modified PDQI-9).
 
-**For the repository.** Whether the repository is named `ai-for-clinicians` (the site URL and repository link in
-`_quarto.yml` and the README assume it). Which licence, if any. Who reads the case cards as a clinician.
+**For the repository.** It is public at `MohammadYusif/ai-for-clinicians` and the site is live at
+`https://mohammadyusif.github.io/ai-for-clinicians/`. Which licence, if any: with none, others can read and fork
+the repository but have no right to reuse it. Whether `day3-talking-points.md` should stay public: its Lab Three
+facilitation section holds the two backup examples and their answer keys, which a participant could find and read
+before the exercise. Who reads the case cards as a clinician.
 
 ## Updating the deck
 
