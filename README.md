@@ -45,6 +45,12 @@ quarto render && python tools/check_links.py   # every internal link and #fragme
 
 `tools/contrast_audit.js` is a browser-console tool that measures text contrast on the rendered pages in light and dark mode. Python is standard library only; there is nothing to install beyond [Quarto](https://quarto.org) (the workflow pins 1.10.18).
 
+## Publishing
+
+The workflow runs every check and renders the site on each push. It deploys to GitHub Pages only while the
+repository is public: make it public, set **Settings → Pages → Source** to **GitHub Actions**, then push or run
+the workflow by hand.
+
 ## The three rules
 
 1. **The clock adds up.** A duration changes in `course/timing.json` and on its page in the same commit; CI fails otherwise.

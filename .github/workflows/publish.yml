@@ -3,6 +3,11 @@ name: Publish the course site
 # Runs the repository's own checks, renders the site, audits every internal link in the
 # rendered HTML, and (on main only) deploys to GitHub Pages. Nothing here needs a key or
 # a network service beyond GitHub: the site executes no code (execute: enabled: false).
+#
+# The Pages steps run only while the repository is public. A private repository on a plan
+# without private Pages has no Pages site to configure, and configure-pages fails there.
+# To publish: make the repository public, then Settings > Pages > Source: GitHub Actions.
+# The runner is pinned: GitHub moves ubuntu-latest to Ubuntu 26 on 2026-10-19.
 
 on:
   push:
@@ -34,7 +39,7 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v7
 
@@ -61,16 +66,16 @@ jobs:
         run: python3 tools/check_links.py
 
       - uses: actions/configure-pages@v6
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' && github.event.repository.private == false
       - uses: actions/upload-pages-artifact@v5
-        if: github.ref == 'refs/heads/main'
+        if: github.ref == 'refs/heads/main' && github.event.repository.private == false
         with:
           path: _site
 
   deploy:
     needs: build
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
-    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request' && github.event.repository.private == false
+    runs-on: ubuntu-24.04
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
