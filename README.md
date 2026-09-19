@@ -52,10 +52,11 @@ to the **GitHub Actions** source (Settings → Pages), and the deploy steps run 
 public. A change to a page, the theme, `tools/` or `course/timing.json` deploys on push; anything else can be
 deployed by running the workflow by hand.
 
-## The three rules
+## The four rules
 
 1. **The clock adds up.** A duration changes in `course/timing.json` and on its page in the same commit; CI fails otherwise.
 2. **No real patient, ever.** Every case is a synthetic card in `reference/case-cards.qmd`.
-3. **Nothing is claimed about AI that the site cannot back.** Facts about products and law come from the source brief; example outputs are labeled illustrative.
+3. **Nothing is claimed about AI that the site cannot back.** Facts about products and law come from the source brief or a vendor's own dated public page; example outputs are labeled illustrative.
+4. **The course relies on no tool but one general assistant.** A product is only an example of a type, and every activity has a fallback that needs nothing more.
 
 `CLAUDE.md` has the detail, and `course/authoring-guide.md` has the voice, markup, and vocabulary for anyone writing a page.

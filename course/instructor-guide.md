@@ -24,7 +24,7 @@ verification step is."** If a discussion drifts, steer it back to one of them.
 
 ## What changed from the brief
 
-The site departs from `BRIEF.md` in six places. Each is deliberate; each can be reversed.
+The site departs from `BRIEF.md` in seven places. Each is deliberate; each can be reversed.
 
 ### 1. Day One did not add up, so it was re-timed
 
@@ -90,7 +90,19 @@ source-of-truth fact sheet first, then check that the three outputs agree with e
 - A setup page, a glossary, a troubleshooting page, and a self-check bank on `assessment.qmd`.
 - Checks that fail CI: the clock, the prompt library, and unfinished placeholders.
 
-### 6. Not done
+### 6. The tool comparisons do not depend on Vera Health, or on any tool
+
+The brief pairs a general assistant with a literature-grounded tool in both labs and the live demo, and the first
+draft assumed everyone would have Vera Health access. Its public information does not settle that for Saudi
+participants, or for a trainer who is not a clinician: the Terms require users to be healthcare professionals in
+practice or in training and bar people in countries under US sanctions (Saudi Arabia is not among those named), but
+how credentials are checked is not published. So the site's only requirement is now **one general assistant**. The
+"second option" in each comparison is whichever of three the person can open: a literature-grounded tool, the
+assistant's own search or citation mode, or a plain literature search (PubMed or a library database).
+[Module 3](../day1/m3-choosing-tools.qmd#second-option) defines it, and the setup page, both labs and the scripts
+point to it. For the live demo, a clinician colleague's account or a participant's screen also works.
+
+### 7. Not done
 
 - **The scored quiz.** The brief marks it "kept" and it is not in the material I was given. The bank on
   `assessment.qmd` is practice, not the quiz. If the scored quiz becomes a form, keep it and its key out of
@@ -171,12 +183,12 @@ Total 120 min.
 ## Before each day
 
 **Every day.** A projector and a timer the room can see. Your presenting machine signed in to a general
-assistant *and* Vera Health, in separate tabs. The site open on `reference/case-cards`. A short link to the
+assistant, plus your second option (see Module 3) in another tab. The site open on `reference/case-cards`. A short link to the
 site on the first slide. Printed copies of the three-question check (one page) and the day's lab worksheet.
 
 **Day One.** Type the live-demo question into a text file so you can paste it into both tools at once.
 **Rehearse the demo the day before and keep screenshots of the real outputs as a fallback**: real ones,
-never invented. Check who has finished Vera Health verification and pair up anyone who has not.
+never invented. Nothing needs verifying: anyone without a working second option uses another of the three, or pairs up.
 
 **Day Two.** Re-check the Sahl AI and Augnito facts against the brief. Have `reference/practice-source` open.
 
@@ -216,7 +228,7 @@ own output and saying "no" to the third question, which is the outcome the whole
 | What goes wrong | Fallback |
 |---|---|
 | A tool is down or slow during the live demo | Show the screenshots of real outputs from your rehearsal; say they are a recorded run |
-| Vera Health verification is pending for someone | Pair them with a neighbor for the face-off |
+| A participant cannot open a literature-grounded tool | Either of the other two second options works; nothing depends on it |
 | A participant hits the free-tier limit mid-lab | Switch to the other tool; never share a login |
 | Wi-Fi fails | Phones on mobile data, with synthetic cases only |
 | Hospital networks block a tool | Own device and connection, synthetic cases only; never bypass a control with real patient data |
@@ -241,8 +253,9 @@ whether the form is anonymous. Whether SCFHS CPD accreditation is granted and fo
 `accreditation.md`); until then the course claims none. How long participants keep access to the site, and any
 terms on sharing it.
 
-**Before Day One.** Your own Vera Health access, verified and working from the venue network. The question for
-the live demo (topic 11).
+**Before Day One.** Your second option for the live demo. A literature-grounded tool such as Vera Health is for
+healthcare professionals, so if you are not one, use your assistant's search mode, a literature search, or a
+clinician's screen. The question for the live demo (topic 11).
 
 **Before Day Two.** The current status of Sahl AI and Augnito at the sites named. Read the Sahl AI paper's
 abstract yourself: its text could not be opened when this was written, so 42.2 of 45 and 4.35 of 5 are the

@@ -176,10 +176,17 @@ a fluent reader must check it. Prefer commas and colons; keep em dashes rare.
   already gathered" section of `course/BRIEF.md` (Sahl AI's 42.2/45 and 4.35/5, etc.). Numbers in
   examples come from the case cards.
 - **No invented sources.** No citations, guideline titles or numbers, DOIs, or URLs. Do not add
-  external links; if a page truly needs one, write `[LINK NEEDED: what]` and report it.
-- **Product facts** only as the brief states them, worded no more strongly than it, with "as of
-  September 2026" where availability could change. Name only: ChatGPT, Claude, Gemini (general
-  assistants), Vera Health and OpenEvidence (literature-grounded), Sahl AI and Augnito (scribes).
+  external links; if a page truly needs one, write `[LINK NEEDED: what]` and report it. A link someone has
+  opened and vouched for goes into `ALLOWED_URLS` in `tools/lint_content.py`, with a comment saying when and how.
+- **Product facts** only as the brief states them, or as a vendor's own public page states them (dated, and
+  linked as above), worded no more strongly than the source, with "as of September 2026" where availability
+  could change. Name only: ChatGPT, Claude, Gemini (general assistants), Vera Health and OpenEvidence
+  (literature-grounded), Sahl AI and Augnito (scribes).
+- **No dependency.** No lab, demo or setup step may require a particular product, an account that needs
+  verification, or anyone's approval. The only requirement is one general assistant of the participant's
+  choice. A product appears as an example of a type, and every activity has a fallback that needs nothing
+  more (the "second option" in Module 3 is the pattern). `tools/lint_content.py` blocks the phrasings that
+  once made Vera Health a requirement.
 - **Claim discipline on the scribes.** The Sahl AI pilot reported clinician-rated documentation
   quality on a modified PDQI-9 (42.2 of 45; 4.35 of 5 for accuracy). It did not compare against
   generic prompting, and it did not measure patient outcomes. Never write that purpose-built tools

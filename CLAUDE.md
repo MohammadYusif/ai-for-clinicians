@@ -7,7 +7,7 @@ theory pages plus hands-on labs, rendered straight into the site, nothing execut
 time. Read this before adding a page, changing a minute, or touching `_quarto.yml`.
 The house style for prose, markup and vocabulary is `course/authoring-guide.md`.
 
-## The three rules everything else serves
+## The four rules everything else serves
 
 **1. The clock adds up.** Each day is exactly 120 minutes including its 10-minute break.
 `course/timing.json` is the single source of every minute; each timed section on the site
@@ -31,6 +31,13 @@ where availability could change. Example AI outputs are *illustrative*: written 
 author, labeled as such in a callout, never presented as a measurement of any tool. What the
 room measures for itself in a lab (time, word count, edit count) is theirs, not a claim of the
 site's. Do not soften the labels and do not add a number without a source.
+
+**4. The course relies on no tool but one general assistant.** No lab, demo or setup step may require a
+particular product, a verification step, or anyone's approval. A product appears only as an example of a
+type, and every activity has a fallback that needs nothing more: Module 3's "second option" (a
+literature-grounded tool, the assistant's own search mode, or a plain literature search) is the pattern.
+Vera Health once was a requirement; a trainer who is not a clinician cannot register for it, and its public
+terms do not say how credentials are checked. `tools/lint_content.py` blocks the phrasings that made it one.
 
 ## Layout
 

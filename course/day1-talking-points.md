@@ -449,8 +449,8 @@ Instructor script for Day One, Foundations: 120 minutes including the 10-minute 
 
 **Slides**
 
-1. `geography` — kept, wording corrected. Headline: "Same Tool, Different Doctor". On-slide: (1) OpenEvidence: "The best-known tool of its kind. Requires US NPI verification. Withdrew from the EU and UK in April 2026. Not usable by a Saudi audience." (2) Vera Health: "The same job: citation-grounded answers from peer-reviewed literature. Verifies healthcare professionals globally, no geographic restriction." (3) "Check access before you recommend a tool to a room." with the tag "As of September 2026". Visual: as now, two cards (Vera Health with a 2 px teal border), the indigo line beneath. The old card said "Free" and "US medical license", which the brief does not support; the wording above follows the brief.
-   Notes: As of September 2026. OpenEvidence is the best-known literature-grounded clinical tool. It requires US NPI verification and withdrew from the EU and UK in April 2026, so it is not usable by a Saudi audience. Vera Health does the same job, citation-grounded answers from peer-reviewed literature, and verifies healthcare professionals globally, with no geographic restriction. The lesson is not about these two names. The tool you have heard most about may be the one you cannot open, and a colleague abroad may recommend one in good faith that does not work here. Access is part of the tool.
+1. `geography` — kept, wording corrected. Headline: "Same Tool, Different Doctor". On-slide: (1) OpenEvidence: "The best-known tool of its kind. Requires US NPI verification. Withdrew from the EU and UK in April 2026. Not usable by a Saudi audience." (2) Vera Health: "The same job: citation-grounded answers from peer-reviewed literature. States that it verifies healthcare professionals globally. Sign-up asks for professional credentials." (3) "Check access before you recommend a tool to a room." with the tag "As of September 2026". Visual: as now, two cards (Vera Health with a 2 px teal border), the indigo line beneath. The old card said "Free" and "US medical license", which the brief does not support; the wording above follows the brief.
+   Notes: As of September 2026. OpenEvidence is the best-known literature-grounded clinical tool. It requires US NPI verification and withdrew from the EU and UK in April 2026, so it is not usable by a Saudi audience. Vera Health does the same job, citation-grounded answers from peer-reviewed literature, and states that it verifies healthcare professionals globally. Its Terms require users to be healthcare professionals in practice or in training and bar people in countries under US trade sanctions; Saudi Arabia is not among those named. How it checks credentials is not published, so try it before you rely on it. The lesson is not about these two names. The tool you have heard most about may be the one you cannot open. Access is part of the tool, so nothing in this course depends on either.
 
 2. `gdpr-not-approval` — new. Headline: "'GDPR Compliant' Is Not 'Approved Here'". On-slide: (1) "GDPR is European data-protection law." (2) "It does not tell you whether your institution has approved the tool, or whether it suits Saudi requirements." (3) "Ask your institution's data protection officer or legal team." Visual: three stacked lines on the light ground, the third in indigo 30 px semibold.
    Notes: Vera Health states that it is GDPR compliant. That is a statement about European data-protection law. It does not tell you whether your institution has approved the tool, or whether it suits Saudi requirements. Ask your institution's data protection officer or legal team. This course is education, not legal advice. Day Three covers what Saudi law says about health data. Before you recommend any tool, three questions: who can actually sign up, has my institution approved it or is it a consumer AI tool, and what does the tool say happens to what I type.
@@ -458,7 +458,7 @@ Instructor script for Day One, Foundations: 120 minutes including the 10-minute 
 **Say**
 
 - 0:00–0:30. A tool can be excellent and still be closed to you.
-- 0:30–2:00. `geography`. Say "as of September 2026" out loud. OpenEvidence: best known, requires US NPI verification, withdrew from the EU and UK in April 2026, so not usable by a Saudi audience. Vera Health: the same job, verifies professionals globally. The lesson is access, not the two names.
+- 0:30–2:00. `geography`. Say "as of September 2026" out loud. OpenEvidence: best known, requires US NPI verification, withdrew from the EU and UK in April 2026, so not usable by a Saudi audience. Vera Health: the same job, states it verifies professionals globally; try it early, and nothing here depends on it. The lesson is access, not the two names.
 - 2:00–3:15. `gdpr-not-approval`. A statement about European law is not an approval by your institution. Ask the data protection officer or legal team. Education, not legal advice.
 - 3:15–4:30. The three-line checklist from the page: who can actually sign up (my country, my license, my profession); has my institution approved it, or is it a consumer AI tool; what does the tool say happens to what I type.
 - 4:30–5:00. Access changes: open the tool's own sign-up page and check today. Bridge.
@@ -480,7 +480,7 @@ Instructor script for Day One, Foundations: 120 minutes including the 10-minute 
 **Watch for**
 
 - "OpenEvidence is bad." It is not; as of September 2026 it is closed to this audience.
-- "Vera Health is better." The claim is only that it does the same job and is open to this room.
+- "Vera Health is better." The claim is only that it does the same job and, on its published terms, does not exclude this room. Nothing in the course depends on it.
 - Dropping the date. Always say "as of September 2026".
 - "GDPR compliant" heard as "safe for patient data".
 
@@ -494,7 +494,7 @@ Instructor script for Day One, Foundations: 120 minutes including the 10-minute 
 
 **Slides**
 
-1. `demo-grid` — new. Headline: "Same Question, Two Tools". On-slide: (1) the question, pasted word for word into an `#EEF2FF` quote box; (2) the grid, five rows (cites sources you can open; states its limits; answers your question, not a nearby one; claims you could verify; time to a usable answer) against two empty columns, General assistant and Literature-grounded tool; (3) "One run is not a benchmark." Visual: the `tool-types` table style with empty cells for a show-of-hands yes, partly or no.
+1. `demo-grid` — new. Headline: "Same Question, Two Tools". On-slide: (1) the question, pasted word for word into an `#EEF2FF` quote box; (2) the grid, five rows (cites sources you can open; states its limits; answers your question, not a nearby one; claims you could verify; time to a usable answer) against two empty columns, General assistant and Second option; (3) "One run is not a benchmark." Visual: the `tool-types` table style with empty cells for a show-of-hands yes, partly or no.
    Notes: One clinical question, two tools, live. The question is general, with no patient information in it, and it is pasted, not typed, so both tools get exactly the same words. While they generate, watch for four things: is there a citation; does it say what it could not find; is it answering my question or a nearby, easier one; and how long until I have something usable, counting my own checking. Then we fill the grid: yes, partly or no. This is one run of one question on one day. It is not a benchmark, and I will not tell you which tool wins.
 
 2. `one-run` — new. Headline: "What One Run Can Tell You". On-slide: (1) "You can conclude: what each tool showed you (a source, a limit, or nothing); how much checking each answer needs; which tool you would open first for this kind of question." (2) "You cannot conclude: that one tool is better; that a citation means the answer is right; that it holds in your specialty." (3) "A citation you have not opened is a claim you have not checked." Visual: two columns, the "can" column with a teal top border and the "cannot" column with an indigo one; the third line beneath.
@@ -512,16 +512,16 @@ Instructor script for Day One, Foundations: 120 minutes including the 10-minute 
 
 Before class, not counted in the five minutes:
 
-1. Two windows side by side, both signed in, both on a fresh chat: a general assistant, and Vera Health. Test both today, from the venue network. [TRAINER TO CONFIRM: your Vera Health access is verified and works from the venue.]
+1. Two windows side by side, both on a fresh chat: a general assistant, and your second option, whichever you can open (a literature-grounded tool, your assistant's search or citation mode, or a literature search such as PubMed). A tool like Vera Health is for healthcare professionals, so if you are not one, use the other two, or ask a clinician co-presenter or a participant to run that side. Test both today, from the venue network.
 2. The question in a note, ready to paste, in the wording of the `evidence-question` prompt from Lab One part 3: the question, then "Summarize the main options and how strong the evidence is for each. Cite sources I can open. If you cannot find a source, say so. This is a general question: no patient details." Use a question from your own field that you can judge, and not the Lab One default (the atrial fibrillation question), so the room's own run stays fresh. [TRAINER TO CONFIRM: the demo question.]
 3. Rehearse once. Screenshot both full answers, with no account name or email showing, and note the date. Keep them on your laptop, not in the repository.
 
 The five minutes:
 
 1. 0:00. Show the question. Say it once: no patient information.
-2. 0:30. Paste into the general assistant, then into Vera Health. Enter in both. Start the timer.
+2. 0:30. Paste into the general assistant, then into the second option (for a literature search, type the question's key terms). Enter in both. Start the timer.
 3. 1:00. While they generate, read the grid rows aloud. Say what you are watching for. Say nothing about either tool yet.
-4. 2:30. Compare. General assistant first: sources you can open? limits stated? your question or a nearby one? Then Vera Health. Fill the grid by show of hands. Open one citation live, for 60 seconds at most, and read whether it says what the sentence says.
+4. 2:30. Compare. General assistant first: sources you can open? limits stated? your question or a nearby one? Then the second option. Fill the grid by show of hands. Open one citation live, for 60 seconds at most, and read whether it says what the sentence says.
 5. 4:15. Switch to `one-run` and close. Do not name a winner.
 
 Fallback:
@@ -534,7 +534,7 @@ Fallback:
 
 - **Which one won?** It is not a benchmark: one question, one run, one day. What matters is what each let you check.
 - **The general assistant gave a citation. Is it real?** Open it. A citation you have not opened is a claim you have not checked. A made-up citation looks exactly like a real one.
-- **Vera Health cited papers. So is it correct?** A citation is something to open, not proof. A tool can misread a source.
+- **The second option cited papers. So is it correct?** A citation is something to open, not proof. A tool can misread a source.
 
 **Watch for**
 
@@ -572,7 +572,7 @@ Fallback:
 
 1. Before class: both slides staged; the break time written where the room can see it.
 2. Ask: "Who knows what their free tier lets them do today?" Take the hands. If few, that is their break task.
-3. Before the break, say what Lab One needs open at 1:30, from the lab page: a general assistant signed in; Vera Health verified, or a neighbor to pair with; a stopwatch and a notes app; Case A in a second tab.
+3. Before the break, say what Lab One needs open at 1:30, from the lab page: a general assistant signed in; your second option for part three, any of the three (a neighbor to pair with if none works); a stopwatch and a notes app; Case A in a second tab.
 4. Start a ten-minute timer. During the break, sort out any access problems with individuals; see Lab 1, before class.
 
 **If asked**
@@ -600,14 +600,14 @@ Fallback:
 **Slides**
 
 1. `lab1` — kept, one wording edit. Headline: "Lab One". On-slide: (1) "Draft one progress note twice on Case A: once freeform, once with the four parts." (2) "Break a tool on purpose. Compare two tools." (3) "Case A is the only patient in this lab." Visual: full-bleed teal `#14B8A6`, small-caps "Hands-On" label, 96 px white "Lab One", three lines in 34 px `#F0FDFA`. The old text said "Draft one real progress note", which contradicts the no-real-patient rule.
-   Notes: Lab One, thirty minutes, four parts. Part one, twelve minutes: draft the same Case A note twice, once with a one-line prompt and once with the four-part framework, and time both. Part two, eight minutes: ask a tool for something it cannot reliably know, watch it answer confidently, run the three questions, and save the answer with the practice-output line, because Lab Three reuses it. Part three, five minutes: the same general question in a general assistant and in Vera Health. Then a five-minute debrief. Case A is the only patient in this lab. No patient identifiers into a consumer AI tool. Ever. Full stop.
+   Notes: Lab One, thirty minutes, four parts. Part one, twelve minutes: draft the same Case A note twice, once with a one-line prompt and once with the four-part framework, and time both. Part two, eight minutes: ask a tool for something it cannot reliably know, watch it answer confidently, run the three questions, and save the answer with the practice-output line, because Lab Three reuses it. Part three, five minutes: the same general question in a general assistant and in a second option that shows sources. Then a five-minute debrief. Case A is the only patient in this lab. No patient identifiers into a consumer AI tool. Ever. Full stop.
 
 **Before class**
 
 - Deck: `lab1` staged after the break. A visible countdown timer set for the four boxes: 12, 8, 5, 5.
 - Projector: the lab page and the Case A card in two tabs. The page's Worksheet section is the print-friendly sheet.
-- Your own kit, as in Topic 11: a general assistant signed in; Vera Health verified [TRAINER TO CONFIRM: same check as Topic 11]; a stopwatch; a notes app. Run Rounds A and B once yourself. Your numbers are yours: never quote them to the room as typical, because the site has no such figure.
-- The break: write the return time up; tell the room what must be open at 1:30 (general assistant signed in; Vera Health verified, or a neighbor to pair with; stopwatch and notes app; Case A in a second tab); go round for access problems. Pair people rather than spend lab time on sign-up.
+- Your own kit, as in Topic 11: a general assistant signed in; your second option ready, as in Topic 11; a stopwatch; a notes app. Run Rounds A and B once yourself. Your numbers are yours: never quote them to the room as typical, because the site has no such figure.
+- The break: write the return time up; tell the room what must be open at 1:30 (general assistant signed in; a second option for part three, any of the three; stopwatch and notes app; Case A in a second tab); go round for access problems. Pair people rather than spend lab time on sign-up.
 
 **Materials**
 
@@ -617,7 +617,7 @@ The lab page and the Case A card on the projector; the page's Worksheet, to prin
 
 - **Part 1, Template test (1:30–1:42).** 0:00–1:30 set-up: Case A only; two fresh chats, same tool; one prompt, no re-prompting; record minutes, words, edits and errors (invented, omitted, altered). 1:30–6:00 Round A, one line plus the facts. 6:00–10:30 Round B, the four-part prompt in a new chat. 10:30–12:00 fill the table and write one sentence on what the template changed. Say at 6:00: "New chat."
 - **Part 2, Break it on purpose (1:42–1:50).** 0:00–1:00 the aim is to see how confident a wrong answer sounds, not to catch the tool out. Pick one probe of five; fill the brackets from your own field so you can judge; probe 5, the drug interaction, is the highest-risk, so choose a less common pair you know well and never act on the output. 1:00–3:00 run it; if the tool declines, note it, then push once. 3:00–6:30 the three questions; for question 2, two minutes to find one item independently. 6:30–8:00 save as `lab1-practice-output` with the exact header line `PRACTICE OUTPUT: CONTAINS DELIBERATELY UNRELIABLE CONTENT. NOT FOR CLINICAL USE.`, one line on the probe and what they found, and a verdict: trust, verify first, or discard.
-- **Part 3, Tool face-off (1:50–1:55).** 0:00–1:00 paste the same text into both tools (the `evidence-question` prompt; the Case C question if they have none). 1:00–4:00 fill the grid and time each tool. 4:00–5:00 one line: which would you trust, and for what. Not a benchmark.
+- **Part 3, Tool face-off (1:50–1:55).** 0:00–1:00 ask both the same question (the `evidence-question` prompt; the Case C question if they have none; for a plain literature search, the question's key terms). 1:00–4:00 fill the grid and time each tool. 4:00–5:00 one line: which would you trust, and for what. Not a benchmark.
 - **Debrief (1:55–2:00).** 0:00–1:30 neighbors share the one prompt or change that worked best. 1:30–3:30 two or three share with the room. 3:30–4:30 add it to the personal library: title, prompt, check. 4:30–5:00 back to the "AI drafts / You decide" columns from Topic 2, then: bring your favorite prompt to Day Two, and keep `lab1-practice-output` for Lab Three.
 
 **What good looks like**
@@ -631,7 +631,8 @@ The lab page and the Case A card on the projector; the page's Worksheet, to prin
 
 | Problem | Fix |
 |---|---|
-| Vera Health not verified, or no general assistant account | Pair with a neighbor who has access. They still fill the grid from the shared screen. |
+| No literature-grounded tool, or Vera Health will not open | Nothing depends on it: use the assistant's search or citation mode, or a literature search such as PubMed. |
+| No general assistant account | Pair with a neighbor who has one. They still fill the grid from the shared screen. |
 | "I found nothing to fix" | Read the plan lines against the card once more: drug names and doses, the two-week lab recheck, the four-week review, and whether the ankle swelling is shown as new since amlodipine. |
 | The tool declines the probe | That is a good answer; note it. Push once with the line on the page, then try another probe. |
 | They re-prompt in Round B | Record the first draft first. Re-prompting can wait until after the lab. |

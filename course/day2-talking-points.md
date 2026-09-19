@@ -368,7 +368,7 @@ Page: [Lab 2](../day2/lab2-one-case-three-outputs.qmd), parts [1](../day2/lab2-o
 **Before class.**
 
 - Case cards and the [practice source](../reference/practice-source.qmd) open on the projector; a visible countdown timer.
-- Every participant has a general assistant and Vera Health or the literature-grounded tool from [setup](../setup.qmd). Anyone without one pairs with a neighbor and shares a screen.
+- Every participant has a general assistant and their second option from Lab One (any of the three in [Module 3](../day1/m3-choosing-tools.qmd#second-option)). Anyone without one pairs with a neighbor and shares a screen.
 - Run all of part 1 on Case A yourself, grid filled in, so you know what a mismatch looks like and can show a backup set if a tool goes down.
 - The two grids and the worksheet at the end of the page, on paper or in a notes app.
 
@@ -384,7 +384,7 @@ Page: [Lab 2](../day2/lab2-one-case-three-outputs.qmd), parts [1](../day2/lab2-o
 1. Part 1 (1:25), min 0 to 4: walk the room and confirm each person checks the sheet against the card line by line. This step decides the rest.
 2. Min 4: "New chat for each output." Min 9: "Second output by now." Min 12: "Take what you have and move on."
 3. Min 14: `consistency-check` on the projector. Ask anyone with an all-ok grid to show you where the follow-up interval sits in the handout. Pick three pairs for part 3: one with a mismatch, one whose handout added content, one clean.
-4. Part 2 (1:45): default task is the study summary, `teaching-summary-from-source`, on the practice source. Min 1 to 5 both tools, 5 to 9 the table, 9 to 10 the two closing lines.
+4. Part 2 (1:45): default task is the study summary, `teaching-summary-from-source`, on the practice source. Min 1 to 5 both, 5 to 9 the table, 9 to 10 the two closing lines. If a participant's second option cannot take pasted text (a plain literature search cannot), they ask both for the evidence behind one number in the practice source, such as 135/85, as the page says.
 5. Part 3 (1:55): min 0 to 1 pairs choose their output; min 1 to 4 call two or three pairs, each shows the output beside the sheet, reads two lines and names one fact checked and where, then the room asks the three questions aloud and the pair answers; min 4 to 5 everyone writes one thing to change, in the sheet or the prompt.
 
 **What good looks like.**
@@ -409,7 +409,7 @@ Page: [Lab 2](../day2/lab2-one-case-three-outputs.qmd), parts [1](../day2/lab2-o
 **If asked.**
 
 - "Why a new chat for each output?" An error in one cannot leak into the next, and each draws on the sheet, not on the others.
-- "Why not OpenEvidence?" As of September 2026 it requires US NPI verification and withdrew from the EU and UK in April 2026, so it is not usable for a Saudi audience. Vera Health verifies healthcare professionals globally.
+- "Why not OpenEvidence?" As of September 2026 it requires US NPI verification and withdrew from the EU and UK in April 2026, so it is not usable for a Saudi audience. Vera Health states that it verifies healthcare professionals globally; nothing in the course depends on either.
 - "Which tool won?" That is not the result. The four questions in the table are.
 - "Can I use my own case?" A case card is safer. If you bring one, apply the [privacy checklist](../reference/privacy-checklist.qmd) first; when in doubt, use a card.
 
