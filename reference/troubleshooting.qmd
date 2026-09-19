@@ -1,0 +1,34 @@
+---
+title: "Troubleshooting"
+subtitle: "When the tool, the account, or the output is not behaving"
+---
+
+Almost every problem in the room is one of three things: a missing part of the prompt, a tool limit, or an account that is not ready. Find yours below.
+
+## The output is the problem
+
+| What you see | Why it happens | What to do |
+|---|---|---|
+| Generic, could be about anyone | The tool only knows what is in the conversation | Add the case facts and the purpose. See the **Context** part of the framework |
+| Long, hedged, padded | Nothing told it the length or the register | Add a word limit and "No hedging phrases" under **Constraints** |
+| A different structure every time | No template | Give the exact headings under **Format** |
+| A number, dose, or date changed | The tool rewrote a value it should have copied | Say "copy all numbers exactly as given", then check every number against the source. You supply numbers; the tool never chooses them |
+| Something appears that you never gave it | The tool filled a gap with something plausible | Use "Use ONLY the facts below. If something needed is missing, write [MISSING: what]" |
+| A citation you cannot find | Citations can be fabricated | Treat it as fabricated until you open the source yourself |
+| It answers a nearby question, not yours | Your question was leading or too broad | Ask neutrally, one question, with the constraint stated |
+| Different answers to the same question | Normal: the same question does not always give the same words | Fix the format so results are comparable, and treat disagreement as a reason to verify |
+| The chat has gotten worse as it got longer | Early instructions drop out of view | Start a new chat. Paste your fact sheet and constraints again |
+| It refuses or adds warnings to a medical task | The wording read as a request for a decision | Ask for a draft, a summary, or a rewording of facts you supply, and keep the decision with you |
+
+## The account or the tool is the problem
+
+- **I could not finish Vera Health verification.** Tell the instructor at the start of Day One. You can pair with a neighbor for the face-off. Do not use anyone else's login.
+- **I hit the free limit.** Batch related questions into one detailed prompt, wait, or switch to another tool. See the quota section in [Module 3](../day1/m3-choosing-tools.qmd).
+- **The tool is blocked on my hospital network.** Use your own device on your own connection, **with synthetic cases only**. Never work around an institutional block with real patient information.
+- **Arabic output looks off.** Ask for Modern Standard Arabic in simple wording. Medical terms and register vary, so a fluent reader must check every line before a patient sees it.
+- **Formatting breaks when I paste.** Ask for plain text, with tables written as lists.
+
+## The problem is what I pasted
+
+- **I pasted something that could identify a patient.** Stop, write down what and where, and report it through your institution's process. See "If it already happened" on the [privacy checklist](privacy-checklist.qmd).
+- **A colleague did.** The same steps apply, and the [privacy module](../day3/m7-privacy.qmd) has the conversation to have.

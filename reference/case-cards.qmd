@@ -1,0 +1,105 @@
+---
+title: "Case cards"
+subtitle: "Five synthetic patients for every lab, demo and exercise"
+---
+
+::: {.callout-important appearance="simple"}
+## Every patient on this page is fictional
+
+None of these people exist, and no card was built from a real chart. Use these, never a real patient, for every exercise in this course. If you bring a case of your own, apply the [privacy line](../day3/m7-privacy.qmd#the-rule) first, and if you are not certain it is safe, use a card instead.
+:::
+
+The cards are written the way a clinician actually jots facts: shorthand, fragments, the order things came to mind. That is deliberate. It is the raw input an AI tool meets in real use. Doses and values are fictional and internally consistent; nothing here is prescribing guidance. Units are SI (mmol/L, µmol/L, g/L).
+
+| Card | Setting | Best for |
+|---|---|---|
+| [A](#case-a) | Primary care, hypertension follow-up | Progress note · patient handout · 3-slide teaching version |
+| [B](#case-b) | Inpatient, pneumonia, day of discharge | Discharge summary · discharge instructions |
+| [C](#case-c) | Primary care, new atrial fibrillation | Referral letter |
+| [D](#case-d) | Pediatrics, viral bronchiolitis | Parent handout · clinic note |
+| [E](#case-e) | Surgery, post-operative day 1 | Same note for three audiences · discharge instructions |
+
+## Case A — Hypertension follow-up {#case-a}
+
+::: {.case-card}
+**Synthetic patient · primary care clinic · follow-up visit, 6 weeks after starting treatment**
+
+- 52 M. Hypertension diagnosed 2 months ago. Started amlodipine 5 mg once daily 6 weeks ago.
+- Says the headaches (mostly mornings) are less frequent. New since starting amlodipine: ankle swelling by evening.
+- Home BP diary, last 2 weeks, mornings: average 146/92.
+- Missed 2 doses in 6 weeks (forgot while travelling).
+- No chest pain, no breathlessness, no visual symptoms, no palpitations.
+- Non-smoker. Walks about 15 min most days. Eats a lot of canned and salted food.
+- Family history: father had a stroke at 68.
+- No known drug allergies.
+- Today: BP 148/94, repeat 146/92 (seated, left arm). HR 76 regular. Weight 91 kg, height 176 cm, BMI 29.4.
+- Trace bilateral ankle edema. Heart sounds normal. Chest clear.
+- Baseline labs (2 months ago): creatinine 82 µmol/L, potassium 4.2 mmol/L, fasting glucose 5.4 mmol/L, LDL 3.6 mmol/L, urine ACR normal.
+- Plan discussed: add losartan 50 mg once daily, keep amlodipine 5 mg, repeat creatinine and potassium in 2 weeks, reduce salt, keep the home BP diary, review in 4 weeks.
+:::
+
+## Case B — Pneumonia, day of discharge {#case-b}
+
+::: {.case-card}
+**Synthetic patient · internal medicine ward · discharge on hospital day 4**
+
+- 64 F. Type 2 diabetes (metformin 1000 mg twice daily), hypertension (amlodipine 5 mg once daily). No known drug allergies. Non-smoker.
+- Presented with 4 days of cough with yellow-green sputum, fever, and right-sided chest pain worse on deep breathing.
+- On arrival: T 38.9 °C, HR 102, RR 24, BP 118/70, SpO2 91% on room air.
+- CXR: right lower lobe consolidation. WBC 15.2 x10^9/L, CRP 168 mg/L, creatinine 88 µmol/L, glucose 11.8 mmol/L, HbA1c 63 mmol/mol (7.9%).
+- Blood cultures: no growth at 48 h, final result pending. Sputum culture sent, result pending at discharge.
+- Treatment: ceftriaxone 1 g IV once daily for 3 days plus azithromycin 500 mg once daily for 3 days (hospital days 1 to 3). Oxygen off from hospital day 3. Afebrile since hospital day 3.
+- Step-down to oral amoxicillin-clavulanate 875/125 mg twice daily started on hospital day 4. Total planned antibiotic course 7 days, so 3 more days at home after discharge.
+- Insulin sliding scale in hospital; glucose 7 to 10 mmol/L over the last 24 h. Metformin continued.
+- At discharge: T 36.8 °C, HR 78, RR 16, BP 122/74, SpO2 96% on room air. Walking on the ward, eating well.
+- Discharge medicines: amoxicillin-clavulanate 875/125 mg twice daily for 3 more days, metformin 1000 mg twice daily, amlodipine 5 mg once daily, paracetamol 1 g up to four times daily if needed.
+- Influenza and pneumococcal vaccination status: not documented.
+- Follow-up: primary care in 1 week. Chest imaging at 6 weeks only if symptoms persist. Return sooner for worse breathing, fever after 48 h of tablets, confusion, chest pain, or coughing blood.
+:::
+
+## Case C — New atrial fibrillation, referral to cardiology {#case-c}
+
+::: {.case-card}
+**Synthetic patient · primary care clinic · writing the referral letter**
+
+- 71 M. Hypertension, on amlodipine 5 mg once daily. **Allergy: penicillin (rash).** Ex-smoker, stopped 10 years ago.
+- 3 weeks of breathlessness on exertion: now stops after about 1 block, previously 3 to 4 blocks. Occasional "fluttering". No chest pain, no syncope, no leg swelling.
+- Exam: pulse irregularly irregular, about 108. BP 132/80. SpO2 97% on room air. JVP not raised. Chest clear. No peripheral edema.
+- ECG today: atrial fibrillation, ventricular rate 112, no acute ST changes. No earlier ECG available to compare.
+- Labs today: Hb 138 g/L, creatinine 96 µmol/L (eGFR 73 mL/min/1.73 m²), potassium 4.4 mmol/L, TSH 2.1 mIU/L.
+- Not yet done: echocardiogram. Not on anticoagulation. No previous atrial fibrillation.
+- CHA2DS2-VASc: age 65 to 74 (1) plus hypertension (1) = 2.
+- Question for cardiology: rate versus rhythm strategy, and the anticoagulation decision. Asking for an appointment within 2 weeks. Patient prefers an Arabic-language consultation.
+:::
+
+## Case D — Bronchiolitis in an infant {#case-d}
+
+::: {.case-card}
+**Synthetic patient · pediatric clinic · going home after assessment**
+
+- 8-month-old girl, weight 8.2 kg, born at term, previously well, vaccines up to date. No known allergies.
+- 3 days of runny nose and cough, then 1 day of faster breathing. Fever 38.1 °C yesterday, none today. Feeding about half of her usual amount but still taking fluids; 4 wet diapers in the last 24 h.
+- A sibling at home has a cold.
+- Exam: alert and playful. RR 52/min, mild subcostal recession, no grunting. SpO2 96% on room air. HR 138. T 37.2 °C. Diffuse fine crackles and some wheeze. Moist mucous membranes. Capillary refill under 2 s.
+- Assessment: viral bronchiolitis, mild to moderate, suitable for home care.
+- Plan: supportive care. Small frequent feeds, saline nose drops, keep upright after feeds. No antibiotics, no bronchodilators. Review in 24 to 48 h, sooner if worse. No medicine doses are stated on this card.
+- Parents are anxious. Mother prefers written instructions in Arabic.
+:::
+
+## Case E — Post-operative day 1 {#case-e}
+
+::: {.case-card}
+**Synthetic patient · surgical ward · morning of planned discharge**
+
+- 41 F. Elective laparoscopic cholecystectomy yesterday for symptomatic gallstones (3 episodes of biliary colic in 6 months; ultrasound: multiple stones, common bile duct 4 mm). No known drug allergies. No regular medicines.
+- Operation uneventful: 55 min, 4 ports, no drain, no conversion to open.
+- POD1: pain 3/10 on oral analgesia, mostly shoulder tip and port sites. Eating and drinking. Walking. Passed urine. No nausea or vomiting.
+- Vitals: T 37.0 °C, HR 78, BP 116/72, SpO2 98% on room air. Abdomen soft, mild tenderness at port sites, no distension, dressings dry.
+- Labs POD1: Hb 128 g/L (134 before surgery), WBC 9.1 x10^9/L.
+- Plan: discharge today. Paracetamol 1 g every 6 h if needed (maximum 4 g in 24 h) plus ibuprofen 400 mg every 8 h with food for 3 days. Normal diet. Light activity; no lifting over 5 kg for 2 weeks; desk work after about 1 week. Keep wounds dry for 48 h, then may shower. Clinic in 2 weeks to review histology.
+- Return sooner for: fever, worsening or severe abdominal pain, repeated vomiting, yellow eyes or skin, wound redness or discharge.
+:::
+
+## Adding your own case
+
+A case of your own is fine if it is fully de-identified: no name, ID number, file number, phone, address, exact date of birth, exact dates, photograph, or any combination of details rare enough to point to one person. De-identification is a judgment, not a guarantee. When in doubt, use a card. The [privacy module](../day3/m7-privacy.qmd) explains why.

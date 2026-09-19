@@ -1,0 +1,32 @@
+---
+title: "Practice source"
+subtitle: "A one-page fictional protocol, so a quiz has an answer you can check"
+---
+
+::: {.callout-note appearance="simple"}
+## A teaching prop, not a guideline
+
+This protocol was written for this course. It is not a published guideline and carries no authority. Its value is that it is short, it has exact numbers, and you can check any AI-generated question or answer against it in seconds. In real work, the source you check against is your own guideline, label, or paper.
+:::
+
+Used in [Module 5](../day2/m5-talks-and-teaching.qmd) and [Lab 2](../day2/lab2-one-case-three-outputs.qmd): paste it into a tool, ask for quiz questions *from this text only*, then check each one against the lines below.
+
+## Protocol HBP-1 (fictional): measuring blood pressure at home {#protocol}
+
+::: {.case-card}
+1. **Device.** Use a validated upper-arm cuff monitor. Choose the cuff size that fits your upper arm. Wrist and finger monitors are not recommended.
+2. **Before measuring.** Do not smoke, exercise, or drink caffeine for 30 minutes. Empty your bladder. Sit quietly for 5 minutes.
+3. **Position.** Sit with your back supported, feet flat on the floor, legs uncrossed. Rest your arm on a table so the cuff is at heart level.
+4. **Readings.** Take 2 readings, 1 minute apart. Record both.
+5. **Schedule.** Measure every morning before taking medicines, and every evening before dinner, for 7 days before a clinic visit.
+6. **Averaging.** Discard the readings from day 1. Average all remaining readings.
+7. **Interpretation.** A home average of 135/85 mmHg or higher suggests that blood pressure is not controlled. Your doctor makes the decision, not the monitor.
+8. **Urgent care.** A reading of 180/120 mmHg or higher together with chest pain, breathlessness, weakness, or difficulty speaking needs emergency care now.
+9. **Bring the log** to your visit. Do not change your medicines because of a single reading.
+:::
+
+## What makes this a good practice source
+
+- **Every rule has a number or a name** (5 minutes, 2 readings, 1 minute apart, 7 days, day 1 discarded, 135/85, 180/120), so a wrong answer can be caught by looking, not by arguing.
+- **It has traps** an AI question-writer can fall into: the day-1 discard, the "average of what?" question, and the difference between the 135/85 home threshold and the 180/120 emergency threshold.
+- **It is short enough** to paste whole and read in a minute, which is the discipline real verification needs.

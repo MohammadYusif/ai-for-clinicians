@@ -1,0 +1,317 @@
+---
+title: "Prompt library"
+subtitle: "Every reusable prompt from the course, ready to copy"
+---
+
+::: {.callout-important appearance="simple"}
+## Synthetic or de-identified facts only
+Replace the `[square brackets]` with facts from a [case card](case-cards.qmd) or a fully de-identified case. Patient identifiers never go into a consumer AI tool: see the [privacy checklist](privacy-checklist.qmd).
+:::
+
+::: {.callout-note appearance="simple"}
+## This page is generated
+It is built from the prompts in the day pages by `tools/build_prompt_library.py`, so it can never disagree with the page that taught each prompt. To change a prompt, edit it where it is taught. Whatever a prompt returns, run the [three-question check](three-question-check.qmd) on it.
+:::
+
+| Prompt | Use when | Taught in |
+|---|---|---|
+| [Four-part skeleton](#p-four-part-skeleton) | The base for any drafting task: fill the brackets and paste only the facts you want used | [Module 2, Anatomy of a good prompt](../day1/m2-prompting.qmd#anatomy) |
+| [SOAP progress note](#p-soap-note) | Turn jotted visit facts into a progress note in a fixed template | [Module 2, Structure fixes it](../day1/m2-prompting.qmd#structure-notes) |
+| [Referral letter](#p-referral-letter) | Turn a clinic patient's facts into a short referral letter with one clear question | [Module 2, Same framework, three more jobs](../day1/m2-prompting.qmd#three-more-jobs) |
+| [Discharge summary](#p-discharge-summary) | Turn inpatient facts into a five-heading discharge summary with medicines copied exactly | [Module 2, Same framework, three more jobs](../day1/m2-prompting.qmd#three-more-jobs) |
+| [Plain-language patient handout](#p-patient-handout) | Turn a clinician's plan into a short handout a parent or patient can follow at home | [Module 2, Same framework, three more jobs](../day1/m2-prompting.qmd#three-more-jobs) |
+| [Evidence question with sources](#p-evidence-question) | Ask a general clinical question, with no patient details, and ask for sources you can open | [Lab 1, Tool face-off](../day1/lab1-templates-and-limits.qmd#part-3) |
+| [Orient, then verify](#p-orient-and-verify) | A between-patients question that returns a short orientation plus what to confirm and where, never a decision | [Module 4, Four places AI already fits](../day2/m4-notes-and-audiences.qmd#four-places) |
+| [Source-of-truth fact sheet](#p-source-of-truth-sheet) | Turn your jotted facts about one clinical event into one fixed-layout sheet that the chart, patient and colleague prompts all draw from | [Module 4, Same note, three audiences](../day2/m4-notes-and-audiences.qmd#three-audiences) |
+| [Chart note from the sheet](#p-chart-note-from-sheet) | Draft the clinical-register note for the record from a checked fact sheet | [Module 4, Same note, three audiences](../day2/m4-notes-and-audiences.qmd#three-audiences) |
+| [Patient instructions from the sheet](#p-patient-instructions-from-sheet) | Draft plain-language discharge instructions from a checked fact sheet, keeping every dose and warning sign | [Module 4, Same note, three audiences](../day2/m4-notes-and-audiences.qmd#three-audiences) |
+| [Colleague letter from the sheet](#p-colleague-letter-from-sheet) | Draft a short handover letter to the patient's community physician or clinic from a checked fact sheet | [Module 4, Same note, three audiences](../day2/m4-notes-and-audiences.qmd#three-audiences) |
+| [Case to slide outline](#p-case-outline) | Turn de-identified case notes and your teaching points into a slide-by-slide outline | [Module 5, From case to slide deck](../day2/m5-talks-and-teaching.qmd#case-to-deck) |
+| [Slides from an outline](#p-full-talk-slides) | Turn an approved outline and your facts into slide text, one speaker note, and one visual idea per slide | [Module 5, Building a full talk, not just an outline](../day2/m5-talks-and-teaching.qmd#full-talk) |
+| [Quiz questions from a source](#p-quiz-from-source) | Write multiple-choice questions only from a text you paste, with balanced answer positions and option lengths | [Module 5, Teaching with AI](../day2/m5-talks-and-teaching.qmd#teaching-with-ai) |
+| [Answer key with quotations](#p-answer-key-with-quotes) | Add an answer key to a quiz, with the exact supporting words from the source for every answer | [Module 5, Grading yourself](../day2/m5-talks-and-teaching.qmd#grading-yourself) |
+| [Study summary from a source](#p-teaching-summary-from-source) | Turn a source text into a short, numbers-exact study summary for trainees | [Lab 2, Tool check, again](../day2/lab2-one-case-three-outputs.qmd#part-2) |
+| [List the checkable claims](#p-claim-list) | Pull every number, name, date, dose and citation out of an AI answer so you can check each one against its source | [Module 6, Confidently wrong](../day3/m6-confidently-wrong.qmd#confidently-wrong) |
+
+## Day One — Foundations
+
+### Four-part skeleton {#p-four-part-skeleton}
+
+**Use when:** The base for any drafting task: fill the brackets and paste only the facts you want used  
+**Taught in:** [Module 2, Anatomy of a good prompt](../day1/m2-prompting.qmd#anatomy)
+
+```text
+ROLE: You are [role], writing for [audience].
+CONTEXT: [What this is for.] Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+[paste the facts]
+FORMAT: [Exact template or headings.] Maximum [N] words.
+CONSTRAINTS: Do not add findings, doses, or diagnoses that are not in the facts. No hedging phrases. [Units, reading level, abbreviations.]
+```
+
+### SOAP progress note {#p-soap-note}
+
+**Use when:** Turn jotted visit facts into a progress note in a fixed template  
+**Taught in:** [Module 2, Structure fixes it](../day1/m2-prompting.qmd#structure-notes)
+
+```text
+ROLE: You are a primary care physician, writing a progress note for the patient's chart.
+CONTEXT: This is the note for today's follow-up visit. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+- 52 M. Hypertension diagnosed 2 months ago. Started amlodipine 5 mg once daily 6 weeks ago.
+- Says the headaches (mostly mornings) are less frequent. New since starting amlodipine: ankle swelling by evening.
+- Home BP diary, last 2 weeks, mornings: average 146/92.
+- Missed 2 doses in 6 weeks (forgot while travelling).
+- No chest pain, no breathlessness, no visual symptoms, no palpitations.
+- Non-smoker. Walks about 15 min most days. Eats a lot of canned and salted food.
+- Family history: father had a stroke at 68.
+- No known drug allergies.
+- Today: BP 148/94, repeat 146/92 (seated, left arm). HR 76 regular. Weight 91 kg, height 176 cm, BMI 29.4.
+- Trace bilateral ankle edema. Heart sounds normal. Chest clear.
+- Baseline labs (2 months ago): creatinine 82 µmol/L, potassium 4.2 mmol/L, fasting glucose 5.4 mmol/L, LDL 3.6 mmol/L, urine ACR normal.
+- Plan discussed: add losartan 50 mg once daily, keep amlodipine 5 mg, repeat creatinine and potassium in 2 weeks, reduce salt, keep the home BP diary, review in 4 weeks.
+FORMAT: A SOAP note with four headings: S, O, A, P. Under A, one line that restates the diagnosis and findings already in the facts. Maximum 150 words.
+CONSTRAINTS: Do not add findings, doses, or diagnoses that are not in the facts. No hedging phrases. Keep every value and unit exactly as written. Standard clinical abbreviations are fine.
+```
+
+### Referral letter {#p-referral-letter}
+
+**Use when:** Turn a clinic patient's facts into a short referral letter with one clear question  
+**Taught in:** [Module 2, Same framework, three more jobs](../day1/m2-prompting.qmd#three-more-jobs)
+
+```text
+ROLE: You are a family physician, writing a referral letter to a cardiologist who has not met the patient.
+CONTEXT: This is a referral for a new problem. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+- 71 M. Hypertension, on amlodipine 5 mg once daily. Allergy: penicillin (rash). Ex-smoker, stopped 10 years ago.
+- 3 weeks of breathlessness on exertion: now stops after about 1 block, previously 3 to 4 blocks. Occasional "fluttering". No chest pain, no syncope, no leg swelling.
+- Exam: pulse irregularly irregular, about 108. BP 132/80. SpO2 97% on room air. JVP not raised. Chest clear. No peripheral edema.
+- ECG today: atrial fibrillation, ventricular rate 112, no acute ST changes. No earlier ECG available to compare.
+- Labs today: Hb 138 g/L, creatinine 96 µmol/L (eGFR 73 mL/min/1.73 m²), potassium 4.4 mmol/L, TSH 2.1 mIU/L.
+- Not yet done: echocardiogram. Not on anticoagulation. No previous atrial fibrillation.
+- CHA2DS2-VASc: age 65 to 74 (1) plus hypertension (1) = 2.
+- Question for cardiology: rate versus rhythm strategy, and the anticoagulation decision. Asking for an appointment within 2 weeks. Patient prefers an Arabic-language consultation.
+FORMAT: A letter with no headings. Paragraph 1: the question, then the urgency. Paragraph 2: only the history and findings that bear on the question. Paragraph 3: what has and has not been done. End with the allergy and the language preference. Maximum 200 words.
+CONSTRAINTS: The allergy must appear. Do not add findings, doses, or diagnoses that are not in the facts. Do not answer the question or recommend a treatment: that is the cardiologist's decision. No hedging phrases. Keep every value and unit exactly as written.
+```
+
+### Discharge summary {#p-discharge-summary}
+
+**Use when:** Turn inpatient facts into a five-heading discharge summary with medicines copied exactly  
+**Taught in:** [Module 2, Same framework, three more jobs](../day1/m2-prompting.qmd#three-more-jobs)
+
+```text
+ROLE: You are a hospital physician on an internal medicine ward, writing a discharge summary for the patient's primary care physician.
+CONTEXT: This is the summary that goes with the patient on the day of discharge. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+- Diagnosis this admission: pneumonia, right lower lobe.
+- 64 F. Type 2 diabetes (metformin 1000 mg twice daily), hypertension (amlodipine 5 mg once daily). No known drug allergies. Non-smoker.
+- Presented with 4 days of cough with yellow-green sputum, fever, and right-sided chest pain worse on deep breathing.
+- On arrival: T 38.9 °C, HR 102, RR 24, BP 118/70, SpO2 91% on room air.
+- CXR: right lower lobe consolidation. WBC 15.2 x10^9/L, CRP 168 mg/L, creatinine 88 µmol/L, glucose 11.8 mmol/L, HbA1c 63 mmol/mol (7.9%).
+- Blood cultures: no growth at 48 h, final result pending. Sputum culture sent, result pending at discharge.
+- Treatment: ceftriaxone 1 g IV once daily for 3 days plus azithromycin 500 mg once daily for 3 days (hospital days 1 to 3). Oxygen off from hospital day 3. Afebrile since hospital day 3.
+- Step-down to oral amoxicillin-clavulanate 875/125 mg twice daily started on hospital day 4. Total planned antibiotic course 7 days, so 3 more days at home after discharge.
+- Insulin sliding scale in hospital; glucose 7 to 10 mmol/L over the last 24 h. Metformin continued.
+- At discharge: T 36.8 °C, HR 78, RR 16, BP 122/74, SpO2 96% on room air. Walking on the ward, eating well.
+- Discharge medicines: amoxicillin-clavulanate 875/125 mg twice daily for 3 more days, metformin 1000 mg twice daily, amlodipine 5 mg once daily, paracetamol 1 g up to four times daily if needed.
+- Influenza and pneumococcal vaccination status: not documented.
+- Follow-up: primary care in 1 week. Chest imaging at 6 weeks only if symptoms persist. Return sooner for worse breathing, fever after 48 h of tablets, confusion, chest pain, or coughing blood.
+FORMAT: Five headings, in this order: Diagnoses, Hospital course, Discharge medicines, Pending results, Follow-up. Discharge medicines as a list, one line each. Maximum 250 words.
+CONSTRAINTS: Copy the discharge medicines exactly as listed in the facts: no change to any name, dose, frequency or duration. Do not add findings, doses, or diagnoses that are not in the facts. If a result is pending, say it is pending; do not guess the result. No hedging phrases. Keep every value and unit exactly as written.
+```
+
+### Plain-language patient handout {#p-patient-handout}
+
+**Use when:** Turn a clinician's plan into a short handout a parent or patient can follow at home  
+**Taught in:** [Module 2, Same framework, three more jobs](../day1/m2-prompting.qmd#three-more-jobs)
+
+```text
+ROLE: You are a pediatrician, writing a home-care handout for the parents of a baby.
+CONTEXT: The parents are anxious and want clear written instructions for home. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+- 8-month-old girl. Viral bronchiolitis, mild to moderate, suitable for home care.
+- Plan: supportive care. Small frequent feeds, saline nose drops, keep upright after feeds. No antibiotics, no bronchodilators.
+- Review in 24 to 48 h, sooner if worse.
+FORMAT: Three short headings: What this is, What to do at home, When to come back. Maximum 200 words.
+CONSTRAINTS: Write at a reading level a 12-year-old could follow: short sentences, no jargon, and explain any medical term in plain words. Do not add medicines, doses, advice, timelines or warning signs that are not in the facts. If the facts give no warning signs, write [MISSING: warning signs the parents should watch for] under "When to come back". No hedging phrases. Reassure without minimizing.
+```
+
+### Evidence question with sources {#p-evidence-question}
+
+**Use when:** Ask a general clinical question, with no patient details, and ask for sources you can open  
+**Taught in:** [Lab 1, Tool face-off](../day1/lab1-templates-and-limits.qmd#part-3)
+
+```text
+[A general clinical question from your own field.] Summarize the main options and how strong the evidence is for each. Cite sources I can open. If you cannot find a source, say so. This is a general question: no patient details.
+```
+
+## Day Two — Applications
+
+### Orient, then verify {#p-orient-and-verify}
+
+**Use when:** A between-patients question that returns a short orientation plus what to confirm and where, never a decision  
+**Taught in:** [Module 4, Four places AI already fits](../day2/m4-notes-and-audiences.qmd#four-places)
+
+```text
+ROLE: You are a clinical reference assistant, writing for a physician who has two minutes between patients.
+CONTEXT: I want orientation on the question below, not a decision. The situation below is all the patient detail you have. If you are not sure of something, write [NOT SURE: what] instead of guessing.
+FACTS:
+Situation, in general terms with no patient identifiers: [for example, an adult with new ankle swelling after starting amlodipine]
+My question: [what you want to understand]
+FORMAT: Three parts. (1) Short answer, maximum 60 words. (2) The two or three points I must confirm before relying on it. (3) For each point, the kind of source where I can confirm it (formulary, product label, local guideline). Maximum 150 words in total.
+CONSTRAINTS: Do not recommend a dose or a diagnosis for this patient. Do not invent references: no citations, guideline titles or numbers. No hedging phrases. The answer is orientation; I make the decision.
+```
+
+### Source-of-truth fact sheet {#p-source-of-truth-sheet}
+
+**Use when:** Turn your jotted facts about one clinical event into one fixed-layout sheet that the chart, patient and colleague prompts all draw from  
+**Taught in:** [Module 4, Same note, three audiences](../day2/m4-notes-and-audiences.qmd#three-audiences)
+
+```text
+ROLE: You are a clinical documentation assistant, writing for the doctor who will use this sheet as the only source for three later documents.
+CONTEXT: Turn my jotted facts into a one-page fact sheet. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+[paste your jotted facts: no name, ID, file number, phone or exact dates]
+FORMAT: A numbered sheet with exactly these headings, in this order: 1. Patient and event. 2. Status today (symptoms, vitals, exam, results). 3. Medicines going home (each with dose, how often, how long, and any maximum). 4. Activity and wound care (each instruction with its limit or time). 5. Follow-up (what, and when). 6. Return sooner for (one item per line, exactly as I wrote them). 7. Allergies and regular medicines. One short line per fact. Keep every number and unit exactly as written. Maximum 250 words.
+CONSTRAINTS: Do not add findings, doses, or diagnoses that are not in the facts. Do not rephrase, combine or drop items in the return-sooner list. No hedging phrases.
+```
+
+### Chart note from the sheet {#p-chart-note-from-sheet}
+
+**Use when:** Draft the clinical-register note for the record from a checked fact sheet  
+**Taught in:** [Module 4, Same note, three audiences](../day2/m4-notes-and-audiences.qmd#three-audiences)
+
+```text
+ROLE: You are a surgeon, writing a discharge-day note for the medical record, for the clinicians who read this chart next.
+CONTEXT: Write the note from the fact sheet below. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+[paste the checked fact sheet]
+FORMAT: Clinical register with standard abbreviations. Headings in this order: Procedure and indication; Post-operative course; Examination and results; Allergies and regular medicines; Discharge plan (medicines, activity, wound care, follow-up); Return precautions given. Maximum 200 words.
+CONSTRAINTS: Do not add findings, doses, or diagnoses that are not in the facts. Keep every number and unit exactly as in the sheet. Include every item of the "Return sooner for" list, once each. No hedging phrases.
+```
+
+### Patient instructions from the sheet {#p-patient-instructions-from-sheet}
+
+**Use when:** Draft plain-language discharge instructions from a checked fact sheet, keeping every dose and warning sign  
+**Taught in:** [Module 4, Same note, three audiences](../day2/m4-notes-and-audiences.qmd#three-audiences)
+
+```text
+ROLE: You are a surgical nurse educator, writing for a patient going home after an operation. The reader is an adult with no medical training.
+CONTEXT: Write discharge instructions from the fact sheet below. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+[paste the checked fact sheet]
+FORMAT: Plain language at about a 6th-grade reading level, short sentences, addressed to "you". Headings: What was done; Your medicines; Looking after your wounds; What you can do; Come back or call if you have; Your next visit. Under "Your medicines", give each medicine with its exact dose, how often, and for how long, and state any maximum. Under "Come back or call if you have", use bullet points and include EVERY item of the "Return sooner for" list in ordinary words. Leave out lab values and scan results. Maximum 250 words.
+CONSTRAINTS: Do not add findings, doses, or advice that are not in the facts. Do not change any number, unit or time. No medical abbreviations. No hedging phrases.
+```
+
+### Colleague letter from the sheet {#p-colleague-letter-from-sheet}
+
+**Use when:** Draft a short handover letter to the patient's community physician or clinic from a checked fact sheet  
+**Taught in:** [Module 4, Same note, three audiences](../day2/m4-notes-and-audiences.qmd#three-audiences)
+
+```text
+ROLE: You are a surgeon, writing to the patient's community physician or clinic, who will see the patient next and has not seen the hospital record.
+CONTEXT: Write a short handover letter from the fact sheet below. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+[paste the checked fact sheet]
+FORMAT: Start with "Dear Colleague," and end with "[your name and role]". Begin with what was done and why. Then, in this order: status at discharge, medicines started, what the patient was told to do, follow-up arranged, and the warning signs the patient was told to return for. Write for a clinician and focus on what the reader must know or do; leave out detail that would not change their care. Maximum 150 words.
+CONSTRAINTS: Do not add findings, doses, or diagnoses that are not in the facts. Keep every number and unit exactly as in the sheet. Include every item of the "Return sooner for" list. Use the placeholder [PATIENT NAME AND FILE NUMBER] wherever the patient would be named; I will add it myself. Do not invent a recipient name, date or contact detail. No hedging phrases.
+```
+
+### Case to slide outline {#p-case-outline}
+
+**Use when:** Turn de-identified case notes and your teaching points into a slide-by-slide outline  
+**Taught in:** [Module 5, From case to slide deck](../day2/m5-talks-and-teaching.qmd#case-to-deck)
+
+```text
+ROLE: You are a clinical educator helping a doctor plan a short teaching talk for [audience, e.g. junior doctors at morning report].
+CONTEXT: The talk is built around one case. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing. The facts contain no patient identifiers; do not add any.
+FACTS:
+[paste the de-identified case notes]
+TEACHING POINTS:
+[two or three points you want the room to leave with, in your words]
+FORMAT: A slide-by-slide outline of [3] slides. For each slide: a title of six words or fewer, then two to four bullet fragments naming what goes on it. Finish with one line saying which slide carries each teaching point. Maximum [150] words.
+CONSTRAINTS: Do not add findings, doses, or diagnoses that are not in the facts. No statistics, guidelines, or citations. No hedging phrases. Keep units exactly as written in the facts.
+```
+
+### Slides from an outline {#p-full-talk-slides}
+
+**Use when:** Turn an approved outline and your facts into slide text, one speaker note, and one visual idea per slide  
+**Taught in:** [Module 5, Building a full talk, not just an outline](../day2/m5-talks-and-teaching.qmd#full-talk)
+
+```text
+ROLE: You are a clinical educator preparing slides for [audience, e.g. junior doctors at morning report].
+CONTEXT: The slides teach from one case. Use ONLY the facts below, and stay inside the outline. If something needed is missing, write [MISSING: what] instead of guessing. No patient identifiers on any slide.
+FACTS:
+[paste the de-identified facts, or your checked source-of-truth sheet]
+OUTLINE:
+[paste the outline you approved, or list the slide titles]
+FORMAT: One block per slide, in outline order, with exactly these labels:
+SLIDE (number): title, six words or fewer
+ON THE SLIDE: at most 3 lines, 12 words or fewer each
+SPEAKER NOTE: one sentence
+VISUAL: one suggestion: what to show, and which facts it uses
+After the last slide, add NUMBERS USED: every number on the slides, each with the fact it came from. Maximum [250] words.
+CONSTRAINTS: Copy every number, dose, and unit exactly as written in the facts. For a visual, say what to show; do not supply data points, trends, or values that are not in the facts. Do not add findings, doses, or diagnoses that are not in the facts. No statistics, guidelines, or citations. No hedging phrases.
+```
+
+### Quiz questions from a source {#p-quiz-from-source}
+
+**Use when:** Write multiple-choice questions only from a text you paste, with balanced answer positions and option lengths  
+**Taught in:** [Module 5, Teaching with AI](../day2/m5-talks-and-teaching.qmd#teaching-with-ai)
+
+```text
+ROLE: You are a medical educator writing exam questions for [audience, e.g. family medicine residents].
+CONTEXT: The questions test whether the learner has understood the SOURCE below. Use ONLY the SOURCE. Do not add facts, numbers, or recommendations from anywhere else. If the SOURCE is too short for [5] questions, write fewer and say so.
+SOURCE:
+[paste the source text]
+FORMAT: [5] multiple-choice questions, each with four options labeled A to D and one correct answer. Spread the correct answers across A to D, with no letter correct more than twice. Make the four options in each question about the same length, so the correct one is not the longest. No "all of the above" or "none of the above". After the questions, one line: ANSWER LETTERS, giving the correct letter for each question. Maximum [300] words.
+CONSTRAINTS: Every question must be answerable from a single line of the SOURCE. Do not add findings, doses, or diagnoses that are not in the SOURCE. Copy numbers exactly as written in the SOURCE. No hedging phrases.
+```
+
+### Answer key with quotations {#p-answer-key-with-quotes}
+
+**Use when:** Add an answer key to a quiz, with the exact supporting words from the source for every answer  
+**Taught in:** [Module 5, Grading yourself](../day2/m5-talks-and-teaching.qmd#grading-yourself)
+
+```text
+ROLE: You are a medical educator checking your own quiz against its source.
+CONTEXT: The questions below were written from the SOURCE below. Use ONLY the SOURCE. Do not use anything you know from elsewhere.
+QUESTIONS:
+[paste the questions, or write "the questions above"]
+SOURCE:
+[paste the same source text]
+FORMAT: An answer key with one entry per question: the question number; the correct letter; the exact words from the SOURCE that make it correct, copied word for word inside quotation marks; and the line or heading of the SOURCE where those words appear. Maximum [200] words.
+CONSTRAINTS: Never paraphrase inside quotation marks. If no words in the SOURCE support an answer, write NOT SUPPORTED instead of a quotation and say the question should be removed. Do not add findings, doses, or diagnoses that are not in the SOURCE. No hedging phrases.
+```
+
+### Study summary from a source {#p-teaching-summary-from-source}
+
+**Use when:** Turn a source text into a short, numbers-exact study summary for trainees  
+**Taught in:** [Lab 2, Tool check, again](../day2/lab2-one-case-three-outputs.qmd#part-2)
+
+```text
+ROLE: You are a medical educator writing a one-page study summary for [audience, e.g. family medicine residents].
+CONTEXT: The summary is for revision. Use ONLY the SOURCE below. If something a learner would need is missing from the SOURCE, write [MISSING: what] instead of adding it.
+SOURCE:
+[paste the source text]
+FORMAT: Exactly [5] bullet points, one per key rule, each starting with its number or threshold in bold. Then one line beginning "Easy to confuse:" naming two rules in the SOURCE with similar numbers. Maximum [120] words.
+CONSTRAINTS: Copy every number exactly as written in the SOURCE. Do not add findings, doses, or thresholds that are not in the SOURCE. Cite nothing outside the SOURCE. No hedging phrases.
+```
+
+## Day Three — Safety & Ethics
+
+### List the checkable claims {#p-claim-list}
+
+**Use when:** Pull every number, name, date, dose and citation out of an AI answer so you can check each one against its source  
+**Taught in:** [Module 6, Confidently wrong](../day3/m6-confidently-wrong.qmd#confidently-wrong)
+
+```text
+ROLE: You are a careful research assistant, writing for a physician who will check each item against its source.
+CONTEXT: Below is a text I need to verify. Use ONLY the text below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+[paste the text to be checked]
+FORMAT: A numbered list, one checkable claim per line, in the order they appear, with the exact words from the text in quotation marks. Maximum 25 lines.
+CONSTRAINTS: Do not say whether any claim is true. Do not add claims that are not in the text. Do not correct or rewrite anything. Include every number, name, date, dose, citation, and guideline reference.
+```

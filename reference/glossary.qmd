@@ -1,0 +1,64 @@
+---
+title: "Glossary"
+subtitle: "The words this course uses, in plain terms"
+---
+
+Terms are defined the way the course uses them. Where the wider world uses a different word for the same thing, that word is noted.
+
+**Altered.** A kind of AI error: a value, negation, side, date, or unit in the output differs from the source. See *invented* and *omitted*.
+
+**Ambient scribe.** A tool that listens to a consultation, with the system deployed by an institution, and drafts the clinical note. Different from typing facts into a chat assistant. Sahl AI and Augnito are examples taught on Day Two.
+
+**Approved tool.** An AI tool your institution has vetted and contracted for use with patient information. Not the same as a tool you can sign up for yourself.
+
+**Case card.** One of the five synthetic patients on the [case cards](case-cards.qmd) page, used for every exercise. None is a real person.
+
+**Consumer AI tool.** A general assistant you signed up for yourself, on a personal account: ChatGPT, Claude, or Gemini, for example. Patient identifiers never go into one.
+
+**Context.** Everything the tool can see in the current conversation: your messages, anything you pasted, and its own earlier replies. The second part of the four-part framework is *Context*.
+
+**Context window.** The limit on how much the tool can hold in view at once. In a very long chat, early instructions can be dropped or followed less reliably, which is why a fresh chat helps.
+
+**De-identification.** Removing or generalizing details so that a person cannot be identified, directly or indirectly. A judgment, not a guarantee.
+
+**Fabricated.** Made up: a fact, a number, a reference, or a guideline that does not exist or does not say what the tool claims. Also called a *hallucination*.
+
+**Four-part framework.** *Role, Context, Format, Constraints.* Who it is, what it knows, what shape to return, what to avoid.
+
+**General assistant.** A tool built to help with any writing, structuring, or reasoning task. It does not, on its own, give citations. ChatGPT, Claude, and Gemini are examples.
+
+**Hallucination.** The word you will hear for *fabricated* content. This course says "made-up" or "fabricated", which describe the problem more plainly.
+
+**Identifier.** Any detail that can point to a person: a name, an ID or file number, a phone number, an exact date, a photograph, or a combination of details rare enough to single someone out. See the [privacy checklist](privacy-checklist.qmd).
+
+**Invented.** A kind of AI error: something appears in the output that is not in the source. See *omitted* and *altered*.
+
+**Large language model (LLM).** The kind of system behind these tools. It has read a very large amount of text and produces new text by predicting what comes next.
+
+**Literature-grounded tool.** A tool that answers from peer-reviewed literature and shows citations you can open. Vera Health is the example used in this course.
+
+**Omitted.** A kind of AI error: something that was in the source is missing from the output. See *invented* and *altered*.
+
+**PDPL.** Saudi Arabia's Personal Data Protection Law, enforced by SDAIA. It classifies health data as sensitive personal data.
+
+**PDQI-9.** The Physician Documentation Quality Instrument, a rating tool for the quality of clinical notes. The Sahl AI pilot discussed on Day Two used a modified version, with a maximum total of 45.
+
+**Prompt.** What you type into the tool: the instruction and the facts it should use.
+
+**Prompt library.** Your own collection of prompts that worked. This course keeps a copy of every reusable one on the [prompt library](prompt-library.qmd) page.
+
+**Quota.** How much a free or paid plan lets you use in a period. Batch related questions into one detailed prompt to spend it well.
+
+**Sensitive personal data.** A legal category under the PDPL that includes health, genetic, and biometric data.
+
+**Source of truth.** A single fact sheet, written once by you, that every output on a task is drawn from, so the outputs cannot drift apart. Taught on Day Two.
+
+**Synthetic case.** A fictional patient invented for teaching. Every case in this course is synthetic.
+
+**Three-question check.** *Could I defend this to a colleague? Does it point to something I can verify? Would I catch it if it were wrong?* The [card](three-question-check.qmd).
+
+**Token.** The small piece of text, roughly a short word or part of a word, that a model reads and writes. It produces its answer one token at a time.
+
+**Training cutoff.** The point after which the model saw no more training data. Unless a tool searches the web, it does not know about later events.
+
+**Verification workflow.** Draft with AI, cross-check the source, confirm or correct, use.

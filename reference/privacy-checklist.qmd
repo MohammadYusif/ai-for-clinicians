@@ -1,0 +1,68 @@
+---
+title: "Privacy checklist"
+subtitle: "Before you paste anything into an AI tool"
+---
+
+::: {.callout-important appearance="simple"}
+## No patient identifiers into a consumer AI tool. Ever. Full stop.
+A *consumer AI tool* is a general assistant you signed up for yourself. The teaching behind this line, and why "anonymized" is harder than it sounds, is in [Module 7](../day3/m7-privacy.qmd).
+:::
+
+## Before you paste
+
+- [ ] Is this tool **approved by my institution** for patient information? If not, stop, unless what I am pasting is synthetic or fully de-identified.
+- [ ] Does the text contain **any identifier**? (list below)
+- [ ] Could a colleague, a neighbor, or the family **recognize the person** from these details together?
+- [ ] Is anything hiding in the **file**: a header, an EMR banner in a screenshot, metadata, a filename, a wristband, a face, a tattoo?
+- [ ] Have I **generalized** ages, dates, and places?
+- [ ] Would I be comfortable if the patient **read exactly what I am about to paste**?
+- [ ] **Not sure?** Do not paste.
+
+## What counts as an identifier
+
+This list is a floor, not a ceiling. The real test is whether a person can be identified, directly or indirectly, from what you paste.
+
+- Name, or any part of it
+- National ID or iqama number, file or medical record number, insurance number
+- Phone number, email, home address, workplace
+- Exact date of birth, and exact dates of admission, procedure, or death
+- Photographs, and any image with a face or a distinguishing mark
+- Any **combination** of details rare enough to point to one person: a rare condition plus a small town plus a date
+
+## De-identify, then re-read
+
+1. **Remove** every identifier above.
+2. **Replace** with neutral labels ("the patient", "a 50-year-old man").
+3. **Generalize:** an exact age becomes a decade; a place becomes a region; a date becomes "day 3".
+4. **Re-read as a stranger.** Could you tell who this is?
+
+De-identification is a judgment, not a guarantee. When in doubt, use a [case card](case-cards.qmd) instead.
+
+## What to do instead
+
+- Use a tool **your institution has approved** for patient information.
+- Use a **synthetic case**, like the cards on this site.
+- Ask your institution's **data protection officer** what is allowed. Settings such as turning off chat history do not turn a consumer tool into an approved one.
+
+## Formats that leak
+
+| Format | What it can carry |
+|---|---|
+| Screenshot of the chart | Name, file number, date of birth in the banner |
+| Photograph | A face, a wristband, a tattoo, a room, a date stamp |
+| PDF or lab report | Headers, footers, barcodes, the ordering clinician |
+| Audio recording | A name spoken aloud, a voice |
+| The filename | `FirstName_LastName_discharge_final.docx` |
+
+## The law, in one paragraph
+
+Saudi Arabia's Personal Data Protection Law, enforced by SDAIA, classifies health data as **sensitive personal data**, alongside genetic and biometric data. Healthcare entities face real financial and operational penalties for mishandling it. This page is education, not legal advice: for what applies to you, ask your institution's data protection officer or legal team.
+
+## If it already happened
+
+Everyone who uses these tools long enough will paste something they should not have. What matters next:
+
+1. **Stop.** Do not keep pasting or trying to fix it in the same chat.
+2. **Write down** what was pasted, into which tool, and when.
+3. **Report it promptly** through your institution's process, and to its data protection officer.
+4. **Do not assume** that deleting the chat undoes it.

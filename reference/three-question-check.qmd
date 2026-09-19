@@ -1,0 +1,68 @@
+---
+title: "The three-question check"
+subtitle: "One card. Run it on every AI output before it goes anywhere."
+---
+
+::: {.callout-important appearance="simple"}
+## AI drafts. You decide.
+The check is how "you decide" becomes something you actually do, in about a minute, every time.
+:::
+
+## The three questions
+
+1. **Could I defend this to a colleague?**
+2. **Does it point to something I can verify?**
+3. **Would I catch it if it were wrong?**
+
+If the answer to any of these is no, that's the signal to slow down, not the finding to accept.
+
+## What each question is really asking
+
+| Question | It is asking | A "no" sounds like |
+|---|---|---|
+| **1. Could I defend this?** | Do I understand the reasoning well enough to explain it from the chart or a source, without saying "the AI wrote it"? | "I'm not sure why it says that." "It sounded right." |
+| **2. Can I verify it?** | Is there a source I can actually open: the chart value, the drug label, the guideline, the paper? | "It doesn't say where that comes from." "I can't find that reference." |
+| **3. Would I catch it?** | Not about the tool, about **me**: do I have the expertise, and the source to hand, to notice if this were wrong? | "This is outside my area." "I'd only skim it." |
+
+A source the tool *names* is not verification until you have opened it. Asking the tool to check its own answer is not verification either.
+
+## Run it in a minute
+
+1. **Read** the whole output once, slowly.
+2. **Mark** every number, name, date, dose, and source.
+3. **Check** each mark against the chart or the source, not against the tool.
+4. **Ask** the three questions out loud.
+5. **Decide:** use it, fix it, or discard it.
+
+## How hard to check depends on the stakes
+
+| Stakes | Examples | How much |
+|---|---|---|
+| Low | Rewording an email to a colleague | A read-through |
+| Medium | A summary you will teach from | Check the key claims against the source |
+| High | Anything in a chart: a dose, an allergy, a diagnosis, the red flags in a patient handout | Every number and name, against the primary source, every time |
+
+## When the answer is no
+
+- **No on 1:** do not use it until you can explain it. Look it up or ask a colleague.
+- **No on 2:** find the source, or discard the claim.
+- **No on 3:** do not use this tool for this task, or get someone who would catch it.
+
+## Name the mistake
+
+When you find one, say which kind it is. The names carry across every document:
+
+- **Invented:** something added that is not in the source.
+- **Omitted:** something dropped that was.
+- **Altered:** a value, negation, side, date, or unit changed.
+- **Fabricated citation:** a reference or guideline that does not exist or does not say that.
+
+## Your log (print this)
+
+| Output | Q1 defend | Q2 verify | Q3 catch | What I checked | Use / fix / discard | Kind of error |
+|---|---|---|---|---|---|---|
+| | | | | | | |
+| | | | | | | |
+| | | | | | | |
+
+Used on Day One ([Lab 1](../day1/lab1-templates-and-limits.qmd)), Day Three ([Lab 3](../day3/lab3-spot-the-error.qmd)), and again in [Back to the rule](../day3/m8-back-to-the-rule.qmd).
