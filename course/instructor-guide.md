@@ -107,7 +107,9 @@ point to it. For the live demo, a clinician colleague's account or a participant
 - **The scored quiz.** The brief marks it "kept" and it is not in the material I was given. The bank on
   `assessment.qmd` is practice, not the quiz. If the scored quiz becomes a form, keep it and its key out of
   this public repository, and apply the answer-position and answer-length balancing rules in your workspace.
-- **The deck.** Not edited. Slide text and paste-ready speaker notes are in the talking-points files.
+- **A trainer read of the deck.** The deck was rebuilt from the talking-points files (78 slides, each with its
+  speaker notes; see "Updating the deck"). Nobody has looked through it slide by slide yet. `demo-grid` carries a
+  bracketed placeholder for the live-demo question, and `closing` has no feedback link until one is confirmed.
 - **A clinician read of the case cards.** The values are internally consistent (the eGFR and the
   CHA2DS2-VASc score were recomputed) but a tool cannot vouch for clinical realism. There is no Arabic text
   anywhere in this repository: the Arabic variant of the patient handout asks the tool to write Arabic and
@@ -271,8 +273,10 @@ before the exercise. Who reads the case cards as a clinician.
 ## Updating the deck
 
 The deck is a Slides artifact at the link in `BRIEF.md`: `project/deck.json` plus one
-`project/slides/<id>.html` per slide, with speaker notes of at most 4,000 characters. This repository holds
-the words; nothing here edits the deck.
+`project/slides/<id>.html` per slide, with speaker notes of at most 4,000 characters. It was rebuilt from the
+three talking-points files on 2026-09-19 and now matches them: 78 slides in run-of-show order, each with its
+notes. The table records what was done to the 26 slides that were already there. This repository still holds
+the words, so if a script changes, change the slide to match, or the reverse.
 
 | Existing slide id | Topic | Change |
 |---|---|---|
@@ -296,7 +300,17 @@ the words; nothing here edits the deck.
 | `back-to-rule` | Back to the rule | expand into the group exercise; the three pills abbreviate the questions ("Can I verify it?", "Would I catch it wrong?"), so use the exact wording |
 | `assessment`, `closing` | Close | closing expands into the first-two-weeks plan |
 
-The new slides each day needs are specified, with headline, on-slide text, visual note and paste-ready
-speaker notes (each under 900 characters; the deck allows 4,000), in the three talking-points files. In all,
-they specify 79 slides: about 52 new and about 27 kept (several of those reworded), against the 26 in the deck
-now. The deck's design system is in `BRIEF.md`.
+The new slides are specified, with headline, on-slide text, visual note and paste-ready speaker notes (each
+under 900 characters; the deck allows 4,000), in the three talking-points files: about 52 new and 26 kept, a
+dozen of those reworded or rebuilt. The deck's design system is in `BRIEF.md`. The rebuild made a few choices
+the scripts leave open:
+
+- `assessment` is one slide with both sets of notes. The scripts use it twice, which is why they list 79.
+- Day Three headlines are in title case, like the rest of the deck; the script has them in sentence case.
+- The two bubbles on `sure-not-right` (two years for one guideline) and the letter tiles on `mcq-habit` are
+  illustrative, labeled as such, and written for the deck; the scripts do not give their text.
+- `demo-grid` holds a bracketed placeholder where the live-demo question goes.
+- The reveals on `next-word`, `altered-dose` and `spot-the-gap` are builds that play in Present mode. In a PDF or
+  a slide export everything is visible at once.
+- The first card on `teaching-ai` now reads "a source you may share", as Module 5 does; the script marks it optional.
+- The cover has two pills, "3 Days" and "2 Hours a Day". The language is not on the slide.

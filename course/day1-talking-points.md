@@ -18,7 +18,7 @@ Instructor script for Day One, Foundations: 120 minutes including the 10-minute 
 
 **Slides**
 
-1. `cover` — kept. Headline: "AI for Clinicians". On-slide: "Physician AI Literacy"; "3 Days · 2 Hours a Day · English". Visual: dark `#0F172A` field, 96 px DM Sans title, indigo-to-teal diamond at right, three white pill tags.
+1. `cover` — kept. Headline: "AI for Clinicians". On-slide: "Physician AI Literacy"; two pills, "3 Days" and "2 Hours a Day". Visual: dark `#0F172A` field, 96 px DM Sans title, indigo-to-teal diamond at right, two white pill tags.
    Notes: Leave this up while people settle; the clock starts at the next slide. Welcome the room and introduce yourself in one sentence. Say what this is: a practical, hands-on course in using AI tools well, in daily practice, documentation and teaching, for doctors of any specialty. No technical background is assumed. Three days, two hours a day, in English. Today is the foundation for the other two: how these tools work, how to ask them for what you need, how to choose one, and a first lab.
 
 2. `why` — kept, one wording edit. Headline: "Why This Weekend". On-slide: (1) "Most of you already have a chatbot open between patients. This weekend makes that deliberate instead of accidental." (2) three cards: Time back, Fewer mistakes, A clear line. Edit: the Time back card reads "A method for the writing jobs that pile up. You time yourself in Lab One, so the number is yours." (the old wording promised a saving the site cannot back; the new one matches the participant page). Visual: light `#FBFBFD` ground, 56 px statement, three white cards with Clock (indigo), Trust (teal) and Lock (indigo) icons.

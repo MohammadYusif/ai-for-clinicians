@@ -1,6 +1,6 @@
 # AI for Clinicians
 
-**Physician AI Literacy** · three days, two hours a day · English
+**Physician AI Literacy** · three days, two hours a day
 
 Course site: **<https://mohammadyusif.github.io/ai-for-clinicians/>**
 

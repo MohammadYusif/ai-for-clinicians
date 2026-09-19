@@ -1,6 +1,6 @@
 ---
 title: "AI for Clinicians"
-subtitle: "Physician AI Literacy · three days, two hours a day · English"
+subtitle: "Physician AI Literacy · three days, two hours a day"
 toc: false
 ---
 
