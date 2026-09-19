@@ -1,0 +1,131 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "day1/*.qmd"
+    - "day2/*.qmd"
+    - "day3/*.qmd"
+    - "reference/*.qmd"
+  preview:
+    port: 4731
+
+website:
+  title: "AI for Clinicians"
+  description: "Physician AI Literacy: three days, two hours a day, on using AI tools well in daily practice, documentation, and teaching."
+  site-url: https://mohammadyusif.github.io/ai-for-clinicians/
+  repo-url: https://github.com/MohammadYusif/ai-for-clinicians
+  favicon: assets/mark.svg
+  page-navigation: true
+  back-to-top-navigation: true
+  reader-mode: true
+  navbar:
+    logo: assets/mark.svg
+    left:
+      - href: index.qmd
+        text: Home
+      - href: setup.qmd
+        text: Setup
+      - text: Day One
+        menu:
+          - day1/m1-rule-and-mechanics.qmd
+          - day1/m2-prompting.qmd
+          - day1/m3-choosing-tools.qmd
+          - day1/lab1-templates-and-limits.qmd
+      - text: Day Two
+        menu:
+          - day2/m4-notes-and-audiences.qmd
+          - day2/m5-talks-and-teaching.qmd
+          - day2/lab2-one-case-three-outputs.qmd
+      - text: Day Three
+        menu:
+          - day3/m6-confidently-wrong.qmd
+          - day3/lab3-spot-the-error.qmd
+          - day3/m7-privacy.qmd
+          - day3/m8-back-to-the-rule.qmd
+      - href: assessment.qmd
+        text: Assessment
+      - text: Reference
+        menu:
+          - reference/case-cards.qmd
+          - reference/practice-source.qmd
+          - reference/three-question-check.qmd
+          - reference/prompt-library.qmd
+          - reference/privacy-checklist.qmd
+          - reference/glossary.qmd
+          - reference/troubleshooting.qmd
+    right:
+      - icon: github
+        href: https://github.com/MohammadYusif/ai-for-clinicians
+        aria-label: GitHub
+
+  sidebar:
+    style: docked
+    collapse-level: 1
+    contents:
+      - index.qmd
+      - setup.qmd
+      - section: "Day One — Foundations"
+        contents:
+          - day1/m1-rule-and-mechanics.qmd
+          - day1/m2-prompting.qmd
+          - day1/m3-choosing-tools.qmd
+          - day1/lab1-templates-and-limits.qmd
+      - section: "Day Two — Applications"
+        contents:
+          - day2/m4-notes-and-audiences.qmd
+          - day2/m5-talks-and-teaching.qmd
+          - day2/lab2-one-case-three-outputs.qmd
+      - section: "Day Three — Safety & Ethics"
+        contents:
+          - day3/m6-confidently-wrong.qmd
+          - day3/lab3-spot-the-error.qmd
+          - day3/m7-privacy.qmd
+          - day3/m8-back-to-the-rule.qmd
+      - assessment.qmd
+      - section: "Reference"
+        contents:
+          - reference/case-cards.qmd
+          - reference/practice-source.qmd
+          - reference/three-question-check.qmd
+          - reference/prompt-library.qmd
+          - reference/privacy-checklist.qmd
+          - reference/glossary.qmd
+          - reference/troubleshooting.qmd
+
+  page-footer:
+    left: "AI for Clinicians · Physician AI Literacy"
+    center: "Every patient case on this site is fictional. Educational material, not medical or legal advice."
+    right:
+      - icon: github
+        href: https://github.com/MohammadYusif/ai-for-clinicians
+        text: Repository
+
+format:
+  html:
+    lang: en
+    toc: true
+    toc-depth: 3
+    toc-title: "On this page"
+    anchor-sections: true
+    smooth-scroll: true
+    code-copy: true
+    code-overflow: wrap
+    code-line-numbers: false
+    link-external-icon: true
+    link-external-newwindow: true
+    include-after-body: assets/copy-prompts.html
+    respect-user-color-scheme: true
+    theme:
+      light: [cosmo, theme-light.scss]
+      dark: [darkly, theme-dark.scss]
+    mermaid:
+      theme: neutral
+
+# Nothing on this site executes: every code block is either read or copied into an
+# AI tool by a participant. Example outputs are illustrative and labeled as such;
+# no page states a measurement the repository cannot back (see CLAUDE.md).
+execute:
+  enabled: false
+
+lightbox: auto

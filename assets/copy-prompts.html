@@ -1,0 +1,64 @@
+<script>
+/* "Copy prompt" buttons for the ```text blocks that hold every prompt on this site.
+   Quarto's own copy button only attaches to recognised code blocks, and prompts are plain
+   text, so without this a participant would have to select a prompt by hand on a phone.
+   No dependencies. If the clipboard API is unavailable (an insecure context, or a browser
+   that blocks it) the prompt is selected instead, so Ctrl+C or a long-press still works. */
+(function () {
+  var LABEL = "Copy prompt";
+
+  function selectAll(node) {
+    var range = document.createRange();
+    range.selectNodeContents(node);
+    var sel = window.getSelection();
+    sel.removeAllRanges();
+    sel.addRange(range);
+  }
+
+  function flash(btn, text, cls) {
+    btn.textContent = text;
+    btn.classList.add(cls);
+    window.setTimeout(function () {
+      btn.textContent = LABEL;
+      btn.classList.remove(cls);
+    }, 2200);
+  }
+
+  function attach(pre) {
+    if (pre.parentElement && pre.parentElement.classList.contains("prompt-block")) return;
+    var wrap = document.createElement("div");
+    wrap.className = "prompt-block";
+    pre.parentNode.insertBefore(wrap, pre);
+    wrap.appendChild(pre);
+
+    var btn = document.createElement("button");
+    btn.type = "button";
+    btn.className = "prompt-copy";
+    btn.textContent = LABEL;
+    btn.setAttribute("aria-label", "Copy this prompt to the clipboard");
+    btn.addEventListener("click", function () {
+      var text = pre.innerText.replace(/\s+$/, "");
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(text).then(
+          function () { flash(btn, "Copied", "copied"); },
+          function () { selectAll(pre); flash(btn, "Selected: press Ctrl+C", "selected"); }
+        );
+      } else {
+        selectAll(pre);
+        flash(btn, "Selected: press Ctrl+C", "selected");
+      }
+    });
+    wrap.appendChild(btn);
+  }
+
+  function init() {
+    Array.prototype.forEach.call(document.querySelectorAll("pre.text"), attach);
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
+  } else {
+    init();
+  }
+})();
+</script>

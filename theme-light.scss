@@ -1,0 +1,55 @@
+/*-- scss:defaults --*/
+
+// Palette: course/BRIEF.md "Deck design system", so the site reads as the deck's sibling.
+$ink: #0f172a;
+$paper: #fbfbfd;
+$card: #ffffff;
+$indigo: #4f46e5;
+$teal: #14b8a6;
+$teal-text: #0f766e;   // #14b8a6 is only 2.5:1 on white: decoration only, never text
+$body-slate: #475569;
+$hairline: #e2e5ea;
+
+// Custom variables used by _components.scss
+$c-card: $card;
+$c-border: $hairline;
+$c-muted: #64748b;
+$c-accent: $indigo;
+$c-accent-soft: #eef2ff;
+$c-teal: $teal;
+$c-teal-text: $teal-text;
+$c-teal-soft: #ccfbf1;
+$c-code-bg: #f1f5f9;
+
+// DM Sans, the deck's only typeface. Bootswatch loads $web-font-path; point it at DM Sans
+// instead of the theme's own font so the page does not fetch two families. Noto Naskh Arabic rides
+// along for the patient-handout examples; Google serves it in unicode-range slices, so a page with
+// no Arabic downloads none of it.
+$web-font-path: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Naskh+Arabic:wght@400;600&display=swap";
+$font-family-sans-serif: "DM Sans", "Segoe UI", system-ui, -apple-system, "Noto Sans Arabic", sans-serif !default;
+$font-family-monospace: "JetBrains Mono", "Cascadia Code", ui-monospace, SFMono-Regular, Consolas, monospace !default;
+$body-font-size: 1.04rem;
+$line-height-base: 1.65;
+$toc-font-size: 0.86rem;
+$headings-font-weight: 700;
+
+$body-bg: $paper;
+$body-color: $body-slate;
+$headings-color: $ink;
+$link-color: $indigo;
+$primary: $indigo;
+
+$navbar-bg: $ink;
+$navbar-fg: #e2e8f0;
+$navbar-hover-color: #a5b4fc;
+$footer-bg: $paper;
+$footer-fg: $body-slate;
+
+$callout-color-note: $indigo;
+$callout-color-tip: $teal-text;
+$callout-color-important: #b91c1c;
+$callout-color-warning: #b45309;
+$callout-color-caution: #b45309;
+
+/*-- scss:rules --*/
+@import "components";

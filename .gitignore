@@ -1,0 +1,22 @@
+# Quarto
+/_site/
+/.quarto/
+**/*.quarto_ipynb
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Secrets — never commit a key or a password
+.env
+*.key
+
+# Local tooling
+.claude/
+.DS_Store
+Thumbs.db
+
+# Nothing identifying a patient or a participant belongs here: keep working copies outside the repo
+/private/

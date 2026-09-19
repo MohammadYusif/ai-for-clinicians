@@ -1,0 +1,65 @@
+/*-- scss:defaults --*/
+
+// Dark ground is the deck's #0F172A. Indigo #4F46E5 is only 3.3:1 on it, so links and
+// accents step up to indigo-300 for text; the saturated indigo stays for fills.
+$ink: #0f172a;
+$paper-text: #f8fafc;
+$body-on-dark: #aeb8d1;
+$indigo-text: #a5b4fc;
+$teal-on-dark: #5eead4;
+
+// Custom variables used by _components.scss
+$c-card: #162036;
+$c-border: #2a3550;
+$c-muted: #94a3b8;
+$c-accent: $indigo-text;
+$c-accent-soft: rgba(79, 70, 229, 0.18);
+$c-teal: #14b8a6;
+$c-teal-text: $teal-on-dark;
+$c-teal-soft: rgba(20, 184, 166, 0.16);
+$c-code-bg: #1b2740;
+
+$web-font-path: "https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Naskh+Arabic:wght@400;600&display=swap";
+$font-family-sans-serif: "DM Sans", "Segoe UI", system-ui, -apple-system, "Noto Sans Arabic", sans-serif !default;
+$font-family-monospace: "JetBrains Mono", "Cascadia Code", ui-monospace, SFMono-Regular, Consolas, monospace !default;
+$body-font-size: 1.04rem;
+$line-height-base: 1.65;
+$toc-font-size: 0.86rem;
+$headings-font-weight: 700;
+
+$body-bg: $ink;
+$body-color: $body-on-dark;
+$headings-color: $paper-text;
+$link-color: $indigo-text;
+$primary: #4f46e5;
+
+$navbar-bg: #0b1222;
+$navbar-fg: #e2e8f0;
+$navbar-hover-color: #a5b4fc;
+$footer-bg: $ink;
+$footer-fg: $body-on-dark;
+
+$callout-color-note: $indigo-text;
+$callout-color-tip: $teal-on-dark;
+$callout-color-important: #fca5a5;
+$callout-color-warning: #fcd34d;
+$callout-color-caution: #fcd34d;
+
+/*-- scss:rules --*/
+@import "components";
+
+/* Mermaid renders with its light "neutral" theme even in dark mode: nodes keep their own light
+   fills (readable), but the arrow lines are #666 on the #0F172A page, about 3.1:1. Brighten only
+   the lines. !important because mermaid writes its rules against the diagram's generated id. */
+svg[id^="mermaid"] .flowchart-link,
+svg[id^="mermaid"] .edgePath path,
+svg[id^="mermaid"] .messageLine0,
+svg[id^="mermaid"] .messageLine1 {
+  stroke: #94a3b8 !important;
+}
+
+svg[id^="mermaid"] marker path,
+svg[id^="mermaid"] .arrowheadPath {
+  fill: #94a3b8 !important;
+  stroke: #94a3b8 !important;
+}

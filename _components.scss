@@ -1,0 +1,255 @@
+// Shared component rules. Compiled into BOTH the light and the dark bundle, so every
+// colour here comes from a variable that theme-light.scss / theme-dark.scss defines.
+
+/* Arabic runs right-to-left and needs a face that can render it. Patient handouts in
+   Arabic are part of the course, so bilingual rendering is not a nicety. */
+:lang(ar),
+.arabic {
+  font-family: "Noto Naskh Arabic", "Segoe UI", "Traditional Arabic", serif;
+  direction: rtl;
+  text-align: right;
+  line-height: 2;
+}
+
+/* A long file name or identifier in inline code wraps rather than pushing a phone screen sideways
+   (the file name in Module 7 measured 346px on a 360px screen). */
+code:not(.sourceCode) {
+  white-space: pre-wrap; /* Quarto sets `pre` on inline code, and no wrap value can break a `pre` line */
+  overflow-wrap: anywhere;
+}
+
+/* Wide tables scroll inside themselves rather than pushing the page sideways. */
+.table-responsive,
+table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+table th,
+table td {
+  white-space: normal;
+}
+
+/* The minutes badge on a timed heading: "[10 min]{.time}". Small, teal, unmistakable, and
+   the same on every timed section so a trainer can scan a page for its clock. */
+.time {
+  display: inline-block;
+  padding: 0.05rem 0.55rem;
+  margin-left: 0.4rem;
+  border-radius: 999px;
+  border: 1px solid $c-teal;
+  background: $c-teal-soft;
+  color: $c-teal-text;
+  font-size: 0.5em;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+/* Header block at the top of a module or lab: time, cases used, what you leave with. */
+.session-meta {
+  border-left: 3px solid $c-accent;
+  padding: 0.6rem 0 0.6rem 1rem;
+  margin: 1.2rem 0;
+}
+
+.session-meta dl {
+  margin: 0;
+}
+
+.session-meta dt {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: $c-muted;
+}
+
+.session-meta dd {
+  margin: 0 0 0.6rem 0;
+}
+
+/* A synthetic patient. The teal edge says "this is a prop": no card is a real person. */
+.case-card {
+  background: $c-card;
+  border: 1px solid $c-border;
+  border-left: 4px solid $c-teal;
+  border-radius: 0.6rem;
+  padding: 0.9rem 1.2rem 0.5rem;
+  margin: 1rem 0 1.4rem;
+}
+
+.case-card > p:first-child {
+  margin-bottom: 0.6rem;
+}
+
+/* Prompts are the thing a participant copies, so they get their own edge, and a button
+   (assets/copy-prompts.html) that puts the whole prompt on the clipboard. */
+div.sourceCode pre.sourceCode.text,
+pre.text {
+  border-left: 3px solid $c-accent;
+  background: $c-code-bg;
+  padding-right: 6.5rem;
+}
+
+.prompt-block {
+  position: relative;
+}
+
+.prompt-copy {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.45rem;
+  max-width: 11rem;
+  padding: 0.2rem 0.65rem;
+  border: 1px solid $c-border;
+  border-radius: 999px;
+  background: $c-card;
+  color: $c-accent;
+  font-family: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.prompt-copy:hover,
+.prompt-copy:focus-visible {
+  border-color: $c-accent;
+}
+
+.prompt-copy.copied {
+  border-color: $c-teal;
+  color: $c-teal-text;
+}
+
+.prompt-copy.selected {
+  white-space: normal;
+  text-align: left;
+}
+
+/* Quarto only overrides bootstrap's bare `code` chip for p/li/td, so inline code in
+   these blocks would keep a light chip on the dark ground. One value that reads on both. */
+.session-meta dd code:not(.sourceCode),
+.case-card code:not(.sourceCode) {
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+h1 code:not(.sourceCode),
+h2 code:not(.sourceCode),
+h3 code:not(.sourceCode),
+h4 code:not(.sourceCode),
+h5 code:not(.sourceCode),
+h6 code:not(.sourceCode) {
+  background-color: transparent;
+}
+
+.callout.callout-style-default .callout-title,
+.callout.callout-style-simple .callout-title {
+  font-weight: 700;
+}
+
+/* Bootstrap's gray-600 (#6c757d) measured 2.85:1 on the dark breadcrumb bar and 3.8:1 on the
+   dark page. Muted text gets one value per theme that reads on its own ground. */
+.breadcrumb {
+  --bs-breadcrumb-item-active-color: #{$c-muted};
+}
+
+.nav-page .nav-page-text,
+.nav-page-text {
+  color: $c-muted;
+}
+
+/* The breadcrumb in the page's title block (not the secondary nav) kept gray-600. */
+.quarto-title-breadcrumbs .breadcrumb-item a,
+.quarto-title-breadcrumbs .breadcrumb li:last-of-type a,
+.quarto-title-breadcrumbs .breadcrumb-item.active {
+  color: $c-accent;
+}
+
+/* The pull quote on the home page ("AI drafts. You decide.") inherited a blockquote grey that
+   measured 3.7:1 on the dark ground. It gets the body colour and the accent edge instead. */
+blockquote,
+.blockquote {
+  color: $body-color;
+  border-left: 4px solid $c-accent;
+  padding: 0.15rem 0 0.15rem 1rem;
+  margin: 1.2rem 0;
+}
+
+/* Practice-bank answers: a plain <details>, so it works with scripts off and in print. */
+details.answer {
+  margin: 0.4rem 0 1.4rem;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid $c-border;
+  border-radius: 0.5rem;
+  background: $c-card;
+}
+
+details.answer > summary {
+  cursor: pointer;
+  font-weight: 700;
+  color: $c-accent;
+}
+
+details.answer[open] > summary {
+  margin-bottom: 0.4rem;
+}
+
+/* Mermaid diagrams never overflow the column. */
+.mermaid svg,
+pre.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto !important;
+  }
+}
+
+/* The labs and the check card get printed. Strip the chrome, keep the content. */
+@media print {
+  #quarto-sidebar,
+  #quarto-margin-sidebar,
+  #quarto-header,
+  .nav-footer,
+  .page-navigation,
+  .quarto-page-breadcrumbs,
+  .quarto-back-to-top-link,
+  .prompt-copy {
+    display: none !important;
+  }
+
+  body {
+    background: #fff !important;
+    color: #000 !important;
+  }
+
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+
+  .time {
+    border-color: #000;
+    background: none;
+    color: #000;
+  }
+
+  pre,
+  .callout,
+  .case-card,
+  table,
+  details.answer {
+    break-inside: avoid;
+  }
+
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+}
