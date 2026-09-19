@@ -3,7 +3,7 @@ title: "Lab 1 — Templates and limits"
 subtitle: "Day One · 30 min"
 ---
 
-In this lab you measure what a template changes for you, watch a tool be confidently wrong on purpose, and compare two kinds of tool on one question. It all runs on a synthetic case. None of it uses a real patient.
+In this lab you measure what a template changes for you, watch a tool be confidently wrong on purpose, and compare two ways of answering on one question. It all runs on a synthetic case. None of it uses a real patient.
 
 ::: {.session-meta}
 Time
@@ -13,13 +13,13 @@ Uses
 :   [Case A](../reference/case-cards.qmd#case-a), plus the question from [Case C](../reference/case-cards.qmd#case-c) as a default in part 3
 
 You leave with
-:   Your own time, word and edit counts for a note written without and with a template; a saved, deliberately unreliable answer you have run through the three-question check (Lab 3 reuses it); a first comparison of two kinds of tool; and one prompt to bring to Day Two.
+:   Your own time, word and edit counts for a note written without and with a template; a saved, deliberately unreliable answer you have run through the three-question check (Lab 3 reuses it); a first comparison of two ways of answering; and one prompt to bring to Day Two.
 :::
 
 ::: {.callout-note appearance="simple"}
 ## Have these open before the clock starts
 - [ ] A general assistant on your own account (ChatGPT, Claude or Gemini), signed in
-- [ ] Vera Health, verified for your account (see the [setup page](../setup.qmd)); if yours is not ready, pair with a neighbor who has access
+- [ ] Your second option for part 3, whichever you can open: a literature-grounded tool, your assistant's search or citation mode, or a literature search such as PubMed ([Module 3](m3-choosing-tools.qmd#second-option)). No special account is needed
 - [ ] A stopwatch, and a notes app or blank document for pasting drafts
 - [ ] [Case A](../reference/case-cards.qmd#case-a) in a second tab
 :::
@@ -166,18 +166,18 @@ The tone told you nothing. Only the check did.
 
 ## 3. Tool face-off [5 min]{.time} {#part-3}
 
-Same question, two kinds of tool. A general assistant writes from what it learned in training. A literature-grounded tool such as Vera Health gives citation-grounded answers from peer-reviewed literature, and as of September 2026 it verifies healthcare professionals globally, with no geographic restriction. [Module 3](m3-choosing-tools.qmd) covers the difference.
+Same question, two ways of answering. A general assistant writes from what it learned in training. The second option shows sources you can open: a literature-grounded tool, your assistant's search or citation mode, or a plain literature search. Use whichever you can open today. [Module 3](m3-choosing-tools.qmd#second-option) lists all three, and nothing here depends on one of them.
 
-Choose a general clinical question from your own field, one you can judge, with no patient details. If nothing comes to mind, use this one, taken from [Case C](../reference/case-cards.qmd#case-c)'s question for cardiology: *In adults with newly diagnosed atrial fibrillation, what does the evidence say about rate control versus rhythm control?* Paste the same text into both tools, in two tabs.
+Choose a general clinical question from your own field, one you can judge, with no patient details. If nothing comes to mind, use this one, taken from [Case C](../reference/case-cards.qmd#case-c)'s question for cardiology: *In adults with newly diagnosed atrial fibrillation, what does the evidence say about rate control versus rhythm control?* Ask both the same question, in two tabs. For a plain literature search, type the question's key terms.
 
 <!-- prompt: evidence-question | Evidence question with sources | Ask a general clinical question, with no patient details, and ask for sources you can open -->
 ```text
 [A general clinical question from your own field.] Summarize the main options and how strong the evidence is for each. Cite sources I can open. If you cannot find a source, say so. This is a general question: no patient details.
 ```
 
-Time-box: paste into both (1 min), read and fill the grid (3 min), write the trust line (1 min). Score each row Yes, Partly or No, and time each tool from paste to a usable answer.
+Time-box: ask both (1 min), read and fill the grid (3 min), write the trust line (1 min). Score each row Yes, Partly or No, and time each from asking to a usable answer. For a plain literature search, mark the rows that do not apply n/a.
 
-| | General assistant | Vera Health |
+| | General assistant | Second option |
 |---|---|---|
 | Cites sources you can open | | |
 | States its limits | | |

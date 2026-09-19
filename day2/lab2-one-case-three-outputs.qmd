@@ -18,7 +18,7 @@ You leave with
 
 ::: {.callout-note appearance="simple"}
 ## Have ready
-Open these in tabs: [Module 4's prompts](../day2/m4-notes-and-audiences.qmd#three-audiences), [Module 5's slide prompt](../day2/m5-talks-and-teaching.qmd#full-talk), your general assistant, and Vera Health or the literature-grounded tool you set up (see [setup](../setup.qmd)). All the prompts are also in the [prompt library](../reference/prompt-library.qmd). Keep paper or a notes app open for the two grids. No tool set up yet? Pair with a neighbor and share one screen. A tool misbehaving? See [troubleshooting](../reference/troubleshooting.qmd).
+Open these in tabs: [Module 4's prompts](../day2/m4-notes-and-audiences.qmd#three-audiences), [Module 5's slide prompt](../day2/m5-talks-and-teaching.qmd#full-talk), your general assistant, and your second option from Lab One ([Module 3](../day1/m3-choosing-tools.qmd#second-option)). All the prompts are also in the [prompt library](../reference/prompt-library.qmd). Keep paper or a notes app open for the two grids. No tool set up yet? Pair with a neighbor and share one screen. A tool misbehaving? See [troubleshooting](../reference/troubleshooting.qmd).
 :::
 
 ::: {.callout-important appearance="simple"}
@@ -93,11 +93,11 @@ One sheet, three outputs, one grid. An output that disagrees with the sheet is w
 
 ## 2. Tool check, again [10 min]{.time} {#part-2}
 
-On Day One you ran one question through a general assistant and a literature-grounded tool ([Lab One, part 3](../day1/lab1-templates-and-limits.qmd#part-3)). Now repeat the comparison on a Day Two task and see whether what you found holds. Glance at your Day One notes first.
+On Day One you ran one question through a general assistant and a second option that shows sources ([Lab One, part 3](../day1/lab1-templates-and-limits.qmd#part-3)). Now repeat the comparison on a Day Two task and see whether what you found holds. Glance at your Day One notes first.
 
 ### The task
 
-The default is a study summary from the practice source. If you would rather, use a referral letter for [Case C](../reference/case-cards.qmd#case-c) with the referral prompt from [Day One](../day1/m2-prompting.qmd#three-more-jobs). Either way, paste the same prompt, unchanged, into both tools.
+The default is a study summary from the practice source. If you would rather, use a referral letter for [Case C](../reference/case-cards.qmd#case-c) with the referral prompt from [Day One](../day1/m2-prompting.qmd#three-more-jobs). Either way, paste the same prompt, unchanged, into both. If your second option cannot take pasted text (a plain literature search cannot), ask both instead for the evidence behind one number in the practice source, such as the 135/85 threshold, and compare what each lets you check.
 
 <!-- prompt: teaching-summary-from-source | Study summary from a source | Turn a source text into a short, numbers-exact study summary for trainees -->
 ```text
@@ -112,11 +112,11 @@ CONSTRAINTS: Copy every number exactly as written in the SOURCE. Do not add find
 ### Time-boxes
 
 - **Minute 0 to 1.** Choose the task and copy the source.
-- **Minutes 1 to 5.** Run the prompt in both tools. If a tool will not take the pasted text, or answers from its own sources instead of yours, write that down. It is a result, not a failure.
+- **Minutes 1 to 5.** Run the prompt in both. If a tool will not take the pasted text, or answers from its own sources instead of yours, write that down. It is a result, not a failure.
 - **Minutes 5 to 9.** Fill in the table.
 - **Minute 9 to 10.** Finish the two lines under it.
 
-| Question | General assistant | Literature-grounded tool |
+| Question | General assistant | Second option |
 |---|---|---|
 | Stayed inside what I gave it? | | |
 | Added anything that is not in it? | | |
@@ -135,7 +135,7 @@ For this job I would use ______________ because ______________________
 
 ::: {.callout-tip appearance="simple"}
 ## Keep this
-Same task, two tool types: compare what each stayed inside, added, and cited. Which one sounded better is not a result.
+Same task, two ways of answering: compare what each stayed inside, added, and cited. Which one sounded better is not a result.
 :::
 
 ## 3. Share-out [5 min]{.time} {#part-3}

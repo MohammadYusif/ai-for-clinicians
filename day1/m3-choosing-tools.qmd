@@ -78,9 +78,11 @@ A tool can be excellent and still be closed to you. Before you recommend one to 
 | As of September 2026 | OpenEvidence | Vera Health |
 |---|---|---|
 | What it does | Citation-grounded clinical answers from the literature. The best-known tool of its kind. | The same job: citation-grounded answers from peer-reviewed literature. |
-| Who can get in | Requires US NPI verification, and withdrew from the EU and UK in April 2026, so it is not usable by a Saudi audience. | Verifies healthcare professionals globally, with no geographic restriction. |
+| Who can get in | Requires US NPI verification, and withdrew from the EU and UK in April 2026, so it is not usable by a Saudi audience. | States that it verifies healthcare professionals globally, with no geographic restriction. Its Terms add conditions, below. |
 
 The lesson is not about these two names. The tool you have heard the most about may be the one you cannot open, and a colleague abroad may recommend a tool in good faith that does not work in this country. Access is part of the tool.
+
+Here is what Vera Health's own [Terms](https://www.verahealth.ai/terms) say, as of September 2026. Users must be over 18 and healthcare professionals, in practice or in training. They must not be located in or resident of a country under US trade sanctions or embargoes, and the countries the Terms name do not include Saudi Arabia. The home page says to sign up with your professional credentials. Neither page says how those credentials are checked, so whether a Saudi licence is accepted is something only trying the sign-up will show. Try it a few days early, and treat it as a bonus rather than a requirement.
 
 Vera Health also states that it is GDPR compliant. That is a statement about European data-protection law. It does not tell you whether your institution has approved the tool, or whether it suits Saudi requirements. Ask your institution's data protection officer or legal team. This course is education, not legal advice. [Day Three](../day3/m7-privacy.qmd#the-rule) covers what the Saudi law says about health data.
 
@@ -95,7 +97,7 @@ Before you recommend any tool, run this list.
 - [ ] Has my institution approved it, or is it a consumer AI tool?
 - [ ] What does the tool say happens to what I type?
 
-Have your own access ready before Lab One: see [Setup](../setup.qmd).
+Nothing in this course depends on either tool. The comparisons in the labs use [a second option](#second-option) that you choose on the day, and [Setup](../setup.qmd) lists the one account you need.
 
 ::: {.callout-tip appearance="simple"}
 ## Keep this
@@ -104,11 +106,25 @@ Check access before you recommend a tool to a room.
 
 ## 3. Live demo: same question, two tools [5 min]{.time} {#live-demo}
 
-Comparing beats describing. The instructor puts one clinical question to two tools, live, and the room compares before you do the same on your own screen in [Lab One, part 3](lab1-templates-and-limits.qmd#part-3).
+Comparing beats describing. The instructor puts one clinical question to a general assistant and to a second option that shows sources, live, and the room compares before you do the same on your own screen in [Lab One, part 3](lab1-templates-and-limits.qmd#part-3).
 
-The question is a general clinical question with no patient information in it, phrased the way you would ask a colleague. It is pasted, word for word, into a general assistant and into Vera Health. Watch while each one generates, then fill in the grid.
+The question is a general clinical question with no patient information in it, phrased the way you would ask a colleague. It is pasted, word for word, into both. Watch while each one generates, then fill in the grid.
 
-| Look for | Ask yourself | General assistant | Literature-grounded tool |
+### The second option {#second-option}
+
+The comparison needs something that shows its sources. Use whichever of these you can open today. The question and the grid are the same for all three, and nothing in this course depends on any one of them.
+
+| Option | What it asks of you | Watch for |
+|---|---|---|
+| **A literature-grounded tool** | An account, and possibly a professional check. Vera Health is one example | Whether you can actually open it: access varies by country and changes. Try it early |
+| **Your assistant's search or citation mode** | Nothing beyond the assistant you already have, if it offers the feature | Whether it exists, and what your plan allows. Check before class |
+| **A plain literature search**: PubMed, or your library's database | Nothing: no AI and no account | You read the sources yourself, so it takes longer, and no summary asks for your trust |
+
+If none of the three works for you, pair with a neighbor and share a screen, or follow the instructor's run. You still fill in the grid. For a plain literature search, type the question's key terms and mark the rows that do not apply n/a.
+
+### The grid
+
+| Look for | Ask yourself | General assistant | Second option |
 |---|---|---|---|
 | Cites sources you can open | Is there a citation, and does it lead to a real page? | | |
 | States its limits | Does it say what it could not find or does not know? | | |
@@ -116,7 +132,7 @@ The question is a general clinical question with no patient information in it, p
 | Claims you could verify | Which statements could you check in a source, and which have nothing behind them? | | |
 | Time to a usable answer | How long until you had something you could use, counting your own checking? | | |
 
-Mark each cell yes, partly or no. Then decide which tool you would open first for this kind of question, and what you would still check.
+Mark each cell yes, partly or no. Then decide which you would open first for this kind of question, and what you would still check.
 
 ::: {.callout-warning appearance="simple"}
 ## Watch for

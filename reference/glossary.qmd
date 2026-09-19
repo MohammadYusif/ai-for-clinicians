@@ -35,7 +35,7 @@ Terms are defined the way the course uses them. Where the wider world uses a dif
 
 **Large language model (LLM).** The kind of system behind these tools. It has read a very large amount of text and produces new text by predicting what comes next.
 
-**Literature-grounded tool.** A tool that answers from peer-reviewed literature and shows citations you can open. Vera Health is the example used in this course.
+**Literature-grounded tool.** A tool that answers from peer-reviewed literature and shows citations you can open. Vera Health and OpenEvidence are the examples named in this course; none is required.
 
 **Omitted.** A kind of AI error: something that was in the source is missing from the output. See *invented* and *altered*.
 
@@ -48,6 +48,8 @@ Terms are defined the way the course uses them. Where the wider world uses a dif
 **Prompt library.** Your own collection of prompts that worked. This course keeps a copy of every reusable one on the [prompt library](prompt-library.qmd) page.
 
 **Quota.** How much a free or paid plan lets you use in a period. Batch related questions into one detailed prompt to spend it well.
+
+**Second option.** In the tool comparisons, whatever you use beside your general assistant to get sources you can open: a literature-grounded tool, your assistant's search or citation mode, or a plain literature search. Defined in [Module 3](../day1/m3-choosing-tools.qmd#second-option).
 
 **Sensitive personal data.** A legal category under the PDPL that includes health, genetic, and biometric data.
 

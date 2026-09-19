@@ -22,7 +22,7 @@ Almost every problem in the room is one of three things: a missing part of the p
 
 ## The account or the tool is the problem
 
-- **I could not finish Vera Health verification.** Tell the instructor at the start of Day One. You can pair with a neighbor for the face-off. Do not use anyone else's login.
+- **I cannot open a literature-grounded tool (Vera Health or another).** Nothing depends on it. Use your assistant's search or citation mode, or a plain literature search such as PubMed, as [Module 3](../day1/m3-choosing-tools.qmd#second-option) describes. Do not use anyone else's login.
 - **I hit the free limit.** Batch related questions into one detailed prompt, wait, or switch to another tool. See the quota section in [Module 3](../day1/m3-choosing-tools.qmd).
 - **The tool is blocked on my hospital network.** Use your own device on your own connection, **with synthetic cases only**. Never work around an institutional block with real patient information.
 - **Arabic output looks off.** Ask for Modern Standard Arabic in simple wording. Medical terms and register vary, so a fluent reader must check every line before a patient sees it.

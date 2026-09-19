@@ -1,49 +1,54 @@
 ---
 title: "Before you arrive"
-subtitle: "Twenty minutes of setup, done once"
+subtitle: "Ten minutes of setup, done once"
 ---
 
-Nothing to install. You need a laptop (best) or a phone, a web browser, and two accounts. Do this before Day One: one of the accounts has a verification step that can take time.
+Nothing to install. You need a laptop (best) or a phone, a web browser, and **one account**: an AI assistant. Nothing else in this course depends on a particular tool, a verification step, or anyone's approval.
 
-## 1. Two accounts
+## 1. One account
 
 | Tool | Why you need it | What to do |
 |---|---|---|
-| **A general assistant**: ChatGPT, Claude, or Gemini (any one; a free account is enough) | Drafting and structuring in every lab | Sign up with your own email and sign in on the device you will bring |
-| **Vera Health** | A literature-grounded tool: it answers from peer-reviewed literature and shows the sources. It verifies healthcare professionals worldwide. Used in the tool face-offs in Labs 1 and 2 | Create an account and complete professional verification before Day One |
+| **A general assistant**: ChatGPT, Claude, or Gemini (any one; a free account is enough), or another you already use | Drafting and structuring in every lab | Sign up with your own email and sign in on the device you will bring |
 
-Use your own account on your own device. Do not use a shared login.
+Use your own account on your own device. Do not use a shared login. No account yet, or it will not open? Pair with a neighbor and share one screen: you can still do every exercise.
 
-If your Vera Health verification is not complete by Day One, tell the instructor at the start. You can pair with a neighbor for the face-off.
+## 2. The second option, for the tool comparisons
+
+[Lab 1](day1/lab1-templates-and-limits.qmd) and [Lab 2](day2/lab2-one-case-three-outputs.qmd) compare your assistant with something that shows its sources. You do **not** need a special account for that. [Module 3](day1/m3-choosing-tools.qmd#second-option) gives three ways to do it, and on the day you use the first one you can open:
+
+1. A literature-grounded tool, if you can open one.
+2. Your assistant's own search or citation mode, if it has one.
+3. A plain literature search, such as PubMed or your library's database. No AI and no account.
 
 ::: {.callout-note appearance="simple"}
-## You may have heard of OpenEvidence
-As of September 2026 it requires US NPI verification and has withdrawn from the EU and UK, so it is not an option for this room. Why that matters more than which tool wins is the lesson in [Module 3](day1/m3-choosing-tools.qmd).
+## If you want to try a literature-grounded tool
+Vera Health is one example. It is for healthcare professionals, in practice or in training, and its home page says to sign up with your professional credentials, so try it a few days early. What it asks, and what it says about who can use it, is in [Module 3](day1/m3-choosing-tools.qmd#different-doctor). Treat it as a bonus: if it does not work for you, nothing in the course breaks.
 :::
 
-## 2. Practice data is synthetic
+## 3. Practice data is synthetic
 
 Every lab uses the [case cards](reference/case-cards.qmd): five fictional patients. **Do not type a real patient's name, ID, or details into any tool during this course.** The reason is the whole of Day Three, but the rule starts now. If you want to use a case of your own, read the [privacy checklist](reference/privacy-checklist.qmd) first, and if you are not certain it is safe, use a card.
 
-## 3. What to bring each day
+## 4. What to bring each day
 
 | Day | Bring |
 |---|---|
-| **One** | Your device, both accounts signed in, and a place to save prompts (a notes app is fine, with no patient information in it) |
+| **One** | Your device, your assistant signed in, and a place to save prompts (a notes app is fine, with no patient information in it) |
 | **Two** | Your favorite prompt from Day One, and an idea of a *type* of case you present or teach (no patient information) |
 | **Three** | Your saved output from Lab 1, "break it on purpose", with its warning line, and one AI output from Days One and Two to put through the three-question check |
 
-## 4. Check your setup
+## 5. Check your setup
 
 Two minutes. Tick each one.
 
 - [ ] I can open my general assistant, sign in, and send it a message.
-- [ ] I can open Vera Health and I am signed in (or I have told the instructor it is pending).
+- [ ] I know which second option I will try first for the comparisons in Labs 1 and 2. Any of the three is fine.
 - [ ] I can copy text from a web page and paste it into a chat.
 - [ ] I have somewhere to save text, and I know where it is.
 - [ ] I can read this site on my device, in light and dark mode.
 
-## 5. Ground rules for the room
+## 6. Ground rules for the room
 
 - **Candor over polish.** The labs are built to make the tools fail. A tool failing is the point, and saying so out loud helps the room.
 - **Synthetic only.** No real patient information, in any lab, in any tool.

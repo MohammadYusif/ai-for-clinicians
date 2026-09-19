@@ -56,6 +56,9 @@ BANNED = [
     (re.compile(r"\bArticle\s+\d+\b|\bمادة\s*\d+", re.I), "a PDPL article number; the brief supplies none"),
     (re.compile(r"\b(SAR|SR)\s*[\d,]+|\b[\d,.]+\s*(million|billion)?\s*riyals?\b|\bfines? of\b|\bimprisonment\b", re.I), "a fine or penalty amount; the brief supplies none"),
     (re.compile(r"Co-Authored-By|Generated with|Anthropic"), "an AI attribution or vendor line"),
+    # The course relies on no tool but one general assistant (CLAUDE.md, rule 4). These phrasings made a
+    # verification step or a specific product a requirement; they must not come back.
+    (re.compile(r"verified for your account|professional verification before|complete .{0,30}professional verification|Vera Health verification|\b(two|both) accounts\b|neighbor who has access", re.I), "makes a specific tool or a verification step a requirement (CLAUDE.md, rule 4)"),
 ]
 # The course's fixed vocabulary (authoring guide, section 1). A reader who meets a differently
 # worded name will assume it is a different tool, so drift is worth a warning.
@@ -72,6 +75,8 @@ ALLOWED_URLS: set[str] = {
     "https://medinform.jmir.org/2026/1/e83335",
     # Augnito / Almoosa Health press release, 31 January 2025 (fetched; future tense: "will see ... integrated")
     "https://www.prnewswire.com/news-releases/augnito-secures-major-enterprise-partnership-with-almoosa-health-302365216.html",
+    # Vera Health Terms of Service: eligibility and sanctions clauses quoted in Module 3 (fetched 2026-09-19)
+    "https://www.verahealth.ai/terms",
 }
 
 TIMED = re.compile(r"^##\s+.*\[\d+\s*min\]\{\.time\}")

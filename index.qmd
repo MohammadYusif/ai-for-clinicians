@@ -11,7 +11,7 @@ A practical, hands-on course in using AI tools well: in daily practice, in docum
 **AI drafts. You decide.** Every tool. Every task. All three days.
 :::
 
-You do not need a technical background. You do need a laptop or a phone and the two accounts on the [setup page](setup.qmd). Every patient in this course is fictional, on the [case cards](reference/case-cards.qmd), and nothing you do here puts a real patient's information into any tool.
+You do not need a technical background. You do need a laptop or a phone and one AI assistant account, as the [setup page](setup.qmd) explains. Nothing in the course depends on any one tool. Every patient in this course is fictional, on the [case cards](reference/case-cards.qmd), and nothing you do here puts a real patient's information into any tool.
 
 ## What you leave with
 
@@ -62,8 +62,8 @@ The first is the rule. The second is why the rule needs a habit behind it: these
 ## Before you arrive
 
 ::: {.callout-note appearance="simple"}
-## Twenty minutes, done once
-Create one general-assistant account and one Vera Health account, and complete Vera Health's professional verification early. Everything else is on the [setup page](setup.qmd).
+## Ten minutes, done once
+Create one general-assistant account. That is the only account the course needs. The rest is on the [setup page](setup.qmd).
 :::
 
 ## What is on this site
