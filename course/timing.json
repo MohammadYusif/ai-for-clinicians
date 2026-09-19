@@ -1,0 +1,62 @@
+{
+  "_comment": "The clock. Single source for every minute in this course. `min` is what this repository schedules; `brief_min` is what course/BRIEF.md scheduled (Lab parts use the brief's Lab spec, not its table row). `ref` is page#anchor: the page must carry a heading with that {#anchor} and a matching [N min]{.time} badge. Verify with: python tools/check_timing.py",
+  "day_minutes": 120,
+  "days": [
+    {
+      "day": 1,
+      "title": "Foundations",
+      "items": [
+        {"n": 1,  "title": "Why this weekend (course opener)",        "min": 5,  "brief_min": 10, "ref": "day1/m1-rule-and-mechanics.qmd#opener"},
+        {"n": 2,  "title": "The rule for the weekend",                "min": 5,  "brief_min": 5,  "ref": "day1/m1-rule-and-mechanics.qmd#rule"},
+        {"n": 3,  "title": "How these tools actually work",           "min": 10, "brief_min": 10, "ref": "day1/m1-rule-and-mechanics.qmd#how-it-works"},
+        {"n": 4,  "title": "Your three-question check",               "min": 5,  "brief_min": 5,  "ref": "day1/m1-rule-and-mechanics.qmd#three-questions"},
+        {"n": 5,  "title": "Where the extra words come from",         "min": 5,  "brief_min": 5,  "ref": "day1/m2-prompting.qmd#extra-words"},
+        {"n": 6,  "title": "Anatomy of a good prompt",                "min": 10, "brief_min": 10, "ref": "day1/m2-prompting.qmd#anatomy"},
+        {"n": 7,  "title": "Structure fixes it (notes)",              "min": 5,  "brief_min": 10, "ref": "day1/m2-prompting.qmd#structure-notes"},
+        {"n": 8,  "title": "Same framework, three more jobs",         "min": 15, "brief_min": 15, "ref": "day1/m2-prompting.qmd#three-more-jobs"},
+        {"n": 9,  "title": "Not all AI is the same",                  "min": 5,  "brief_min": 5,  "ref": "day1/m3-choosing-tools.qmd#tool-types"},
+        {"n": 10, "title": "Same tool, different doctor",             "min": 5,  "brief_min": 5,  "ref": "day1/m3-choosing-tools.qmd#different-doctor"},
+        {"n": 11, "title": "Live demo: same question, two tools",     "min": 5,  "brief_min": 10, "ref": "day1/m3-choosing-tools.qmd#live-demo"},
+        {"n": 12, "title": "Spend your quota on purpose",             "min": 5,  "brief_min": 5,  "ref": "day1/m3-choosing-tools.qmd#quota"},
+        {"n": 13, "title": "Break",                                   "min": 10, "brief_min": 10, "break": true},
+        {"n": 14, "title": "Lab One, part 1 — Template test",         "min": 12, "brief_min": 15, "ref": "day1/lab1-templates-and-limits.qmd#part-1"},
+        {"n": 15, "title": "Lab One, part 2 — Break it on purpose",   "min": 8,  "brief_min": 10, "ref": "day1/lab1-templates-and-limits.qmd#part-2"},
+        {"n": 16, "title": "Lab One, part 3 — Tool face-off",         "min": 5,  "brief_min": 5,  "ref": "day1/lab1-templates-and-limits.qmd#part-3"},
+        {"n": 17, "title": "Lab One — Debrief",                       "min": 5,  "brief_min": 5,  "ref": "day1/lab1-templates-and-limits.qmd#debrief"}
+      ]
+    },
+    {
+      "day": 2,
+      "title": "Applications",
+      "items": [
+        {"n": 1,  "title": "Four places AI already fits",             "min": 10, "brief_min": 10, "ref": "day2/m4-notes-and-audiences.qmd#four-places"},
+        {"n": 2,  "title": "Notes, done right",                       "min": 5,  "brief_min": 5,  "ref": "day2/m4-notes-and-audiences.qmd#notes-done-right"},
+        {"n": 3,  "title": "Already live in Saudi clinics",           "min": 10, "brief_min": 10, "ref": "day2/m4-notes-and-audiences.qmd#saudi-scribes"},
+        {"n": 4,  "title": "Same note, three audiences",              "min": 15, "brief_min": 15, "ref": "day2/m4-notes-and-audiences.qmd#three-audiences"},
+        {"n": 5,  "title": "From case to slide deck",                 "min": 8,  "brief_min": 8,  "ref": "day2/m5-talks-and-teaching.qmd#case-to-deck"},
+        {"n": 6,  "title": "Building a full talk, not just an outline", "min": 12, "brief_min": 12, "ref": "day2/m5-talks-and-teaching.qmd#full-talk"},
+        {"n": 7,  "title": "Teaching with AI",                        "min": 8,  "brief_min": 8,  "ref": "day2/m5-talks-and-teaching.qmd#teaching-with-ai"},
+        {"n": 8,  "title": "Grading yourself",                        "min": 7,  "brief_min": 7,  "ref": "day2/m5-talks-and-teaching.qmd#grading-yourself"},
+        {"n": 9,  "title": "Break",                                   "min": 10, "brief_min": 10, "break": true},
+        {"n": 10, "title": "Lab Two, part 1 — One case, three outputs", "min": 20, "brief_min": 20, "ref": "day2/lab2-one-case-three-outputs.qmd#part-1"},
+        {"n": 11, "title": "Lab Two, part 2 — Tool check, again",     "min": 10, "brief_min": 10, "ref": "day2/lab2-one-case-three-outputs.qmd#part-2"},
+        {"n": 12, "title": "Lab Two, part 3 — Share-out",             "min": 5,  "brief_min": 5,  "ref": "day2/lab2-one-case-three-outputs.qmd#part-3"}
+      ]
+    },
+    {
+      "day": 3,
+      "title": "Safety & Ethics",
+      "items": [
+        {"n": 1,  "title": "Confidently wrong",                       "min": 10, "brief_min": 10, "ref": "day3/m6-confidently-wrong.qmd#confidently-wrong"},
+        {"n": 2,  "title": "Lab Three, part 1 — Trade and catch",     "min": 15, "brief_min": 15, "ref": "day3/lab3-spot-the-error.qmd#part-1"},
+        {"n": 3,  "title": "Lab Three, part 2 — Instructor examples", "min": 10, "brief_min": 10, "ref": "day3/lab3-spot-the-error.qmd#part-2"},
+        {"n": 4,  "title": "The rule that isn't optional",            "min": 10, "brief_min": 10, "ref": "day3/m7-privacy.qmd#the-rule"},
+        {"n": 5,  "title": "Where doctors get this wrong",            "min": 15, "brief_min": 15, "ref": "day3/m7-privacy.qmd#where-doctors-go-wrong"},
+        {"n": 6,  "title": "Break",                                   "min": 10, "brief_min": 10, "break": true},
+        {"n": 7,  "title": "Back to the rule, applied to a real case", "min": 20, "brief_min": 20, "ref": "day3/m8-back-to-the-rule.qmd#back-to-the-rule"},
+        {"n": 8,  "title": "Assessment quiz",                         "min": 20, "brief_min": 20, "ref": "day3/m8-back-to-the-rule.qmd#assessment"},
+        {"n": 9,  "title": "Certificate and closing",                 "min": 10, "brief_min": 10, "ref": "day3/m8-back-to-the-rule.qmd#closing"}
+      ]
+    }
+  ]
+}
