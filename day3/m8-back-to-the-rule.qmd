@@ -1,0 +1,234 @@
+---
+title: "Module 8 — Back to the rule"
+subtitle: "Day Three · 50 min"
+---
+
+You have learned a rule, a check, and a way to build prompts. You have seen a tool be confidently wrong, and seen where doctors put privacy at risk. This last block asks whether the rule holds up on your own work, without anyone telling you what to look for.
+
+::: {.session-meta}
+Time
+:   50 minutes, three parts: back to the rule (20), the assessment quiz (20), certificate and closing (10)
+
+Uses
+:   [The three-question check](../reference/three-question-check.qmd), one output of your own from Days One and Two, [Case C](../reference/case-cards.qmd#case-c) if you need a fresh one
+
+You leave with
+:   Check one AI output against its source and defend your decision to use it, fix it, or discard it. Name one thing you will change when you are back at work. Say the four things to keep, and follow a plan for your first two weeks.
+:::
+
+## 1. Back to the rule, applied to a real case [20 min]{.time} {#back-to-the-rule}
+
+On Day One the three questions were a card you were handed. Today they are a habit you either have or do not, and the only way to find out is to use them on something you made. You will check one output, defend your decision to a colleague, and write down what you will change.
+
+### Bring one output
+
+Choose one output you made on Day One or Day Two: a note, a letter, a handout, a teaching summary. A Lab Two output works well. Pick one you would have been content to use, not one you already took apart in Lab Three. This exercise is for the output that looks fine.
+
+The case behind it is fictional; the output is real, because a tool produced it for you this weekend.
+
+::: {.callout-important appearance="simple"}
+## The privacy line applies here too
+Use only outputs made from this course's synthetic cases. Nothing from a real patient comes into this exercise, in any form, not even to see how the check works on your own work.
+
+**No patient identifiers into a consumer AI tool. Ever. Full stop.** (A consumer AI tool is a general assistant you sign up for yourself.)
+:::
+
+No output to hand? Make one in two minutes. Open [Case C](../reference/case-cards.qmd#case-c), paste its facts where the prompt says, and run it in the tool you already use. If your quota has run out, ask a neighbor to share one of theirs, and check it independently.
+
+```text
+ROLE: You are a referring physician, writing for a specialist colleague.
+CONTEXT: This is a referral letter for the case below. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+[paste the facts from Case C]
+FORMAT: A short referral letter: reason for referral, relevant history, current medications, allergies, the question for the specialist. Maximum 200 words.
+CONSTRAINTS: Do not add findings, doses, or diagnoses that are not in the facts. No hedging phrases. Keep every value and unit exactly as given.
+```
+
+### The card you fill in
+
+The check is the verification workflow from earlier today, made personal: Draft with AI → Cross-check the source → Confirm or correct → Use.
+
+Copy the card below onto paper or into a note. It is the log from the [three-question card](../reference/three-question-check.qmd), laid out for one output, with one addition: the Monday line.
+
+| Part of the card | What you write |
+|---|---|
+| The output | Which lab it came from, and what it is |
+| 1. Could I defend this to a colleague? | Yes or no, and why |
+| 2. Does it point to something I can verify? | Yes or no, and exactly what you opened |
+| 3. Would I catch it if it were wrong? | Yes or no, and why |
+| Decision | Use, fix, or discard |
+| Kind of error | Invented, omitted, altered, fabricated citation, or none found |
+| What I will change on Monday | One sentence, starting with a verb |
+
+If the answer to any of these is no, that's the signal to slow down, not the finding to accept. A "no" is not a failure. It is the check working.
+
+The "why" and the "what you opened" are your evidence. Finding nothing wrong is a valid result; an empty evidence entry is not. If you cannot say what you compared, you have not finished.
+
+Check against the source, not against the tool. In this exercise the source is the case card. At work it is the chart, the drug label, the guideline. Treat your output as if it were headed for a chart: every number and name goes back to the source.
+
+Question 3 is the one people answer too fast. Ask it as if this were a full clinic on an ordinary afternoon, not a training room. If the output is in a language you do not read fluently, the honest answer is no, and the card's fix applies: get someone who would catch it.
+
+::: {.callout-warning appearance="simple"}
+## Watch for
+Two things that feel like checking and are not: reading the output a second time, and asking the tool whether it is right. Neither opens the source. A source the tool names is not verification until you have opened it.
+:::
+
+### One way to fill it in
+
+Suppose the card you used lists an allergy, and the tool's referral letter contains the excerpt below. Here is how one doctor might mark it and fill in the card.
+
+::: {.callout-note appearance="simple"}
+## Illustrative output — written for this course, not captured from a real tool
+**The draft, excerpt**
+
+> Thank you for seeing this patient. Allergies: none known. I would be grateful for your opinion within two weeks.
+
+**The card, filled in**
+
+> **1. Could I defend this to a colleague?** No. My source lists an allergy and the letter says none known. I also cannot say where "within two weeks" came from.
+>
+> **2. Does it point to something I can verify?** The allergy line, yes: I compared it with the card. The timeframe, no: my source says nothing about it.
+>
+> **3. Would I catch it if it were wrong?** Only because the card was open beside it. On a busy afternoon I would have read past a routine-looking line.
+>
+> **Decision:** fix. Correct the allergy line from the card, delete the timeframe, then use.
+>
+> **Kind of error:** altered (the allergy line) and invented (the timeframe).
+>
+> **Monday:** I will read the allergy and medication lines of every letter against the chart before it leaves my hands.
+:::
+
+### The four rounds
+
+Your instructor keeps the clock. You check alone first so that whatever your partner catches is something you actually missed.
+
+1. **Alone (2 minutes).** Read your output once, slowly. Mark every number, name, date, dose, and source. Then fill in your card, everything except the Monday line, comparing against the case card and not against the tool.
+
+2. **In pairs (6 minutes, 3 each).** Defend it to a colleague. Show your partner the marked output and your card, and say your decision aloud. Their job is to ask "where did that come from?" about each mark, and to point at anything you did not mark.
+
+   Change your card wherever they find something. If you disagree, the source decides: not either of you, and not another AI. Swap at three minutes.
+
+3. **In triads or as a whole room (8 minutes).** Your instructor will choose the format for the size of the room. In a triad, take a minute each to say what the output was, what you decided (use, fix, or discard), and the kind of error you found, or "none found".
+
+   As a room, your instructor will take a show of hands on each decision and call on a few of you. Either way, finish on one question: what did your partner catch that you missed?
+
+4. **Synthesize (4 minutes).** The room answers three questions, and your instructor writes the answers where everyone can see them. Which question most often came out as "no"? Which kind of error came up most? What would have caught it faster? Then finish your card with the Monday line.
+
+Whatever the room finds is a measure of these outputs and this room, not of any tool.
+
+### Writing your Monday line
+
+The first day you are back at work is the test of the whole weekend. Make your line small enough to do that day and specific enough that you would know if you had not. Read it to the person next to you: if they cannot picture you doing it, it is too vague.
+
+| Too vague | Specific enough |
+|---|---|
+| Be more careful with AI. | Open the source for every number and name before I use a draft. |
+| Check everything. | Run the three questions on the first output I get each day, and log it on the card. |
+| Follow the rule. | Read every instruction in a patient handout against the source before I give it out. |
+
+Each specific line names an action, a thing to check, and a moment.
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Check the output against its source, finish with use, fix, or discard, and write down one thing you will do differently.
+:::
+
+## 2. Assessment quiz [20 min]{.time} {#assessment}
+
+A short quiz covering all three days closes Day Three. Your instructor will explain how it runs; this section tells you what it draws on and how to get ready.
+
+### What it covers
+
+All three days: how the tools work and how to prompt them, notes, audiences and teaching, verification and privacy. The list below is a checklist for you, not a preview of the questions. If you can do each item without looking, you have the core of the weekend.
+
+- [ ] Say the rule and the three questions in order ([Module 1](../day1/m1-rule-and-mechanics.qmd#three-questions)).
+- [ ] Explain in plain words why a tool sounds just as sure when it is wrong ([Module 1](../day1/m1-rule-and-mechanics.qmd#how-it-works)).
+- [ ] Name the four parts of a prompt and what each is for ([Module 2](../day1/m2-prompting.qmd#anatomy)).
+- [ ] Tell a general assistant from a literature-grounded tool (answers drawn from cited published literature) and from an ambient scribe (listens to a visit and drafts the note) ([Module 3](../day1/m3-choosing-tools.qmd#tool-types)).
+- [ ] Explain why an AI-drafted note is still read line by line, even from a purpose-built scribe ([Module 4](../day2/m4-notes-and-audiences.qmd#saudi-scribes)).
+- [ ] Take one event, write it for three audiences, and check that the three outputs agree ([Module 4](../day2/m4-notes-and-audiences.qmd#three-audiences)).
+- [ ] Say how you would check an AI-made answer key before using it on trainees ([Module 5](../day2/m5-talks-and-teaching.qmd#grading-yourself)).
+- [ ] Walk through Draft with AI → Cross-check the source → Confirm or correct → Use, and name the kinds of error: invented, omitted, altered, fabricated citation ([Module 6](m6-confidently-wrong.qmd#confidently-wrong)).
+- [ ] Say the privacy line and list what counts as an identifier ([Module 7](m7-privacy.qmd#the-rule)).
+
+### How to get ready
+
+Say the four things to keep aloud, without looking: the rule, the three questions, the four parts, the privacy line. They are written out in the closing section below.
+
+Use the practice bank on the [assessment page](../assessment.qmd). It is separate from the quiz you take in class, so do not treat it as a preview. Use it to find what you are unsure of: try a question, say your reasoning aloud, then see how the page answers it.
+
+Look back at your own log: the errors you found in Lab Three and in the exercise above, and how you found them.
+
+### While you answer, and after
+
+If a question describes a mistake, name it in the course's words: invented, omitted, altered, or a fabricated citation. If it describes patient data going somewhere, start from the privacy line before anything else.
+
+Whatever the result, keep a note of the topics that made you hesitate. They are your reading list for the next two weeks.
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Use the practice bank to find what you are unsure of, not to guess what will be asked.
+:::
+
+## 3. Certificate and closing [10 min]{.time} {#closing}
+
+You leave with a certificate and, more usefully, four things to keep and a plan for your first two weeks.
+
+### Your certificate
+
+Every doctor who finishes the weekend receives a certificate of completion.
+
+### Four things to keep
+
+Everything in the weekend comes back to these four. If you keep nothing else, keep them in these words.
+
+**The rule.** AI drafts. You decide.
+
+**The three questions.**
+
+1. Could I defend this to a colleague?
+2. Does it point to something I can verify?
+3. Would I catch it if it were wrong?
+
+If the answer to any of these is no, that's the signal to slow down, not the finding to accept. When you find a mistake, name it: invented, omitted, or altered. The full card is [the three-question check](../reference/three-question-check.qmd).
+
+**The four parts.** *Role · Context · Format · Constraints*: who it is, what it knows, what shape to return, what to avoid. Your reusable prompts are in the [prompt library](../reference/prompt-library.qmd).
+
+::: {.callout-important appearance="simple"}
+## The privacy line
+No patient identifiers into a consumer AI tool. Ever. Full stop.
+
+Not sure whether something counts as an identifier? Do not paste it. The [privacy checklist](../reference/privacy-checklist.qmd) has the list.
+:::
+
+### Your first two weeks
+
+Four steps, in order. Each is small on purpose.
+
+- [ ] **At the start of week one, pick one low-risk task and run the check on every output.** Choose something where an error costs little, such as rewording an email to a colleague or a first outline for a talk. Log each output on the card, even when it is fine. Keep patient data out of it.
+- [ ] **In week one, keep a prompt library.** Save each prompt that gave you a draft you would use after checking, with its four parts and a placeholder where the facts go, never the facts themselves. Start from the [prompt library](../reference/prompt-library.qmd) on this site.
+- [ ] **In week one, ask your institution.** Does it have a policy on AI tools, and which tools has it approved, for which uses? An approved tool is one your institution has vetted and contracted. Until you have an answer, the privacy line is your policy. For anything about identifiers or the law, ask your institution's data protection officer or legal team.
+- [ ] **In week two, teach one colleague.** Give them ten minutes: the rule, the three questions, and the privacy line, on a synthetic case from the [case cards](../reference/case-cards.qmd). Hand them the three-question card.
+
+Stuck? [Troubleshooting](../reference/troubleshooting.qmd) and the [glossary](../reference/glossary.qmd) are on this site.
+
+### What this course did not cover
+
+This weekend was about text: drafting, summarizing, and checking, with general assistants and a few purpose-built tools. Four large areas were outside it, so do not assume the rule alone covers them.
+
+- **Imaging AI.** Tools that analyze scans, slides, and other images.
+- **Clinical decision support and regulation.** Systems that flag or recommend inside clinical workflows, and the rules about how they may be used.
+- **Medico-legal questions.** Who answers for an AI-drafted note that turns out to be wrong, and what consent or documentation your setting expects. "AI drafts. You decide" tells you where the decision sits; it is not a legal position. Ask your institution's data protection officer or legal team. This course is education, not legal advice.
+- **AI built into your hospital's record system, in depth.** Day Two showed that some scribes work inside hospital record systems. How any one of them works, what it stores, and how it was approved was not covered.
+
+For these areas, treat the rule as the place to start, and ask someone who works in that area. Nothing on this site is clinical guidance.
+
+::: {.callout-note appearance="simple"}
+## Try it (2 minutes)
+Before you leave, write down two things: the one low-risk task you will start with, and the colleague you will teach. Put them where you will see them on your first day back.
+:::
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+AI drafts. You decide. Run the check every time.
+:::

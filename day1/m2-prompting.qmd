@@ -1,0 +1,391 @@
+---
+title: "Module 2 — Anatomy of a good prompt"
+subtitle: "Day One · 35 min"
+---
+
+A chatbot is fast at producing text and indifferent to whether it is the text you needed. This module gives you one structure for asking, the four-part framework, and runs it on four documents you write often: a progress note, a referral letter, a discharge summary and a patient handout. The point is not four good prompts. It is one skeleton you can paste into any tool and fill in.
+
+::: {.session-meta}
+Time
+:   35 minutes, four topics
+
+Uses
+:   [Case A](../reference/case-cards.qmd#case-a), [Case B](../reference/case-cards.qmd#case-b), [Case C](../reference/case-cards.qmd#case-c), [Case D](../reference/case-cards.qmd#case-d)
+
+You leave with
+:   You can name the four parts of a prompt and say which one is missing when an answer goes wrong. You have a saved skeleton to paste into any tool. You can turn jotted facts into a SOAP note, a referral letter, a discharge summary or a plain-language handout, and you know which parts of each to check.
+:::
+
+::: {.callout-important appearance="simple"}
+## Synthetic cases only
+Every patient on this page comes from a fictional [case card](../reference/case-cards.qmd). No patient identifiers into a consumer AI tool. Ever. Full stop. The [privacy checklist](../reference/privacy-checklist.qmd) says what that means at your desk.
+:::
+
+## 1. Where the extra words come from [5 min]{.time} {#extra-words}
+
+You have probably asked a chatbot to "write a note" and then spent your time cutting the answer down. The extra words are not random, and most of them can be prevented before the tool writes anything.
+
+As [Module 1](m1-rule-and-mechanics.qmd#how-it-works) showed, the tool continues text with what usually comes next. Every choice you leave open gets filled with the typical: typical hedges, typical padding, a typical layout. Here is a vague prompt on Case A, with the facts from the card pasted underneath.
+
+```text
+Write a progress note for this patient.
+
+[paste the Case A facts]
+```
+
+::: {.callout-note appearance="simple"}
+## Illustrative output — written for this course, not captured from a real tool
+Same prompt, two runs. The bold words are the extra words.
+
+> Thank you for sharing this information. Here is a progress note for a 52-year-old man with hypertension. **It is important to note that** his home blood pressure readings, averaging 146/92 in the mornings, **may indicate** that control is **not yet fully optimal**. His headaches are **reportedly** less frequent on amlodipine 5 mg once daily, **although** ankle swelling has been noted by evening. **Further evaluation may be warranted, and clinical correlation is advised. Please consult the treating physician** before making any changes. [...]
+
+> **Patient Summary.** A 52-year-old male presents for follow-up. **Key Findings.** Home readings average 146/92. **Considerations.** Blood pressure **could potentially** benefit from **additional measures**. **It may be reasonable to consider** lifestyle changes **and/or** medication adjustment, **depending on clinical judgment**. **Suggested Next Steps.** [...] **Disclaimer.** This note **is intended for informational purposes only** and **should be reviewed by a qualified healthcare professional**.
+:::
+
+Read the two runs side by side. Run 1 is prose and Run 2 is headings, because nothing told the tool which to use. Run 1 tells the treating physician to consult the treating physician: the tool guessed an audience, and guessed wrong. Run 2 turns the actual plan on the card into "medication adjustment". The words look careful and say nothing.
+
+| You left open | What tends to come back |
+|---|---|
+| Audience | A general reader, not a colleague opening the chart |
+| Length | A greeting, a restatement, a closing offer |
+| Structure | A layout of its own, different on each run |
+| Tone | Hedges and disclaimers standing in for judgment |
+
+Lab One lets you see this on your own screen, so you do not have to take the table on trust.
+
+::: {.callout-warning appearance="simple"}
+## Watch for
+A hedge is not a safety check. "Clinical correlation is advised" tells the next reader nothing. The real risk is the long, padded draft you skim, because skimming is how a changed dose gets through.
+:::
+
+::: {.callout-note appearance="simple"}
+## Try it
+One minute. Think of the last thing you typed into an assistant. Which of the four did you leave open: audience, length, structure or tone? Tell your neighbor.
+:::
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+The fix isn't a better model. It's a better prompt.
+:::
+
+## 2. Anatomy of a good prompt [10 min]{.time} {#anatomy}
+
+A good prompt is not clever wording. It is four decisions, made on purpose, in the same order every time. Make them once and the tool has nothing left to guess. The four parts are Role, Context, Format and Constraints, and the memory line is: *"Who it is, what it knows, what shape to return, what to avoid."*
+
+Here is the whole framework as one paste-ready skeleton. Fill the brackets, paste your facts under FACTS, and send it.
+
+<!-- prompt: four-part-skeleton | Four-part skeleton | The base for any drafting task: fill the brackets and paste only the facts you want used -->
+```text
+ROLE: You are [role], writing for [audience].
+CONTEXT: [What this is for.] Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+[paste the facts]
+FORMAT: [Exact template or headings.] Maximum [N] words.
+CONSTRAINTS: Do not add findings, doses, or diagnoses that are not in the facts. No hedging phrases. [Units, reading level, abbreviations.]
+```
+
+FACTS is not a fifth part. It is the slot under CONTEXT where the facts you supply go. Every prompt later in this course is this skeleton with different fills.
+
+### Role
+
+Who the AI is writing as, and for whom.
+
+```text
+ROLE: You are a family physician, writing for a cardiologist who has not met the patient.
+```
+
+Role sets the register: a colleague's shorthand, or plain words for a parent. It changes the voice, not the facts. "You are a world-class cardiologist" cannot supply a finding you did not give it.
+
+**Common mistake:** a flattering role and no audience. Name the reader, because the reader decides the words.
+
+### Context
+
+The facts it may use, and what the output is for. Only the facts you give it.
+
+```text
+CONTEXT: This is a progress note for the chart after a six-week hypertension follow-up. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+```
+
+Whatever you leave out, the tool fills with plausible, generic content. The `[MISSING: what]` line changes that: when the tool follows it, a silent invention becomes a visible gap that you can see and fill. If you memorize one line from this module, memorize that one.
+
+**Common mistake:** pasting the facts but not saying to use only those. Then your facts and the tool's filler look identical on the page.
+
+### Format
+
+The exact shape: template, headings, length.
+
+```text
+FORMAT: SOAP note with four headings: S, O, A, P. Maximum 150 words.
+```
+
+Give the tool a layout and a number. "Short" is a wish; "maximum 150 words" is a limit you can check. A named template also removes the run-to-run drift you saw in the last section.
+
+**Common mistake:** describing length in adjectives ("brief", "concise") and leaving the layout to the tool.
+
+### Constraints
+
+What it must not do: no invented facts, no hedging, the units, the reading level.
+
+```text
+CONSTRAINTS: Do not add findings, doses, or diagnoses that are not in the facts. No hedging phrases. Keep every unit exactly as written in the facts.
+```
+
+Name the forbidden thing. "Be accurate" gives the tool nothing to act on; "do not add doses" does. A constraint lowers the chance of a problem. It does not remove it, so the numbers still get checked, using the [three-question check](../reference/three-question-check.qmd).
+
+**Common mistake:** writing constraints as hopes ("try to be careful") instead of prohibitions.
+
+### When an answer goes wrong
+
+Every missing part leaves a recognizable mark. Read the right column, then look left.
+
+| Missing part | The symptom you see |
+|---|---|
+| Role | Wrong reader: a chart note that talks to the patient, a letter that reads like a textbook |
+| Context | Details you never gave it, or generic filler where your facts belong |
+| Format | A different layout on every run, and a length you did not choose |
+| Constraints | Hedges, disclaimers, unrequested advice, units that drift |
+
+::: {.callout-note appearance="simple"}
+## Try it
+Two minutes, in pairs. Each prompt below is missing exactly one of the four parts. Which?
+
+```text
+1. ROLE: You are a family physician, writing for a cardiologist.
+   CONTEXT: A referral. Use ONLY the facts below. Write [MISSING: what] if something is absent.
+   FACTS: [facts]
+   CONSTRAINTS: Add no findings, doses, or diagnoses. No hedging.
+
+2. ROLE: You are a pediatrician, writing for a baby's parents.
+   CONTEXT: A home-care handout. Use ONLY the facts below.
+   FACTS: [facts]
+   FORMAT: Three short headings. Maximum 150 words.
+
+3. ROLE: You are a hospital physician, writing for the family doctor.
+   FORMAT: Five headings. Maximum 250 words.
+   CONSTRAINTS: Add no findings, doses, or diagnoses. No hedging.
+   Write a discharge summary for my patient.
+```
+
+Answers: prompt 1 has no FORMAT, prompt 2 has no CONSTRAINTS, prompt 3 has no CONTEXT and no facts. Prompt 3 gives the tool nothing to work from, so whatever it writes would be filled in, not drawn from your patient.
+:::
+
+### Fix the prompt, not the answer
+
+When an answer is wrong, resist replying "no, shorter" in the same chat. Use the table: find the symptom, name the missing part, fix the prompt, and run it again in a fresh chat. A prompt you have fixed once is a prompt you can keep. Save the ones that work; the [prompt library](../reference/prompt-library.qmd) holds every reusable prompt from this course, and your own list can grow from it.
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Who it is, what it knows, what shape to return, what to avoid.
+:::
+
+## 3. Structure fixes it [5 min]{.time} {#structure-notes}
+
+You already know the layout you want your notes in. The framework lets you say so once and get it back every time, so the only thing left to read is the content.
+
+| Without a template | With a template |
+|---|---|
+| "Write a progress note for this patient." | "Write a SOAP note in this exact format: [template]. Under 150 words. No hedging language." |
+
+The right-hand prompt is the framework squeezed into one line: a format, a length, a constraint. Spread out, with a role and an only-these-facts context, it becomes the prompt below. The facts are Case A, copied from the [card](../reference/case-cards.qmd#case-a).
+
+<!-- prompt: soap-note | SOAP progress note | Turn jotted visit facts into a progress note in a fixed template -->
+```text
+ROLE: You are a primary care physician, writing a progress note for the patient's chart.
+CONTEXT: This is the note for today's follow-up visit. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+- 52 M. Hypertension diagnosed 2 months ago. Started amlodipine 5 mg once daily 6 weeks ago.
+- Says the headaches (mostly mornings) are less frequent. New since starting amlodipine: ankle swelling by evening.
+- Home BP diary, last 2 weeks, mornings: average 146/92.
+- Missed 2 doses in 6 weeks (forgot while travelling).
+- No chest pain, no breathlessness, no visual symptoms, no palpitations.
+- Non-smoker. Walks about 15 min most days. Eats a lot of canned and salted food.
+- Family history: father had a stroke at 68.
+- No known drug allergies.
+- Today: BP 148/94, repeat 146/92 (seated, left arm). HR 76 regular. Weight 91 kg, height 176 cm, BMI 29.4.
+- Trace bilateral ankle edema. Heart sounds normal. Chest clear.
+- Baseline labs (2 months ago): creatinine 82 µmol/L, potassium 4.2 mmol/L, fasting glucose 5.4 mmol/L, LDL 3.6 mmol/L, urine ACR normal.
+- Plan discussed: add losartan 50 mg once daily, keep amlodipine 5 mg, repeat creatinine and potassium in 2 weeks, reduce salt, keep the home BP diary, review in 4 weeks.
+FORMAT: A SOAP note with four headings: S, O, A, P. Under A, one line that restates the diagnosis and findings already in the facts. Maximum 150 words.
+CONSTRAINTS: Do not add findings, doses, or diagnoses that are not in the facts. No hedging phrases. Keep every value and unit exactly as written. Standard clinical abbreviations are fine.
+```
+
+::: {.callout-note appearance="simple"}
+## Illustrative output — written for this course, not captured from a real tool
+> **S:** 52 M, hypertension, amlodipine 5 mg once daily for 6 weeks. Morning headaches less frequent. New ankle swelling by evening. Missed 2 doses in 6 weeks (forgot while travelling). No chest pain, breathlessness, visual symptoms or palpitations. Non-smoker. Eats a lot of canned and salted food. Father had a stroke at 68. No known drug allergies.
+>
+> **O:** BP 148/94, repeat 146/92 (seated, left arm). Home mornings over 2 weeks: average 146/92. HR 76 regular. Weight 91 kg, BMI 29.4. Trace bilateral ankle edema. Heart sounds normal. Chest clear. Labs 2 months ago: creatinine 82 µmol/L, potassium 4.2 mmol/L, fasting glucose 5.4 mmol/L, LDL 3.6 mmol/L, urine ACR normal.
+>
+> **A:** Hypertension, BP still elevated on amlodipine 5 mg; new ankle edema.
+>
+> **P:** Add losartan 50 mg once daily; keep amlodipine 5 mg. Repeat creatinine and potassium in 2 weeks. Reduce salt. Keep home BP diary. Review in 4 weeks.
+:::
+
+Now the same three passes, every time, before this goes near a chart. Each pass is short because the structure tells you where to look:
+
+1. **Numbers.** Every value and unit against the card: the two clinic readings, the home average, heart rate, weight, BMI, the four labs.
+2. **Medicines.** Name, dose, frequency, and whether each is new or continued. Here amlodipine stays at 5 mg and losartan 50 mg is new.
+3. **Plan.** All six plan items present, none added. Read the A line with it: that line is where a tool is most tempted to add a diagnosis you did not make.
+
+Those three passes are where *invented, omitted, altered* show up in a note. Count the words too. A limit is a request, not a lock, and if the tool dropped a fact to fit it, raise the limit rather than accept the omission. [Lab One, part 1](lab1-templates-and-limits.qmd#part-1) puts this on a clock.
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Give it the template, then check the numbers, the medicines and the plan.
+:::
+
+## 4. Same framework, three more jobs [15 min]{.time} {#three-more-jobs}
+
+The skeleton does not change. Four things do: the reader, the format, the constraint that matters most, and what you check afterward. Here are three documents you write often, each on its own case card.
+
+| Job | Reader | Format | Matters most | Check first |
+|---|---|---|---|---|
+| Referral letter, Case C | A cardiologist who has not met the patient | The question first; 200 words at most | The allergy must appear | The question, the allergy, the two heart rates |
+| Discharge summary, Case B | The family doctor taking over | Five fixed headings; 250 words at most | Medicines copied exactly as listed | Durations, doses, pending results, follow-up |
+| Patient handout, Case D | The baby's parents | Short headings, plain words; 200 words at most | No warning signs or doses you did not give | Warning signs, doses, the "no antibiotics" line |
+
+### Referral letter: Case C
+
+A referral is read by a busy colleague with no context. So the order changes: the question first, then the urgency, then only the facts that bear on the question. The allergy is the one fact a letter cannot leave out, so the prompt says so. The facts are copied from [Case C](../reference/case-cards.qmd#case-c).
+
+<!-- prompt: referral-letter | Referral letter | Turn a clinic patient's facts into a short referral letter with one clear question -->
+```text
+ROLE: You are a family physician, writing a referral letter to a cardiologist who has not met the patient.
+CONTEXT: This is a referral for a new problem. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+- 71 M. Hypertension, on amlodipine 5 mg once daily. Allergy: penicillin (rash). Ex-smoker, stopped 10 years ago.
+- 3 weeks of breathlessness on exertion: now stops after about 1 block, previously 3 to 4 blocks. Occasional "fluttering". No chest pain, no syncope, no leg swelling.
+- Exam: pulse irregularly irregular, about 108. BP 132/80. SpO2 97% on room air. JVP not raised. Chest clear. No peripheral edema.
+- ECG today: atrial fibrillation, ventricular rate 112, no acute ST changes. No earlier ECG available to compare.
+- Labs today: Hb 138 g/L, creatinine 96 µmol/L (eGFR 73 mL/min/1.73 m²), potassium 4.4 mmol/L, TSH 2.1 mIU/L.
+- Not yet done: echocardiogram. Not on anticoagulation. No previous atrial fibrillation.
+- CHA2DS2-VASc: age 65 to 74 (1) plus hypertension (1) = 2.
+- Question for cardiology: rate versus rhythm strategy, and the anticoagulation decision. Asking for an appointment within 2 weeks. Patient prefers an Arabic-language consultation.
+FORMAT: A letter with no headings. Paragraph 1: the question, then the urgency. Paragraph 2: only the history and findings that bear on the question. Paragraph 3: what has and has not been done. End with the allergy and the language preference. Maximum 200 words.
+CONSTRAINTS: The allergy must appear. Do not add findings, doses, or diagnoses that are not in the facts. Do not answer the question or recommend a treatment: that is the cardiologist's decision. No hedging phrases. Keep every value and unit exactly as written.
+```
+
+::: {.callout-note appearance="simple"}
+## Illustrative output — written for this course, not captured from a real tool
+> Dear Colleague,
+>
+> I would be grateful for your advice on a 71-year-old man with new atrial fibrillation: rate versus rhythm strategy, and the anticoagulation decision. I am asking for an appointment within 2 weeks.
+>
+> He has hypertension, on amlodipine 5 mg once daily, and is an ex-smoker (stopped 10 years ago). He has had 3 weeks of exertional breathlessness: he now stops after about 1 block, previously 3 to 4 blocks, with occasional fluttering. No chest pain, syncope or leg swelling. Pulse is irregularly irregular at about 108, BP 132/80, SpO2 97% on room air, JVP not raised, chest clear. ECG today shows atrial fibrillation, ventricular rate 112, no acute ST changes; there is no earlier ECG to compare. Hb 138 g/L, creatinine 96 µmol/L (eGFR 73 mL/min/1.73 m²), potassium 4.4 mmol/L, TSH 2.1 mIU/L. CHA2DS2-VASc is 2 (age 65 to 74, hypertension).
+>
+> An echocardiogram has not been done. He is not on anticoagulation and has no previous atrial fibrillation.
+>
+> Allergy: penicillin (rash). He prefers an Arabic-language consultation.
+:::
+
+Verify first:
+
+- **The question.** It is in the first paragraph, worded as you asked it, and the tool has not answered it.
+- **The allergy.** Present, and still "penicillin (rash)": not dropped, not upgraded to a worse reaction.
+- **The numbers.** Pulse about 108 on exam and ventricular rate 112 on the ECG are two measurements. Check that neither replaced the other, and that the CHA2DS2-VASc of 2 and the eGFR are as written.
+- **What is not done.** No echocardiogram, no anticoagulation. Leave these out and the cardiologist has to go looking.
+
+### Discharge summary: Case B
+
+A discharge summary is read by the doctor who takes over, often days later and without the chart open. So the format becomes five fixed headings, and one rule the tool must not bend: the discharge medicines are copied exactly as listed. This is the job where *altered* costs the most, because the next doctor acts on it. The facts are copied from [Case B](../reference/case-cards.qmd#case-b). The first line states the diagnosis, which the card gives in its title.
+
+<!-- prompt: discharge-summary | Discharge summary | Turn inpatient facts into a five-heading discharge summary with medicines copied exactly -->
+```text
+ROLE: You are a hospital physician on an internal medicine ward, writing a discharge summary for the patient's primary care physician.
+CONTEXT: This is the summary that goes with the patient on the day of discharge. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+- Diagnosis this admission: pneumonia, right lower lobe.
+- 64 F. Type 2 diabetes (metformin 1000 mg twice daily), hypertension (amlodipine 5 mg once daily). No known drug allergies. Non-smoker.
+- Presented with 4 days of cough with yellow-green sputum, fever, and right-sided chest pain worse on deep breathing.
+- On arrival: T 38.9 °C, HR 102, RR 24, BP 118/70, SpO2 91% on room air.
+- CXR: right lower lobe consolidation. WBC 15.2 x10^9/L, CRP 168 mg/L, creatinine 88 µmol/L, glucose 11.8 mmol/L, HbA1c 63 mmol/mol (7.9%).
+- Blood cultures: no growth at 48 h, final result pending. Sputum culture sent, result pending at discharge.
+- Treatment: ceftriaxone 1 g IV once daily for 3 days plus azithromycin 500 mg once daily for 3 days (hospital days 1 to 3). Oxygen off from hospital day 3. Afebrile since hospital day 3.
+- Step-down to oral amoxicillin-clavulanate 875/125 mg twice daily started on hospital day 4. Total planned antibiotic course 7 days, so 3 more days at home after discharge.
+- Insulin sliding scale in hospital; glucose 7 to 10 mmol/L over the last 24 h. Metformin continued.
+- At discharge: T 36.8 °C, HR 78, RR 16, BP 122/74, SpO2 96% on room air. Walking on the ward, eating well.
+- Discharge medicines: amoxicillin-clavulanate 875/125 mg twice daily for 3 more days, metformin 1000 mg twice daily, amlodipine 5 mg once daily, paracetamol 1 g up to four times daily if needed.
+- Influenza and pneumococcal vaccination status: not documented.
+- Follow-up: primary care in 1 week. Chest imaging at 6 weeks only if symptoms persist. Return sooner for worse breathing, fever after 48 h of tablets, confusion, chest pain, or coughing blood.
+FORMAT: Five headings, in this order: Diagnoses, Hospital course, Discharge medicines, Pending results, Follow-up. Discharge medicines as a list, one line each. Maximum 250 words.
+CONSTRAINTS: Copy the discharge medicines exactly as listed in the facts: no change to any name, dose, frequency or duration. Do not add findings, doses, or diagnoses that are not in the facts. If a result is pending, say it is pending; do not guess the result. No hedging phrases. Keep every value and unit exactly as written.
+```
+
+Verify first:
+
+- **Durations and doses.** Read the medicine list against the card, line by line. Check that "3 more days at home" and the 7-day total have not been merged or swapped.
+- **Pending results.** Both cultures appear as pending. A blood culture with no growth at 48 h and a final result pending must not become "negative".
+- **Follow-up.** Primary care in 1 week. Chest imaging at 6 weeks only if symptoms persist: check that "only if" survived. The five reasons to return sooner are all there.
+- **What is not documented.** Vaccination status is stated as not documented, not turned into "up to date" or "unvaccinated".
+
+::: {.callout-warning appearance="simple"}
+## Watch for
+A tool tidying a medicine list. Merging two lines, rounding a dose or shortening a duration all read fluently, and each changes what the next doctor prescribes. The safest habit is to delete the tool's list and paste in the real one yourself.
+:::
+
+### Patient handout: Case D
+
+Now the reader is a worried parent, not a colleague. What changes is the reading level, the length, and the rule about warning signs. Give the tool only what the handout needs: the diagnosis, the home plan and when to return. The facts come from [Case D](../reference/case-cards.qmd#case-d), which lists no warning signs beyond "sooner if worse". The prompt therefore tells the tool to leave a gap rather than write its own.
+
+<!-- prompt: patient-handout | Plain-language patient handout | Turn a clinician's plan into a short handout a parent or patient can follow at home -->
+```text
+ROLE: You are a pediatrician, writing a home-care handout for the parents of a baby.
+CONTEXT: The parents are anxious and want clear written instructions for home. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+- 8-month-old girl. Viral bronchiolitis, mild to moderate, suitable for home care.
+- Plan: supportive care. Small frequent feeds, saline nose drops, keep upright after feeds. No antibiotics, no bronchodilators.
+- Review in 24 to 48 h, sooner if worse.
+FORMAT: Three short headings: What this is, What to do at home, When to come back. Maximum 200 words.
+CONSTRAINTS: Write at a reading level a 12-year-old could follow: short sentences, no jargon, and explain any medical term in plain words. Do not add medicines, doses, advice, timelines or warning signs that are not in the facts. If the facts give no warning signs, write [MISSING: warning signs the parents should watch for] under "When to come back". No hedging phrases. Reassure without minimizing.
+```
+
+::: {.callout-note appearance="simple"}
+## Illustrative output — written for this course, not captured from a real tool
+> **What this is**
+>
+> Your daughter has bronchiolitis. This is a chest infection caused by a virus. It makes the tiny airways in her chest swollen and full of mucus. The doctor has examined her, and she can be looked after at home.
+>
+> **What to do at home**
+>
+> - Give small feeds, often.
+> - Use saline nose drops to clear her nose.
+> - Keep her upright after feeds.
+> - She does not need antibiotics. She does not need bronchodilators, which are medicines that open the airways.
+>
+> **When to come back**
+>
+> We will review her in 24 to 48 hours, or sooner if she gets worse. [MISSING: warning signs the parents should watch for]
+:::
+
+That last line is the point. The tool left a visible gap where the warning signs belong, because you did not give it any. Filling the gap is your clinical judgment: write the signs you would tell this family, add them to FACTS, and run it again. The tool words them. It does not choose them.
+
+Verify first:
+
+- **Warning signs.** Only yours. If a sign appears that you did not supply, delete it: a red flag the tool wrote is a clinical decision you did not make.
+- **Medicines and doses.** None added, and "no antibiotics" and "no bronchodilators" are still negatives.
+- **Timing.** "24 to 48 hours" and "sooner if worse" are unchanged, with no expected recovery time added.
+- **The explanation of the illness.** This is the tool's general knowledge, not your facts. Read it as you would a colleague's: is it accurate, and is it kind?
+
+### Optional: an Arabic version
+
+Case D says the mother prefers written instructions in Arabic. Add one line to the end of the prompt.
+
+```text
+LANGUAGE: The mother prefers written instructions in Arabic. Write the handout in Arabic, in simple everyday words a parent would use at home. Then give the English version below it so I can compare the two.
+```
+
+::: {.callout-important appearance="simple"}
+## Check the Arabic
+A fluent Arabic reader must check the Arabic before it reaches a family. Question 3 of the [three-question check](../reference/three-question-check.qmd) is "Would I catch it if it were wrong?" If you cannot read the Arabic yourself, the answer is no, and that is the signal to slow down, not the finding to accept.
+:::
+
+Three cases, three readers, one skeleton. What moved was the fill: the reader, the shape, one constraint. What never moved was only these facts, `[MISSING: what]` instead of guessing, and a check of the hot spots before anything reaches a chart, a colleague or a family.
+
+::: {.callout-note appearance="simple"}
+## Try it
+Two minutes. Pick the document you write most often. Which of the four parts would you change from the prompts above? Write the one CONSTRAINTS line that matters most for it, and save it with your skeleton.
+:::
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+You supply the numbers and the red flags. The tool only words them.
+:::

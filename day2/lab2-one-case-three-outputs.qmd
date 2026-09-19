@@ -1,0 +1,179 @@
+---
+title: "Lab 2 — One case, three outputs"
+subtitle: "Day Two · 35 min"
+---
+
+Module 4 gave you a technique: write the facts down once, then draw every output from that one sheet. Module 5 gave you a habit: check the numbers against a source. This lab uses both. You take one case, make three outputs for three readers, and find out whether they still agree with each other.
+
+::: {.session-meta}
+Time
+:   35 minutes, three parts
+
+Uses
+:   [Case A](../reference/case-cards.qmd#case-a) by default, any [case card](../reference/case-cards.qmd) allowed; the [practice source](../reference/practice-source.qmd) in part 2
+
+You leave with
+:   A source-of-truth sheet you checked yourself. A chart note, a patient handout, and a three-slide teaching version, plus a grid showing whether they agree. A second comparison of a general assistant and a literature-grounded tool, on a Day Two task.
+:::
+
+::: {.callout-note appearance="simple"}
+## Have ready
+Open these in tabs: [Module 4's prompts](../day2/m4-notes-and-audiences.qmd#three-audiences), [Module 5's slide prompt](../day2/m5-talks-and-teaching.qmd#full-talk), your general assistant, and Vera Health or the literature-grounded tool you set up (see [setup](../setup.qmd)). All the prompts are also in the [prompt library](../reference/prompt-library.qmd). Keep paper or a notes app open for the two grids. No tool set up yet? Pair with a neighbor and share one screen. A tool misbehaving? See [troubleshooting](../reference/troubleshooting.qmd).
+:::
+
+::: {.callout-important appearance="simple"}
+## The privacy line
+No patient identifiers into a consumer AI tool. Ever. Full stop.
+:::
+
+Use a case card. If you bring a case of your own, apply the [privacy checklist](../reference/privacy-checklist.qmd) first, and if you are not certain it is safe, use a card.
+
+## 1. One case, three outputs [20 min]{.time} {#part-1}
+
+One event, three readers: the chart, the patient, and a room of colleagues. The facts must not change as the words do. The way to keep them still is the sheet: build it once, check it once, and draw everything from it.
+
+### Step 1: the sheet (minutes 0 to 4)
+
+Pick a card. Case A is the default, because its card is written for exactly these three outputs. Run the `source-of-truth-sheet` prompt from [Module 4](../day2/m4-notes-and-audiences.qmd#three-audiences) on the card's bullets.
+
+Then check the sheet against the card, line by line, for the three failures: **invented**, **omitted**, **altered**. Fix it yourself, by hand.
+
+The sheet is now the only source for everything that follows, so an error left here is copied into all three outputs. This is the verification workflow one level up: Draft with AI → Cross-check the source → Confirm or correct → Use. Here the card is the source.
+
+### Step 2: three outputs (minutes 4 to 14)
+
+Start a new chat for each output and paste the sheet into each one. That way an error in one output cannot leak into the next, and each output draws on the sheet rather than on the others.
+
+| Output | For | Prompt |
+|---|---|---|
+| Chart note | The record, in clinical register | `chart-note-from-sheet`, [Module 4](../day2/m4-notes-and-audiences.qmd#three-audiences) |
+| Patient handout | The patient, in plain language | `patient-instructions-from-sheet`, [Module 4](../day2/m4-notes-and-audiences.qmd#three-audiences) |
+| Teaching version | Junior colleagues, three slides | `full-talk-slides`, [Module 5](../day2/m5-talks-and-teaching.qmd#full-talk) |
+
+Paste each prompt as taught. Change only its placeholders, and any setting words that do not fit your case (a clinic visit, not an operation). For the slides, paste the sheet under FACTS and type these three titles under OUTLINE: "The case", "What was found", "The plan and the next checks". Three titles give you three slides.
+
+Give each output about three minutes. If one runs long, take what you have and move on: the check in step 3 is the point of the lab.
+
+Case A names no warning signs to return for. If your handout contains a list of them, it did not come from the card: delete it, or replace it with one you write. A [MISSING: ...] line where the sheet is silent is the prompt doing its job.
+
+### Step 3: the consistency check (minutes 14 to 20)
+
+Now find out whether the three outputs agree. For each constant fact, write it in the Sheet column, then look for it in each output and mark the cell: **ok**, **altered**, **omitted**, or **n/a** (left out on purpose: a handout does not need every reading).
+
+The last row is for **invented**: anything in an output that is not in the sheet.
+
+| Constant fact | Sheet | Chart note | Handout | Slides |
+|---|---|---|---|---|
+| Medicines and doses | | | | |
+| Tests to repeat, and when | | | | |
+| Follow-up interval | | | | |
+| Key readings | | | | |
+| Advice given | | | | |
+| Invented: not in the sheet | | | | |
+
+For Case A the constant facts are two medicines with doses, the repeat blood tests, the review, the blood pressure readings, and the advice on salt and the diary. If two outputs disagree, go to the sheet and the card, not to whichever output reads better. Then ask whether the sheet itself was the source of the error.
+
+### What good looks like
+
+- You fixed the sheet before you made any output.
+- Every dose, interval, and reading is identical wherever it appears, and copied from the sheet, not re-worked.
+- Where the card is silent, an output says [MISSING: ...] or says nothing. It does not fill the gap.
+- Every cell of the grid has a mark. A grid with no mismatch is a good result if you checked. A grid nobody filled in is not.
+- The handout is in plain language, and the slides carry no identifiers.
+
+::: {.callout-warning appearance="simple"}
+## Watch for
+Extra content is easiest to miss in the handout: friendly advice, warnings, and reassurance that sound helpful and are not on the card. Check every instruction in it against the sheet, not only the numbers.
+:::
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+One sheet, three outputs, one grid. An output that disagrees with the sheet is wrong, however fluent it sounds.
+:::
+
+## 2. Tool check, again [10 min]{.time} {#part-2}
+
+On Day One you ran one question through a general assistant and a literature-grounded tool ([Lab One, part 3](../day1/lab1-templates-and-limits.qmd#part-3)). Now repeat the comparison on a Day Two task and see whether what you found holds. Glance at your Day One notes first.
+
+### The task
+
+The default is a study summary from the practice source. If you would rather, use a referral letter for [Case C](../reference/case-cards.qmd#case-c) with the referral prompt from [Day One](../day1/m2-prompting.qmd#three-more-jobs). Either way, paste the same prompt, unchanged, into both tools.
+
+<!-- prompt: teaching-summary-from-source | Study summary from a source | Turn a source text into a short, numbers-exact study summary for trainees -->
+```text
+ROLE: You are a medical educator writing a one-page study summary for [audience, e.g. family medicine residents].
+CONTEXT: The summary is for revision. Use ONLY the SOURCE below. If something a learner would need is missing from the SOURCE, write [MISSING: what] instead of adding it.
+SOURCE:
+[paste the source text]
+FORMAT: Exactly [5] bullet points, one per key rule, each starting with its number or threshold in bold. Then one line beginning "Easy to confuse:" naming two rules in the SOURCE with similar numbers. Maximum [120] words.
+CONSTRAINTS: Copy every number exactly as written in the SOURCE. Do not add findings, doses, or thresholds that are not in the SOURCE. Cite nothing outside the SOURCE. No hedging phrases.
+```
+
+### Time-boxes
+
+- **Minute 0 to 1.** Choose the task and copy the source.
+- **Minutes 1 to 5.** Run the prompt in both tools. If a tool will not take the pasted text, or answers from its own sources instead of yours, write that down. It is a result, not a failure.
+- **Minutes 5 to 9.** Fill in the table.
+- **Minute 9 to 10.** Finish the two lines under it.
+
+| Question | General assistant | Literature-grounded tool |
+|---|---|---|
+| Stayed inside what I gave it? | | |
+| Added anything that is not in it? | | |
+| Cited something? Could I open it? | | |
+| Every number copied exactly? | | |
+
+Same pattern as Day One? ______________________
+
+For this job I would use ______________ because ______________________
+
+### What good looks like
+
+- You compared on things you can see: staying inside the text, additions, citations you opened, numbers. Not on which answer sounded better.
+- If a tool cited something, you opened it before you believed it.
+- Your "because" names something you observed, not a feeling about the tool.
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Same task, two tool types: compare what each stayed inside, added, and cited. Which one sounded better is not a result.
+:::
+
+## 3. Share-out [5 min]{.time} {#part-3}
+
+The last five minutes are for doing together what you have been doing alone: applying the check to something a colleague made, with the room watching. It is the same move you will need at work, when someone hands you an AI-drafted note and asks whether it looks fine.
+
+### How it runs
+
+- **Minute 0 to 1.** Pair up. Choose the one output you would least want to be wrong. The handout is a good candidate, because a patient will act on it.
+- **Minutes 1 to 4.** The trainer calls on two or three pairs. Each shows its output beside the sheet, reads two lines aloud, and names one fact it checked and where. The room then asks the three questions out loud, and the pair answers them:
+
+  1. Could I defend this to a colleague?
+  2. Does it point to something I can verify?
+  3. Would I catch it if it were wrong?
+
+- **Minute 4 to 5.** Write one thing you will change next time, in the sheet or in the prompt.
+
+If the answer to any of these is no, that's the signal to slow down, not the finding to accept. A "no" is a good answer here. What matters is what the pair does next.
+
+### What good looks like
+
+- The presenter names a specific fact and where they checked it, not "it looked fine".
+- A "no" to any question comes with a next step: check the source, or delete the line.
+- The room questions the output, not the person presenting it.
+
+### Worksheet
+
+Print this page, or copy the list into your notes. It is the whole lab on one screen.
+
+- [ ] Card used: ______________
+- [ ] Sheet checked line by line against the card. Invented, omitted, altered found: ______________
+- [ ] Chart note, handout, and slides made from the same sheet, each in its own chat
+- [ ] Consistency grid filled in, every cell marked. Mismatches found: ______________
+- [ ] Tool check run in both tools, table filled in. Did the Day One pattern hold? ______________
+- [ ] Share-out: one output presented, three-question check applied
+- [ ] One thing I will change next time: ______________
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Fluent is not verified. Say what you checked, against what, and what you would still check.
+:::

@@ -1,0 +1,393 @@
+---
+title: "Module 5 — Talks and teaching"
+subtitle: "Day Two · 35 min"
+---
+
+You give talks, you write exam questions, and you supervise people who are still learning. Each starts from a source and ends with something other people will trust because your name is on it.
+
+A tool can draft the middle in seconds. This module shows where that helps, and the one habit that keeps it safe: every number and every claim is checked against a source before anyone else sees it. The prompts here are also collected in the [prompt library](../reference/prompt-library.qmd).
+
+::: {.session-meta}
+Time
+:   35 minutes, four topics
+
+Uses
+:   [Case A](../reference/case-cards.qmd#case-a) for the slides, the [practice source](../reference/practice-source.qmd) for the quiz
+
+You leave with
+:   A case turned into a checked slide outline. A three-slide draft with speaker notes and a visual idea for each slide. A quiz written only from a source you may share. An answer key with a quotation for every answer, and a spot-check for the riskiest line.
+:::
+
+## 1. From case to slide deck [8 min]{.time} {#case-to-deck}
+
+The slow part of a case talk is rarely the medicine. It is turning a page of jotted notes into an order another person can follow. A tool is quick at that. It does not know which teaching point matters to your audience, and it must never see who the patient is.
+
+### Four steps, two owners
+
+```{mermaid}
+flowchart TD
+    A["1. Case notes: yours, de-identified"] --> B["2. Structured outline: AI drafts, you check"]
+    B --> C["3. AI slide draft: text, notes, visual idea"]
+    C --> D["4. Your edit and delivery: yours"]
+    classDef you fill:#CCFBF1,stroke:#14B8A6,color:#0F172A
+    classDef ai fill:#EEF2FF,stroke:#4F46E5,color:#0F172A
+    class A,D you
+    class B,C ai
+```
+
+Every step after the outline is faster with AI. The edit at the end is still yours. The order matters: whatever you paste at step 1 is inherited by everything after it, so step 1 is where identifiers come out.
+
+### De-identify before you paste
+
+::: {.callout-important appearance="simple"}
+## The privacy line
+No patient identifiers into a consumer AI tool. Ever. Full stop.
+:::
+
+For a teaching slide, that rule covers the prompt that builds it and the slide itself. Leave out:
+
+- a name, initials, or any file, ID, or phone number
+- a date of birth, or an exact date (write "6 weeks ago", not the calendar date)
+- a photograph, a scan or ECG with a name in the corner, or a screenshot from the EMR
+- a combination of details rare enough to point to one person
+
+The cards in this course are written this way: an age, relative times, no names.
+
+Images need more care than text, because a face, a tattoo, or a distinctive scar identifies someone even with the caption removed.
+
+If your institution has an approved tool and a policy for teaching material, that policy comes first. Day Three returns to this in [the privacy module](../day3/m7-privacy.qmd#the-rule), and the [privacy checklist](../reference/privacy-checklist.qmd) is the one-page version.
+
+### Worked example: Case A, three slides
+
+Use the four parts from Day One: Role, Context, Format, Constraints (see [anatomy of a good prompt](../day1/m2-prompting.qmd#anatomy)).
+
+A talk adds two things. Your teaching points go in, in your own words, so the outline is built around what you want the room to learn. And the outline is capped, so you can check all of it.
+
+<!-- prompt: case-outline | Case to slide outline | Turn de-identified case notes and your teaching points into a slide-by-slide outline -->
+```text
+ROLE: You are a clinical educator helping a doctor plan a short teaching talk for [audience, e.g. junior doctors at morning report].
+CONTEXT: The talk is built around one case. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing. The facts contain no patient identifiers; do not add any.
+FACTS:
+[paste the de-identified case notes]
+TEACHING POINTS:
+[two or three points you want the room to leave with, in your words]
+FORMAT: A slide-by-slide outline of [3] slides. For each slide: a title of six words or fewer, then two to four bullet fragments naming what goes on it. Finish with one line saying which slide carries each teaching point. Maximum [150] words.
+CONSTRAINTS: Do not add findings, doses, or diagnoses that are not in the facts. No statistics, guidelines, or citations. No hedging phrases. Keep units exactly as written in the facts.
+```
+
+Under FACTS, paste the bullets from the [Case A card](../reference/case-cards.qmd#case-a). Under TEACHING POINTS, paste these, or write your own:
+
+- Compare what the patient says with what the diary and the clinic show.
+- Record what is new since the drug was started.
+- Build the next checks into the plan.
+
+::: {.callout-note appearance="simple"}
+## Illustrative output — written for this course, not captured from a real tool
+> **Slide 1: A six-week follow-up**
+>
+> - 52-year-old man, hypertension diagnosed 2 months ago
+> - Amlodipine 5 mg once daily for 6 weeks
+> - Headaches less frequent; ankle swelling new since starting
+>
+> **Slide 2: What the numbers show**
+>
+> - Home diary, mornings, last 2 weeks: average 146/92
+> - Clinic: 148/94, repeat 146/92
+> - Two missed doses in 6 weeks; trace bilateral ankle edema
+>
+> **Slide 3: The plan and the next checks**
+>
+> - Add losartan 50 mg once daily; keep amlodipine 5 mg
+> - Repeat creatinine and potassium in 2 weeks
+> - Less salt, keep the diary, review in 4 weeks
+>
+> Teaching points: 1 on slide 2, 2 on slides 1 and 2, 3 on slide 3.
+:::
+
+Before anything is built on it, read the outline against the card once, for the three ways drafted clinical text goes wrong:
+
+- **Invented**: on the outline, not on the card.
+- **Omitted**: on the card and needed, missing from the outline.
+- **Altered**: a value, dose, side, or unit changed.
+
+Omission is fine when you chose it. It becomes a problem when the tool chose it and the talk depends on it. This outline leaves out the father's stroke, for example, and only you know whether a slide about follow-up needs it.
+
+Fix the outline by hand, or tell the tool exactly what to change. Then move on: the slide text in the next section is built from this outline, so an error left here is copied onto every slide.
+
+::: {.callout-note appearance="simple"}
+## Try it
+Two minutes. Run the prompt on Case A. When the outline comes back, tick every number against the card. Then tell your neighbor one thing the outline left out, and whether you would have left it out too.
+:::
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Take identifiers out first, check the outline against your notes, and keep the final edit for yourself.
+:::
+
+## 2. Building a full talk, not just an outline [12 min]{.time} {#full-talk}
+
+An outline tells you what goes where. It does not give you a slide. The hours in a talk go into the next level down: the words on each slide, what you will say, and the picture.
+
+That is also where a tool has the most room to add things you did not ask for, so it is where checking matters most.
+
+### One level past the outline
+
+For each slide, ask for exactly three things:
+
+1. **Slide text.** A title and at most three short lines. One idea per slide.
+2. **One line of speaker notes.** What you would say to introduce the slide, so you can rewrite it in your own voice.
+3. **One visual suggestion.** A description of what to show, not the visual itself.
+
+The short list is the discipline. Ask for "a full slide" and you may get paragraphs, a supporting statistic, and a source line, and all three become yours to verify. Ask for three things and you have three things to check.
+
+### Who owns what
+
+| Piece | The tool drafts | You decide |
+|---|---|---|
+| Slide text | Wording and layout of the facts you gave it | Which facts belong, and every number |
+| Speaker note | A first sentence to say | What you actually say, in your own voice |
+| Visual | An idea for the picture | The values, the axes, and whether to show it at all |
+
+A visual suggestion is a suggestion. If a tool proposes a chart of the home blood pressure diary, ask which points it would plot. Case A gives only the two-week average, so any daily values on that chart would be made-up. The numbers in a chart come from you and the source, never from the tool.
+
+### Worked example: the same three slides, in full
+
+Take the outline you approved in section 1 and the Case A facts. The prompt below asks for the three things, caps each one, and finishes with a numbers ledger: every number on the slides, with the fact it came from.
+
+The ledger is a checklist for you, not proof. Tick the numbers on the slides against the card, not against the ledger.
+
+<!-- prompt: full-talk-slides | Slides from an outline | Turn an approved outline and your facts into slide text, one speaker note, and one visual idea per slide -->
+```text
+ROLE: You are a clinical educator preparing slides for [audience, e.g. junior doctors at morning report].
+CONTEXT: The slides teach from one case. Use ONLY the facts below, and stay inside the outline. If something needed is missing, write [MISSING: what] instead of guessing. No patient identifiers on any slide.
+FACTS:
+[paste the de-identified facts, or your checked source-of-truth sheet]
+OUTLINE:
+[paste the outline you approved, or list the slide titles]
+FORMAT: One block per slide, in outline order, with exactly these labels:
+SLIDE (number): title, six words or fewer
+ON THE SLIDE: at most 3 lines, 12 words or fewer each
+SPEAKER NOTE: one sentence
+VISUAL: one suggestion: what to show, and which facts it uses
+After the last slide, add NUMBERS USED: every number on the slides, each with the fact it came from. Maximum [250] words.
+CONSTRAINTS: Copy every number, dose, and unit exactly as written in the facts. For a visual, say what to show; do not supply data points, trends, or values that are not in the facts. Do not add findings, doses, or diagnoses that are not in the facts. No statistics, guidelines, or citations. No hedging phrases.
+```
+
+For Case A, paste the card's bullets under FACTS and the three slides from section 1 under OUTLINE.
+
+::: {.callout-note appearance="simple"}
+## Illustrative output — written for this course, not captured from a real tool
+> **SLIDE 1: A six-week follow-up**
+>
+> ON THE SLIDE: 52-year-old man, hypertension diagnosed 2 months ago / Amlodipine 5 mg once daily, 6 weeks / Headaches less frequent; ankle swelling new
+>
+> SPEAKER NOTE: Set the scene: a routine follow-up six weeks after starting treatment, with one new complaint.
+>
+> VISUAL: A three-point timeline: diagnosis (2 months ago), amlodipine started (6 weeks ago), today's visit. Uses only the intervals in the facts.
+>
+> **SLIDE 2: What the numbers show**
+>
+> ON THE SLIDE: Home diary, mornings, 2 weeks: average 146/92 / Clinic: 148/94, repeat 146/92 / Two missed doses in 6 weeks
+>
+> SPEAKER NOTE: Show the home and clinic readings side by side before you mention the missed doses.
+>
+> VISUAL: A two-column table: the home average beside the two clinic readings. No daily values: the facts give only the average.
+>
+> **SLIDE 3: The plan and the next checks**
+>
+> ON THE SLIDE: Add losartan 50 mg once daily; keep amlodipine 5 mg / Repeat creatinine and potassium in 2 weeks / Less salt, keep the diary, review in 4 weeks
+>
+> SPEAKER NOTE: End on the checks built into the plan, not on the new medicine.
+>
+> VISUAL: A three-step line: today, blood tests in 2 weeks, review in 4 weeks.
+>
+> NUMBERS USED: 52 (age); 2 months (since diagnosis); 5 mg once daily (amlodipine); 6 weeks (on amlodipine); 146/92 (home diary average); 148/94 and 146/92 (clinic readings); 2 (missed doses); 50 mg once daily (losartan); 2 weeks (repeat creatinine and potassium); 4 weeks (review).
+:::
+
+Two things to notice. The VISUAL line for slide 2 says no daily values, because the facts give only the average: that is the constraint working. And the ledger hands you a list to tick. If a tool ignores the constraint and draws a line of daily readings, every point on it is made-up.
+
+When a slide is not right, change one slide at a time. Ask for that slide only, and say what to change. Asking for the whole deck again can alter slides you have already checked.
+
+### Slide check: before anyone else sees a slide
+
+Run this once per slide. It takes a minute for three slides, and it is the step that makes the draft yours.
+
+- [ ] Every number matches the source, digit by digit: value, unit, side, and which reading it belongs to.
+- [ ] No identifiers: no name, file number, exact date, or image that shows a face or a name.
+- [ ] Every claim has a source you can name, or it is your own statement. Delete any citation, statistic, or guideline the tool added.
+- [ ] One idea per slide, three lines at most.
+- [ ] Every chart uses only values you supplied.
+
+::: {.callout-warning appearance="simple"}
+## Watch for
+A tool asked to make a slide more convincing may add a statistic, a guideline name, or a "Source:" line. It has no way to know whether any of them is real. If you did not supply it, treat it as made-up until you have found the original yourself.
+:::
+
+::: {.callout-note appearance="simple"}
+## Try it
+Two minutes. Run the prompt on your approved outline, then swap screens with a neighbor. Run the slide check on their three slides and report one finding: a number that does not match, something that is not on the card, or "clean". Swap back.
+:::
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+The tool suggests the slide and the picture; the numbers come from you and the source. AI drafts. You decide.
+:::
+
+## 3. Teaching with AI [8 min]{.time} {#teaching-with-ai}
+
+You already write quiz questions, summarize papers for trainees, and read what your residents bring you. A tool can draft the first version of each in seconds. What it cannot do is tell you which of its sentences came from your source and which it filled in from somewhere else.
+
+### Three uses
+
+| Use | Safe pattern | Trap |
+|---|---|---|
+| Quiz questions | Paste a source you may share and say "only from this text" | Questions from the tool's general memory; a key nobody checks |
+| Study summaries | A fixed shape and a word limit, as with a note | A changed number or a dropped caveat |
+| Supervising trainees | Ask for the prompt and the source, then check the output together | A real patient note pasted into a consumer AI tool |
+
+**Quiz questions.** Ask for questions on "home blood pressure monitoring" and the tool writes them from whatever it absorbed in training, and a wrong question reads exactly like a right one.
+
+Paste the source into the conversation and tell it to use nothing else. Now every question has an answer you can find on the page in front of you, and a question with no answer in the text is easy to spot.
+
+**Study summaries.** The discipline is the same as for notes: a fixed shape, a word limit, numbers copied exactly, and you read every line before a trainee does. The risk is also the note's risk: a changed number or a dropped caveat, now in a document trainees treat as an authority. You practice this in [Lab 2](../day2/lab2-one-case-three-outputs.qmd#part-2).
+
+**Supervising.** When a trainee brings you an AI-drafted answer, ask to see the prompt and the source, then run the [three-question check](../reference/three-question-check.qmd) on the output together. Say the privacy line to them as well: a trainee in a hurry may paste a real note "just to tidy it".
+
+### What you may paste
+
+Only material you are allowed to share with a third-party tool. Your own teaching notes are the easy case.
+
+A published paper or guideline is not automatically yours to paste: whether you may depends on its terms and on your institution's policy. If you do not know, do not paste it; ask your library or your institution's legal team.
+
+The [practice source](../reference/practice-source.qmd) was written for this course, so it is safe to use today.
+
+### Worked example: a quiz from the practice source
+
+Open the [practice source](../reference/practice-source.qmd) and copy the nine numbered lines of Protocol HBP-1. It is fictional and carries no authority. Its use is that every rule has a number, so any question can be checked against a line.
+
+<!-- prompt: quiz-from-source | Quiz questions from a source | Write multiple-choice questions only from a text you paste, with balanced answer positions and option lengths -->
+```text
+ROLE: You are a medical educator writing exam questions for [audience, e.g. family medicine residents].
+CONTEXT: The questions test whether the learner has understood the SOURCE below. Use ONLY the SOURCE. Do not add facts, numbers, or recommendations from anywhere else. If the SOURCE is too short for [5] questions, write fewer and say so.
+SOURCE:
+[paste the source text]
+FORMAT: [5] multiple-choice questions, each with four options labeled A to D and one correct answer. Spread the correct answers across A to D, with no letter correct more than twice. Make the four options in each question about the same length, so the correct one is not the longest. No "all of the above" or "none of the above". After the questions, one line: ANSWER LETTERS, giving the correct letter for each question. Maximum [300] words.
+CONSTRAINTS: Every question must be answerable from a single line of the SOURCE. Do not add findings, doses, or diagnoses that are not in the SOURCE. Copy numbers exactly as written in the SOURCE. No hedging phrases.
+```
+
+The last line, ANSWER LETTERS, is there so you can check the balance at a glance.
+
+### The weakness to check for
+
+Tools that write multiple-choice questions tend to put the correct answer in the same position, and to make it the longest option. Both let a learner pass by guessing a letter or picking the longest option, without reading the source. So the prompt asks for balance, and you check that it got it.
+
+::: {.callout-note appearance="simple"}
+## Illustrative output — written for this course, not captured from a real tool
+Written to show the weakness, so it is unbalanced on purpose.
+
+> **Question 2.** What should you do just before a home reading?
+>
+> - **A.** Drink a cup of coffee
+> - **B.** Exercise for 10 minutes
+> - **C.** Empty your bladder and sit quietly for 5 minutes
+> - **D.** Stand for 1 minute
+>
+> ANSWER LETTERS: 1-C, 2-C, 3-C, 4-B, 5-C
+:::
+
+Here the correct answer is C in four of five questions, and in question 2 it is also the longest option. A learner could score well on this quiz without opening the source.
+
+Check every quiz the same way:
+
+1. Read ANSWER LETTERS. If one letter carries most of the answers, the quiz is guessable.
+2. In each question, find the longest option. Is it the correct one more than once or twice?
+3. If either check fails, reply in the same chat, in plain words: "In questions 2, 3, and 5 the correct option is the longest and sits at C. Rewrite so the four options in each question are about the same length, and spread the correct letters across A to D."
+
+Then check the rewritten questions against the source again. A rewrite can change a fact.
+
+::: {.callout-note appearance="simple"}
+## Try it
+Two minutes. Run the prompt on the practice source. Look at ANSWER LETTERS and at the longest option in each question. Did it balance? Tell your neighbor what you found.
+:::
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Paste the source and say "only from this text", then check whether the answer positions and lengths are balanced. Do not assume they are.
+:::
+
+## 4. Grading yourself [7 min]{.time} {#grading-yourself}
+
+A quiz is an assessment. If its key is wrong, a trainee who answered correctly is marked wrong, and one who answered wrongly is marked right.
+
+The tool writes a wrong key line in the same confident voice as a right one, so "does this look right?" is not a test. You need the key in a form you can check by looking.
+
+### Ask for the key with a quotation
+
+Generate the key in the same conversation as the questions, and ask for the exact words from the source that make each answer correct.
+
+A quotation turns "is this answer right?" into "does this line say that?", which you settle with the page open, not by arguing with the tool. And if no line supports an answer, the tool has to say so.
+
+<!-- prompt: answer-key-with-quotes | Answer key with quotations | Add an answer key to a quiz, with the exact supporting words from the source for every answer -->
+```text
+ROLE: You are a medical educator checking your own quiz against its source.
+CONTEXT: The questions below were written from the SOURCE below. Use ONLY the SOURCE. Do not use anything you know from elsewhere.
+QUESTIONS:
+[paste the questions, or write "the questions above"]
+SOURCE:
+[paste the same source text]
+FORMAT: An answer key with one entry per question: the question number; the correct letter; the exact words from the SOURCE that make it correct, copied word for word inside quotation marks; and the line or heading of the SOURCE where those words appear. Maximum [200] words.
+CONSTRAINTS: Never paraphrase inside quotation marks. If no words in the SOURCE support an answer, write NOT SUPPORTED instead of a quotation and say the question should be removed. Do not add findings, doses, or diagnoses that are not in the SOURCE. No hedging phrases.
+```
+
+### Worked example: a key line that contradicts the source
+
+Here is a key for three questions built on the practice source. One line has been written wrong on purpose, to show how the quotation lets you catch it.
+
+::: {.callout-note appearance="simple"}
+## Illustrative output — written for this course, not captured from a real tool
+> **Question 1** (rest before a reading): C. "Sit quietly for 5 minutes." Line 2.
+>
+> **Question 2** (readings per sitting): B. "Take 2 readings, 1 minute apart." Line 4.
+>
+> **Question 3** (which readings are averaged): A, all readings from days 1 to 7. "Average all readings." Line 6.
+:::
+
+A tool may or may not make this mistake, and you cannot know beforehand which line it will get wrong. That is why the check goes to the riskiest line first.
+
+### The spot-check
+
+1. **Pick the riskiest question.** The one with a trap: a number, an exception, a threshold, a negation. Here it is question 3, the day-1 discard.
+2. **Go to the real source.** The page itself, not the tool's copy of it and not the tool's quotation.
+3. **Check three things.** The quotation appears word for word. It says what the key claims. The letter it supports is the letter in the key.
+4. **If it fails, the rest is unchecked.** Not "probably fine". Check every remaining line against the source, or discard the set.
+5. **If it passes, one line is verified.** For a quiz that counts, the quotes make every other line quick to check too.
+
+Run it on question 3. Line 6 of the practice source reads: "Discard the readings from day 1. Average all remaining readings."
+
+The quotation in the key, "Average all readings.", is not in the source. It is a shortened version that drops the discard, and the key's answer follows it. The source says days 2 to 7, which is not A.
+
+Without the quotation you would have had to work the answer out yourself, or take the tool's word. Questions 1 and 2 match their lines, but the key has just shown it can be confidently wrong, so they get checked, not assumed.
+
+### The same check, in your words
+
+This is the verification workflow: Draft with AI → Cross-check the source → Confirm or correct → Use. The key is the draft; the source is the cross-check. Then the [three-question check](../reference/three-question-check.qmd):
+
+1. Could I defend this to a colleague?
+2. Does it point to something I can verify?
+3. Would I catch it if it were wrong?
+
+If the answer to any of these is no, that's the signal to slow down, not the finding to accept.
+
+The key line for question 3 fails the first question the moment a colleague opens line 6. The quotation is what makes the second question answerable. And you pass the third only by opening the source, which is why the spot-check is a required step.
+
+::: {.callout-note appearance="simple"}
+## Try it
+Three minutes. Run the key prompt on your quiz. Pick your riskiest question, read its quotation aloud, and have your neighbor find the line in the practice source. Pass or fail? If it fails, say what you now do with the other four.
+:::
+
+After the break, [Lab 2](../day2/lab2-one-case-three-outputs.qmd#part-1) puts the whole of Day Two into one exercise: one case, three outputs.
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Ask for a quotation with every answer and check the riskiest line first. If it fails, the rest is unchecked, not fine.
+:::

@@ -1,0 +1,414 @@
+---
+title: "Module 4 — Notes and audiences"
+subtitle: "Day Two · 40 min"
+---
+
+Most of what a doctor writes is the same few facts told to different readers: the chart, the patient, the colleague who sees them next. This module shows where AI already helps with that writing, how to read a draft so nothing invented, omitted or altered gets through, and how to keep three versions of one event in agreement.
+
+::: {.session-meta}
+Time
+:   40 minutes, four topics
+
+Uses
+:   [Case A](../reference/case-cards.qmd#case-a) for the note review, [Case E](../reference/case-cards.qmd#case-e) for three audiences
+
+You leave with
+:   Run a 60-second review pass on any AI-drafted note. Read a scribe's published score for what it does and does not show. Produce a chart note, patient instructions and a colleague letter from one fact sheet, and check that they agree.
+:::
+
+## 1. Four places AI already fits [10 min]{.time} {#four-places}
+
+Day One gave you a rule, a check and a framework. Today you use them on the work you do every week, and this first section shows where AI already fits in that week and how each place goes wrong.
+
+### Yesterday in three lines
+
+**The rule.** AI drafts. You decide.
+
+**The check.** Three questions, in this order ([full card](../reference/three-question-check.qmd)):
+
+1. Could I defend this to a colleague?
+2. Does it point to something I can verify?
+3. Would I catch it if it were wrong?
+
+If the answer to any of these is no, that's the signal to slow down, not the finding to accept.
+
+**The framework.** *Role · Context · Format · Constraints*: who it is, what it knows, what shape to return, what to avoid.
+
+Today's aim is to apply all three to notes, letters, talks and teaching material, and to finish with a [lab](lab2-one-case-three-outputs.qmd) where one case becomes three outputs.
+
+### The four places
+
+Each place has a safe way in, a specific trap, and one of the three questions that guards it.
+
+| Place | Safe pattern | The trap | Question that guards it |
+|---|---|---|---|
+| **Daily questions** | Quick orientation between patients, always checked against a source | A calm, authoritative tone whether the answer is right or wrong; a citation that looks real and is not | 2. Does it point to something I can verify? |
+| **Progress notes** | A fixed template, a length limit, and you read every line before it is saved | A smooth draft that dropped a fact or quietly changed a value | 3. Would I catch it if it were wrong? |
+| **Presentations** | Your case notes become an outline, then a slide draft that you edit and deliver | A patient identifier left on a slide; chart numbers that came from the tool, not the source | 1. Could I defend this to a colleague? |
+| **Teaching prep** | Questions and summaries made only from text you may share, with an answer key that quotes the source | Invented citations; a wrong answer key delivered with confidence; the right answer always in the same place | 2. Does it point to something I can verify? |
+
+**Daily questions.** Use the tool to get oriented, not to decide. A good question is one you could put to a well-read colleague in the corridor, and the answer is the start of a lookup, not the end of one. The trap is tone: a wrong answer arrives in the same calm, complete sentences as a right one, and a citation the tool made up has the shape of a real one. Nothing that identifies a patient goes in the question.
+
+**Progress notes.** This is the place where you control the most, because the facts are yours and the tool only arranges them. Its failures are quiet: a fluent note that left out an allergy or changed a dose reads exactly like a correct one. The next section is the method for catching that.
+
+**Presentations.** A case you present is still a patient's story. Two things go wrong: an identifier rides along from the chart onto a slide (a name, a date, a scan with its header), and a chart appears whose numbers the tool supplied. Every number comes from you and your source. [Module 5](m5-talks-and-teaching.qmd#case-to-deck) builds this step by step.
+
+**Teaching prep.** Quizzes and summaries make the tool sound like an examiner, which is when it is easiest to believe. Give it only text you are allowed to share, ask for an answer key that quotes that text, and check the key. [Module 5](m5-talks-and-teaching.qmd#teaching-with-ai) covers a habit of AI-written multiple-choice questions that you can spot and fix.
+
+::: {.callout-important appearance="simple"}
+## The privacy line
+No patient identifiers into a consumer AI tool. Ever. Full stop.
+:::
+
+### Worked example: a question between patients
+
+Here is the safe pattern for the first place. The prompt asks for orientation, then makes the tool list what you must confirm and where. The situation comes from [Case A](../reference/case-cards.qmd#case-a), reduced to a general description that identifies no one.
+
+<!-- prompt: orient-and-verify | Orient, then verify | A between-patients question that returns a short orientation plus what to confirm and where, never a decision -->
+```text
+ROLE: You are a clinical reference assistant, writing for a physician who has two minutes between patients.
+CONTEXT: I want orientation on the question below, not a decision. The situation below is all the patient detail you have. If you are not sure of something, write [NOT SURE: what] instead of guessing.
+FACTS:
+Situation, in general terms with no patient identifiers: [for example, an adult with new ankle swelling after starting amlodipine]
+My question: [what you want to understand]
+FORMAT: Three parts. (1) Short answer, maximum 60 words. (2) The two or three points I must confirm before relying on it. (3) For each point, the kind of source where I can confirm it (formulary, product label, local guideline). Maximum 150 words in total.
+CONSTRAINTS: Do not recommend a dose or a diagnosis for this patient. Do not invent references: no citations, guideline titles or numbers. No hedging phrases. The answer is orientation; I make the decision.
+```
+
+Then run the verification workflow: Draft with AI → Cross-check the source → Confirm or correct → Use. Read part 2, open one of the sources named in part 3, and find the same statement there. If you cannot find it, the answer stays unverified and does not change what you do.
+
+::: {.callout-note appearance="simple"}
+## Try it
+Think of a question you looked up between patients this week. Rewrite it so it contains no patient detail, then name the source where you would confirm the answer. Compare with your neighbor: did you pick the same source?
+:::
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Use AI to get into each of these four jobs, and the three-question check to get out of them.
+:::
+
+## 2. Notes, done right [5 min]{.time} {#notes-done-right}
+
+A saved note gets trusted, copied forward and read by the next doctor, so a mistake in it outlives a mistake in a chat window. Three habits keep an AI-drafted note safe: two belong to the prompt, and one belongs to you.
+
+1. **A fixed template, every time.** Same headings, same order, as in [Day One's note prompt](../day1/m2-prompting.qmd#structure-notes). A fixed shape makes a gap visible: an empty Allergies line stands out, a missing sentence does not.
+2. **An explicit length limit.** State a maximum in words. It keeps the note short enough to read in full, and gives the tool less room to add.
+3. **You read every line before it is saved.** The rest of this section is how.
+
+### The 60-second pass
+
+Read the draft against your source facts, not against your memory of the visit. You are hunting for the three ways drafted clinical text goes wrong: **invented** (in the draft, not in your facts), **omitted** (in your facts, not in the draft), **altered** (in both, but changed). Two passes of 30 seconds find all three.
+
+- **Source to draft.** Tick each fact of your source off in the draft. Whatever you cannot tick was omitted.
+- **Draft to source.** Find each line of the draft in your source. A line you cannot find was invented; a line you find with a different value was altered.
+
+Spend the time where a slip costs most. Check these first:
+
+- [ ] Numbers and units, including every vital sign and lab value
+- [ ] Medicines: name, dose, how often, and which are new or stopped
+- [ ] Allergies
+- [ ] Negations: "no chest pain" must never become "chest pain"
+- [ ] Dates and intervals
+- [ ] Side: left or right
+- [ ] The plan: every item present, nothing added
+
+### Worked example: a Case A draft
+
+Below is what a tool might return for [Case A](../reference/case-cards.qmd#case-a) from Day One's note prompt, with the card pasted in as the facts and a 200-word limit. It reads well. It also has three problems, one of each kind. Take 60 seconds with the card open and find them before you read the review.
+
+::: {.callout-note appearance="simple"}
+## Illustrative output — written for this course, not captured from a real tool
+> **Subjective:** 52 M, hypertension diagnosed 2 months ago, on amlodipine 5 mg once daily for 6 weeks. Headaches (mostly mornings) less frequent. New ankle swelling by evening since starting amlodipine. Missed 2 doses in 6 weeks (forgot while travelling). Home BP diary, last 2 weeks, mornings: average 164/92. No chest pain, no breathlessness, no visual symptoms, no palpitations. Non-smoker. Walks about 15 min most days. Eats a lot of canned and salted food. Father had a stroke at 68. No known drug allergies.
+>
+> **Objective:** BP 148/94, repeat 146/92 (seated, left arm). HR 76 regular. Weight 91 kg, height 176 cm, BMI 29.4. Trace bilateral ankle edema. Heart sounds normal. Chest clear. Baseline labs 2 months ago: creatinine 82 µmol/L, potassium 4.2 mmol/L, fasting glucose 5.4 mmol/L, LDL 3.6 mmol/L, urine ACR normal.
+>
+> **Assessment:** [MISSING: assessment not given in the facts]
+>
+> **Plan:** Add losartan 50 mg once daily. Keep amlodipine 5 mg. Reduce salt. Keep the home BP diary. Advise walking 30 minutes daily. Review in 4 weeks.
+:::
+
+The Assessment placeholder is not one of the three: that is the template working, because the card gives no assessment. You write it. Here is what the two passes find.
+
+| Pass | What it finds | Type |
+|---|---|---|
+| Draft to source | The home diary average reads 164/92; the card says 146/92 | Altered |
+| Source to draft | The card's plan includes repeat creatinine and potassium in 2 weeks; the draft's plan does not | Omitted |
+| Draft to source | "Advise walking 30 minutes daily" is not on the card; no one discussed it | Invented |
+
+None of these makes the note read worse. A swapped pair of digits, a missing item in a list and a helpful-sounding addition all pass a read for style, which is why the pass compares against the source. Correct the note yourself. If you ask the tool to redo it, the pass starts again: a new draft is a new draft.
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Read every line twice in 60 seconds: source to draft for what was omitted, draft to source for what was invented or altered.
+:::
+
+## 3. Already live in Saudi clinics [10 min]{.time} {#saudi-scribes}
+
+Notes have a second answer: skip the typing and the prompting, and let a tool listen to the consultation. Two such tools have been reported in Saudi settings, and one has published numbers. Reading those numbers is a clinician's skill, and this section practices it.
+
+### What an ambient scribe is
+
+An *ambient scribe* listens to the consultation, working in the background, and drafts the note. You do not dictate, type or write a prompt. Set beside what you practiced yesterday (terms are in the [glossary](../reference/glossary.qmd)):
+
+| | Prompting a chat assistant (Day One) | An ambient scribe (the two examples below) |
+|---|---|---|
+| Input | The facts you type or paste | The consultation itself, as it happens |
+| Who deploys it | You, on the tool you choose | An institution: a pilot across its clinics, or an integration into its own record system |
+| Who reads every line | You | You |
+
+### Two examples, as of September 2026
+
+The facts below are as the public reports give them, and nothing more is claimed about either tool.
+
+| | Sahl AI | Augnito at Almoosa Health |
+|---|---|---|
+| What it is | A Saudi-built bilingual Arabic-English ambient scribe, from Riyadh | Augnito's Omni AI Scribe, multi-lingual including Arabic dialects |
+| Where | Piloted across outpatient, inpatient and primary care clinics within Riyadh First Health Cluster and King Saud Medical City | An agreement, signed at the Arab Health Exhibition and announced in January 2025, to integrate the scribe with Almoosa Specialist Hospital's electronic medical record (EMR/HIS), in a phased rollout |
+| What was reported | 42.2 of 45 on a modified Physician Documentation Quality Instrument (PDQI-9), a rating scale for clinical notes; 4.35 of 5 for accuracy; published in *JMIR Medical Informatics*, March 2026 | An integration announcement; no accuracy figures are reported here |
+
+Note the tense. The Augnito announcement describes an integration that *will* happen, so it tells you what was agreed, not how the tool performs in daily use. Both sources are public and short, and you can open them: the Sahl AI pilot paper is in [*JMIR Medical Informatics*](https://medinform.jmir.org/2026/1/e83335), and the Augnito and Almoosa Health [announcement](https://www.prnewswire.com/news-releases/augnito-secures-major-enterprise-partnership-with-almoosa-health-302365216.html) is a press release dated 31 January 2025. Whether either tool is in routine use where you work is a question for your own institution.
+
+### Reading the numbers like a clinician
+
+You would not accept a drug trial without asking what was measured, in whom, and against what. Ask the same of these numbers.
+
+| Reported | What it is | What it is not |
+|---|---|---|
+| 42.2 of 45 | Clinician-rated documentation quality on a modified PDQI-9, in a pilot | A comparison with a doctor prompting a general assistant. The paper describes a single-arm pilot, so there was no comparison group |
+| 4.35 of 5, accuracy | The accuracy rating within that pilot | Perfect accuracy. It is short of the maximum, which is why the note is still read line by line |
+| Both | A result for one tool, in Riyadh clinics | A measure of patient outcomes. Outcomes were not measured |
+
+The honest summary is short: in one pilot, clinicians rated the quality of the notes a scribe drafted. It says nothing about which is better, a scribe or a well-prompted general assistant, because nobody compared them, and nothing about patients. Questions to ask of any pilot: how many notes, rated by whom, compared with what? The paper answers those; this page does not. The score is a reason to look at a scribe seriously, not a reason to stop reading its notes.
+
+### Before your clinic adopts a scribe
+
+These are questions to ask, not rules. Several are also questions about the Personal Data Protection Law (PDPL), which is enforced by SDAIA and classifies health data as sensitive personal data, alongside genetic and biometric data. Healthcare entities face real financial and operational penalties for mishandling it, so your institution's data protection officer or legal team is the right person to answer them. This is education, not legal advice.
+
+- [ ] Who reviews and signs the note before it enters the record?
+- [ ] How are patients told, and how do they say no?
+- [ ] Where are the audio and the text stored, for how long, and who can open them?
+- [ ] Which Arabic dialects does it cover, and what does it do when the consultation moves between Arabic and English?
+- [ ] How does it connect to our record system, and where does the draft appear?
+- [ ] What happens when it makes an error: how is it reported, and who hears about it?
+
+A free transcription app on your own phone can also turn speech into text. It is a consumer tool, and a recording of a consultation is patient information, so the privacy line applies. Try answering the six questions for an app you downloaded yourself and notice how many you cannot. [Day Three](../day3/m7-privacy.qmd#the-rule) returns to exactly this, and the [privacy checklist](../reference/privacy-checklist.qmd) is what to use before any recording goes anywhere.
+
+::: {.callout-note appearance="simple"}
+## Try it
+With a neighbor, pick the two questions you would ask first, and name who in your institution could answer them.
+:::
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+A published score says how good the drafts were when clinicians rated them; it does not replace your read of the note.
+:::
+
+## 4. Same note, three audiences [15 min]{.time} {#three-audiences}
+
+A patient, a colleague and the chart all need the same facts, in different words. When each version is written separately, the facts drift: a dose in one, a follow-up interval in another, a warning sign missing from the third. This section fixes that at the source.
+
+### One event, three readers
+
+Take [Case E](../reference/case-cards.qmd#case-e): a woman on the morning after a planned laparoscopic gallbladder operation, going home today. One event, three readers who need different things.
+
+| Output | Reader | What it is for |
+|---|---|---|
+| Chart note | The surgical team and any clinician who reads the record | An accurate clinical record, in clinical shorthand |
+| Discharge instructions | The patient, at home | What to take, do and watch for, in plain language |
+| Colleague letter | The patient's community physician or clinic | What they must know and do next, and nothing more |
+
+This is not Day One's [three-jobs demo](../day1/m2-prompting.qmd#three-more-jobs), where the framework traveled across three documents and three cases. Here the event is fixed and only the audience changes. That creates a problem Day One never had: keeping three outputs in agreement.
+
+### The technique: one source of truth
+
+Do not write three prompts from three memories of the case. Write the facts down once, in one fixed layout, check that page against your source, and draw every output from it. That page is the *source of truth*: the one page every later document is drawn from. An error in it is copied into all three outputs, so it is the page you check most carefully.
+
+```{mermaid}
+flowchart LR
+    A["Your jotted facts"] --> B["Source-of-truth sheet<br/>(checked by you)"]
+    B --> C["Chart note"]
+    B --> D["Patient instructions"]
+    B --> E["Colleague letter"]
+    C --> F["Consistency check"]
+    D --> F
+    E --> F
+    classDef sheet fill:#EEF2FF,stroke:#4F46E5,color:#0F172A
+    classDef out fill:#CCFBF1,stroke:#14B8A6,color:#0F172A
+    class B sheet
+    class C,D,E out
+```
+
+### Step 1: write the sheet
+
+Jot the facts the way you would on the ward, with no name, ID, file number, phone or exact date. The prompt below turns your jottings into a fixed layout. The return-sooner list is yours: you write it, and the tool copies it. Paste the [Case E](../reference/case-cards.qmd#case-e) card as the facts.
+
+<!-- prompt: source-of-truth-sheet | Source-of-truth fact sheet | Turn your jotted facts about one clinical event into one fixed-layout sheet that the chart, patient and colleague prompts all draw from -->
+```text
+ROLE: You are a clinical documentation assistant, writing for the doctor who will use this sheet as the only source for three later documents.
+CONTEXT: Turn my jotted facts into a one-page fact sheet. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+[paste your jotted facts: no name, ID, file number, phone or exact dates]
+FORMAT: A numbered sheet with exactly these headings, in this order: 1. Patient and event. 2. Status today (symptoms, vitals, exam, results). 3. Medicines going home (each with dose, how often, how long, and any maximum). 4. Activity and wound care (each instruction with its limit or time). 5. Follow-up (what, and when). 6. Return sooner for (one item per line, exactly as I wrote them). 7. Allergies and regular medicines. One short line per fact. Keep every number and unit exactly as written. Maximum 250 words.
+CONSTRAINTS: Do not add findings, doses, or diagnoses that are not in the facts. Do not rephrase, combine or drop items in the return-sooner list. No hedging phrases.
+```
+
+::: {.callout-note appearance="simple"}
+## Illustrative output — written for this course, not captured from a real tool
+> 1. **Patient and event:** 41 F. Elective laparoscopic cholecystectomy yesterday for symptomatic gallstones (3 episodes of biliary colic in 6 months; ultrasound: multiple stones, common bile duct 4 mm). Uneventful: 55 min, 4 ports, no drain, no conversion to open.
+> 2. **Status today (POD1):** Pain 3/10 on oral analgesia, mostly shoulder tip and port sites. Eating and drinking, walking, passed urine. No nausea or vomiting. T 37.0 °C, HR 78, BP 116/72, SpO2 98% on room air. Abdomen soft, mild tenderness at port sites, no distension, dressings dry. Hb 128 g/L (134 before surgery), WBC 9.1 x10^9/L.
+> 3. **Medicines going home:** Paracetamol 1 g every 6 h if needed (maximum 4 g in 24 h). Ibuprofen 400 mg every 8 h with food for 3 days.
+> 4. **Activity and wound care:** Normal diet. Light activity. No lifting over 5 kg for 2 weeks. Desk work after about 1 week. Keep wounds dry for 48 h, then may shower.
+> 5. **Follow-up:** Discharge today. Clinic in 2 weeks to review histology.
+> 6. **Return sooner for:**
+>    - Fever
+>    - Worsening or severe abdominal pain
+>    - Repeated vomiting
+>    - Yellow eyes or skin
+>    - Wound redness or discharge
+> 7. **Allergies and regular medicines:** No known drug allergies. No regular medicines.
+:::
+
+Now the step that matters most. Check the sheet against the card with the 60-second pass from the last section: source to draft, then draft to source. Read the medicines, the intervals and the return-sooner list twice. Fix the sheet itself, never an output alone. From here on, every prompt pastes the sheet, not the card.
+
+### Step 2: three prompts, one sheet
+
+Each prompt keeps the four-part framework and changes only who it writes for and what shape it returns. All three paste the checked sheet under FACTS, and all three tell the tool to use every item of your return-sooner list, so it cannot shorten it or add to it.
+
+### Prompt 1: the chart note
+
+<!-- prompt: chart-note-from-sheet | Chart note from the sheet | Draft the clinical-register note for the record from a checked fact sheet -->
+```text
+ROLE: You are a surgeon, writing a discharge-day note for the medical record, for the clinicians who read this chart next.
+CONTEXT: Write the note from the fact sheet below. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+[paste the checked fact sheet]
+FORMAT: Clinical register with standard abbreviations. Headings in this order: Procedure and indication; Post-operative course; Examination and results; Allergies and regular medicines; Discharge plan (medicines, activity, wound care, follow-up); Return precautions given. Maximum 200 words.
+CONSTRAINTS: Do not add findings, doses, or diagnoses that are not in the facts. Keep every number and unit exactly as in the sheet. Include every item of the "Return sooner for" list, once each. No hedging phrases.
+```
+
+::: {.callout-note appearance="simple"}
+## Illustrative output — written for this course, not captured from a real tool
+> **Procedure and indication:** Elective laparoscopic cholecystectomy for symptomatic gallstones (3 episodes of biliary colic in 6 months; ultrasound: multiple stones, common bile duct 4 mm). 55 min, 4 ports, no drain, no conversion to open.
+>
+> **Post-operative course:** POD1. Pain 3/10 on oral analgesia, at shoulder tip and port sites. Eating, drinking, mobilizing, voiding. No nausea or vomiting.
+>
+> **Examination and results:** T 37.0 °C, HR 78, BP 116/72, SpO2 98% on room air. Abdomen soft, mild port-site tenderness, no distension, dressings dry. Hb 128 g/L (134 pre-op), WBC 9.1 x10^9/L.
+>
+> **Allergies and regular medicines:** NKDA. No regular medicines.
+>
+> **Discharge plan:** Discharge today. Paracetamol 1 g q6h PRN (max 4 g/24 h). Ibuprofen 400 mg q8h with food for 3 days. Normal diet. Light activity; no lifting over 5 kg for 2 weeks; desk work after about 1 week. Wounds dry for 48 h, then may shower. Clinic in 2 weeks to review histology.
+>
+> **Return precautions given:** Fever; worsening or severe abdominal pain; repeated vomiting; jaundice; wound redness or discharge.
+:::
+
+### Prompt 2: the patient instructions
+
+<!-- prompt: patient-instructions-from-sheet | Patient instructions from the sheet | Draft plain-language discharge instructions from a checked fact sheet, keeping every dose and warning sign -->
+```text
+ROLE: You are a surgical nurse educator, writing for a patient going home after an operation. The reader is an adult with no medical training.
+CONTEXT: Write discharge instructions from the fact sheet below. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+[paste the checked fact sheet]
+FORMAT: Plain language at about a 6th-grade reading level, short sentences, addressed to "you". Headings: What was done; Your medicines; Looking after your wounds; What you can do; Come back or call if you have; Your next visit. Under "Your medicines", give each medicine with its exact dose, how often, and for how long, and state any maximum. Under "Come back or call if you have", use bullet points and include EVERY item of the "Return sooner for" list in ordinary words. Leave out lab values and scan results. Maximum 250 words.
+CONSTRAINTS: Do not add findings, doses, or advice that are not in the facts. Do not change any number, unit or time. No medical abbreviations. No hedging phrases.
+```
+
+::: {.callout-note appearance="simple"}
+## Illustrative output — written for this course, not captured from a real tool
+> **What was done.** Yesterday you had an operation to take out your gallbladder, using small cuts (keyhole surgery). It went as planned, and you are well enough to go home today.
+>
+> **Your medicines**
+>
+> - Paracetamol: 1 g every 6 hours, only if you have pain. Never take more than 4 g in 24 hours.
+> - Ibuprofen: 400 mg every 8 hours, with food, for 3 days.
+>
+> **Looking after your wounds.** Keep them dry for 48 hours. After that you may shower.
+>
+> **What you can do.** Eat and drink normally. Do light activity. Do not lift anything over 5 kg for 2 weeks. You can go back to desk work after about 1 week.
+>
+> **Come back or call if you have**
+>
+> - a fever
+> - belly pain that gets worse, or is severe
+> - vomiting again and again
+> - yellow eyes or skin
+> - redness at a wound, or fluid coming from it
+>
+> **Your next visit.** Come to the clinic in 2 weeks. The doctor will go over the results of the tissue that was removed.
+:::
+
+Notice what moved and what did not. "Jaundice" and "yellow eyes or skin" are the same warning sign in two registers, and the numbers are identical in both outputs. The lab values dropped out of the patient version because the patient does not need them to act.
+
+### Prompt 3: the colleague letter
+
+<!-- prompt: colleague-letter-from-sheet | Colleague letter from the sheet | Draft a short handover letter to the patient's community physician or clinic from a checked fact sheet -->
+```text
+ROLE: You are a surgeon, writing to the patient's community physician or clinic, who will see the patient next and has not seen the hospital record.
+CONTEXT: Write a short handover letter from the fact sheet below. Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+[paste the checked fact sheet]
+FORMAT: Start with "Dear Colleague," and end with "[your name and role]". Begin with what was done and why. Then, in this order: status at discharge, medicines started, what the patient was told to do, follow-up arranged, and the warning signs the patient was told to return for. Write for a clinician and focus on what the reader must know or do; leave out detail that would not change their care. Maximum 150 words.
+CONSTRAINTS: Do not add findings, doses, or diagnoses that are not in the facts. Keep every number and unit exactly as in the sheet. Include every item of the "Return sooner for" list. Use the placeholder [PATIENT NAME AND FILE NUMBER] wherever the patient would be named; I will add it myself. Do not invent a recipient name, date or contact detail. No hedging phrases.
+```
+
+::: {.callout-note appearance="simple"}
+## Illustrative output — written for this course, not captured from a real tool
+> Dear Colleague,
+>
+> Re: [PATIENT NAME AND FILE NUMBER], 41-year-old woman.
+>
+> She had an elective laparoscopic cholecystectomy yesterday for symptomatic gallstones (3 episodes of biliary colic in 6 months). It was uneventful: 55 min, 4 ports, no drain, no conversion to open.
+>
+> At discharge on POD1: pain 3/10 on oral analgesia, eating, walking and passing urine, T 37.0 °C, abdomen soft, dressings dry. No known drug allergies; no regular medicines.
+>
+> Medicines started: paracetamol 1 g every 6 h if needed (maximum 4 g in 24 h) and ibuprofen 400 mg every 8 h with food for 3 days. She was told: no lifting over 5 kg for 2 weeks, desk work after about 1 week, wounds dry for 48 h.
+>
+> Clinic in 2 weeks to review histology. She was told to return sooner for fever, worsening or severe abdominal pain, repeated vomiting, jaundice, or wound redness or discharge.
+>
+> [your name and role]
+:::
+
+The placeholder is deliberate. The identifiers never went into the prompt; you add the name and file number yourself, in your own system, after the draft.
+
+### What changes and what must not
+
+| What changes with the audience | What must not change |
+|---|---|
+| Register: shorthand, plain words, or a colleague's summary | The procedure and the reason for it |
+| Length: maximums of 200, 250 and 150 words | Every medicine, dose, frequency, duration and maximum |
+| Order: what this reader needs first | The follow-up interval and its purpose |
+| What is left out: lab values and most vital signs, in the patient version and the letter | The return-sooner list: the same five items in all three |
+| Words for the same thing ("jaundice", "yellow eyes or skin") | Every number and unit: 5 kg, 2 weeks, 48 h |
+
+### The new skill: check that the three agree
+
+Reading each output against the sheet is not enough on its own, because the drift you are hunting is between outputs. Take the constant facts, the ones every output must carry, and check each across all three. Copy the table into a note, and mark a cell only when that output matches the sheet.
+
+| Constant fact | The sheet says | Chart note | Patient instructions | Colleague letter |
+|---|---|---|---|---|
+| Procedure and reason | Laparoscopic cholecystectomy for symptomatic gallstones | | | |
+| Paracetamol | 1 g every 6 h if needed; maximum 4 g in 24 h | | | |
+| Ibuprofen | 400 mg every 8 h with food, for 3 days | | | |
+| Lifting and desk work | No lifting over 5 kg for 2 weeks; desk work after about 1 week | | | |
+| Wounds | Dry for 48 h, then may shower | | | |
+| Follow-up | Clinic in 2 weeks, to review histology | | | |
+| Return sooner | Fever; worsening or severe abdominal pain; repeated vomiting; yellow eyes or skin; wound redness or discharge (5 items) | | | |
+
+A word may change; a number, a unit, an interval or a list item may not. Detail specific to one audience can be left out, but a medicine, an interval or a return-sooner item missing from any output is a failure. If an output disagrees with the sheet, the output is wrong: fix it and check again. If the sheet was wrong, fix the sheet and regenerate all three.
+
+::: {.callout-warning appearance="simple"}
+## Watch for
+The return-sooner list is a clinical judgment, and it is yours. Write it into the sheet yourself; the tool only words it for each reader. If you ask a tool to suggest warning signs, it will, plausibly, without knowing this patient, and a list you did not check is a list you did not write.
+:::
+
+Every prompt on this page is in the [prompt library](../reference/prompt-library.qmd), and [Lab Two](lab2-one-case-three-outputs.qmd#part-1) repeats this method on a case card of your choice. If a tool ignores the word limit or the headings, see [troubleshooting](../reference/troubleshooting.qmd).
+
+::: {.callout-note appearance="simple"}
+## Try it
+With a neighbor, look at the consistency table. If you had 30 seconds, which row would you check first, and why?
+:::
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Write the facts once, check them once, then check that all three outputs still say the same thing.
+:::

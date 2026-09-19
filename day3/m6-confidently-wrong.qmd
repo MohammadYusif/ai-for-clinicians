@@ -1,0 +1,133 @@
+---
+title: "Module 6 — Confidently wrong"
+subtitle: "Day Three · 10 min"
+---
+
+Days One and Two showed what AI can draft. Today is about the other half of the rule: a draft is only as safe as the check you put behind it. A tool sounds exactly as sure when it is right as when it is making something up, so how confident it sounds tells you nothing.
+
+::: {.session-meta}
+Time
+:   10 minutes, one topic
+
+Uses
+:   [Case A](../reference/case-cards.qmd#case-a) for the worked check; the [three-question check](../reference/three-question-check.qmd)
+
+You leave with
+:   A five-step way to check any AI output against a real source, and the verification card you will use in Lab 3.
+:::
+
+## 1. Confidently wrong [10 min]{.time} {#confidently-wrong}
+
+Day Three is safety and ethics, in three parts: checking what AI tells you (this module and [Lab 3](lab3-spot-the-error.qmd)), protecting your patients' information ([Module 7](m7-privacy.qmd)), and then applying both to your own work from the weekend ([Module 8](m8-back-to-the-rule.qmd)).
+
+### Tone is not a signal
+
+A tool writes a made-up citation in the same steady, fluent voice it uses for a correct one. There is no hesitation to listen for. You will hear the word *hallucination* elsewhere; in this course we say what actually happened: something was **invented**, **omitted**, or **altered**, or a citation was fabricated.
+
+What separates a right answer from a wrong one is whether someone checked it against a source. That is the verification workflow: Draft with AI → Cross-check the source → Confirm or correct → Use. The two middle steps are where "you decide" happens:
+
+```{mermaid}
+flowchart LR
+  A["Draft<br/>with AI"] --> B["Cross-check<br/>the source"]
+  B --> C["Confirm<br/>or correct"]
+  C --> D["Use"]
+  B -. "could not find it" .-> E["Treat<br/>as wrong"]
+  E --> C
+  classDef step fill:#EEF2FF,stroke:#4F46E5,color:#0F172A;
+  classDef stop fill:#CCFBF1,stroke:#14B8A6,color:#0F172A;
+  class A,B,C,D step;
+  class E stop;
+```
+
+### Five steps you can do with nothing else
+
+Lab 3 uses only this list.
+
+1. **Extract every checkable claim.** Numbers, names, citations, dates, doses, and guideline references. Anything a colleague could answer with "says who?" is a claim.
+2. **Find each source yourself.** Do not ask the tool to confirm itself: "are you sure?" returns the same voice, not a check.
+3. **Mark each claim confirmed, wrong, or could-not-find.** Could-not-find counts as wrong. If you cannot locate the source, the claim is unsupported, and that is a finding, not a gap to fill with trust. Then read the source against the output once, for what was left out.
+4. **Fix it in the document, or discard the output.** If the errors run all through it, discard it and restart from your own facts.
+5. **Name the kind of error.** *Invented*: added, not in the source. *Omitted*: dropped, was in the source. *Altered*: a value, negation, side, date, or unit changed. Or a *fabricated citation*: a reference that looks real and is not, or does not say what it is cited for.
+
+Step 1 is the one people skip because it is tedious. A tool can do the listing, never the checking:
+
+<!-- prompt: claim-list | List the checkable claims | Pull every number, name, date, dose and citation out of an AI answer so you can check each one against its source -->
+```text
+ROLE: You are a careful research assistant, writing for a physician who will check each item against its source.
+CONTEXT: Below is a text I need to verify. Use ONLY the text below. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+[paste the text to be checked]
+FORMAT: A numbered list, one checkable claim per line, in the order they appear, with the exact words from the text in quotation marks. Maximum 25 lines.
+CONSTRAINTS: Do not say whether any claim is true. Do not add claims that are not in the text. Do not correct or rewrite anything. Include every number, name, date, dose, citation, and guideline reference.
+```
+
+It can miss a claim, so still read the text yourself. If the text came from a chart, de-identify it first ([the privacy line](m7-privacy.qmd#the-rule)). This prompt is saved in the [prompt library](../reference/prompt-library.qmd).
+
+### Where "the source" comes from
+
+Not every source is worth the same. From strongest to weakest:
+
+1. **The primary source:** the guideline, drug label, or paper itself, not a summary of it.
+2. **Your institution's formulary or guideline:** local rules, which can differ from a published one.
+3. **A second AI is not a source.** Two drafts agreeing is not a check, because neither was checked against anything.
+
+A literature-grounded tool such as Vera Health gives you references to open, which makes step 2 quicker. Open them anyway: a reference tells you where to look, not that the sentence beside it is right.
+
+::: {.callout-warning appearance="simple"}
+## Watch for
+"Add citations" is not verification. A general assistant can produce a reference with a plausible author, journal, and year that does not exist. Open every citation. If you cannot find the paper, or the paper does not say that, count the claim as wrong.
+:::
+
+### Effort follows the stakes
+
+| What the output contains | How hard you check |
+|---|---|
+| Wording, tone, formatting | Low. Read it, fix what you would not say. |
+| A summary of a document you have | Medium. Check each number and name against that document. |
+| Doses, allergies, diagnoses, anything that goes into a chart | Always the primary source, however routine it looks. |
+
+### Worked example: Case A
+
+You gave a tool [Case A](../reference/case-cards.qmd#case-a) and asked for a short summary for a colleague. It returned this:
+
+::: {.callout-note appearance="simple"}
+## Illustrative output — written for this course, not captured from a real tool
+> 52-year-old man with hypertension, taking amlodipine 5 mg daily for 6 weeks. Headaches are now more frequent; new ankle swelling. Home BP averages 146/92. Plan: add losartan 50 mg daily, continue amlodipine, review in 6 weeks. This follows current guidelines.
+:::
+
+Step 1 lists the claims; step 2 reads each against the card; steps 3 and 5 mark and name:
+
+| Claim | The card says | Mark | Kind of error |
+|---|---|---|---|
+| Amlodipine 5 mg daily, 6 weeks | Same | Confirmed | |
+| Headaches more frequent | Less frequent | Wrong | Altered |
+| New ankle swelling | Same | Confirmed | |
+| Home BP averages 146/92 | Same | Confirmed | |
+| Add losartan 50 mg, continue amlodipine | Same | Confirmed | |
+| Review in 6 weeks | Review in 4 weeks | Wrong | Altered |
+| "Follows current guidelines" | No guideline named | Could not find | Treat as wrong: name it and open it, or delete the sentence |
+
+One more finding does not come from any line of the output. The card plans a repeat creatinine and potassium in 2 weeks after adding losartan, and the summary never says so. **Omissions only show up when you read the source against the output**, so read it once in that direction too. Step 4: correct the two values, restore the repeat blood test, delete the unsupported sentence.
+
+The [three-question check](../reference/three-question-check.qmd) is the fast screen for everything you read:
+
+1. Could I defend this to a colleague?
+2. Does it point to something I can verify?
+3. Would I catch it if it were wrong?
+
+If the answer to any of these is no, that's the signal to slow down, not the finding to accept. The five steps are what "slow down" looks like.
+
+### The verification card
+
+Have this open for [Lab 3](lab3-spot-the-error.qmd), and use it on anything you would put in a chart.
+
+- [ ] **1. Extract** every number, name, date, dose, citation, and guideline reference.
+- [ ] **2. Find each source yourself:** the primary source, then your institution's guideline. Not the same tool, not a second AI.
+- [ ] **3. Mark each claim:** confirmed, wrong, or could-not-find (counts as wrong). Then read the source against the output once, for what was left out.
+- [ ] **4. Fix it in the document,** or discard the output.
+- [ ] **5. Name the error:** invented, omitted, altered, or fabricated citation.
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Tone is not a signal; a verification step is. If you cannot find the source, treat the claim as wrong.
+:::

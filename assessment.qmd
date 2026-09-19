@@ -1,0 +1,223 @@
+---
+title: "Assessment"
+subtitle: "How the weekend closes, and a practice bank to check yourself against"
+---
+
+## How the weekend closes
+
+The weekend ends on Day Three with a short quiz covering all three days, taken in the last stretch of the day, followed by the certificate: a certificate of completion for every doctor who finishes the weekend. The run of the quiz itself is described in [Module 8](day3/m8-back-to-the-rule.qmd#assessment).
+
+::: {.callout-note appearance="simple"}
+## This practice bank is not the quiz
+The questions below are for you to check yourself against, before or after the weekend. They are not the scored quiz, and no answer here should be assumed to appear in it. Use them to find the module worth rereading: if a question makes you hesitate, the module named above the group answers it.
+:::
+
+## Practice bank
+
+Twenty-four questions, grouped by module. Try each one before you open its model answer. The model answers are short on purpose: if yours makes the same point in different words, that is a pass.
+
+### Module 1: the rule and how these tools work
+
+**Q1.** In one sentence, what does "AI drafts. You decide." commit you to?
+
+<details class="answer"><summary>Model answer</summary>
+
+The tool may produce, structure, or reword. The judgment and the signature stay with you: you read it, you verify it, and you are accountable for what reaches the chart.
+
+</details>
+
+**Q2.** Why does an AI tool sound just as sure when it is wrong as when it is right?
+
+<details class="answer"><summary>Model answer</summary>
+
+It is built to produce fluent, plausible text, and nothing in that process is tied to whether the content is true. There is no built-in "I am unsure" signal, so tone tells you nothing about accuracy.
+
+</details>
+
+**Q3.** The tool gives a generic answer that ignores your hospital's protocol. What explains it, and what is the fix?
+
+<details class="answer"><summary>Model answer</summary>
+
+It only knows what is in the conversation plus its training. It has never seen your protocol. Give it the relevant requirement, de-identified, as part of the context.
+
+</details>
+
+**Q4.** State the three questions of the check.
+
+<details class="answer"><summary>Model answer</summary>
+
+Could I defend this to a colleague? Does it point to something I can verify? Would I catch it if it were wrong? If any answer is no, slow down.
+
+</details>
+
+### Module 2: anatomy of a good prompt
+
+**Q5.** Name the four parts of a good prompt and say what each one does.
+
+<details class="answer"><summary>Model answer</summary>
+
+Role: who it writes as, and for whom. Context: the facts it may use and what the output is for. Format: the exact shape, such as headings and length. Constraints: what it must not do.
+
+</details>
+
+**Q6.** The same prompt gave you a hedged, padded note with a different structure each time. Which parts were probably missing?
+
+<details class="answer"><summary>Model answer</summary>
+
+Format (no template) and Constraints (no length limit, nothing against hedging). Every choice you leave open is filled with the most typical pattern, and the typical pattern is generic and wordy.
+
+</details>
+
+**Q7.** Why put "use only these facts; write [MISSING: what] if something needed is absent" in a documentation prompt?
+
+<details class="answer"><summary>Model answer</summary>
+
+It stops the tool filling gaps with plausible invention and makes any gap visible to you, so you decide what to do about it.
+
+</details>
+
+**Q8.** In a discharge summary prompt, who supplies the medicines, doses, and durations, and why?
+
+<details class="answer"><summary>Model answer</summary>
+
+You do, copied from the chart. The tool words and formats; it must never choose or change a number.
+
+</details>
+
+### Module 3: choosing the right tool
+
+**Q9.** When would you choose a literature-grounded tool over a general assistant?
+
+<details class="answer"><summary>Model answer</summary>
+
+When a citation matters: you want an answer traceable to published literature. You still open the sources.
+
+</details>
+
+**Q10.** What did the OpenEvidence and Vera Health example teach beyond those two tools?
+
+<details class="answer"><summary>Model answer</summary>
+
+Access varies by country and changes over time, so check that a tool is usable by your audience before you recommend it.
+
+</details>
+
+**Q11.** Why spend a free plan on one careful, detailed prompt rather than five vague ones?
+
+<details class="answer"><summary>Model answer</summary>
+
+Batched related questions use less of the limit and give a better answer, because the tool sees the whole context at once.
+
+</details>
+
+### Modules 4 and 5: notes, audiences, talks, teaching
+
+**Q12.** Name the three ways AI-drafted clinical text goes wrong.
+
+<details class="answer"><summary>Model answer</summary>
+
+Invented (added something not in the source), omitted (dropped something that was), altered (changed a value, negation, side, date, or unit).
+
+</details>
+
+**Q13.** What did the Sahl AI pilot's 4.35 out of 5 for accuracy tell you, and what did it not tell you?
+
+<details class="answer"><summary>Model answer</summary>
+
+It told you clinician raters scored accuracy high in a pilot. It did not compare the scribe against generic prompting or measure patient outcomes, and it was short of the maximum, which is why the note is still read line by line.
+
+</details>
+
+**Q14.** One clinical event needs three documents for three audiences. What do you write first, and why?
+
+<details class="answer"><summary>Model answer</summary>
+
+A source-of-truth fact sheet. All three outputs draw from it, which keeps the facts the same while the register changes. Then you check that the three outputs agree.
+
+</details>
+
+**Q15.** The tool suggests a chart for your slide. Where must the numbers come from?
+
+<details class="answer"><summary>Model answer</summary>
+
+From you and the source, never from the tool.
+
+</details>
+
+**Q16.** Name two weaknesses of AI-written multiple-choice questions.
+
+<details class="answer"><summary>Model answer</summary>
+
+The correct answer tends to sit in the same position and to be the longest option, and the key itself can be wrong. Ask for balance, then check that it did, and check the key against the source.
+
+</details>
+
+**Q17.** You generated a quiz and an answer key. Which single check protects you most?
+
+<details class="answer"><summary>Model answer</summary>
+
+Verify the riskiest question against the real source. If that check fails, treat the rest as unchecked, not fine.
+
+</details>
+
+### Module 6: confidently wrong
+
+**Q18.** State the four steps of the verification workflow.
+
+<details class="answer"><summary>Model answer</summary>
+
+Draft with AI, cross-check the source, confirm or correct, use.
+
+</details>
+
+**Q19.** The tool gave you references. Are you done checking?
+
+<details class="answer"><summary>Model answer</summary>
+
+No. Open each one: a citation can be fabricated. A second AI is not a source.
+
+</details>
+
+**Q20.** Which claims always go to a primary source, however busy you are?
+
+<details class="answer"><summary>Model answer</summary>
+
+Doses, allergies, diagnoses, and anything that goes into a chart, including the red flags in a patient handout.
+
+</details>
+
+### Module 7: privacy
+
+**Q21.** State the privacy line, and name one thing besides typed text that can leak an identifier.
+
+<details class="answer"><summary>Model answer</summary>
+
+No patient identifiers into a consumer AI tool. Ever. Full stop. A screenshot banner, a photograph, a lab PDF header, or an audio recording can each carry one.
+
+</details>
+
+**Q22.** A note has no name but describes a rare condition, a small town, and a date. Is it de-identified?
+
+<details class="answer"><summary>Model answer</summary>
+
+Not necessarily. Identifiability is about the combination of details, not the absence of a name. Treat it as identifiable: generalize it or do not paste it.
+
+</details>
+
+**Q23.** What does the course say the PDPL does with health data?
+
+<details class="answer"><summary>Model answer</summary>
+
+It is enforced by SDAIA and classifies health data as sensitive personal data, alongside genetic and biometric data, with real financial and operational penalties for mishandling it. For specifics, ask your institution's data protection officer.
+
+</details>
+
+### Module 8: back to the rule
+
+**Q24.** You run the three-question check on an output you could not verify. What is the decision?
+
+<details class="answer"><summary>Model answer</summary>
+
+Slow down. A no on any question means verify it or discard it. It does not go into the chart as it stands.
+
+</details>

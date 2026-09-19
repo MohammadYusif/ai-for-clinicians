@@ -1,0 +1,158 @@
+---
+title: "Module 3 — Choosing the right tool"
+subtitle: "Day One · 20 min"
+---
+
+Not every AI tool is built for the same job, and not every tool is open to you. This module sorts the tools you will meet into types, shows why one tool can work for one doctor and be closed to another, and gives you a way to compare two tools on the same question without over-reading the result.
+
+::: {.session-meta}
+Time
+:   20 minutes, four topics
+
+Uses
+:   No case card. The live demo uses a general clinical question with no patient information in it.
+
+You leave with
+:   You can say which type of tool fits a task and which does not. You know what to check before you recommend a tool: who can sign up, and whether your institution has approved it. You can compare two tools on one question without over-reading the result. You have five habits for spending a limited quota on purpose.
+:::
+
+## 1. Not all AI is the same [5 min]{.time} {#tool-types}
+
+Asking a general assistant for a citation, and asking a literature tool to write your referral letter, are the same mistake: right question, wrong tool. Choosing first saves you from checking the wrong thing afterward.
+
+| Type | Best for | Examples | Watch for |
+|---|---|---|---|
+| General assistant | Drafting, structuring, reasoning through a case | ChatGPT, Claude, Gemini | No built-in citations |
+| Literature-grounded tool | Anything where a citation matters | Vera Health, OpenEvidence | Access varies by country |
+| Ambient scribe (Day Two) | Drafting a note from the conversation in the room | Sahl AI, Augnito | Still read line by line |
+| EMR-embedded feature (Day Two) | Drafting inside the record system your institution runs | Whatever your institution has switched on | Exists only if your institution enabled it |
+
+**General assistants** are for wording and structure: drafting, restructuring, and reasoning through a case you have described. By default they answer from what they learned in training, with no source you can open. Some can search the web and show links. Treat the links as leads to open, not as proof.
+
+**Literature-grounded tools** answer from published papers and show them. They are for questions where the answer must point to something you can open. They are not for writing your letters, and who can use them varies by country, which is the next topic.
+
+Ambient scribes and EMR-embedded features are previews here. [Day Two](../day2/m4-notes-and-audiences.qmd#saudi-scribes) takes both in full.
+
+The flow below puts safety first. Its first question is about the patient, not the tool.
+
+```{mermaid}
+flowchart TD
+    A{"Does the task involve<br/>patient identifiers?"}
+    A -->|Yes| B["STOP<br/>No patient identifiers into a consumer AI tool.<br/>Ever. Full stop."]
+    A -->|No| C{"Is it a simple<br/>fact lookup?"}
+    C -->|Yes| D["Search engine or<br/>your usual reference"]
+    C -->|No| E{"Do you need a citation<br/>you can open?"}
+    E -->|Yes| F["Literature-grounded tool"]
+    E -->|No| G["General assistant"]
+    classDef ask fill:#EEF2FF,stroke:#4F46E5,color:#0F172A
+    classDef use fill:#CCFBF1,stroke:#14B8A6,color:#0F172A
+    classDef stop fill:#FFFFFF,stroke:#4F46E5,stroke-width:3px,color:#0F172A
+    class A,C,E ask
+    class D,F,G use
+    class B stop
+```
+
+A tool you signed up for yourself is not an approved tool, whatever type it is. The [privacy checklist](../reference/privacy-checklist.qmd) says what that means in practice.
+
+::: {.callout-note appearance="simple"}
+## Try it
+Two minutes, in pairs. Which box of the flow does each task land in?
+
+1. Reword a paragraph of your clinic's information sheet in plain language for patients.
+2. Find the evidence behind a treatment claim you plan to cite in a talk.
+3. Confirm the spelling of a drug name.
+4. Tidy the wording of a real discharge summary that still carries the patient's name and file number.
+
+Answers: 1 general assistant. 2 literature-grounded tool, then open the citation. 3 search engine. 4 stop.
+:::
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Pick the tool by the job. If the task carries a patient's identifiers, stop.
+:::
+
+## 2. Same tool, different doctor [5 min]{.time} {#different-doctor}
+
+A tool can be excellent and still be closed to you. Before you recommend one to a colleague, or build a habit on it yourself, find out who can actually use it.
+
+| As of September 2026 | OpenEvidence | Vera Health |
+|---|---|---|
+| What it does | Citation-grounded clinical answers from the literature. The best-known tool of its kind. | The same job: citation-grounded answers from peer-reviewed literature. |
+| Who can get in | Requires US NPI verification, and withdrew from the EU and UK in April 2026, so it is not usable by a Saudi audience. | Verifies healthcare professionals globally, with no geographic restriction. |
+
+The lesson is not about these two names. The tool you have heard the most about may be the one you cannot open, and a colleague abroad may recommend a tool in good faith that does not work in this country. Access is part of the tool.
+
+Vera Health also states that it is GDPR compliant. That is a statement about European data-protection law. It does not tell you whether your institution has approved the tool, or whether it suits Saudi requirements. Ask your institution's data protection officer or legal team. This course is education, not legal advice. [Day Three](../day3/m7-privacy.qmd#the-rule) covers what the Saudi law says about health data.
+
+::: {.callout-warning appearance="simple"}
+## Watch for
+Access changes. Everything in the table is dated as of September 2026. A tool can open, close or tighten its rules, so open its own sign-up page and check today, before you tell a room to use it.
+:::
+
+Before you recommend any tool, run this list.
+
+- [ ] Who can actually sign up: is my country, my license and my profession accepted?
+- [ ] Has my institution approved it, or is it a consumer AI tool?
+- [ ] What does the tool say happens to what I type?
+
+Have your own access ready before Lab One: see [Setup](../setup.qmd).
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Check access before you recommend a tool to a room.
+:::
+
+## 3. Live demo: same question, two tools [5 min]{.time} {#live-demo}
+
+Comparing beats describing. The instructor puts one clinical question to two tools, live, and the room compares before you do the same on your own screen in [Lab One, part 3](lab1-templates-and-limits.qmd#part-3).
+
+The question is a general clinical question with no patient information in it, phrased the way you would ask a colleague. It is pasted, word for word, into a general assistant and into Vera Health. Watch while each one generates, then fill in the grid.
+
+| Look for | Ask yourself | General assistant | Literature-grounded tool |
+|---|---|---|---|
+| Cites sources you can open | Is there a citation, and does it lead to a real page? | | |
+| States its limits | Does it say what it could not find or does not know? | | |
+| Answers your question | Is it the question you asked, or a nearby, easier one? | | |
+| Claims you could verify | Which statements could you check in a source, and which have nothing behind them? | | |
+| Time to a usable answer | How long until you had something you could use, counting your own checking? | | |
+
+Mark each cell yes, partly or no. Then decide which tool you would open first for this kind of question, and what you would still check.
+
+::: {.callout-warning appearance="simple"}
+## Watch for
+A confident, well-formatted answer is not evidence. Fluent text is what these tools are built to produce, right or wrong. Judge an answer by what you can open, not by how it reads.
+:::
+
+What you can conclude from one run:
+
+- What each tool showed you: a source, a limit, or nothing.
+- How much checking each answer needs before you would use it.
+- Which tool you would reach for first for this kind of question.
+
+What you cannot conclude:
+
+- That one tool is better or more accurate. One question, one run, one day is not a benchmark, and the same tool can answer the same question differently next time.
+- That a citation means the answer is right. A citation you have not opened is a claim you have not checked. Open one, and see whether it says what the answer says it does.
+- That the result holds for the questions in your own specialty.
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+One run shows you how to compare tools, not which tool wins.
+:::
+
+## 4. Spend your quota on purpose [5 min]{.time} {#quota}
+
+Your quota is whatever your plan lets you use: messages, longer conversations, the stronger model, extra features. It differs by tool and changes often, so these habits are about how you spend it, not how big it is.
+
+1. **Batch related questions into one detailed prompt instead of five small ones.** The SOAP prompt in [Module 2](m2-prompting.qmd#structure-notes) is a batch: the facts, the format and the constraints in one request, instead of one request per heading.
+2. **Save paid or premium tiers for synthesis work, not quick lookups.** Synthesis means combining many facts into one structured piece, such as a discharge summary from a whole admission. A quick lookup does not need your strongest option.
+3. **A search engine still beats a chatbot for simple factual lookups.** A search engine points you to the page. A chatbot writes a sentence about it. For a fact with one right answer, such as the spelling of a drug name or the date of a meeting, you want the page.
+4. **Know what your free tier gives you.** Limits differ by tool and change often. Before Lab One, find out for the tool you will use how much you can do before it stops, and whether the stronger model or web search is included. Find out before you need it, not in the middle of a clinic.
+5. **Keep your best prompts in a personal library.** A prompt that worked once is worth more than a new one written from scratch. Start with the skeleton and the four prompts from Module 2, which the [prompt library](../reference/prompt-library.qmd) already holds, and add each one that works with a line on when to use it.
+
+After the break, [Lab One](lab1-templates-and-limits.qmd) puts Modules 2 and 3 to work on your own screen.
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Batch your questions, save the strong tier for synthesis, search for simple facts, and keep the prompts that work.
+:::

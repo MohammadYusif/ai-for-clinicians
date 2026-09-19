@@ -1,0 +1,168 @@
+---
+title: "Module 7 — Patient privacy"
+subtitle: "Day Three · 25 min"
+---
+
+Every patient in this course's exercises was fictional, on purpose. Yours are real, and what they told you in confidence does not belong in a tool you signed up for yourself. This module is the one rule that does not bend, followed by four invented situations that show how careful doctors still get it wrong.
+
+::: {.session-meta}
+Time
+:   25 minutes, two topics
+
+Uses
+:   [Case B](../reference/case-cards.qmd#case-b) for the de-identification example; the [privacy checklist](../reference/privacy-checklist.qmd)
+
+You leave with
+:   The privacy line, a working list of what counts as an identifier, a four-step routine for de-identifying text, and four situations you will now recognize.
+:::
+
+## 1. The rule that isn't optional [10 min]{.time} {#the-rule}
+
+The habit that protects your patients is small: know what you are about to paste, and where it is going.
+
+::: {.callout-important appearance="simple"}
+## No patient identifiers into a consumer AI tool. Ever. Full stop.
+A *consumer AI tool* is a general assistant you signed up for yourself: ChatGPT, Claude, or Gemini on a personal account. An *approved tool* is one your institution has vetted and contracted.
+:::
+
+### The law, in a paragraph
+
+Saudi Arabia's Personal Data Protection Law (PDPL), enforced by SDAIA, classifies health data as **sensitive personal data**, alongside genetic and biometric data. Healthcare entities face real financial and operational penalties for mishandling it. That is as far as this course goes. It is education, not legal advice: for what applies to you, ask your institution's data protection officer or legal team.
+
+### What counts as an identifier
+
+If any of these is in what you paste, it is not de-identified:
+
+- Name, or any part of it
+- National ID or iqama number, file or medical record number, insurance number
+- Phone number, email, home address, workplace
+- Exact date of birth, and exact dates of admission, procedure, or death
+- A photograph, or any image with a face or a distinguishing mark
+- Any **combination** of details rare enough to point to one person
+
+This list is a floor, not a ceiling. The real test is whether a person can be identified, directly or indirectly, from what you paste: by a colleague, a neighbor, or the family.
+
+### Consumer or approved
+
+| | Consumer AI tool | Approved tool |
+|---|---|---|
+| Who chose it | You, with a personal account | Your institution, after vetting and contracting |
+| Identifiable patient data | Never | Only within the terms your institution gives you |
+| A synthetic case | Fine | Fine |
+
+Turning off chat history, or changing any privacy setting, does not turn a consumer tool into an approved one. Approval is a decision your institution makes, not a switch you flip. And do not assume that deleting a chat undoes what was sent.
+
+What to do instead, in this order:
+
+1. **Use an approved tool**, within the terms your institution gives you. Ask which tools are approved, and for what.
+2. **De-identify** what you need to paste, then re-read it (next).
+3. **Use a synthetic case**, like the [case cards](../reference/case-cards.qmd), when the task is practice, teaching, or trying out a prompt.
+
+### De-identify, then re-read
+
+1. **Remove** every identifier in the list above.
+2. **Replace** with neutral labels: "the patient", "a woman in her 60s".
+3. **Generalize:** an exact age becomes a decade, a place becomes "outside the city", an exact date becomes "day 3".
+4. **Re-read as a stranger.** Could you tell who this is? Could someone who knows the family?
+
+Here is the routine on a fictional note built on [Case B](../reference/case-cards.qmd#case-b). Square brackets stand for real values that never appear in this course.
+
+::: {.callout-note appearance="simple"}
+## Try it (2 minutes)
+Before you read the "after", mark every identifier in the "before", and every detail that could point to one person.
+:::
+
+**Before (fictional)**
+
+> [Patient name], 64, file [file number], admitted to [hospital name] on [exact date] with pneumonia and discharged on [exact date]. Lives in [small town]; her daughter is a nurse on the same ward.
+
+**After**
+
+> A woman in her 60s was admitted with pneumonia and discharged on day 4. She lives outside the city with family.
+
+The last detail in the "before" is the one people leave in. A daughter who is a nurse on the same ward names no one, yet it points to someone, and it adds nothing to the task, so it goes. De-identification is a judgment, not a guarantee. When in doubt, use a case card.
+
+### Identifiers hide outside the text
+
+An identifier does not have to be typed. Before you upload anything, look at what else is in it:
+
+- **Screenshots:** the banner across the top of the record, with name, file number, and date of birth.
+- **Photographs:** a face, a wristband, a tattoo, a room, a date stamp.
+- **Lab and imaging PDFs:** headers, footers, barcodes, the ordering clinician.
+- **Voice recordings:** a name spoken aloud, and the voice itself.
+- **The filename:** a file called `FirstName_LastName_discharge_final.docx` carries the name with it.
+
+The full table is in the [privacy checklist](../reference/privacy-checklist.qmd). Not sure whether something identifies someone? Do not paste.
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+No patient identifiers into a consumer AI tool. Ever. Full stop. And if you are not sure, do not paste.
+:::
+
+## 2. Where doctors get this wrong [15 min]{.time} {#where-doctors-go-wrong}
+
+Nobody in the next four situations is careless or dishonest. They are busy, the tool was open, and the shortcut looked harmless. Recognizing the shape of the mistake is what protects you when it is your turn.
+
+::: {.callout-note appearance="simple"}
+## All four situations are invented
+No real patient, colleague, hospital, or incident is described. For each one, decide what is wrong before you read on, then compare.
+:::
+
+### Situation 1: "Just to clean up the wording"
+
+**What happened.** A physician finishing a long clinic pastes a full discharge summary into a free chatbot on a personal account and asks it to tidy the language before signing. The summary opens with the patient's name and file number, then gives the admission and discharge dates, the family's town, the diagnoses, and the medicines.
+
+**What is wrong.** Name, file number, exact dates, and a place, attached to a full clinical picture: that is identifiable, sensitive information. It went straight from the institution's records to a personal account on a consumer tool that no one at the institution vetted or contracted, and deleting the chat does not undo it. The tidied text also comes back unchecked, and a tool "improving wording" can alter a value or drop a line, so Module 6 applies too.
+
+**What should happen instead.** Use the institution's approved tool if there is one. Otherwise, write the summary yourself and, if you want help with phrasing, paste de-identified text or a synthetic case. Either way, check the result against the original before signing.
+
+**Discuss.** What do you say to a colleague who does this every week, and how do you say it?
+
+**The line.** Take the wording to the tool. Leave the patient behind.
+
+### Situation 2: The screenshot
+
+**What happened.** On a night shift, a doctor takes a screenshot of a lab result from the hospital system and pastes it into a consumer chatbot, asking what the pattern suggests. The doctor typed no name. The screenshot includes the banner across the top of the record.
+
+**What is wrong.** The banner carries the name, file number, and date of birth, and the report may add a barcode and the ordering clinician. Nothing identifying was typed, and it left anyway, because an image carries everything inside it. The path runs from the hospital system to a personal device to a consumer service. Cropping the banner helps only if you have checked every other part of the image and the file's metadata. And the "interpretation" that comes back is a draft: the doctor decides.
+
+**What should happen instead.** Ask a senior colleague through the institution's own channels. If you want a tool's help thinking it through, retype only the values you need, with age as a decade and no dates, into an approved tool if there is one, and check any answer against a primary source.
+
+**Discuss.** Where else in your working day does identifying information sit inside something that is not text?
+
+**The line.** The banner is part of the picture.
+
+### Situation 3: "My own scribe"
+
+**What happened.** A resident, short of time, opens a free transcription app on a personal phone, records a whole clinic consultation, and pastes the transcript into a chatbot to draft the note. The reasoning: the hospital has scribes that do the same thing. The patient was never told, so never had the chance to say no.
+
+**What is wrong.** The recording holds a name spoken aloud, a voice, and everything the family said in the room. It lands on the servers of a free app, then, as a transcript, in a second consumer tool: two disclosures, both to services no institution approved. The [scribes on Day Two](../day2/m4-notes-and-audiences.qmd#saudi-scribes) were put in place by institutions. That was the institution's decision, not an individual doctor's, and it is the difference.
+
+**What should happen instead.** Use the scribe your institution has approved, if it has one, the way it says. If it has none, take your own notes and write the note yourself; a tool can help afterward with de-identified facts. If you would like a scribe, ask your institution whether one is planned.
+
+**Discuss.** The approved scribe and the free app both "just listen and write it down". What is actually different between them?
+
+**The line.** A scribe is approved by your institution, not by how well it works.
+
+### Bonus: "It's anonymized"
+
+**What happened.** A doctor preparing a teaching case for an AI-drafted slide deck says the case is anonymized, because no name appears anywhere. The text does describe a child with a very rare condition, the small town where the family lives, and the exact date of admission.
+
+**What is wrong.** Each detail might pass on its own. Together they can point to one family: anyone in that town, or any doctor who saw the case, would know who it is. That is what "any combination of details rare enough to point to one person" means. The path is the same as before, into a consumer tool. Removing the name was step 1 of four.
+
+**What should happen instead.** Generalize until the details point nowhere: an age band, a region, "day 3" for a date. If the rare condition is itself the giveaway and the teaching point survives without it, keep the teaching point and change the story, which makes it a synthetic case. If you cannot tell, ask your institution's data protection officer.
+
+**Discuss.** Where is the line between a detail that helps the teaching and a detail that points to a person?
+
+**The line.** No name is not the same as no identity.
+
+### If it happens to you
+
+Anyone who uses these tools long enough will paste something they should not have. The steps are on the [privacy checklist](../reference/privacy-checklist.qmd): stop, write down what was pasted, into which tool, and when, report it promptly through your institution's process and to its data protection officer, and do not assume that deleting the chat undoes it.
+
+Before any paste, ask: is this tool approved for patient information? If not, is what I am pasting synthetic or fully de-identified, with no identifier in the text or the file, and nothing that would let someone who knows this person recognize them? If you cannot say yes, do not paste.
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Identity hides in combinations and in files, not only in names. Check the whole thing, and when in doubt, use a case card.
+:::

@@ -1,0 +1,225 @@
+---
+title: "Lab 1 — Templates and limits"
+subtitle: "Day One · 30 min"
+---
+
+In this lab you measure what a template changes for you, watch a tool be confidently wrong on purpose, and compare two kinds of tool on one question. It all runs on a synthetic case. None of it uses a real patient.
+
+::: {.session-meta}
+Time
+:   30 minutes: template test 12, break it on purpose 8, tool face-off 5, debrief 5
+
+Uses
+:   [Case A](../reference/case-cards.qmd#case-a), plus the question from [Case C](../reference/case-cards.qmd#case-c) as a default in part 3
+
+You leave with
+:   Your own time, word and edit counts for a note written without and with a template; a saved, deliberately unreliable answer you have run through the three-question check (Lab 3 reuses it); a first comparison of two kinds of tool; and one prompt to bring to Day Two.
+:::
+
+::: {.callout-note appearance="simple"}
+## Have these open before the clock starts
+- [ ] A general assistant on your own account (ChatGPT, Claude or Gemini), signed in
+- [ ] Vera Health, verified for your account (see the [setup page](../setup.qmd)); if yours is not ready, pair with a neighbor who has access
+- [ ] A stopwatch, and a notes app or blank document for pasting drafts
+- [ ] [Case A](../reference/case-cards.qmd#case-a) in a second tab
+:::
+
+::: {.callout-important appearance="simple"}
+## Case A is the only patient in this lab
+No patient identifiers into a consumer AI tool. Ever. Full stop. Do not swap in a real patient, even to save time.
+:::
+
+## 1. Template test [12 min]{.time} {#part-1}
+
+[Module 2](m2-prompting.qmd) argued that a structured prompt, built on the four-part framework, gets you closer to the note you would write. Here you test that on yourself: same case, same tool, a stopwatch. Your numbers are yours, and they will not match your neighbor's.
+
+### The facts
+
+Copy this block. Both rounds use it. It is [Case A](../reference/case-cards.qmd#case-a), a fictional patient.
+
+```text
+CASE A (fictional patient): primary care clinic, follow-up visit, 6 weeks after starting treatment
+- 52 M. Hypertension diagnosed 2 months ago. Started amlodipine 5 mg once daily 6 weeks ago.
+- Says the headaches (mostly mornings) are less frequent. New since starting amlodipine: ankle swelling by evening.
+- Home BP diary, last 2 weeks, mornings: average 146/92.
+- Missed 2 doses in 6 weeks (forgot while travelling).
+- No chest pain, no breathlessness, no visual symptoms, no palpitations.
+- Non-smoker. Walks about 15 min most days. Eats a lot of canned and salted food.
+- Family history: father had a stroke at 68.
+- No known drug allergies.
+- Today: BP 148/94, repeat 146/92 (seated, left arm). HR 76 regular. Weight 91 kg, height 176 cm, BMI 29.4.
+- Trace bilateral ankle edema. Heart sounds normal. Chest clear.
+- Baseline labs (2 months ago): creatinine 82 µmol/L, potassium 4.2 mmol/L, fasting glucose 5.4 mmol/L, LDL 3.6 mmol/L, urine ACR normal.
+- Plan discussed: add losartan 50 mg once daily, keep amlodipine 5 mg, repeat creatinine and potassium in 2 weeks, reduce salt, keep the home BP diary, review in 4 weeks.
+```
+
+### How to measure (same for both rounds)
+
+Start the stopwatch when you press Enter. Read the draft, then edit it in your notes app until it is a note you would put in a chart. Stop the stopwatch and record four things:
+
+- **Minutes** from Enter to a note you would sign.
+- **Words** in the tool's first draft (your notes app can count them).
+- **Edits**: one tally mark for each insertion, deletion or reworded sentence.
+- **Errors** you found, sorted as invented, omitted or altered.
+
+### Round A: no template
+
+Open a new chat. Type this line, then paste the facts block under it.
+
+```text
+Write a progress note for this patient.
+```
+
+### Round B: the four-part framework
+
+Open another new chat, so Round A cannot influence it. Paste this prompt, then paste the facts block under it. It fills the four parts (Role, Context, Format, Constraints) and points to that block, so there is nothing to edit.
+
+```text
+ROLE: You are a primary care physician writing a progress note for the chart, for the next clinician who sees this patient.
+CONTEXT: This is a follow-up visit for hypertension. Use ONLY the facts in the block headed CASE A at the end of this message. If something needed is missing, write [MISSING: what] instead of guessing.
+FACTS:
+See the block headed CASE A at the end of this message.
+FORMAT: A SOAP note with exactly four headings, in this order: Subjective, Objective, Assessment, Plan. Short lines, as in a real chart. Maximum 150 words.
+CONSTRAINTS: Do not add findings, doses, or diagnoses that are not in the facts. No hedging phrases. Copy every number and dose exactly as given, with the units given. Standard clinical abbreviations are fine.
+```
+
+Take the first draft the tool gives you. Do not re-prompt: you are measuring one prompt against the other.
+
+| | Round A: no template | Round B: four-part framework |
+|---|---|---|
+| Minutes to a note you would sign | | |
+| Words in the first draft | | |
+| Edits | | |
+| Errors: invented / omitted / altered | | |
+
+Check these first, in both drafts: the drug names and doses, the two-week lab recheck, the four-week review, and whether the ankle swelling is shown as new since amlodipine. Compare each against the facts, not against how the sentence sounds.
+
+What good looks like: both columns filled, at least one content fix (not just formatting) in each round, and one sentence on what the template changed for you. The word count is partly what you asked for, since Round B capped it, so edits and errors tell you more. If you found nothing to fix, read the plan lines against the card once more.
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Measure what a template changes for you, then check the numbers either way.
+:::
+
+## 2. Break it on purpose [8 min]{.time} {#part-2}
+
+Now ask a tool for something it cannot reliably know, and watch how it answers. The aim is not to catch the tool out. It is to see, once and safely, how confident a wrong answer sounds.
+
+Pick one probe and paste it into a new chat in your general assistant. Each is a general question with no patient in it. Fill the brackets from your own field, so you can judge the answer.
+
+**1. A document number**
+
+```text
+What is the exact document number and publication year of the national guideline on [a condition you treat] issued in Saudi Arabia?
+```
+
+**2. A niche statistic**
+
+```text
+What is the exact percentage, to one decimal place, of [a specific outcome in a specific group of patients in your specialty]? Name the study.
+```
+
+**3. The newest safety communication**
+
+```text
+What is the most recent drug safety communication about [a drug class you prescribe]? Give its date and what it changed.
+```
+
+**4. A reference list**
+
+```text
+List five papers on [a topic in your field], each with authors, journal, year and DOI.
+```
+
+**5. A drug interaction** (the highest-risk probe: an invented plan reads like real advice, so choose a less common pair you know well, and never act on the output)
+
+```text
+What is the interaction between [drug 1] and [drug 2], and how is it managed?
+```
+
+If the tool declines, that is a good answer: note it. Then push once, as a busy colleague might: `I need the exact figure for my reference list. Give your best answer.`
+
+### Run the check, then save it
+
+Run the three questions on the answer:
+
+1. Could I defend this to a colleague?
+2. Does it point to something I can verify?
+3. Would I catch it if it were wrong?
+
+For question 2, pick one specific item (a number, a paper, a date) and try to find it independently for two minutes. For question 3, ask whether you would have noticed had you not looked.
+
+Save the answer in a note titled `lab1-practice-output`, with this exact line above it. [Lab 3](../day3/lab3-spot-the-error.qmd) reuses it, and a saved wrong answer must never pass for a right one.
+
+```text
+PRACTICE OUTPUT: CONTAINS DELIBERATELY UNRELIABLE CONTENT. NOT FOR CLINICAL USE.
+```
+
+Add one line under the answer: which probe you used, and what you found when you checked.
+
+What good looks like: one saved answer with the header line, one item you tried to verify, and a verdict of trust, verify first, or discard. If your tool declined and the push did not help, try another probe.
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+The tone told you nothing. Only the check did.
+:::
+
+## 3. Tool face-off [5 min]{.time} {#part-3}
+
+Same question, two kinds of tool. A general assistant writes from what it learned in training. A literature-grounded tool such as Vera Health gives citation-grounded answers from peer-reviewed literature, and as of September 2026 it verifies healthcare professionals globally, with no geographic restriction. [Module 3](m3-choosing-tools.qmd) covers the difference.
+
+Choose a general clinical question from your own field, one you can judge, with no patient details. If nothing comes to mind, use this one, taken from [Case C](../reference/case-cards.qmd#case-c)'s question for cardiology: *In adults with newly diagnosed atrial fibrillation, what does the evidence say about rate control versus rhythm control?* Paste the same text into both tools, in two tabs.
+
+<!-- prompt: evidence-question | Evidence question with sources | Ask a general clinical question, with no patient details, and ask for sources you can open -->
+```text
+[A general clinical question from your own field.] Summarize the main options and how strong the evidence is for each. Cite sources I can open. If you cannot find a source, say so. This is a general question: no patient details.
+```
+
+Time-box: paste into both (1 min), read and fill the grid (3 min), write the trust line (1 min). Score each row Yes, Partly or No, and time each tool from paste to a usable answer.
+
+| | General assistant | Vera Health |
+|---|---|---|
+| Cites sources you can open | | |
+| States its limits | | |
+| Answers your question, not a nearby one | | |
+| Makes claims you could verify | | |
+| Minutes to a usable answer | | |
+
+Then write one line: which would you trust, and for what? This is one run of one question, not a benchmark. Do not conclude that one tool is better. Conclude what each lets you check. If time allows, open one cited source and see whether it says what the sentence claims.
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+A source you can open is something you can check. A fluent answer with no source is not.
+:::
+
+## 4. Debrief [5 min]{.time} {#debrief}
+
+Turn to a neighbor and share the one prompt, or the one change to a prompt, that worked best today, and why. Two or three of you will share with the room.
+
+Then add it to your personal prompt library: a note on your phone or laptop, one entry per prompt.
+
+```text
+TITLE: [what it does, in a few words]
+PROMPT: [the prompt, with [brackets] where the facts go]
+CHECK: [what I verify in the output, every time]
+```
+
+The course's own collection is the [prompt library](../reference/prompt-library.qmd). Copy from it, change the facts, and keep your own version. Bring your favorite prompt to Day Two.
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Save the prompt that worked, together with the line you checked.
+:::
+
+## Worksheet
+
+Print this page, or copy the table into your notes.
+
+| Where | What to record |
+|---|---|
+| Part 1, Round A | Minutes, words, edits, errors found |
+| Part 1, Round B | Minutes, words, edits, errors found |
+| Part 2, the probe | Which probe; the one item I tried to verify; what I found |
+| Part 2, the check | Defend, verify, catch (yes or no each); verdict: trust, verify first, or discard |
+| Part 3, the face-off | Which tool I would trust, and for what |
+| Part 4, my library | The prompt I am keeping, and the line I check in its output |

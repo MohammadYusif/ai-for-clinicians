@@ -1,0 +1,121 @@
+---
+title: "Lab 3 — Spot the error"
+subtitle: "Day Three · 25 min"
+---
+
+Checking your own draft is easy to skip, because you already believe it. Checking someone else's output cold is closer to the real job: most of what reaches you in a working week, from a tool or a colleague, is text you did not write. This lab is practice at doing that with a card and a source, and nothing else.
+
+::: {.session-meta}
+Time
+:   25 minutes, two parts
+
+Uses
+:   The output you saved in [Lab 1, part 2](../day1/lab1-templates-and-limits.qmd#part-2); the verification card in [Module 6](m6-confidently-wrong.qmd#confidently-wrong)
+
+You leave with
+:   Practice at finding an error you were not told about, and a five-minute peer-check you can run at work.
+:::
+
+## 1. Trade and catch [15 min]{.time} {#part-1}
+
+You will swap the output you saved in Lab 1's "Break it on purpose" with a neighbor and try to find what is wrong with theirs. You use only the verification workflow: Draft with AI → Cross-check the source → Confirm or correct → Use. The first step is already done. The rest is yours.
+
+### Get your output ready
+
+Open the output you saved in Lab 1, part 2. Its first line should read:
+
+```text
+PRACTICE OUTPUT: CONTAINS DELIBERATELY UNRELIABLE CONTENT. NOT FOR CLINICAL USE.
+```
+
+**Did not save one?** Run a fresh probe now from the menu in [Lab 1, part 2](../day1/lab1-templates-and-limits.qmd#part-2), copy the answer into a note, and type that warning line at the top yourself. It takes a couple of minutes; do it while your neighbor does the same.
+
+Nothing you swap should contain patient information. A probe is a question, not a patient. If yours has anything about a real person in it, do not swap it.
+
+### The protocol
+
+1. **Swap (1 min).** Hand your neighbor the output and the question you asked to get it. Do not say what you found when you checked it in Lab 1.
+2. **Check cold (9 min).** Work down the verification card from Module 6: extract the claims, find each source yourself, mark each claim confirmed, wrong, or could-not-find, and name the kind of error. Record as you go in the table below.
+3. **Compare (3 min).** Hand it back. Where your findings differ from theirs, each say how you checked. The disagreements are the useful part.
+4. **Reflect (2 min).** Answer the question at the end of this part, on paper.
+
+**The rules for checking.** Do not ask an AI tool whether the output is right, and do not ask its owner. Use a search engine, your library, your formulary, or your institution's guideline to find primary sources. A literature-grounded tool can point you to a paper, but a claim is confirmed only when you have read it there yourself. Could-not-find counts as wrong.
+
+### Where to look first
+
+| If the claim is | Look first in |
+|---|---|
+| A guideline recommendation, threshold, or number | The guideline document itself, as its issuing body published it, not a summary |
+| A dosing or interaction statement | The drug's product label, or your institution's formulary |
+| A statistic or a study finding | The paper: the abstract for the claim, the results for the number |
+| A citation | Whether the paper exists, and whether it says what the output says it does |
+| A local policy or protocol | Your institution's own document |
+
+You will not get to every claim in nine minutes. Start with the ones that would matter most if wrong, and mark any you did not reach as could-not-find: unchecked counts as wrong.
+
+### Record what you find
+
+Copy this onto paper or a note, and add rows as you need them.
+
+| # | Claim, in the output's own words | How you checked it | Mark | Kind of error |
+|---|---|---|---|---|
+| 1 | | | | |
+| 2 | | | | |
+| 3 | | | | |
+| 4 | | | | |
+
+Then count: claims checked ___ · confirmed ___ · wrong ___ · could-not-find ___.
+
+If you find nothing wrong, say how you know: list what you confirmed and where you found it. A clean result you cannot show is not yet a clean result. If the output is a refusal or mostly hedging, note what the tool said it could not do, then swap for one that is not.
+
+### What would have caught it faster?
+
+Write two or three lines. Some questions to start from:
+
+- Which claim could I have checked in under a minute, and why did I not start there?
+- Which kind of error did I see last, or miss: invented, omitted, altered, or a fabricated citation?
+- What did the text look like just before the error: a very specific number, a named guideline, a tidy reference?
+- What would I change in my own prompt? For example, add to CONSTRAINTS: *Do not cite sources or guidelines; I will supply them.*
+
+::: {.callout-warning appearance="simple"}
+## Watch for
+The pull to paste the output into a tool and ask "what is wrong with this?" You get a second draft, not a check. The card works because you are the one who finds the source.
+:::
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Extract the claims first, then check them one at a time: an error you have not looked for stays invisible.
+:::
+
+## 2. Instructor examples [10 min]{.time} {#part-2}
+
+Your instructor will project one or two short examples prepared in advance, so the whole room checks the same text. They are on the screen only. The examples and their answers are not on this page, because seeing them first would spoil the practice. The topics are fictional and carry no patient information.
+
+### Procedure
+
+1. **Read and list (1 min).** Copy the claims onto your table: step 1 of the card. Read the text against itself as well as against any source: do its parts agree with each other?
+2. **Check (4 min).** Alone or with your neighbor, work down the card. Where there is no source in the room, say which source you would go to and mark the claim could-not-find.
+3. **Call it (3 min).** The instructor asks for findings. For each, give three things: the claim, how you would confirm it, and the kind of error.
+4. **Score yourself (2 min).** After the instructor's key, count what you found and what you missed, and write down which kind of error you missed.
+
+With two examples, each gets half the time.
+
+### Reflect
+
+Which kind of error did you find fastest, and which did you walk past? If you missed an omission, remember that it cannot be seen by checking what is on the page. Read the source against the output, as in step 3 of the card.
+
+### Run a peer-check at work
+
+The same routine works between two colleagues, in about five minutes:
+
+1. The author hands over the AI output and the source it was drafted from, and nothing else: no opinion about whether it is good.
+2. The checker works down the verification card, cold.
+3. The checker reports each finding as claim, mark, and kind of error, not "looks fine".
+4. The author makes the changes and decides what is used. AI drafts. You decide.
+
+Use it where the stakes are highest: doses, allergies, diagnoses, and anything going into a chart. Send the text through your institution's own channels. If it contains anything about a patient, never send it through a personal messaging app or a consumer AI tool ([Module 7](m7-privacy.qmd#the-rule)).
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+For anything that matters, get a second person to check it cold before you use it.
+:::

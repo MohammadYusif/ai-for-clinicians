@@ -1,0 +1,230 @@
+---
+title: "Module 1 — The rule and how these tools work"
+subtitle: "Day One · 25 min"
+---
+
+This module sets up everything that follows: the one-line rule for the weekend, a plain picture of what an AI tool is doing when it writes, and a three-question check you can run on any draft. None of it needs a technical background, and all of it is meant to change what you do on Monday.
+
+::: {.session-meta}
+Time
+:   25 minutes, four topics
+
+Uses
+:   [Case A](../reference/case-cards.qmd#case-a) in topic 4. Topic 3 uses a spoken sentence-completion exercise and no case.
+
+You leave with
+:   The rule that governs every tool in this course, a working picture of why fluent text can still be wrong, and a three-question check for any AI draft.
+:::
+
+## 1. Why this weekend [5 min]{.time} {#opener}
+
+Most of you already have a chatbot open between patients. This weekend makes that deliberate instead of accidental: a method you choose, a check you run, and a line you do not cross.
+
+| You get | What it means in this course |
+|---|---|
+| Time back | A method for the writing jobs that pile up: notes, letters, handouts, slides. You time yourself in Lab 1, so the number is yours, not ours. |
+| Fewer mistakes | A habit for catching AI errors before they reach a chart. |
+| A clear line | What never goes into a consumer AI tool, and why. |
+
+### What you leave with
+
+1. A prompting method you can reuse for notes, letters, handouts and slides.
+2. A short list of tools that fit clinical work, and ones that don't.
+3. A working check for catching AI mistakes before they reach a chart.
+4. A clear line on what never goes into a consumer AI tool.
+
+### The three days
+
+| Day | Theme | You work on |
+|---|---|---|
+| One | Foundations | Prompting, tool choice, and the ground rule for the weekend: [Module 2](m2-prompting.qmd), [Module 3](m3-choosing-tools.qmd), [Lab 1](lab1-templates-and-limits.qmd) |
+| Two | Applications | Notes, presentations, and teaching prep, hands-on: [Module 4](../day2/m4-notes-and-audiences.qmd), [Module 5](../day2/m5-talks-and-teaching.qmd), [Lab 2](../day2/lab2-one-case-three-outputs.qmd) |
+| Three | Safety & Ethics | Verification, privacy, and the final assessment: [Module 6](../day3/m6-confidently-wrong.qmd), [Lab 3](../day3/lab3-spot-the-error.qmd), [Module 7](../day3/m7-privacy.qmd), [Module 8](../day3/m8-back-to-the-rule.qmd), [assessment](../assessment.qmd) |
+
+### Three ground rules for the room
+
+1. **Every case is synthetic.** Each lab uses a [case card](../reference/case-cards.qmd): a fictional patient, never a real one.
+2. **Say so when a tool fails.** The labs are built to make tools fail, so a failure in the room is data, not embarrassment.
+3. **Ask when it comes up.** Someone else has the same question.
+
+::: {.callout-important appearance="simple"}
+## The privacy line
+No patient identifiers into a consumer AI tool. Ever. Full stop.
+
+A *consumer AI tool* is a general assistant you sign up for yourself: ChatGPT, Claude or Gemini on a personal account. Day Three explains why, and the [privacy checklist](../reference/privacy-checklist.qmd) is there when you need it.
+:::
+
+Accounts and access are on the [setup page](../setup.qmd).
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Deliberate, not accidental: a method, a check, and a line you do not cross.
+:::
+
+## 2. The rule for the weekend [5 min]{.time} {#rule}
+
+Every tool in this course, and every tool you meet after it, gets the same one-line rule. It is short on purpose: you can say it while a tool is still typing.
+
+> **AI drafts. You decide.**
+>
+> Every tool. Every task. All three days.
+
+The tool drafts, structures, summarizes and rephrases. You decide, verify and sign. The first list is wording work. The second is judgment, and it stays with you.
+
+| Job | AI drafts | You decide |
+|---|---|---|
+| A progress note | Your jotted facts in a fixed template | Every number, medicine and plan line, against what you saw |
+| A referral letter | A clear letter from your facts | The question, the urgency, and that the allergy and results are in it |
+| A patient handout | Your plan in plain words | The instructions and the red flags, which come from you |
+
+::: {.callout-warning appearance="simple"}
+## Watch for: pasting without reading
+The output goes into the chart, the inbox or the patient's hands exactly as the tool wrote it. Nothing was checked, so nobody decided anything. It is the one way to break the rule, and it takes a single paste.
+:::
+
+The note, the letter and the handout carry your name, and the tool's part in the first version does not move that. This is a statement about professional responsibility, not legal advice. For questions about your own position, ask your institution's legal team or data protection officer.
+
+The rule does not loosen for better tools. On Day Two you will meet ambient scribes, tools built to listen to a visit and draft the note, and that note is still read line by line.
+
+::: {.callout-note appearance="simple"}
+## Try it (1 minute)
+Think of the last thing you asked an AI tool to write. Which half did you do: the draft or the decision? Tell your neighbor in one sentence.
+:::
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+AI drafts. You decide.
+:::
+
+## 3. How these tools actually work [10 min]{.time} {#how-it-works}
+
+You do not need the mathematics. You need a picture accurate enough to predict when a tool will help and when it will mislead you. One idea explains most of what you will see.
+
+### It predicts the next word
+
+The tool you type into is a *language model*: a program trained on a very large amount of text to predict what comes next. Given your words, it picks a likely next word (or part of a word), adds it, and repeats until the reply is finished.
+
+By itself, it has no step where it checks a statement against the world. It produces text that fits the pattern of everything before it. That is the whole mechanism, at the level you need.
+
+::: {.callout-note appearance="simple"}
+## Try it (2 minutes)
+Your instructor reads a line and stops. Say the next word out loud, together. Nobody is being tested.
+
+1. "Twinkle, twinkle, little ..."
+2. "Take one tablet twice a ..."
+3. "The guideline that covers this was published in ..."
+
+Line 1 usually comes out the same for everyone, at once: a strong pattern gives a fast, confident completion. Line 2 comes just as easily, yet nobody said which drug, and you still wrote a dosing instruction. Line 3 gives you different years, all plausible, none checked.
+
+A language model does this with every sentence. Plausible is not the same as correct.
+:::
+
+### Why it sounds equally sure when it is wrong
+
+Fluent, well-formed text is exactly what the model was built to produce. Nothing on the screen separates a well-founded sentence from a made-up one: there is no built-in "I am unsure" signal, and no drop in the confident tone.
+
+A hedge such as "may" or "consult a specialist" is a habit of style, not a reading of how sure the tool is. That is why made-up content is dangerous in medicine: it arrives looking like everything else.
+
+Elsewhere you will hear this called *hallucination*. This course says *made-up* or *fabricated*, because that is what you will see on the page.
+
+### What it knows, and what it does not
+
+It works from two things only: the conversation in front of it (everything you typed, pasted or uploaded) and what it absorbed in training. Everything else it does not have.
+
+| It does not know | What that means for you |
+|---|---|
+| Your patient | Only what you type in exists for it. |
+| Your hospital's protocol or formulary | Unless you paste the text in, it uses general knowledge instead. |
+| Anything after its training cutoff (the date its training text stops) | Newer guidance and recent safety communications may be missing. |
+| Your other chats | Each new chat starts empty, unless a memory feature is switched on in that tool. |
+| The web | Unless the tool has a search feature and is using it for this answer. |
+
+Whatever you leave out, it may fill with plausible, generic content instead of stopping to ask. Leave the allergy out of a referral request and the letter may come back with no allergy line at all, or with a reassuring generic one.
+
+### When a tool adds search
+
+Some tools put a search step in front of the writing: they look things up first, write from what they found, and show the sources. That helps in one specific way: you now have something to open.
+
+It does not make the summary correct. The tool can still misread a source, and a cited paper may not say what the sentence claims. [Module 3](m3-choosing-tools.qmd#tool-types) sorts the tool types. The check stays the same: open the source.
+
+### Six consequences for how you work
+
+1. **Give it the facts.** It knows only what is in the conversation, so put the facts in. [Module 2](m2-prompting.qmd) shows how.
+2. **Ask neutrally.** A leading question gets an agreeable answer. Ask "What is missing from this letter?", not "This letter is good, isn't it?"
+3. **Expect different answers.** Ask the same thing twice and the wording, and sometimes the content, will differ. That is normal, and one more reason to check.
+4. **Start a fresh chat for a new task.** A long chat carries everything said before it, so a new task in an old chat can pick up yesterday's context.
+5. **Check every number.** Doses, dates, values, durations. To the tool a number is one more word, and a plausible one looks the same as a correct one.
+6. **Treat every output as a draft.** That is the rule from topic 2.
+
+### Two pictures that hold up, and one that does not
+
+| Picture | Holds up? | Why |
+|---|---|---|
+| Very fast autocomplete | Yes | Like the suggestion bar on a phone keyboard, trained on far more text: it continues what you gave it. |
+| A well-read colleague who has never examined your patient | Yes | Knows a lot in general and writes fluently, but has only the facts you hand over, and will help anyway. |
+| A database of facts, or a search engine | No | A database returns a stored record. A language model writes a new sentence each time, and nothing is looked up unless the tool searches. |
+
+Terms used on this page, and the ones you will hear elsewhere, are in the [glossary](../reference/glossary.qmd).
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+It writes what is plausible, not what is checked. Give it the facts, and check what comes back.
+:::
+
+## 4. Your three-question check [5 min]{.time} {#three-questions}
+
+This is the tool you will use on every draft for the next three days. It is three questions, the same for every tool, short enough to run every time.
+
+1. Could I defend this to a colleague?
+2. Does it point to something I can verify?
+3. Would I catch it if it were wrong?
+
+If the answer to any of these is no, that's the signal to slow down, not the finding to accept.
+
+### What each question really asks
+
+| Question | What it asks | What a "no" looks like |
+|---|---|---|
+| 1. Defend | Could you explain the reasoning behind each line to a peer, without saying "the AI wrote it"? | You can repeat the draft but not explain it. |
+| 2. Verify | Is there a source you can actually open, or a value in the chart you can check? | A citation you cannot find, or a number with no origin. |
+| 3. Catch | Do you have the expertise to notice the error? | The topic is outside your field, so a wrong answer would read as right. |
+
+If the honest answer to question 3 is no, the task is not for this tool, at least not with you as the only checker.
+
+### One check, on one line
+
+Case A's plan, as jotted on the [card](../reference/case-cards.qmd#case-a): add losartan 50 mg once daily, keep amlodipine 5 mg, repeat creatinine and potassium in 2 weeks, reduce salt, keep the home BP diary, review in 4 weeks. Here is a draft of that plan line.
+
+::: {.callout-note appearance="simple"}
+## Illustrative output — written for this course, not captured from a real tool
+> **P:** Start losartan 50 mg twice daily. Continue amlodipine 5 mg once daily. Repeat creatinine and potassium in 2 weeks. Advise salt reduction and keep the home BP diary. Review in 4 weeks.
+:::
+
+Now the three questions:
+
+1. **Defend?** Not this line. "Twice daily" is not what I decided.
+2. **Verify?** Yes. The source is my own plan, so the check is a comparison, not a search.
+3. **Catch?** Only if I compare line by line. Read for sense, and the sentence is perfectly plausible.
+
+That is one of the three ways AI-drafted clinical text goes wrong: **invented** (something added that is not in the source), **omitted** (something dropped that was), or **altered** (a value, negation, side, date or unit changed). Here a frequency was altered. You will hear these three words all weekend.
+
+### The check scales with the stakes
+
+| Stakes | Example | Effort |
+|---|---|---|
+| Low | Brainstormed titles for a talk | A glance |
+| Medium | A teaching slide, an email to a colleague | Read all of it, check the facts |
+| High | Anything in a chart, anything a patient receives, any dose, date or result | Line by line, against the source |
+
+The questions never change. The effort behind each one does.
+
+### Where you will use it again
+
+The check sits inside a four-step routine that Day Three develops: Draft with AI → Cross-check the source → Confirm or correct → Use. Nothing reaches "Use" without passing the middle two.
+
+You run the check in [Lab 1, part 2](lab1-templates-and-limits.qmd#part-2) on an answer the tool makes up, in [Lab 3](../day3/lab3-spot-the-error.qmd) on a neighbor's, and in [Back to the rule](../day3/m8-back-to-the-rule.qmd#back-to-the-rule) on an output of your own. The one-page card is the [three-question check](../reference/three-question-check.qmd): keep it open beside the tool.
+
+::: {.callout-tip appearance="simple"}
+## Keep this
+Could I defend it? Can I verify it? Would I catch it? Any "no" is the signal to slow down.
+:::

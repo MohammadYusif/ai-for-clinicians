@@ -1,0 +1,74 @@
+---
+title: "AI for Clinicians"
+subtitle: "Physician AI Literacy · three days, two hours a day · English"
+toc: false
+---
+
+A practical, hands-on course in using AI tools well: in daily practice, in documentation, and in teaching. Most of you already have a chatbot open between patients. This weekend makes that deliberate instead of accidental.
+
+::: {.callout-important appearance="simple"}
+## The rule for the weekend
+**AI drafts. You decide.** Every tool. Every task. All three days.
+:::
+
+You do not need a technical background. You do need a laptop or a phone and the two accounts on the [setup page](setup.qmd). Every patient in this course is fictional, on the [case cards](reference/case-cards.qmd), and nothing you do here puts a real patient's information into any tool.
+
+## What you leave with
+
+| | What you can do | How you will know |
+|---|---|---|
+| **A prompting method** | Write a prompt that gets a usable note, letter, or handout on the first pass, using *role, context, format, constraints* | You time and compare a templated draft against an untemplated one in [Lab 1](day1/lab1-templates-and-limits.qmd) |
+| **A short list of tools** | Say which tool fits which job, which do not fit clinical work, and which you cannot use at all | You run the same question through two tools in Labs 1 and 2 and judge the result yourself |
+| **A working check** | Catch AI mistakes before they reach a chart, using three questions and a verification workflow | In [Lab 3](day3/lab3-spot-the-error.qmd) you find what is wrong in a neighbor's output |
+| **A clear line** | State what never goes into a consumer AI tool, and what to do instead | You work through realistic slips on Day Three, then apply the check to your own output |
+
+## The three days
+
+Each module is short teaching with worked examples; each lab is hands-on, in pairs, on the case cards. Labs are where the learning happens, so they get the most time.
+
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-4}
+### Day One — Foundations
+Why these tools sound sure whether they are right or wrong. The four-part prompt. The three-question check. Choosing a tool, and finding out which ones you can even use.
+
+[Module 1](day1/m1-rule-and-mechanics.qmd) · [Module 2](day1/m2-prompting.qmd) · [Module 3](day1/m3-choosing-tools.qmd) · [Lab 1](day1/lab1-templates-and-limits.qmd)
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### Day Two — Applications
+Notes done right. The scribes already live in Saudi clinics. One clinical event written for three audiences. Talks and teaching prep, and how to grade your own AI-made quiz.
+
+[Module 4](day2/m4-notes-and-audiences.qmd) · [Module 5](day2/m5-talks-and-teaching.qmd) · [Lab 2](day2/lab2-one-case-three-outputs.qmd)
+:::
+
+::: {.g-col-12 .g-col-md-4}
+### Day Three — Safety & Ethics
+Confidently wrong, and how to find out. Spot the error in someone else's output. The privacy rule that is not optional. The rule applied to your own work, then the assessment.
+
+[Module 6](day3/m6-confidently-wrong.qmd) · [Lab 3](day3/lab3-spot-the-error.qmd) · [Module 7](day3/m7-privacy.qmd) · [Module 8](day3/m8-back-to-the-rule.qmd)
+:::
+
+:::
+
+## The two sentences everything follows from
+
+> AI drafts. You decide.
+>
+> Tone is not a signal. A verification step is.
+
+The first is the rule. The second is why the rule needs a habit behind it: these tools sound exactly as sure when they are wrong as when they are right, so you cannot judge an answer by how it reads. Most of Day One teaches you to get a better draft. Most of Days Two and Three teach you to check it.
+
+## Before you arrive
+
+::: {.callout-note appearance="simple"}
+## Twenty minutes, done once
+Create one general-assistant account and one Vera Health account, and complete Vera Health's professional verification early. Everything else is on the [setup page](setup.qmd).
+:::
+
+## What is on this site
+
+- **Modules** are the teaching, one page per block of the day, with the prompts you will use.
+- **Labs** are the hands-on work, with time boxes and a results sheet you can print.
+- **[Reference](reference/three-question-check.qmd)** holds the cards you will keep: the three-question check, the prompt library, the privacy checklist, the case cards, the glossary.
+- **[Assessment](assessment.qmd)** explains how the weekend closes and has a practice bank to check yourself against.
