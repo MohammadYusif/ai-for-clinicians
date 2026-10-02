@@ -148,8 +148,8 @@ speaker notes under it, so there is one thing to follow instead of three. The La
   `assessment.qmd` is practice, not the quiz. If the scored quiz becomes a form, keep it and its key out of
   this public repository, and apply the answer-position and answer-length balancing rules in your workspace.
 - **A trainer read of the decks.** They were built from the old scripts and checked by machine (structure, wording,
-  overflow, contrast, notes). Nobody has presented them yet. `demo-grid` shows the live-demo question as a bracketed
-  placeholder until you choose it.
+  overflow, contrast, notes). Nobody has presented them yet. The live-demo question is still yours to choose (see
+  "Open decisions"): the `demo-grid` slide points to the `evidence-question` prompt, and you paste your question into it.
 - **A clinician read of the case cards.** The values are internally consistent (the eGFR and the
   CHA2DS2-VASc score were recomputed) but a tool cannot vouch for clinical realism. There is no Arabic text
   anywhere in this repository: the Arabic variant of the patient handout asks the tool to write Arabic and
