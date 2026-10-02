@@ -9,6 +9,9 @@ You have learned a rule, a check, and a way to build prompts. You have seen a to
 Time
 :   50 minutes, three parts: back to the rule (20), the assessment quiz (20), certificate and closing (10)
 
+Slides
+:   [Open the deck](../slides/m8-back-to-the-rule.qmd): the same module, one idea to a slide.
+
 Uses
 :   [The three-question check](../reference/three-question-check.qmd), one output of your own from Days One and Two, [Case C](../reference/case-cards.qmd#case-c) if you need a fresh one
 
@@ -20,7 +23,7 @@ You leave with
 
 On Day One the three questions were a card you were handed. Today they are a habit you either have or do not, and the only way to find out is to use them on something you made. You will check one output, defend your decision to a colleague, and write down what you will change.
 
-### Bring one output
+### Have one output ready
 
 Choose one output you made on Day One or Day Two: a note, a letter, a handout, a teaching summary. A Lab Two output works well. Pick one you would have been content to use, not one you already took apart in Lab Three. This exercise is for the output that looks fine.
 
@@ -33,7 +36,7 @@ Use only outputs made from this course's synthetic cases. Nothing from a real pa
 **No patient identifiers into a consumer AI tool. Ever. Full stop.** (A consumer AI tool is a general assistant you sign up for yourself.)
 :::
 
-No output to hand? Make one in two minutes. Open [Case C](../reference/case-cards.qmd#case-c), paste its facts where the prompt says, and run it in the tool you already use. If your quota has run out, ask a neighbor to share one of theirs, and check it independently.
+No output to hand? Make one in two minutes. Open [Case C](../reference/case-cards.qmd#case-c), paste its facts where the prompt says, and run it in the tool you already use. If your quota has run out, ask in the chat: someone can share an output on screen, and you check that one independently.
 
 ```text
 ROLE: You are a referring physician, writing for a specialist colleague.
@@ -48,7 +51,7 @@ CONSTRAINTS: Do not add findings, doses, or diagnoses that are not in the facts.
 
 The check is the verification workflow from earlier today, made personal: Draft with AI → Cross-check the source → Confirm or correct → Use.
 
-Copy the card below onto paper or into a note. It is the log from the [three-question card](../reference/three-question-check.qmd), laid out for one output, with one addition: the Monday line.
+Copy the card below into your notes. It is the log from the [three-question card](../reference/three-question-check.qmd), laid out for one output, with one addition: the Monday line.
 
 | Part of the card | What you write |
 |---|---|
@@ -66,7 +69,7 @@ The "why" and the "what you opened" are your evidence. Finding nothing wrong is 
 
 Check against the source, not against the tool. In this exercise the source is the case card. At work it is the chart, the drug label, the guideline. Treat your output as if it were headed for a chart: every number and name goes back to the source.
 
-Question 3 is the one people answer too fast. Ask it as if this were a full clinic on an ordinary afternoon, not a training room. If the output is in a language you do not read fluently, the honest answer is no, and the card's fix applies: get someone who would catch it.
+Question 3 is the one people answer too fast. Ask it as if this were a full clinic on an ordinary afternoon, not a course. If the output is in a language you do not read fluently, the honest answer is no, and the card's fix applies: get someone who would catch it.
 
 ::: {.callout-warning appearance="simple"}
 ## Watch for
@@ -104,21 +107,19 @@ Your instructor keeps the clock. You check alone first so that whatever your par
 
 1. **Alone (2 minutes).** Read your output once, slowly. Mark every number, name, date, dose, and source. Then fill in your card, everything except the Monday line, comparing against the case card and not against the tool.
 
-2. **In pairs (6 minutes, 3 each).** Defend it to a colleague. Show your partner the marked output and your card, and say your decision aloud. Their job is to ask "where did that come from?" about each mark, and to point at anything you did not mark.
+2. **In a breakout pair (6 minutes, 3 each).** Defend it to a colleague. Show your partner the marked output and your card (share your screen, or paste them into the breakout chat), and say your decision. Their job is to ask "where did that come from?" about each mark, and to point at anything you did not mark.
 
-   Change your card wherever they find something. If you disagree, the source decides: not either of you, and not another AI. Swap at three minutes.
+   Change your card wherever they find something. If you disagree, the source decides: not either of you, and not another AI. Switch roles at three minutes. No breakout room on your call? Type your decision (use, fix, or discard) and the one mark you are least sure of in the main chat, and the group asks "where did that come from?" about three of them.
 
-3. **In triads or as a whole room (8 minutes).** Your instructor will choose the format for the size of the room. In a triad, take a minute each to say what the output was, what you decided (use, fix, or discard), and the kind of error you found, or "none found".
+3. **The whole group (8 minutes).** Vote in the chat on each decision: use, fix, or discard. A few of you then unmute to say what the output was and the kind of error you found, or "none found". Finish on one question, in the chat: what did your partner catch that you missed?
 
-   As a room, your instructor will take a show of hands on each decision and call on a few of you. Either way, finish on one question: what did your partner catch that you missed?
+4. **Synthesize (4 minutes).** The group answers three questions in the chat, and your instructor reads the answers out. Which question most often came out as "no"? Which kind of error came up most? What would have caught it faster? Then finish your card with the Monday line.
 
-4. **Synthesize (4 minutes).** The room answers three questions, and your instructor writes the answers where everyone can see them. Which question most often came out as "no"? Which kind of error came up most? What would have caught it faster? Then finish your card with the Monday line.
-
-Whatever the room finds is a measure of these outputs and this room, not of any tool.
+Whatever the group finds is a measure of these outputs and this group, not of any tool.
 
 ### Writing your Monday line
 
-The first day you are back at work is the test of the whole weekend. Make your line small enough to do that day and specific enough that you would know if you had not. Read it to the person next to you: if they cannot picture you doing it, it is too vague.
+The first day you are back at work is the test of the whole weekend. Make your line small enough to do that day and specific enough that you would know if you had not. Post it in the chat: if others cannot picture you doing it, it is too vague.
 
 | Too vague | Specific enough |
 |---|---|
@@ -153,9 +154,9 @@ All three days: how the tools work and how to prompt them, notes, audiences and 
 
 ### How to get ready
 
-Say the four things to keep aloud, without looking: the rule, the three questions, the four parts, the privacy line. They are written out in the closing section below.
+Say the four things to keep, without looking: the rule, the three questions, the four parts, the privacy line. They are written out in the closing section below.
 
-Use the practice bank on the [assessment page](../assessment.qmd). It is separate from the quiz you take in class, so do not treat it as a preview. Use it to find what you are unsure of: try a question, say your reasoning aloud, then see how the page answers it.
+Use the practice bank on the [assessment page](../assessment.qmd). It is separate from the quiz you take on the call, so do not treat it as a preview. Use it to find what you are unsure of: try a question, write down your reasoning, then see how the page answers it.
 
 Look back at your own log: the errors you found in Lab Three and in the exercise above, and how you found them.
 
@@ -224,8 +225,8 @@ This weekend was about text: drafting, summarizing, and checking, with general a
 For these areas, treat the rule as the place to start, and ask someone who works in that area. Nothing on this site is clinical guidance.
 
 ::: {.callout-note appearance="simple"}
-## Try it (2 minutes)
-Before you leave, write down two things: the one low-risk task you will start with, and the colleague you will teach. Put them where you will see them on your first day back.
+## Try it (2 minutes, in your notes)
+Before you leave the call, write down two things: the one low-risk task you will start with, and the colleague you will teach. Put them where you will see them on your first day back.
 :::
 
 ::: {.callout-tip appearance="simple"}

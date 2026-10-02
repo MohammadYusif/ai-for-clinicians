@@ -9,6 +9,9 @@ Every patient in this course's exercises was fictional, on purpose. Yours are re
 Time
 :   25 minutes, two topics
 
+Slides
+:   [Open the deck](../slides/m7-privacy.qmd): the same module, one idea to a slide.
+
 Uses
 :   [Case B](../reference/case-cards.qmd#case-b) for the de-identification example; the [privacy checklist](../reference/privacy-checklist.qmd)
 
@@ -136,7 +139,7 @@ No real patient, colleague, hospital, or incident is described. For each one, de
 
 **What happened.** A resident, short of time, opens a free transcription app on a personal phone, records a whole clinic consultation, and pastes the transcript into a chatbot to draft the note. The reasoning: the hospital has scribes that do the same thing. The patient was never told, so never had the chance to say no.
 
-**What is wrong.** The recording holds a name spoken aloud, a voice, and everything the family said in the room. It lands on the servers of a free app, then, as a transcript, in a second consumer tool: two disclosures, both to services no institution approved. The [scribes on Day Two](../day2/m4-notes-and-audiences.qmd#saudi-scribes) were put in place by institutions. That was the institution's decision, not an individual doctor's, and it is the difference.
+**What is wrong.** The recording holds a name spoken aloud, a voice, and everything the family said during the visit. It lands on the servers of a free app, then, as a transcript, in a second consumer tool: two disclosures, both to services no institution approved. The [scribes on Day Two](../day2/m4-notes-and-audiences.qmd#saudi-scribes) were put in place by institutions. That was the institution's decision, not an individual doctor's, and it is the difference.
 
 **What should happen instead.** Use the scribe your institution has approved, if it has one, the way it says. If it has none, take your own notes and write the note yourself; a tool can help afterward with de-identified facts. If you would like a scribe, ask your institution whether one is planned.
 

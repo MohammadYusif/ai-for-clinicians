@@ -49,7 +49,7 @@ Terms are defined the way the course uses them. Where the wider world uses a dif
 
 **Quota.** How much a free or paid plan lets you use in a period. Batch related questions into one detailed prompt to spend it well.
 
-**Second option.** In the tool comparisons, whatever you use beside your general assistant to get sources you can open: a literature-grounded tool, your assistant's search or citation mode, or a plain literature search. Defined in [Module 3](../day1/m3-choosing-tools.qmd#second-option).
+**Second option.** In the tool comparisons, whatever you use alongside your general assistant to get sources you can open: a literature-grounded tool, your assistant's search or citation mode, or a plain literature search. Defined in [Module 3](../day1/m3-choosing-tools.qmd#second-option).
 
 **Sensitive personal data.** A legal category under the PDPL that includes health, genetic, and biometric data.
 

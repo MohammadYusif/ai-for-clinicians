@@ -11,6 +11,9 @@ A tool can draft the middle in seconds. This module shows where that helps, and 
 Time
 :   35 minutes, four topics
 
+Slides
+:   [Open the deck](../slides/m5-talks-and-teaching.qmd): the same module, one idea to a slide.
+
 Uses
 :   [Case A](../reference/case-cards.qmd#case-a) for the slides, the [practice source](../reference/practice-source.qmd) for the quiz
 
@@ -61,7 +64,7 @@ If your institution has an approved tool and a policy for teaching material, tha
 
 Use the four parts from Day One: Role, Context, Format, Constraints (see [anatomy of a good prompt](../day1/m2-prompting.qmd#anatomy)).
 
-A talk adds two things. Your teaching points go in, in your own words, so the outline is built around what you want the room to learn. And the outline is capped, so you can check all of it.
+A talk adds two things. Your teaching points go in, in your own words, so the outline is built around what you want your audience to learn. And the outline is capped, so you can check all of it.
 
 <!-- prompt: case-outline | Case to slide outline | Turn de-identified case notes and your teaching points into a slide-by-slide outline -->
 ```text
@@ -70,7 +73,7 @@ CONTEXT: The talk is built around one case. Use ONLY the facts below. If somethi
 FACTS:
 [paste the de-identified case notes]
 TEACHING POINTS:
-[two or three points you want the room to leave with, in your words]
+[two or three points you want the audience to leave with, in your words]
 FORMAT: A slide-by-slide outline of [3] slides. For each slide: a title of six words or fewer, then two to four bullet fragments naming what goes on it. Finish with one line saying which slide carries each teaching point. Maximum [150] words.
 CONSTRAINTS: Do not add findings, doses, or diagnoses that are not in the facts. No statistics, guidelines, or citations. No hedging phrases. Keep units exactly as written in the facts.
 ```
@@ -115,8 +118,8 @@ Omission is fine when you chose it. It becomes a problem when the tool chose it 
 Fix the outline by hand, or tell the tool exactly what to change. Then move on: the slide text in the next section is built from this outline, so an error left here is copied onto every slide.
 
 ::: {.callout-note appearance="simple"}
-## Try it
-Two minutes. Run the prompt on Case A. When the outline comes back, tick every number against the card. Then tell your neighbor one thing the outline left out, and whether you would have left it out too.
+## Try it (2 minutes, on your own, then in the chat)
+Run the prompt on Case A. When the outline comes back, tick every number against the card. Then type in the chat one thing the outline left out, and whether you would have left it out too.
 :::
 
 ::: {.callout-tip appearance="simple"}
@@ -224,8 +227,8 @@ A tool asked to make a slide more convincing may add a statistic, a guideline na
 :::
 
 ::: {.callout-note appearance="simple"}
-## Try it
-Two minutes. Run the prompt on your approved outline, then swap screens with a neighbor. Run the slide check on their three slides and report one finding: a number that does not match, something that is not on the card, or "clean". Swap back.
+## Try it (2 minutes, on your own, then in the chat)
+Run the prompt on your approved outline. Then run the slide check on the three slides it returns and type one finding in the chat: a number that does not match, something that is not on the card, or "clean". If one of you shares a screen, the group runs the check on that person's slides.
 :::
 
 ::: {.callout-tip appearance="simple"}
@@ -306,8 +309,8 @@ Check every quiz the same way:
 Then check the rewritten questions against the source again. A rewrite can change a fact.
 
 ::: {.callout-note appearance="simple"}
-## Try it
-Two minutes. Run the prompt on the practice source. Look at ANSWER LETTERS and at the longest option in each question. Did it balance? Tell your neighbor what you found.
+## Try it (2 minutes, on your own, then in the chat)
+Run the prompt on the practice source. Look at ANSWER LETTERS and at the longest option in each question. Did it balance? Type what you found in the chat.
 :::
 
 ::: {.callout-tip appearance="simple"}
@@ -381,8 +384,8 @@ If the answer to any of these is no, that's the signal to slow down, not the fin
 The key line for question 3 fails the first question the moment a colleague opens line 6. The quotation is what makes the second question answerable. And you pass the third only by opening the source, which is why the spot-check is a required step.
 
 ::: {.callout-note appearance="simple"}
-## Try it
-Three minutes. Run the key prompt on your quiz. Pick your riskiest question, read its quotation aloud, and have your neighbor find the line in the practice source. Pass or fail? If it fails, say what you now do with the other four.
+## Try it (3 minutes, on your own, then in the chat)
+Run the key prompt on your quiz. Pick your riskiest question, find its quotation in the practice source yourself, and type pass or fail in the chat. If it fails, say what you now do with the other four.
 :::
 
 After the break, [Lab 2](../day2/lab2-one-case-three-outputs.qmd#part-1) puts the whole of Day Two into one exercise: one case, three outputs.

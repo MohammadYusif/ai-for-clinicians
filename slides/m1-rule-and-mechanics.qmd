@@ -1,0 +1,459 @@
+---
+title: "AI for Clinicians"
+subtitle: "Physician AI Literacy"
+author: "Day One · Module 1 · The rule and how these tools work"
+format: revealjs
+---
+
+# Why this weekend [5 min]{.time} {#opener}
+
+::: notes
+**While people join.** Leave the cover up; the clock starts at the next slide. Ask in the chat: type your name and your specialty. Welcome everyone, introduce yourself in one sentence, and say what this is: a practical, hands-on course in using AI tools well, in daily practice, documentation and teaching, for doctors of any specialty, online, three days of two hours. No technical background is assumed.
+
+**Goal.** In five minutes everyone can say why the weekend exists, name what they leave with, and knows how we use the call.
+
+**Have ready.** These slides on the cover. A timer. The course home page and the case cards page open in two tabs.
+
+**Watch for.** A real patient story ("I had a case last week..."): thank them, then "hold it; we will use a made-up version in the lab". Enthusiasts against skeptics: do not referee; the skeptic's habit of checking is the one this course teaches. Over-running: cut the agenda slide to twenty seconds; the rule cannot be cut. Any promise of time saved: the site makes none.
+
+**If asked.** CME credit? A certificate closes Day Three; do not promise credit, the accreditation position is in the instructor guide. A real patient in the labs? No; every lab uses the case cards. Allowed at my hospital? Ask your institution's data protection officer or legal team.
+
+**Bridge.** "Every one of those benefits rests on one sentence."
+:::
+
+## Why this weekend {#why}
+
+Most of you already have a chatbot open between patients. This weekend makes that deliberate instead of accidental.
+
+::: {.cards}
+::: {.card}
+[Time back]{.t}
+
+A method for the writing jobs that pile up. You time yourself in Lab One, so the number is yours.
+:::
+::: {.card .teal}
+[Fewer mistakes]{.t}
+
+A habit for catching AI errors before they reach a chart.
+:::
+::: {.card}
+[A clear line]{.t}
+
+What never goes into a consumer AI tool, and why.
+:::
+:::
+
+::: {.move .chat}
+[Chat · 30 sec]{.tag} Have you had a chatbot open for something work-related this month? Type 1 for yes, 2 for no.
+:::
+
+::: notes
+**0:50.** Start with what is already true: many of you have a chatbot open between patients, and nobody needs to confess. This weekend makes that use deliberate. Three benefits. Time back: a method for the writing jobs that pile up, and you time yourself in Lab One, so the number is yours, not mine. Fewer mistakes: a habit for catching AI errors before they reach a chart. A clear line: what never goes into a consumer AI tool, and why.
+
+**Do.** Run the chat vote, glance at the count, move on. Do not ask anyone what they typed into a tool.
+:::
+
+## What you leave with {#outcomes}
+
+::: {.cards}
+::: {.card}
+[01]{.num}
+
+A prompting method you can reuse for notes, letters, handouts and slides
+:::
+::: {.card .teal}
+[02]{.num}
+
+A short list of tools that fit clinical work, and ones that don't
+:::
+:::
+
+::: {.cards}
+::: {.card}
+[03]{.num}
+
+A working check for catching AI mistakes before they reach a chart
+:::
+::: {.card .teal}
+[04]{.num}
+
+A clear line on what never goes into a consumer AI tool
+:::
+:::
+
+::: notes
+**0:40.** Four things you leave with, and I will point at each when we reach it. One: a prompting method you can reuse for notes, letters, handouts and slides, taught in the next hour. Two: a short list of tools that fit clinical work, and ones that do not, today and tomorrow. Three: a working check for catching AI mistakes before they reach a chart; we build it in the first half hour and use it in every lab. Four: a clear line on what never goes into a consumer AI tool. Day Three is where it gets its time, but it runs under everything.
+:::
+
+## Three days, one weekend {#agenda}
+
+::: {.cards}
+::: {.card .dark}
+[Day One]{.t}
+
+**Foundations**
+
+Prompting, tool choice, and the ground rule for the weekend.
+:::
+::: {.card}
+[Day Two]{.t}
+
+**Applications**
+
+Notes, presentations, and teaching prep, hands-on.
+:::
+::: {.card .teal}
+[Day Three]{.t}
+
+**Safety & Ethics**
+
+Verification, privacy, and the final assessment.
+:::
+:::
+
+Two hours a day, break included, and a hands-on lab every day.
+
+::: notes
+**0:30.** Day One is foundations: the rule, how these tools work, how to prompt them, how to choose one, and Lab One after a ten-minute break. Day Two is applications: notes, audiences, slides and teaching, with Lab Two. Day Three is safety and ethics: where AI is confidently wrong, privacy, an assessment and a certificate. Nothing on Day Two or Three works without today, which is why today is dense.
+:::
+
+## Day One: Foundations {#day1-divider}
+
+{{< include _glance-day1.md >}}
+
+::: notes
+**0:50.** Today in four moves. First, the rule and how the tools work. Second, prompting: a four-part method, used on a note and then on three other jobs. Third, choosing tools: which kind for which job, and a live comparison. Then a ten-minute break and Lab One, thirty minutes, hands-on. Say the break time out loud and write it in the chat.
+:::
+
+## Three ground rules {#ground-rules}
+
+1. **Every case is synthetic.** Each lab uses a case card: a fictional patient, never a real one.
+2. **Say so when a tool fails.** The labs are built to make tools fail, so a failure is data, not embarrassment.
+3. **Ask when it comes up.** Someone else has the same question.
+
+> **No patient identifiers into a consumer AI tool. Ever. Full stop.**
+
+::: notes
+**0:50.** Three ground rules. Every lab uses synthetic case cards, never a real patient: open the case cards page for ten seconds and say "these five people are the only patients in this course". Be candid when a tool fails; the labs are built to make tools fail. Ask as you go, in the chat or by unmuting. Then the privacy line, once, in these exact words: no patient identifiers into a consumer AI tool, ever, full stop. Day Three gives the reasons.
+:::
+
+## How we use the call {#call}
+
+| | | |
+|---|---|---|
+| **Chat** | Everyone types at once, then I read a few out | Most quick questions |
+| **Speak** | Two or three of you unmute when I ask | Short answers and debriefs |
+| **Share** | One person shares a screen when asked | Showing an output |
+| **Pair** | A breakout room of two, a few minutes | Checking each other's work |
+| **Solo** | Your own device, your own assistant | The labs |
+
+Keep these slides in one window and your assistant in another.
+
+::: notes
+**1:00.** Every activity this weekend uses one of five moves, and each is announced on the slide with a label and a time. Chat: everyone types at once. Speak: a few of you unmute when I ask. Share: one person shares a screen. Pair: a breakout room of two. Solo: your own device. If breakout rooms are not available, the pair step is done in the chat instead and I will say so. Open this deck link in a second window if your screen allows it.
+
+**Do.** Paste the deck link into the chat now.
+:::
+
+# The rule for the weekend [5 min]{.time} {#rule}
+
+::: notes
+**Goal.** Everyone can say the rule from memory and give one example of what "you decide" covers that a tool cannot.
+
+**Watch for.** "You decide" heard as "do it all yourself": the rule is not against the tool; the drafting is where the time comes back. "Decide" heard as "click accept": deciding includes verifying. A request for a legal conclusion: decline once, kindly, and point to the data protection officer or legal team. Scolding: the violation is pasting without reading, not using AI.
+
+**If asked.** If it errs and I miss it, am I liable? I cannot give legal advice; you are responsible for what carries your name; ask your institution's data protection officer or legal team. Isn't this what I do with a resident's draft? Yes, and the difference is that the tool's draft sounds equally sure whether it is right or wrong. What about tools that write the note for me? Same rule; Day Two covers ambient scribes.
+
+**Bridge.** "To decide well you need to know what you are deciding about: what these tools actually do when they answer."
+:::
+
+## The rule for the weekend {#rule-statement .dark background-color="#4338ca"}
+
+::: {.center-text .vc}
+[AI drafts. You decide.]{.huge}
+
+Every tool. Every task. All three days.
+:::
+
+::: notes
+**0:30.** Put the rule up, read it, and stop talking for three seconds. This is the one sentence to keep if you keep nothing else.
+:::
+
+## What the tool does, what you do {#drafts-decide}
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.card}
+[AI drafts]{.t}
+
+Drafts, structures, summarizes, rephrases. Quickly.
+:::
+:::
+::: {.column width="50%"}
+::: {.card .teal}
+[You decide]{.t}
+
+Decide, verify, sign. Accountability stays with the physician.
+:::
+:::
+:::
+
+::: {.move .chat}
+[Chat · 1 min]{.tag} What does the tool do well? What can it never do for you? Type one of each.
+:::
+
+::: notes
+**2:15.** Ask the two questions in the chat and read out four or five answers, sorting each aloud: drafting things go left, deciding things go right. Diagnose, verify, decide and sign always land under "You decide". Whatever carries your name, a chart entry, a letter, a handout, is yours, and the tool's part in the first version does not move that. Say once that this is professional responsibility, not legal advice. Come back to this slide in the Lab One debrief.
+
+**Do.** Write two or three of the chat answers on the chalkboard (press B) if you want them to stay visible.
+:::
+
+## Three jobs, one way to break the rule {#jobs}
+
+| Job | AI drafts | You decide |
+|---|---|---|
+| A progress note | Your jotted facts in a fixed template | Every number, medicine and plan line, against what you saw |
+| A referral letter | A clear letter from your facts | The question, the urgency, and that the allergy and results are in it |
+| A patient handout | Your plan in plain words | The instructions and the red flags, which come from you |
+
+::: {.callout-warning appearance="simple"}
+## Watch for: pasting without reading
+The output goes into the chart, the inbox or the patient's hands exactly as the tool wrote it. Nothing was checked, so nobody decided anything.
+:::
+
+::: {.move .chat}
+[Chat · 1 min]{.tag} Think of the last thing you asked an AI tool to write. Which half did you do: the draft or the decision? One sentence.
+:::
+
+::: notes
+**1:45.** Three jobs, one violation. A note: check the numbers, medicines and plan. A referral: the question, the urgency, the allergy. A handout: the red flags, which come from you. The violation is not using the tool; it is pasting without reading, and it takes a single paste.
+
+**Do.** Run the chat prompt and take one or two answers aloud if people are willing. Do not push.
+:::
+
+# How these tools actually work [10 min]{.time} {#how-it-works}
+
+::: notes
+**Goal.** Everyone can explain, without jargon, why a fluent answer can be wrong, and name what the tool does and does not know.
+
+**Have ready.** Nothing live and no tool open: the point is intuition. The live demo comes in Module 3.
+
+**Watch for.** "So it is just autocomplete, so it is useless": the frame explains the failure mode, it is not a dismissal. The opposite, "it knows more medicine than I do": it has read about medicine, it has not examined your patient. Technical rabbit holes (tokens, parameters): park them until after the session.
+
+**If asked.** Does it learn from what I type? It depends on the tool and its settings; treat anything typed into a consumer tool as leaving your control, which is the privacy line. Why a different answer the second time? Answers are generated fresh each time, so one run is never a measurement. Does it understand medicine? It produces text that reads as though it does; nothing in it checks the facts against your patient, so you do.
+
+**Bridge.** "A draft that sounds sure and can be wrong needs a check that does not depend on tone."
+:::
+
+## It predicts the next word {#next-word}
+
+::: {.fragment}
+Twinkle, twinkle, little [\_\_\_\_]{.accent}
+:::
+
+::: {.fragment}
+Take one tablet twice a [\_\_\_\_]{.accent}
+:::
+
+::: {.fragment}
+The guideline that covers this was published in [\_\_\_\_]{.accent}
+:::
+
+::: {.move .chat}
+[Chat · 2 min]{.tag} For each line, type the next word. Wait for "three, two, one", then everyone sends at once.
+:::
+
+::: notes
+**2:30.** Show one line at a time and say "three, two, one, send". Line one comes out the same for everyone: star. Line two comes just as easily, yet nobody said which drug, and everyone just completed a dosing instruction. Line three gets different years, all plausible, none checked. That is the mechanism: the tool continues text with what is likely, given everything before it. Very fast autocomplete. Most of the time likely and true line up. When they do not, the tool has no step that notices. Nobody is being tested.
+
+**Do.** If the chat is quiet, answer line one yourself, then invite the chat on lines two and three.
+:::
+
+## Sounding sure is not being right {#sure-not-right}
+
+::: {.columns}
+::: {.column width="50%"}
+> "The guideline that covers this was published in 2018."
+:::
+::: {.column width="50%"}
+> "The guideline that covers this was published in 2021."
+:::
+:::
+
+[Same tone either way.]{.teal} [Illustrative, written for this course]{.illustrative}
+
+- Fluent is what it was built to produce.
+- No built-in "I'm unsure" signal.
+- **Tone is not a signal.**
+
+::: notes
+**2:00.** Fluent, confident prose is what these tools were built to produce. Right or wrong, the sentence reads the same: no warning light, no change in tone when the tool is guessing. You will hear the word hallucination for this; say it once and then use made-up or fabricated, because that is what it is: text that reads as plausible and is false. The lesson is not to distrust everything. It is that tone tells you nothing, so the checking has to come from you. That is what the three questions are for, and we build them in a few minutes.
+:::
+
+## What it knows {#what-it-knows}
+
+::: {.cards}
+::: {.card}
+[The conversation]{.t}
+
+What you typed and pasted.
+:::
+::: {.card .teal}
+[Its training]{.t}
+
+General text, up to a cutoff.
+:::
+::: {.card .dashed}
+[Not]{.t}
+
+Your patient, your protocol, or news after the cutoff, unless it searches.
+:::
+:::
+
+What you leave out, it fills with something plausible.
+
+::: notes
+**2:00.** Two sources only. The conversation: whatever you typed or pasted in this chat. And its training: a very large amount of general text, up to a cutoff date. It has no memory of your other chats unless a memory feature is switched on. It does not know your patient, your hospital's protocol, or anything after its cutoff, and it has no internet unless the tool searches. Whatever you leave out, it fills with plausible, generic content, which is where most made-up detail comes from. Tools that search and cite change part of this picture; we meet them in Module 3, later today.
+:::
+
+## Six habits that follow {#six-habits}
+
+::: {.cards}
+::: {.card}
+[01]{.num}
+
+Give it the facts.
+
+Ask neutrally.
+:::
+::: {.card .teal}
+[02]{.num}
+
+Expect different answers.
+
+New task, new chat.
+:::
+::: {.card}
+[03]{.num}
+
+Check every number.
+
+Every output is a draft.
+:::
+:::
+
+::: notes
+**2:30.** Six habits, from what you just heard. Give it the facts, because it knows nothing about your patient. Ask neutrally: a leading question invites a yes. Expect different answers to the same question; that is normal, not a fault. Start a fresh chat for a new task, so a new task in an old chat does not carry old context along. Check every number: doses, values and dates are where errors cost most. Treat every output as a draft, which is the rule again.
+:::
+
+## Two pictures that hold up, and one that does not {#pictures}
+
+| Picture | Holds up? | Why |
+|---|---|---|
+| Very fast autocomplete | Yes | It continues what you gave it, like a phone's suggestion bar trained on far more text |
+| A well-read colleague who has never examined your patient | Yes | Knows a lot, writes fluently, has only the facts you hand over, and will help anyway |
+| A database of facts, or a search engine | **No** | A database returns a stored record; a language model writes a new sentence each time |
+
+::: notes
+**0:30.** Two analogies that hold: very fast autocomplete, and a well-read colleague who has never examined your patient. One that does not: a database of facts or a search engine. A database returns a stored record; a language model writes a new sentence each time, and nothing is looked up unless the tool searches.
+:::
+
+# Your three-question check [5 min]{.time} {#three-questions}
+
+::: notes
+**Goal.** Everyone can recite the three questions in order, say what each one really asks, and use them on a draft with one changed dose.
+
+**Have ready.** The three-question card open in a tab, so you can paste its link into the chat.
+
+**Watch for.** Question three heard as self-doubt: it is a scope test, a task where you would not recognize the error is not one to hand over. The reveal landing as a gotcha: keep it curious, the difference is easy to miss because the sentence reads well. People skipping the exact wording: they need it in the labs, so say it the same way every time this weekend.
+
+**If asked.** Do I run this on everything? Scale it to the stakes. What if there is no source to check? Then question two is a no, which is the signal to slow down. Can I ask the tool "are you sure"? That is not a check; the check is yours, against something outside the tool.
+
+**Bridge.** "Now the other half of the problem: why do vague prompts give you a wall of extra words to delete?"
+:::
+
+## Your three-question check {#gutcheck}
+
+::: {.cards}
+::: {.card}
+[1]{.num}
+
+**Could I defend this to a colleague?**
+:::
+::: {.card .teal}
+[2]{.num}
+
+**Does it point to something I can verify?**
+:::
+::: {.card}
+[3]{.num}
+
+**Would I catch it if it were wrong?**
+:::
+:::
+
+If the answer to any of these is no, that's the signal to slow down, not the finding to accept.
+
+::: notes
+**1:30.** Three questions, in this order, in these exact words. Could I defend this to a colleague? That asks whether I could explain the reasoning to a peer, not whether it sounds right. Does it point to something I can verify? A source I can actually open, or a value in the chart. Would I catch it if it were wrong? That asks whether I have the expertise to notice the error; if not, this task is not for this tool. Then the no rule, word for word. Paste the link to the one-page card into the chat and suggest they keep it open in the labs.
+:::
+
+## Run the check {#altered-dose}
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.card .dashed}
+[The source: Case A plan]{.t}
+
+add losartan 50 mg once daily, keep amlodipine 5 mg, repeat creatinine and potassium in 2 weeks
+:::
+:::
+::: {.column width="50%"}
+::: {.card .tint}
+[The draft]{.t}
+
+P: Start losartan 50 mg [twice daily]{.fragment .highlight-current-red}. Continue amlodipine 5 mg once daily. Repeat creatinine and potassium in 2 weeks.
+:::
+:::
+:::
+
+[Illustrative, written for this course, not from a real tool]{.illustrative}
+
+::: {.move .chat}
+[Chat · 30 sec]{.tag} Ten seconds, silently: what changed? Type it.
+:::
+
+::: notes
+**1:30.** Two lines. On the left, the plan from the Case A card. On the right, an illustrative draft written for this course, not captured from a tool. Give everyone ten seconds to find the difference, then read out one answer from the chat. Losartan 50 mg once daily became twice daily. Walk the three questions. Could I defend it? Not this line; twice daily is not what I decided. Can I verify it? Yes, my own plan, so the check is a comparison, not a search. Would I catch it? Only if I compare line by line; read for sense and it is perfectly plausible.
+
+**Do.** Show the source line only, then reveal the draft.
+:::
+
+## Three ways it goes wrong, and how much to check {#three-errors}
+
+::: {.columns}
+::: {.column width="48%"}
+::: {.cards .stack}
+::: {.card}
+[Invented]{.t} Something added that is not in the source.
+:::
+::: {.card .teal}
+[Omitted]{.t} Something dropped that was.
+:::
+::: {.card}
+[Altered]{.t} A value, negation, side, date or unit changed.
+:::
+:::
+:::
+::: {.column width="52%"}
+| Stakes | Effort |
+|---|---|
+| Low: brainstormed titles | A glance |
+| Medium: a teaching slide | Read it all |
+| High: anything in a chart, any dose | Line by line, against the source |
+:::
+:::
+
+::: notes
+**1:20.** Name the failure: this one is altered. The other two are invented and omitted. You will hear these three words all weekend. The questions never change; the effort behind each one does. A brainstormed title gets a glance. A slide or an email to a colleague is read in full. Anything in a chart, any dose, date or result is checked line by line against the source. The check returns in Lab One part 2, in Lab Three, and in the Day Three session on your own output.
+:::

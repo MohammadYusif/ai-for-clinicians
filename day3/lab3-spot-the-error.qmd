@@ -9,6 +9,9 @@ Checking your own draft is easy to skip, because you already believe it. Checkin
 Time
 :   25 minutes, two parts
 
+Slides
+:   [Open the deck](../slides/lab3-spot-the-error.qmd): the same module, one idea to a slide.
+
 Uses
 :   The output you saved in [Lab 1, part 2](../day1/lab1-templates-and-limits.qmd#part-2); the verification card in [Module 6](m6-confidently-wrong.qmd#confidently-wrong)
 
@@ -18,7 +21,7 @@ You leave with
 
 ## 1. Trade and catch [15 min]{.time} {#part-1}
 
-You will swap the output you saved in Lab 1's "Break it on purpose" with a neighbor and try to find what is wrong with theirs. You use only the verification workflow: Draft with AI → Cross-check the source → Confirm or correct → Use. The first step is already done. The rest is yours.
+You will swap the output you saved in Lab 1's "Break it on purpose" with a partner in a breakout room and try to find what is wrong with theirs. You use only the verification workflow: Draft with AI → Cross-check the source → Confirm or correct → Use. The first step is already done. The rest is yours. No breakout room on your call? Then check your own saved output instead, cold, as if someone else had written it.
 
 ### Get your output ready
 
@@ -28,16 +31,16 @@ Open the output you saved in Lab 1, part 2. Its first line should read:
 PRACTICE OUTPUT: CONTAINS DELIBERATELY UNRELIABLE CONTENT. NOT FOR CLINICAL USE.
 ```
 
-**Did not save one?** Run a fresh probe now from the menu in [Lab 1, part 2](../day1/lab1-templates-and-limits.qmd#part-2), copy the answer into a note, and type that warning line at the top yourself. It takes a couple of minutes; do it while your neighbor does the same.
+**Did not save one?** Run a fresh probe now from the menu in [Lab 1, part 2](../day1/lab1-templates-and-limits.qmd#part-2), copy the answer into a note, and type that warning line at the top yourself. It takes a couple of minutes; do it while the others do the same.
 
 Nothing you swap should contain patient information. A probe is a question, not a patient. If yours has anything about a real person in it, do not swap it.
 
 ### The protocol
 
-1. **Swap (1 min).** Hand your neighbor the output and the question you asked to get it. Do not say what you found when you checked it in Lab 1.
+1. **Swap (1 min).** In your breakout room, paste the output and the question you asked to get it into the breakout chat for your partner. Do not say what you found when you checked it in Lab 1.
 2. **Check cold (9 min).** Work down the verification card from Module 6: extract the claims, find each source yourself, mark each claim confirmed, wrong, or could-not-find, and name the kind of error. Record as you go in the table below.
-3. **Compare (3 min).** Hand it back. Where your findings differ from theirs, each say how you checked. The disagreements are the useful part.
-4. **Reflect (2 min).** Answer the question at the end of this part, on paper.
+3. **Compare (3 min).** Send it back. Where your findings differ from theirs, each say how you checked. The disagreements are the useful part.
+4. **Reflect (2 min).** Answer the question at the end of this part, in your notes.
 
 **The rules for checking.** Do not ask an AI tool whether the output is right, and do not ask its owner. Use a search engine, your library, your formulary, or your institution's guideline to find primary sources. A literature-grounded tool can point you to a paper, but a claim is confirmed only when you have read it there yourself. Could-not-find counts as wrong.
 
@@ -55,7 +58,7 @@ You will not get to every claim in nine minutes. Start with the ones that would 
 
 ### Record what you find
 
-Copy this onto paper or a note, and add rows as you need them.
+Copy this into your notes, and add rows as you need them.
 
 | # | Claim, in the output's own words | How you checked it | Mark | Kind of error |
 |---|---|---|---|---|
@@ -66,7 +69,7 @@ Copy this onto paper or a note, and add rows as you need them.
 
 Then count: claims checked ___ · confirmed ___ · wrong ___ · could-not-find ___.
 
-If you find nothing wrong, say how you know: list what you confirmed and where you found it. A clean result you cannot show is not yet a clean result. If the output is a refusal or mostly hedging, note what the tool said it could not do, then swap for one that is not.
+If you find nothing wrong, say how you know: list what you confirmed and where you found it. A clean result you cannot show is not yet a clean result. If the output is a refusal or mostly hedging, note what the tool said it could not do, then use one that is not.
 
 ### What would have caught it faster?
 
@@ -89,12 +92,12 @@ Extract the claims first, then check them one at a time: an error you have not l
 
 ## 2. Instructor examples [10 min]{.time} {#part-2}
 
-Your instructor will project one or two short examples prepared in advance, so the whole room checks the same text. They are on the screen only. The examples and their answers are not on this page, because seeing them first would spoil the practice. The topics are fictional and carry no patient information.
+Your instructor will share one or two short examples prepared in advance, so the whole group checks the same text. They are on the shared screen only. The examples and their answers are not on this page, because seeing them first would spoil the practice. The topics are fictional and carry no patient information.
 
 ### Procedure
 
 1. **Read and list (1 min).** Copy the claims onto your table: step 1 of the card. Read the text against itself as well as against any source: do its parts agree with each other?
-2. **Check (4 min).** Alone or with your neighbor, work down the card. Where there is no source in the room, say which source you would go to and mark the claim could-not-find.
+2. **Check (4 min).** On your own, work down the card. Where there is no source to open, say which source you would go to and mark the claim could-not-find.
 3. **Call it (3 min).** The instructor asks for findings. For each, give three things: the claim, how you would confirm it, and the kind of error.
 4. **Score yourself (2 min).** After the instructor's key, count what you found and what you missed, and write down which kind of error you missed.
 

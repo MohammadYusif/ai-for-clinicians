@@ -9,6 +9,9 @@ Most of what a doctor writes is the same few facts told to different readers: th
 Time
 :   40 minutes, four topics
 
+Slides
+:   [Open the deck](../slides/m4-notes-and-audiences.qmd): the same module, one idea to a slide.
+
 Uses
 :   [Case A](../reference/case-cards.qmd#case-a) for the note review, [Case E](../reference/case-cards.qmd#case-e) for three audiences
 
@@ -78,8 +81,8 @@ CONSTRAINTS: Do not recommend a dose or a diagnosis for this patient. Do not inv
 Then run the verification workflow: Draft with AI → Cross-check the source → Confirm or correct → Use. Read part 2, open one of the sources named in part 3, and find the same statement there. If you cannot find it, the answer stays unverified and does not change what you do.
 
 ::: {.callout-note appearance="simple"}
-## Try it
-Think of a question you looked up between patients this week. Rewrite it so it contains no patient detail, then name the source where you would confirm the answer. Compare with your neighbor: did you pick the same source?
+## Try it (2 minutes, in the chat)
+Think of a question you looked up between patients this week. Rewrite it so it contains no patient detail, then name the source where you would confirm the answer. Type both in the chat: did others pick the same source?
 :::
 
 ::: {.callout-tip appearance="simple"}
@@ -194,8 +197,8 @@ These are questions to ask, not rules. Several are also questions about the Pers
 A free transcription app on your own phone can also turn speech into text. It is a consumer tool, and a recording of a consultation is patient information, so the privacy line applies. Try answering the six questions for an app you downloaded yourself and notice how many you cannot. [Day Three](../day3/m7-privacy.qmd#the-rule) returns to exactly this, and the [privacy checklist](../reference/privacy-checklist.qmd) is what to use before any recording goes anywhere.
 
 ::: {.callout-note appearance="simple"}
-## Try it
-With a neighbor, pick the two questions you would ask first, and name who in your institution could answer them.
+## Try it (2 minutes, in the chat)
+Pick the two questions you would ask first, and name who in your institution could answer them. Type your two numbers and the role in the chat.
 :::
 
 ::: {.callout-tip appearance="simple"}
@@ -404,8 +407,8 @@ The return-sooner list is a clinical judgment, and it is yours. Write it into th
 Every prompt on this page is in the [prompt library](../reference/prompt-library.qmd), and [Lab Two](lab2-one-case-three-outputs.qmd#part-1) repeats this method on a case card of your choice. If a tool ignores the word limit or the headings, see [troubleshooting](../reference/troubleshooting.qmd).
 
 ::: {.callout-note appearance="simple"}
-## Try it
-With a neighbor, look at the consistency table. If you had 30 seconds, which row would you check first, and why?
+## Try it (1 minute, in the chat)
+Look at the consistency table. If you had 30 seconds, which row would you check first, and why? Type your answer in the chat.
 :::
 
 ::: {.callout-tip appearance="simple"}

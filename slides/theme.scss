@@ -1,0 +1,350 @@
+/*-- scss:defaults --*/
+
+// The decks use the site's own palette (course/BRIEF.md "Deck design system"), so a deck and
+// the page it belongs to read as one course. The structure follows the SDAIA course decks:
+// white ground, left-aligned text, a hairline under each title, a teal progress bar,
+// dark section slides, and "c / t" slide numbers.
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Noto+Naskh+Arabic:wght@400;600&display=swap");
+
+$ink: #0f172a;
+$paper: #ffffff;
+$indigo: #4f46e5;
+$indigo-ink: #4338ca;
+$indigo-soft: #eef2ff;
+$indigo-line: #c7d2fe;
+$teal: #14b8a6;
+$teal-ink: #0f766e;
+$teal-soft: #ccfbf1;
+$slate: #334155;
+$muted: #64748b;
+$hairline: #e2e5ea;
+$wash: #f1f5f9;
+$red: #b91c1c;
+$red-soft: #fef2f2;
+$red-line: #dc2626;
+
+$font-family-sans-serif: "DM Sans", "Segoe UI", system-ui, -apple-system, "Noto Sans Arabic", sans-serif;
+$font-family-monospace: "Cascadia Code", "JetBrains Mono", ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+$presentation-heading-font: $font-family-sans-serif;
+$presentation-heading-font-weight: 700;
+$presentation-heading-color: $ink;
+$presentation-font-size-root: 30px;
+$presentation-line-height: 1.35;
+
+$body-bg: $paper;
+$body-color: $slate;
+$link-color: $indigo;
+$link-color-hover: $indigo-ink;
+$selection-bg: $teal-soft;
+
+$code-block-bg: $wash;
+$code-block-border-color: $hairline;
+$code-color: $ink;
+$code-block-font-size: 0.7em;
+$blockquote-border-color: $indigo;
+
+$callout-border-width: 0.3rem;
+$callout-color-note: $indigo;
+$callout-color-tip: $teal-ink;
+$callout-color-important: $red;
+$callout-color-warning: #b45309;
+$callout-color-caution: #b45309;
+
+/*-- scss:rules --*/
+
+.reveal { font-variant-ligatures: none; }
+.reveal .slides section { text-align: left; }
+
+// ---- Titles -----------------------------------------------------------------------------
+.reveal .slides section h1 { font-size: 1.7em; letter-spacing: -0.01em; font-weight: 800; }
+.reveal .slides section h2 {
+  font-size: 1.25em;
+  letter-spacing: -0.01em;
+  padding-bottom: 0.15em;
+  margin-bottom: 0.55em;
+  border-bottom: 3px solid rgba(20, 184, 166, 0.4);
+}
+.reveal .slides section h3 { font-size: 0.95em; font-weight: 700; color: $ink; margin: 0 0 0.3em; }
+
+// Minutes badge, the same pill as on the pages: "[10 min]{.time}".
+.reveal .time {
+  display: inline-block;
+  padding: 0.05em 0.6em;
+  margin-left: 0.45em;
+  border: 1px solid $teal;
+  border-radius: 999px;
+  background: $teal-soft;
+  color: $teal-ink;
+  font-size: 0.42em;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  vertical-align: middle;
+  white-space: nowrap;
+}
+
+// Title slide and section slides: dark ground, white text.
+.reveal .slides section.quarto-title-block { text-align: left !important; }
+.reveal .slides section.quarto-title-block h1 { font-size: 2.1em; line-height: 1.08; margin-bottom: 0.2em; }
+.reveal .slides section.quarto-title-block .subtitle { font-size: 0.9em; font-weight: 500; opacity: 1; margin-bottom: 1em; }
+.reveal .slides section.quarto-title-block .quarto-title-authors { justify-content: flex-start; }
+.reveal .slides section.quarto-title-block .quarto-title-author-name,
+.reveal .slides section.quarto-title-block .date { font-size: 0.7em; font-weight: 600; color: #cbd5e1; }
+
+// Pushes a short slide's content toward the middle (the decks are top-aligned, like the SDAIA decks).
+.reveal .vc { margin-top: 2.4em; }
+
+.reveal .slides section.dark,
+.reveal .slides section.quarto-title-block,
+.reveal .slides section.dark h1,
+.reveal .slides section.dark h2,
+.reveal .slides section.dark h3,
+.reveal .slides section.quarto-title-block h1,
+.reveal .slides section.quarto-title-block .subtitle,
+.reveal .slides section.quarto-title-block .quarto-title-author-name,
+.reveal .slides section.dark p,
+.reveal .slides section.dark li {
+  color: #ffffff;
+}
+.reveal .slides section.dark a,
+.reveal .slides section.quarto-title-block a { color: #a5b4fc; }
+// A light box on a dark slide (a move strip, a card) keeps dark text: "all text is white" stops at its edge.
+.reveal .slides section.dark .move,
+.reveal .slides section.dark .move p { color: $ink; }
+.reveal .slides section.dark .card,
+.reveal .slides section.dark .card p,
+.reveal .slides section.dark .card li { color: $slate; }
+.reveal .slides section.dark .card .t { color: $ink; }
+.reveal .slides section.dark .card.dark,
+.reveal .slides section.dark .card.dark p,
+.reveal .slides section.dark .card.dark .t { color: #e2e8f0; }
+.reveal .slides section.dark .move a { color: $indigo-ink; }
+.reveal .slides section.dark h2 { border-bottom-color: rgba(255, 255, 255, 0.3); }
+.reveal .slides section.dark .time {
+  border-color: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.12);
+  color: #ffffff;
+}
+.reveal .slides section.dark .muted { color: #cbd5e1; }
+
+// ---- Text helpers -----------------------------------------------------------------------
+.reveal .muted { color: $muted; }
+.reveal .small { font-size: 0.8em; }
+.reveal span.accent { color: $indigo; font-weight: 700; }
+.reveal span.teal { color: $teal-ink; font-weight: 700; }
+.reveal span.red { color: $red; font-weight: 700; }
+.reveal .big { font-size: 1.5em; font-weight: 700; line-height: 1.2; color: $ink; }
+.reveal .huge { font-size: 2.4em; font-weight: 800; line-height: 1.08; letter-spacing: -0.02em; color: $ink; }
+.reveal .slides section.dark .big,
+.reveal .slides section.dark .huge { color: #ffffff; }
+.reveal .center-text { text-align: center; }
+
+// Every invented example output is labeled (CLAUDE.md, rule 3).
+.reveal .illustrative {
+  display: inline-block;
+  font-size: 0.55em;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: $slate;
+  border: 1px dashed $slate;
+  border-radius: 6px;
+  padding: 0.1em 0.6em;
+}
+
+.reveal .pill {
+  display: inline-block;
+  padding: 0.15em 0.7em;
+  border-radius: 999px;
+  background: $indigo-soft;
+  border: 1px solid $indigo-line;
+  color: $indigo-ink;
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.reveal .pill.teal { background: $teal-soft; border-color: $teal; color: $teal-ink; }
+.reveal .pill.red { background: $red-soft; border-color: $red-line; color: $red; }
+
+// ---- The online moves -------------------------------------------------------------------
+// Every interactive moment is announced the same way: a label, the time, and one instruction.
+//   ::: {.move .chat}
+//   [Chat · 1 min]{.tag} Type your answer.
+//   :::
+.reveal .move {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7em;
+  margin-top: 0.7em;
+  padding: 0.55em 0.9em;
+  border-radius: 14px;
+  background: $indigo-soft;
+  border: 1px solid $indigo-line;
+  font-size: 0.85em;
+  color: $ink;
+}
+.reveal .move > p { margin: 0; }
+.reveal .move .tag {
+  display: inline-block;
+  flex: none;
+  padding: 0.1em 0.7em;
+  border-radius: 999px;
+  background: $indigo;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 0.85em;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+}
+.reveal .move.speak { background: $teal-soft; border-color: $teal; }
+.reveal .move.speak .tag { background: $teal-ink; }
+.reveal .move.pair { background: #f5f3ff; border-color: #ddd6fe; }
+.reveal .move.pair .tag { background: #6d28d9; }
+.reveal .move.share { background: #fff7ed; border-color: #fed7aa; }
+.reveal .move.share .tag { background: #b45309; }
+.reveal .move.solo { background: $wash; border-color: $hairline; }
+.reveal .move.solo .tag { background: $slate; }
+
+// ---- Layout pieces ----------------------------------------------------------------------
+.reveal .cards { display: flex; gap: 0.7em; align-items: stretch; margin: 0.4em 0; }
+.reveal .cards.stack { flex-direction: column; }
+.reveal .card {
+  flex: 1 1 0;
+  min-width: 0;
+  padding: 0.7em 0.9em;
+  border: 1px solid $hairline;
+  border-top: 5px solid $indigo;
+  border-radius: 12px;
+  background: #ffffff;
+  font-size: 0.85em;
+}
+.reveal .card.teal { border-top-color: $teal; }
+.reveal .card.red { border-top-color: $red-line; }
+.reveal .card.dashed { border-style: dashed; border-top-style: dashed; border-top-color: $muted; background: $wash; }
+.reveal .card.tint { background: $indigo-soft; border-color: $indigo-line; border-top-color: $indigo; }
+.reveal .card.dark { background: $ink; border-color: $ink; border-top-color: $teal; color: #e2e8f0; }
+.reveal .card.dark p { color: #e2e8f0; }
+.reveal .card > :first-child { margin-top: 0; }
+.reveal .card > :last-child { margin-bottom: 0; }
+.reveal .card p { margin: 0.25em 0; }
+.reveal .card .t { display: block; font-size: 1.08em; font-weight: 700; color: $ink; line-height: 1.2; margin-bottom: 0.2em; }
+.reveal .card .num { display: block; font-size: 1.6em; font-weight: 800; color: $indigo; line-height: 1; margin-bottom: 0.15em; }
+.reveal .card.teal .num { color: $teal-ink; }
+.reveal .card.dark .t { color: #ffffff; }
+
+.reveal .flow { display: flex; align-items: stretch; gap: 0.2em; margin: 0.4em 0; }
+.reveal .flow .step {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+  margin-right: 1.1em;
+  padding: 0.6em 0.8em;
+  border: 1px solid $hairline;
+  border-radius: 12px;
+  background: #ffffff;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: $ink;
+}
+.reveal .flow .step::after {
+  content: "\2192";
+  position: absolute;
+  right: -1em;
+  top: 50%;
+  transform: translateY(-50%);
+  color: $muted;
+  font-weight: 700;
+}
+.reveal .flow .step:last-child { margin-right: 0; background: $indigo-soft; border-color: $indigo-line; }
+.reveal .flow .step:last-child::after { content: none; }
+.reveal .flow .step .num { display: block; font-size: 1.3em; font-weight: 800; color: $indigo; line-height: 1.1; }
+
+// Columns carry inline widths that add up to 100%, so the gap has to come out of them, not on top.
+.reveal .columns { display: flex; gap: 1.2em; align-items: flex-start; }
+.reveal .columns > .column { flex: 0 1 auto; min-width: 0; box-sizing: border-box; }
+// Quarto's own side margins on a column's children (0.5rem on the inner edge) would push a 100%-wide
+// block 8px past the slide, and the gap already separates the columns.
+.reveal .columns > .column > :not(ul, ol) { margin-left: 0 !important; margin-right: 0 !important; }
+.reveal .columns .column > :first-child { margin-top: 0; }
+
+// ---- Tables, quotes, code, callouts -----------------------------------------------------
+.reveal table { border-collapse: collapse; width: 100%; font-size: 0.78em; }
+.reveal table th {
+  color: $ink;
+  background: $wash;
+  border-bottom: 2px solid $hairline;
+  padding: 0.35em 0.6em;
+  text-align: left;
+}
+.reveal table td { border-bottom: 1px solid $hairline; padding: 0.35em 0.6em; text-align: left; vertical-align: top; }
+.reveal table tr:last-child td { border-bottom: 0; }
+
+.reveal blockquote {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 0.5em 0.9em;
+  border-left: 4px solid $indigo;
+  border-radius: 0 10px 10px 0;
+  background: $indigo-soft;
+  box-shadow: none;
+  font-style: normal;
+  color: $ink;
+}
+.reveal blockquote p { margin: 0.2em 0; }
+
+.reveal pre { box-sizing: border-box; width: 100%; margin: 0.4em 0; box-shadow: none; font-size: 0.7em; }
+.reveal pre code {
+  max-height: none;
+  padding: 0.8em 1em !important;
+  border: 1px solid $hairline;
+  border-left: 4px solid $indigo;
+  border-radius: 10px;
+  background: $wash;
+  line-height: 1.4;
+  white-space: pre-wrap;
+  overflow: visible;
+}
+.reveal pre.text { border: 0; background: transparent; }
+.reveal code:not(pre code) { background: $wash; border-radius: 6px; padding: 0.05em 0.3em; color: $ink; }
+.reveal .prompt-block { position: relative; }
+.reveal .prompt-copy {
+  position: absolute;
+  top: 0.5em;
+  right: 0.5em;
+  padding: 0.15em 0.7em;
+  border: 1px solid $hairline;
+  border-radius: 999px;
+  background: #ffffff;
+  color: $indigo;
+  font-family: inherit;
+  font-size: 0.65em;
+  font-weight: 700;
+  cursor: pointer;
+}
+.reveal .prompt-copy.copied { border-color: $teal; color: $teal-ink; }
+
+.reveal .callout { border-radius: 12px; font-size: 0.85em; margin: 0.5em 0; }
+.reveal .callout-title-container { font-weight: 800; }
+.reveal .callout.callout-style-simple .callout-body { padding-top: 0.4em; padding-bottom: 0.4em; }
+
+// ---- Chrome -----------------------------------------------------------------------------
+.reveal .progress { height: 6px; }
+.reveal .progress span { background: $teal; }
+.reveal .slide-number { color: $muted; font-size: 0.5em; background: transparent; }
+.reveal .footer, .reveal .footer a { color: $muted; font-size: 0.45em; }
+.reveal ul, .reveal ol { margin-left: 1.1em; }
+.reveal li { margin: 0.2em 0; }
+.reveal li > p { margin: 0; }
+
+// The slide number, footer and the three corner buttons sit on the slide's own ground, so on a
+// dark slide they switch to light. (:has is supported by every current browser.)
+html:has(.reveal .slides section.present:is(.dark, .quarto-title-block)) {
+  .reveal .slide-number,
+  .reveal .footer,
+  .reveal .footer a { color: #cbd5e1; }
+  // Quarto bakes the icon colour into a data-URI background, so recolour the whole control.
+  .reveal .slide-menu-button,
+  .reveal .slide-chalkboard-buttons { filter: brightness(0) invert(0.88); }
+}
+
+// Arabic text in a slide: set it right-to-left, in a face that has the glyphs.
+.reveal [lang="ar"] { direction: rtl; text-align: right; font-family: "Noto Naskh Arabic", "Noto Sans Arabic", serif; }

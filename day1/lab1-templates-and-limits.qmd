@@ -9,6 +9,9 @@ In this lab you measure what a template changes for you, watch a tool be confide
 Time
 :   30 minutes: template test 12, break it on purpose 8, tool face-off 5, debrief 5
 
+Slides
+:   [Open the deck](../slides/lab1-templates-and-limits.qmd): the same module, one idea to a slide.
+
 Uses
 :   [Case A](../reference/case-cards.qmd#case-a), plus the question from [Case C](../reference/case-cards.qmd#case-c) as a default in part 3
 
@@ -22,6 +25,7 @@ You leave with
 - [ ] Your second option for part 3, whichever you can open: a literature-grounded tool, your assistant's search or citation mode, or a literature search such as PubMed ([Module 3](m3-choosing-tools.qmd#second-option)). No special account is needed
 - [ ] A stopwatch, and a notes app or blank document for pasting drafts
 - [ ] [Case A](../reference/case-cards.qmd#case-a) in a second tab
+- [ ] This lab page in its own window, so you can follow it while the call carries on
 :::
 
 ::: {.callout-important appearance="simple"}
@@ -31,7 +35,7 @@ No patient identifiers into a consumer AI tool. Ever. Full stop. Do not swap in 
 
 ## 1. Template test [12 min]{.time} {#part-1}
 
-[Module 2](m2-prompting.qmd) argued that a structured prompt, built on the four-part framework, gets you closer to the note you would write. Here you test that on yourself: same case, same tool, a stopwatch. Your numbers are yours, and they will not match your neighbor's.
+[Module 2](m2-prompting.qmd) argued that a structured prompt, built on the four-part framework, gets you closer to the note you would write. Here you test that on yourself: same case, same tool, a stopwatch. Your numbers are yours, and they will not match anyone else's.
 
 ### The facts
 
@@ -185,7 +189,7 @@ Time-box: ask both (1 min), read and fill the grid (3 min), write the trust line
 | Makes claims you could verify | | |
 | Minutes to a usable answer | | |
 
-Then write one line: which would you trust, and for what? This is one run of one question, not a benchmark. Do not conclude that one tool is better. Conclude what each lets you check. If time allows, open one cited source and see whether it says what the sentence claims.
+Then write one line: which would you trust, and for what? When the five minutes are up, type your Yes, Partly or No for the first row in the chat. This is one run of one question, not a benchmark. Do not conclude that one tool is better. Conclude what each lets you check. If time allows, open one cited source and see whether it says what the sentence claims.
 
 ::: {.callout-tip appearance="simple"}
 ## Keep this
@@ -194,7 +198,7 @@ A source you can open is something you can check. A fluent answer with no source
 
 ## 4. Debrief [5 min]{.time} {#debrief}
 
-Turn to a neighbor and share the one prompt, or the one change to a prompt, that worked best today, and why. Two or three of you will share with the room.
+Type in the chat the one prompt, or the one change to a prompt, that worked best today, and why. Two or three of you will then unmute and say more.
 
 Then add it to your personal prompt library: a note on your phone or laptop, one entry per prompt.
 
@@ -213,7 +217,7 @@ Save the prompt that worked, together with the line you checked.
 
 ## Worksheet
 
-Print this page, or copy the table into your notes.
+Copy this table into your notes and fill it in as you go.
 
 | Where | What to record |
 |---|---|

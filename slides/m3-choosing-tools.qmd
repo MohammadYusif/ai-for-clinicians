@@ -1,0 +1,355 @@
+---
+title: "Module 3 — Choosing the right tool"
+subtitle: "Day One · 20 min"
+format: revealjs
+---
+
+## In this module {#plan}
+
+{{< include _plan-m3-choosing-tools.md >}}
+
+::: notes
+**Before the clock.** Show this for ten seconds: four short topics, twenty minutes, then the break. The clock starts at the next slide.
+:::
+
+# Not all AI is the same [5 min]{.time} {#tool-types}
+
+::: notes
+**Goal.** Everyone can name the two tool types they will use this weekend, say what each is for, and run the flow's first question: does the task carry patient identifiers?
+
+**Have ready.** The slides only. No tool open, nothing live in this topic.
+
+**Watch for.** The flow read as a ranking of brands: it sorts jobs. "So I use Vera Health for everything": a literature tool is not for writing your letters. Product names beyond the ones on the slides: name only ChatGPT, Claude and Gemini, Vera Health and OpenEvidence, Sahl AI and Augnito.
+
+**If asked.** A general assistant can search now, so is it a literature tool? Some can search and show links; treat links as leads to open. A literature-grounded tool is built around published papers. Is a literature tool always right? No: it can misread a source, and a cited paper may not say what the sentence claims, so open it. Which assistant is best? The course makes no ranking claim; test on your own task. Can I paste patient details into a literature tool? For a consumer tool, no. For one your institution has approved, that is your institution's decision: ask the data protection officer or legal team.
+
+**Bridge.** "A tool can be excellent and still be closed to you. That is the next topic."
+:::
+
+## Two types, two jobs {#tool-types-table}
+
+| Type | Best for | Examples | Watch for |
+|---------------|---------------------|-----------------|-----------------|
+| General assistant | Drafting, structuring, reasoning through a case | ChatGPT, Claude, Gemini | No built-in citations |
+| Literature-grounded tool | Anything where a citation matters | Vera Health, OpenEvidence | Access varies by country |
+
+Two more types come on Day Two: ambient scribes, and features built into your institution's record system.
+
+::: notes
+**1:45.** Asking a general assistant for a citation, and asking a literature tool to write your referral letter, are the same mistake: right question, wrong tool. General assistants, such as ChatGPT, Claude and Gemini, are for wording and structure. By default they answer from training, with no source you can open. Some can search and show links; treat links as leads to open, not as proof. Literature-grounded tools, such as Vera Health and OpenEvidence, answer from published papers and show them. They are not for writing your letters, and access varies by country, which is the next topic. Ambient scribes and record-embedded features are Day Two.
+
+**Do.** Stay on the slide. No tool open.
+:::
+
+## Pick the tool by the job {#tool-flow}
+
+| Ask in this order | If yes | If no |
+|------------------------|------------------|------------------|
+| **1.** Does the task involve patient identifiers? | [STOP]{.red} | Go to 2 |
+| **2.** Is it a simple fact lookup? | Search engine, or your usual reference | Go to 3 |
+| **3.** Do you need a citation you can open? | Literature-grounded tool | General assistant |
+
+> **No patient identifiers into a consumer AI tool. Ever. Full stop.**
+
+::: notes
+**1:00.** Safety first: the first question is about the patient, not the tool. Does the task involve patient identifiers? If yes, stop, and read the privacy line aloud, word for word. If no: is it a simple fact lookup? Then a search engine, or your usual reference. If not: do you need a citation you can open? Then a literature-grounded tool; if not, a general assistant. The flow sorts jobs, not brands. And a tool you signed up for yourself is not an approved tool, whatever its type.
+
+**Do.** Point to each row as you read it. Say "stop" clearly on row one.
+:::
+
+## Where does each task land? {#tool-try}
+
+1. Reword your clinic's information sheet in plain language.
+2. Find the evidence behind a treatment claim for a talk.
+3. Confirm the spelling of a drug name.
+4. Tidy a real discharge summary that still has the patient's name and file number.
+
+[**G** general assistant · **L** literature-grounded tool · **S** search engine · **STOP**]{.muted .small}
+
+::: {.move .chat}
+[Chat · 1 min]{.tag} Type your four answers in one message, in task order.
+:::
+
+::: {.fragment}
+**Answers:** 1 G. 2 L, then open the citation. 3 S. 4 STOP.
+:::
+
+::: notes
+**1:45.** Four tasks, one answer each: where does it land? Type your four answers in one message, in task order, using the letters on the slide. Give people sixty seconds; typing is slower than thinking. Then read out three or four answers and click for the answers. One: general assistant. Two: a literature-grounded tool, and then open the citation. Three: a search engine. Four: stop. Make sure the group hears "stop" on task four, even if it draws a laugh.
+
+**Do.** Run the chat move. If the chat is quiet, ask two people to unmute and give their answer for task two.
+:::
+
+# Same tool, different doctor [5 min]{.time} {#different-doctor}
+
+::: notes
+**Goal.** Everyone can say why access is part of a tool, and knows the three checks to run before recommending one.
+
+**Have ready.** Nothing live: do not sign up for anything on the call. Say "as of September 2026" aloud each time you give a fact about either tool.
+
+**Watch for.** "OpenEvidence is bad": it is not; as of September 2026 it is closed to this audience. "Vera Health is better": the claim is only that it does the same job and, on its published terms, does not exclude this group; nothing in the course depends on it. "GDPR compliant" heard as "safe for patient data". Dropping the date.
+
+**If asked.** I can get into OpenEvidence another way; should I use it? Access rules belong to the tool and change; I will not suggest ways around a verification requirement. Check its own sign-up page and your institution's policy. Is Vera Health approved by my hospital? I cannot know; "GDPR compliant" does not answer it. Is GDPR compliance enough for Saudi patients' data? It is a statement about European law; ask your institution's data protection officer or legal team. What happens to what I type? Read the tool's own statement; I will not state a product's policy from memory.
+
+**Bridge.** "Now let us see two tools side by side, on one question."
+:::
+
+## Access is part of the tool [As of September 2026]{.pill} {#geography}
+
+::: {.fragment}
+::: {.cards}
+::: {.card}
+[OpenEvidence]{.t}
+
+Citation-grounded clinical answers from the literature. The best-known tool of its kind.
+
+**Who can get in.** Requires US NPI verification, and withdrew from the EU and UK in April 2026, so it is not usable by a Saudi audience.
+:::
+::: {.card}
+[Vera Health]{.t}
+
+The same job: citation-grounded answers from peer-reviewed literature.
+
+**Who can get in.** States that it verifies healthcare professionals globally, with no geographic restriction. Its Terms add conditions.
+:::
+:::
+:::
+
+::: {.move .chat}
+[Chat · 30 sec]{.tag} Heard of OpenEvidence? Type 1 for yes, 2 for no.
+:::
+
+::: notes
+**2:00.** As of September 2026: say the date aloud. OpenEvidence is the best-known literature-grounded clinical tool. It requires US NPI verification and withdrew from the EU and UK in April 2026, so it is not usable by a Saudi audience. Vera Health does the same job and states that it verifies healthcare professionals globally. Its Terms require users to be healthcare professionals in practice or in training, and bar people in countries under US trade sanctions or embargoes; Saudi Arabia is not among those named. How credentials are checked is not published, so try it a few days early, as a bonus. The lesson is access, not these two names. Nothing in this course depends on either.
+
+**Do.** Run the chat vote with the cards hidden, read the count, then click once to show them.
+:::
+
+## "GDPR compliant" is not "approved here" {#gdpr-not-approval}
+
+[As of September 2026]{.pill}
+
+Vera Health states that it is GDPR compliant. That is a statement about European data-protection law.
+
+It does not tell you whether your institution has approved the tool, or whether it suits Saudi requirements.
+
+[Ask your institution's data protection officer or legal team.]{.big}
+
+[This course is education, not legal advice.]{.muted .small}
+
+::: notes
+**1:15.** Vera Health states that it is GDPR compliant. That is a statement about European data-protection law. It does not tell you whether your institution has approved the tool, or whether it suits Saudi requirements. Ask your institution's data protection officer or legal team. This course is education, not legal advice; Day Three covers what the Saudi law says about health data. And a tool you signed up for yourself is not an approved tool, whatever it says about compliance.
+
+**Do.** Read the third line aloud, slowly. Say once that this is education, not legal advice.
+:::
+
+## Before you recommend any tool {#access-checklist}
+
+::: {.cards}
+::: {.card}
+[1]{.num}
+
+Who can actually sign up: is my country, my license and my profession accepted?
+:::
+::: {.card .teal}
+[2]{.num}
+
+Has my institution approved it, or is it a consumer AI tool?
+:::
+::: {.card}
+[3]{.num}
+
+What does the tool say happens to what I type?
+:::
+:::
+
+::: {.callout-warning appearance="simple"}
+## Watch for
+Access changes. A tool can open, close or tighten its rules, so open its own sign-up page and check today, before you tell colleagues to use it.
+:::
+
+::: notes
+**1:15.** Before you recommend any tool, to a colleague or to yourself, three checks. Who can actually sign up: is my country, my license and my profession accepted? Has my institution approved it, or is it a consumer AI tool? What does the tool say happens to what I type? Read the tool's own statement; I will not state a product's policy from memory. Access changes: a tool can open, close or tighten its rules, so open its own sign-up page and check today. Nothing in this course depends on either tool.
+
+**Do.** Read the three lines, one breath each. Ask everyone to copy them into their notes.
+:::
+
+# Live demo: same question, two tools [5 min]{.time} {#live-demo}
+
+::: notes
+**Goal.** The group has watched one question go to two tools, has voted the grid together, and knows what one run can and cannot tell them.
+
+**Have ready.** Before the call, not in the five minutes. Two windows side by side, each on a fresh chat: your general assistant, and your second option, whichever you can open (a literature-grounded tool, your assistant's search or citation mode, or a literature search such as PubMed). A clinician colleague's account or a volunteer's shared screen also works. Share your whole screen, so you can move between this deck and both windows. The question in a note, ready to paste: general, from your own field, one you can judge, not the Lab One default. Rehearse once and keep screenshots of both full answers, with no account name showing, as a fallback.
+
+**Watch for.** A horse race: refuse a winner, kindly. The nicer formatting winning applause. A citation that will not open: that is data, say so. Patient detail added "to be realistic": do not.
+
+**If asked.** Which one won? One question, one run, one day; what matters is what each let you check. The assistant gave a citation; is it real? Open it; a made-up citation looks exactly like a real one. The second option cited papers, so is it correct? A citation is something to open, not proof.
+
+**Bridge.** "Now the last habit before the break: how to spend what your plan gives you."
+:::
+
+## The second option {#second-option}
+
+::: {.cards}
+::: {.card}
+[1 · A literature-grounded tool]{.t}
+
+Vera Health is one example. Access varies by country.
+:::
+::: {.card .teal}
+[2 · Your assistant's search or citation mode]{.t}
+
+No extra account, if your assistant offers the feature.
+:::
+::: {.card}
+[3 · A plain literature search]{.t}
+
+PubMed, or your library's database. No AI and no account.
+:::
+:::
+
+Use whichever you can open today. Nothing in this course depends on one of them.
+
+::: {.move .chat}
+[Chat · 30 sec]{.tag} Which could you open today? Type 1, 2, 3 or none.
+:::
+
+::: notes
+**0:40.** One question goes to two tools, and the comparison needs something that shows its sources. Three ways to do that: a literature-grounded tool, such as Vera Health; your assistant's search or citation mode; or a plain literature search, PubMed or your library's database. Use whichever you can open today. The question and the grid are the same for all three, and nothing in this course depends on one of them. Say which one you are using today.
+
+**Do.** Run the chat vote and glance at the count: anyone who types none follows your shared screen, and still fills the grid.
+:::
+
+## Same question, two tools {#demo-grid}
+
+::: {.small .muted}
+Both tools get the same general question, no patient details, in the [evidence-question](../reference/prompt-library.qmd#p-evidence-question) prompt.
+:::
+
+| Look for | General assistant | Second option |
+|------------------------------------|--------------------|--------------------|
+| Cites sources you can open | | |
+| States its limits | | |
+| Answers your question | | |
+| Claims you could verify | | |
+| Time to a usable answer | | |
+
+::: {.move .chat}
+[Chat · 2 min]{.tag} Per row, type Yes, Partly or No for each tool.
+:::
+
+::: notes
+**3:00.** Say which second option you are using, and that the question is general, with no patient details. Share your whole screen. Paste the same words into both tools, press Enter in both, start the timer. While they generate, read the five rows aloud and say what you are watching for; read neither answer yet. Then go row by row and ask for the chat vote: Yes, Partly or No for each tool, assistant first, letters are fine. Row three asks whether it is your question or a nearby, easier one. For the last row, yes means you would have had something usable, partly means you would still be checking, no means not yet. Say the majority aloud; everyone copies the grid into their notes. If a tool is down or has not returned by 2:00, switch to your rehearsal screenshots and say so.
+
+**Do.** Do not name a winner. Open one citation only if time allows.
+:::
+
+## What one run can tell you {#one-run}
+
+::: {.cards}
+::: {.card .teal}
+[You can conclude]{.t}
+
+- What each tool showed you: a source, a limit, or nothing.
+- How much checking each answer needs.
+- Which you would open first for this kind of question.
+:::
+::: {.card}
+[You cannot conclude]{.t}
+
+- That one tool is better.
+- That a citation means the answer is right.
+- That it holds in your specialty.
+:::
+:::
+
+**A citation you have not opened is a claim you have not checked.**
+
+::: notes
+**0:50.** What you can conclude from one run: what each tool showed you, a source, a limit, or nothing; how much checking each answer needs before you would use it; and which tool you would reach for first for this kind of question. What you cannot conclude: that one tool is better or more accurate, because one question, one run, one day is not a benchmark, and the same tool can answer the same question differently next time; that a citation means the answer is right; or that the result holds for your own specialty. A citation you have not opened is a claim you have not checked. In Lab One part 3 you run your own comparison.
+
+**Do.** Name no winner. If a citation is still on screen, click it once and read its first line aloud.
+:::
+
+# Spend your quota on purpose [5 min]{.time} {#quota}
+
+::: notes
+**Goal.** Everyone can name five habits for spending a limited plan on purpose, and knows what to have open when Lab One starts.
+
+**Have ready.** The restart time, ready to type into the chat. A ten-minute timer. The lab page link, ready to paste.
+
+**Watch for.** The slide turning into a pricing debate: the course quotes no tiers and no limits, because they change. "Paid" heard as "required": nothing here requires a paid plan. Break overrun: hold the start time, because the lab runs on a clock. Real work in the break: a reminder is enough, no patient identifiers into a consumer AI tool.
+
+**If asked.** Which paid tier should I buy? The course recommends none; find out what your free tier gives you first. What counts as synthesis? Combining many facts into one structured piece, like a discharge summary from a whole admission. Is a chatbot ever better than a search engine for a lookup? For a fact with one right answer, you want the page. Where do I keep my prompts? A note on your phone or laptop, one entry per prompt: title, prompt, and what you check.
+
+**Bridge.** "Ten minutes. Then Lab One: you measure it yourselves."
+:::
+
+## Three habits for your quota {#quota-three}
+
+::: {.cards}
+::: {.card}
+[1]{.num}
+
+Batch related questions into one detailed prompt instead of five small ones.
+:::
+::: {.card .teal}
+[2]{.num}
+
+Save paid or premium tiers for synthesis work, not quick lookups.
+:::
+::: {.card}
+[3]{.num}
+
+A search engine still beats a chatbot for simple factual lookups.
+:::
+:::
+
+Your quota is whatever your plan lets you use. It changes often, so these are habits, not numbers.
+
+::: notes
+**2:00.** Your quota is whatever your plan lets you use: messages, longer conversations, the stronger model, extra features. It differs by tool and changes often, so these are habits, not numbers. One: batch related questions into one detailed prompt. The SOAP prompt from Module 2 is a batch: the facts, the format and the constraints in one request, not one request per heading. Two: save paid or premium tiers for synthesis, which means combining many facts into one structured piece, such as a discharge summary from a whole admission. A quick lookup does not need your strongest option. Three: a search engine points you to the page; a chatbot writes a sentence about it. For a fact with one right answer, such as a drug's spelling, you want the page.
+:::
+
+## Two more habits {#quota-more}
+
+::: {.cards}
+::: {.card}
+[4]{.num}
+
+Know what your free tier gives you.
+:::
+::: {.card .teal}
+[5]{.num}
+
+Keep your best prompts in a personal library.
+:::
+:::
+
+[Before Lab One, find out your own limits.]{.accent}
+
+::: {.move .chat}
+[Chat · 30 sec]{.tag} Do you know what your free tier lets you do today? Type 1 for yes, 2 for no.
+:::
+
+::: notes
+**1:15.** Two more. Four: know what your free tier gives you. Limits differ by tool and change often. Before Lab One, find out how much you can do before it stops, and whether the stronger model or web search is included. Find out before you need it, not in the middle of a clinic. Five: keep your best prompts in a personal library. A prompt that worked once is worth more than a new one written from scratch. Start from the skeleton and the four prompts from Module 2, which the prompt library holds, and add each one that works with a line on when to use it.
+
+**Do.** Run the chat vote and read the count. Anyone who typed 2 has a break task.
+:::
+
+## Use the break to get ready {#break-prep}
+
+- A general assistant, signed in
+- Your second option for part 3: any of the [three](../day1/m3-choosing-tools.qmd#second-option)
+- A stopwatch, and a notes app
+- [Case A](../reference/case-cards.qmd#case-a) in a second tab
+- The [lab page](../day1/lab1-templates-and-limits.qmd) in its own window
+
+[Ten minutes. The restart time is in the chat.]{.big}
+
+::: notes
+**1:15.** The break is ten minutes. Before it, here is what Lab One needs open when we restart: a general assistant, signed in; your second option for part 3, any of the three, with no special account needed; a stopwatch and a notes app; Case A in a second tab; and the lab page in its own window. If you cannot open any of the three second options, you will follow my shared screen, and that is fine. Real work waits: no patient identifiers into a consumer AI tool, even in the break.
+
+**Do.** Type the restart time in the chat now and start a ten-minute timer. In the break, answer access problems one by one in the chat.
+:::

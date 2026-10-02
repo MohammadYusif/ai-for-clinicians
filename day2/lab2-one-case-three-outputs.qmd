@@ -9,6 +9,9 @@ Module 4 gave you a technique: write the facts down once, then draw every output
 Time
 :   35 minutes, three parts
 
+Slides
+:   [Open the deck](../slides/lab2-one-case-three-outputs.qmd): the same module, one idea to a slide.
+
 Uses
 :   [Case A](../reference/case-cards.qmd#case-a) by default, any [case card](../reference/case-cards.qmd) allowed; the [practice source](../reference/practice-source.qmd) in part 2
 
@@ -18,7 +21,7 @@ You leave with
 
 ::: {.callout-note appearance="simple"}
 ## Have ready
-Open these in tabs: [Module 4's prompts](../day2/m4-notes-and-audiences.qmd#three-audiences), [Module 5's slide prompt](../day2/m5-talks-and-teaching.qmd#full-talk), your general assistant, and your second option from Lab One ([Module 3](../day1/m3-choosing-tools.qmd#second-option)). All the prompts are also in the [prompt library](../reference/prompt-library.qmd). Keep paper or a notes app open for the two grids. No tool set up yet? Pair with a neighbor and share one screen. A tool misbehaving? See [troubleshooting](../reference/troubleshooting.qmd).
+Open these in tabs: [Module 4's prompts](../day2/m4-notes-and-audiences.qmd#three-audiences), [Module 5's slide prompt](../day2/m5-talks-and-teaching.qmd#full-talk), your general assistant, and your second option from Lab One ([Module 3](../day1/m3-choosing-tools.qmd#second-option)). All the prompts are also in the [prompt library](../reference/prompt-library.qmd). Keep a notes app open for the two grids. No tool set up yet? Ask in the chat: follow a shared screen and still fill in the grids. A tool misbehaving? See [troubleshooting](../reference/troubleshooting.qmd).
 :::
 
 ::: {.callout-important appearance="simple"}
@@ -30,7 +33,7 @@ Use a case card. If you bring a case of your own, apply the [privacy checklist](
 
 ## 1. One case, three outputs [20 min]{.time} {#part-1}
 
-One event, three readers: the chart, the patient, and a room of colleagues. The facts must not change as the words do. The way to keep them still is the sheet: build it once, check it once, and draw everything from it.
+One event, three readers: the chart, the patient, and an audience of colleagues. The facts must not change as the words do. The way to keep them still is the sheet: build it once, check it once, and draw everything from it.
 
 ### Step 1: the sheet (minutes 0 to 4)
 
@@ -140,12 +143,12 @@ Same task, two ways of answering: compare what each stayed inside, added, and ci
 
 ## 3. Share-out [5 min]{.time} {#part-3}
 
-The last five minutes are for doing together what you have been doing alone: applying the check to something a colleague made, with the room watching. It is the same move you will need at work, when someone hands you an AI-drafted note and asks whether it looks fine.
+The last five minutes are for doing together what you have been doing alone: applying the check to something a colleague made, in front of the group. It is the same move you will need at work, when someone hands you an AI-drafted note and asks whether it looks fine.
 
 ### How it runs
 
-- **Minute 0 to 1.** Pair up. Choose the one output you would least want to be wrong. The handout is a good candidate, because a patient will act on it.
-- **Minutes 1 to 4.** The trainer calls on two or three pairs. Each shows its output beside the sheet, reads two lines aloud, and names one fact it checked and where. The room then asks the three questions out loud, and the pair answers them:
+- **Minute 0 to 1.** On your own, choose the one output you would least want to be wrong. The handout is a good candidate, because a patient will act on it. Type "I can share" in the chat if you are willing to show it.
+- **Minutes 1 to 4.** The instructor asks two or three of you to share your screen. Each shows the output beside the sheet, reads out two lines, and names one fact checked and where. Everyone else answers the three questions in the chat, yes or no, and the person presenting answers them too:
 
   1. Could I defend this to a colleague?
   2. Does it point to something I can verify?
@@ -153,17 +156,17 @@ The last five minutes are for doing together what you have been doing alone: app
 
 - **Minute 4 to 5.** Write one thing you will change next time, in the sheet or in the prompt.
 
-If the answer to any of these is no, that's the signal to slow down, not the finding to accept. A "no" is a good answer here. What matters is what the pair does next.
+If the answer to any of these is no, that's the signal to slow down, not the finding to accept. A "no" is a good answer here. What matters is what the presenter does next.
 
 ### What good looks like
 
 - The presenter names a specific fact and where they checked it, not "it looked fine".
 - A "no" to any question comes with a next step: check the source, or delete the line.
-- The room questions the output, not the person presenting it.
+- The group questions the output, not the person presenting it.
 
 ### Worksheet
 
-Print this page, or copy the list into your notes. It is the whole lab on one screen.
+Copy this list into your notes. It is the whole lab on one screen.
 
 - [ ] Card used: ______________
 - [ ] Sheet checked line by line against the card. Invented, omitted, altered found: ______________

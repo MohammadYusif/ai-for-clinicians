@@ -9,6 +9,9 @@ Not every AI tool is built for the same job, and not every tool is open to you. 
 Time
 :   20 minutes, four topics
 
+Slides
+:   [Open the deck](../slides/m3-choosing-tools.qmd): the same module, one idea to a slide.
+
 Uses
 :   No case card. The live demo uses a general clinical question with no patient information in it.
 
@@ -24,7 +27,7 @@ Asking a general assistant for a citation, and asking a literature tool to write
 |---|---|---|---|
 | General assistant | Drafting, structuring, reasoning through a case | ChatGPT, Claude, Gemini | No built-in citations |
 | Literature-grounded tool | Anything where a citation matters | Vera Health, OpenEvidence | Access varies by country |
-| Ambient scribe (Day Two) | Drafting a note from the conversation in the room | Sahl AI, Augnito | Still read line by line |
+| Ambient scribe (Day Two) | Drafting a note from the conversation during the visit | Sahl AI, Augnito | Still read line by line |
 | EMR-embedded feature (Day Two) | Drafting inside the record system your institution runs | Whatever your institution has switched on | Exists only if your institution enabled it |
 
 **General assistants** are for wording and structure: drafting, restructuring, and reasoning through a case you have described. By default they answer from what they learned in training, with no source you can open. Some can search the web and show links. Treat the links as leads to open, not as proof.
@@ -55,8 +58,8 @@ flowchart TD
 A tool you signed up for yourself is not an approved tool, whatever type it is. The [privacy checklist](../reference/privacy-checklist.qmd) says what that means in practice.
 
 ::: {.callout-note appearance="simple"}
-## Try it
-Two minutes, in pairs. Which box of the flow does each task land in?
+## Try it (2 minutes, in the chat)
+Which box of the flow does each task land in? Type your answers in the chat, for example "1: general assistant".
 
 1. Reword a paragraph of your clinic's information sheet in plain language for patients.
 2. Find the evidence behind a treatment claim you plan to cite in a talk.
@@ -88,7 +91,7 @@ Vera Health also states that it is GDPR compliant. That is a statement about Eur
 
 ::: {.callout-warning appearance="simple"}
 ## Watch for
-Access changes. Everything in the table is dated as of September 2026. A tool can open, close or tighten its rules, so open its own sign-up page and check today, before you tell a room to use it.
+Access changes. Everything in the table is dated as of September 2026. A tool can open, close or tighten its rules, so open its own sign-up page and check today, before you tell colleagues to use it.
 :::
 
 Before you recommend any tool, run this list.
@@ -101,12 +104,12 @@ Nothing in this course depends on either tool. The comparisons in the labs use [
 
 ::: {.callout-tip appearance="simple"}
 ## Keep this
-Check access before you recommend a tool to a room.
+Check access before you recommend a tool to a group.
 :::
 
 ## 3. Live demo: same question, two tools [5 min]{.time} {#live-demo}
 
-Comparing beats describing. The instructor puts one clinical question to a general assistant and to a second option that shows sources, live, and the room compares before you do the same on your own screen in [Lab One, part 3](lab1-templates-and-limits.qmd#part-3).
+Comparing beats describing. The instructor puts one clinical question to a general assistant and to a second option that shows sources, live, on a shared screen, and everyone compares the two in the chat before you do the same on your own screen in [Lab One, part 3](lab1-templates-and-limits.qmd#part-3).
 
 The question is a general clinical question with no patient information in it, phrased the way you would ask a colleague. It is pasted, word for word, into both. Watch while each one generates, then fill in the grid.
 
@@ -120,7 +123,7 @@ The comparison needs something that shows its sources. Use whichever of these yo
 | **Your assistant's search or citation mode** | Nothing beyond the assistant you already have, if it offers the feature | Whether it exists, and what your plan allows. Check before class |
 | **A plain literature search**: PubMed, or your library's database | Nothing: no AI and no account | You read the sources yourself, so it takes longer, and no summary asks for your trust |
 
-If none of the three works for you, pair with a neighbor and share a screen, or follow the instructor's run. You still fill in the grid. For a plain literature search, type the question's key terms and mark the rows that do not apply n/a.
+If none of the three works for you, follow the instructor's shared screen. You still fill in the grid. For a plain literature search, type the question's key terms and mark the rows that do not apply n/a.
 
 ### The grid
 

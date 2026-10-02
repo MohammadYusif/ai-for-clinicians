@@ -24,10 +24,11 @@ Each day is exactly 120 minutes including a 10-minute break. `course/timing.json
 
 | Path | What |
 |---|---|
-| `index.qmd`, `setup.qmd`, `assessment.qmd` | the course site's root pages (Quarto → GitHub Pages) |
-| `day1/`, `day2/`, `day3/` | the modules and labs, in run-of-show order |
+| `index.qmd`, `setup.qmd`, `assessment.qmd` | the course site's root pages (Quarto → GitHub Pages); the home page is the course map |
+| `slides/` | one reveal.js deck per module and lab, with the speaker notes under every slide: what the instructor shares on the call |
+| `day1/`, `day2/`, `day3/` | the handouts for the same modules and labs, in run-of-show order, with the prompts to copy |
 | `reference/` | case cards, practice source, prompt library, three-question check, privacy checklist, glossary, troubleshooting |
-| `course/` | trainer-facing and deliberately **not** published to the site: instructor guide, per-day talking points and slide text, accreditation notes, the source brief, `timing.json` |
+| `course/` | trainer-facing and deliberately **not** published to the site: instructor guide, the Lab 3 examples, accreditation notes, the authoring guide, the source brief, `timing.json` |
 | `tools/` | the checks below |
 | `.github/workflows/publish.yml` | checks, render, link audit, deploy |
 
@@ -36,14 +37,15 @@ Each day is exactly 120 minutes including a 10-minute break. `course/timing.json
 ```bash
 quarto preview                          # the site, at http://localhost:4731
 
-python tools/check_timing.py            # every day sums to 120, every badge matches
+python tools/check_timing.py            # every day sums to 120, every badge matches; rewrites the decks' plan tables with --write-guide
+python tools/check_decks.py             # the decks are well formed (no heading inside a div, no empty slide)
 python tools/build_prompt_library.py    # rebuild reference/prompt-library.qmd (generated)
 python tools/check_placeholders.py      # no unfinished markers left in published pages
-python tools/lint_content.py            # canonical wording present, banned claims absent
+python tools/lint_content.py            # canonical wording present, banned claims absent, nothing that assumes a shared room
 quarto render && python tools/check_links.py   # every internal link and #fragment in _site/
 ```
 
-`tools/contrast_audit.js` is a browser-console tool that measures text contrast on the rendered pages in light and dark mode. Python is standard library only; there is nothing to install beyond [Quarto](https://quarto.org) (the workflow pins 1.10.18).
+`tools/contrast_audit.js` and `tools/deck_audit.js` are browser-console tools: the first measures text contrast on the rendered pages in light and dark mode, the second checks a rendered deck for overflow, nested slides, contrast and missing notes. Python is standard library only; there is nothing to install beyond [Quarto](https://quarto.org) (the workflow pins 1.10.18).
 
 ## Publishing
 
@@ -52,11 +54,12 @@ to the **GitHub Actions** source (Settings → Pages), and the deploy steps run 
 public. A change to a page, the theme, `tools/` or `course/timing.json` deploys on push; anything else can be
 deployed by running the workflow by hand.
 
-## The four rules
+## The five rules
 
-1. **The clock adds up.** A duration changes in `course/timing.json` and on its page in the same commit; CI fails otherwise.
+1. **The clock adds up.** A duration changes in `course/timing.json` and on its page and deck in the same commit; CI fails otherwise.
 2. **No real patient, ever.** Every case is a synthetic card in `reference/case-cards.qmd`.
 3. **Nothing is claimed about AI that the site cannot back.** Facts about products and law come from the source brief or a vendor's own dated public page; example outputs are labeled illustrative.
 4. **The course relies on no tool but one general assistant.** A product is only an example of a type, and every activity has a fallback that needs nothing more.
+5. **The course is delivered online, and nothing assumes a shared room.** Every activity is a chat, a short answer, a shared screen, a breakout pair or solo work on your own device.
 
 `CLAUDE.md` has the detail, and `course/authoring-guide.md` has the voice, markup, and vocabulary for anyone writing a page.

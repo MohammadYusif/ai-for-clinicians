@@ -9,6 +9,9 @@ Days One and Two showed what AI can draft. Today is about the other half of the 
 Time
 :   10 minutes, one topic
 
+Slides
+:   [Open the deck](../slides/m6-confidently-wrong.qmd): the same module, one idea to a slide.
+
 Uses
 :   [Case A](../reference/case-cards.qmd#case-a) for the worked check; the [three-question check](../reference/three-question-check.qmd)
 

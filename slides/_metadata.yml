@@ -1,0 +1,35 @@
+# Shared options for every deck in this folder. A deck's own front matter only names the format
+# (`format: revealjs`) and its title. revealjs is NOT a project-level format on purpose: listed
+# beside html there, Quarto renders every page twice (see CLAUDE.md).
+format:
+  revealjs:
+    theme: [default, theme.scss]
+    lang: en
+    html-math-method: plain
+    slide-number: c/t
+    show-slide-number: all
+    transition: fade
+    transition-speed: fast
+    background-transition: fade
+    title-slide-attributes:
+      data-background-gradient: "linear-gradient(135deg, #0f172a 0%, #1e1b4b 55%, #0f766e 135%)"
+    progress: true
+    hash: true
+    history: false
+    chalkboard: true
+    menu: true
+    preview-links: false
+    hide-inactive-cursor: true
+    strip-comments: true
+    center: false
+    incremental: false
+    scrollable: false
+    code-copy: false
+    code-line-numbers: false
+    pdf-separate-fragments: false
+    help: true
+    footer: "[AI for Clinicians](../index.qmd)"
+    filters:
+      - section.lua
+    include-after-body:
+      - ../assets/copy-prompts.html

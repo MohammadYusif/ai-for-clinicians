@@ -1,9 +1,19 @@
 ---
 title: "Troubleshooting"
-subtitle: "When the tool, the account, or the output is not behaving"
+subtitle: "When the call, the tool, the account, or the output is not behaving"
 ---
 
-Almost every problem in the room is one of three things: a missing part of the prompt, a tool limit, or an account that is not ready. Find yours below.
+Almost every problem during the course is one of four things: the call, a missing part of the prompt, a tool limit, or an account that is not ready. Find yours below.
+
+## The call is the problem
+
+- **I cannot see the shared screen, or it is too small to read.** Open the slides link from the chat in a window of your own. Every slide is there, and you can go at your own pace.
+- **I lost the link.** Ask in the chat. The instructor pastes the deck and the page again.
+- **The chat moves too fast.** Type your answer and send it; the instructor reads a few out. You do not need to follow every message.
+- **My breakout room did not open, or my partner did not join.** Tell the instructor in the chat. The step has a version that needs no partner: you do it on your own and type the result in the chat.
+- **I cannot talk or type in the chat right now.** Say so by any means you have. Nothing here is graded, and every answer you were asked for can be given later in the chat.
+- **I joined late.** Open the slides link, go to the slide the instructor is on (the slide number is in the corner), and carry on. Ask in the chat for anything you missed.
+- **My screen is too small for the call and my assistant.** Keep the call on one device and your assistant on another, or run the assistant in a window next to the call and rely on the slides link for what you miss.
 
 ## The output is the problem
 

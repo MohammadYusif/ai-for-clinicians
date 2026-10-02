@@ -15,7 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 PATTERN = re.compile(r"TRAINER TO CONFIRM|LINK NEEDED|\bTODO\b|\bFIXME\b|LOREM IPSUM")
-GLOBS = ["*.qmd", "day1/*.qmd", "day2/*.qmd", "day3/*.qmd", "reference/*.qmd"]
+GLOBS = ["*.qmd", "day1/*.qmd", "day2/*.qmd", "day3/*.qmd", "reference/*.qmd", "slides/*.qmd"]
 
 
 def main() -> int:

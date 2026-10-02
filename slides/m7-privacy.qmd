@@ -1,0 +1,403 @@
+---
+title: "Module 7 — Patient privacy"
+subtitle: "Day Three · 25 min"
+format: revealjs
+---
+
+## In this module {#plan}
+
+{{< include _plan-m7-privacy.md >}}
+
+::: notes
+Two topics, 25 minutes: the rule and the test, then four invented situations. Say it in one breath; the clock starts at the next slide.
+:::
+
+# The rule that isn't optional [10 min]{.time} {#the-rule}
+
+::: notes
+**Goal.** Everyone can say the privacy line, say what the law does and does not tell them in three sentences, and de-identify a sentence and re-read it as a stranger.
+
+**Have ready.** The privacy checklist open in a second tab, so you can paste its link into the chat. A visible timer.
+
+**Watch for.** "There is no name, so it is fine": the list is a floor; the test is whether anyone could be identified. A legal debate: park it; the answer is always the data protection officer or legal team. Someone confessing a past paste: thank them, point to "If it already happened" on the checklist, and take the detail aside after the session.
+
+**If asked.** What counts as an approved tool? One your institution vetted and contracted for patient information; ask which, and for what. Does a paid plan, or turning off history, make it fine? No: a paid personal account is still a consumer tool, and settings do not change who approved it. Have I broken the law, and what are the penalties? Both are for your data protection officer or legal team; this course quotes no amounts or articles. If it already happened, the checklist steps apply.
+
+**Bridge.** "That is the rule and the test. Now the situations where careful, well-meaning doctors break it without noticing: four short situations."
+:::
+
+## The privacy line {#privacy-rule .dark background-color="#0f172a"}
+
+[No patient identifiers into a consumer AI tool. Ever. Full stop.]{.huge}
+
+::: {.fragment .small}
+**Consumer AI tool:** a general assistant you signed up for yourself. **Approved tool:** one your institution has vetted and contracted.
+:::
+
+::: {.fragment .small}
+Saudi Arabia's Personal Data Protection Law (PDPL), enforced by SDAIA, classifies health data as **sensitive personal data**, alongside genetic and biometric data. Healthcare entities face real financial and operational penalties for mishandling it. Education, not legal advice: for what applies to you, ask your institution's data protection officer or legal team.
+:::
+
+::: notes
+**2:30.** Read the line aloud, slowly, then stop for three seconds. A consumer AI tool is a general assistant you signed up for yourself, such as ChatGPT, Claude or Gemini on a personal account. An approved tool is one your institution has vetted and contracted. The difference is who chose it. Then the law, in three sentences, and stop: it is enforced by SDAIA; it classifies health data as sensitive personal data, like genetic and biometric data; and it carries real financial and operational penalties. No article numbers, no amounts, no conclusions. I am teaching, not advising: for what applies to you, ask your institution's data protection officer or legal team.
+
+**Do.** Click once for the two terms, once for the law. Paste the privacy checklist link into the chat now, so everyone can keep it open.
+:::
+
+## A floor, not a ceiling {#identifier-floor}
+
+If any of these is in what you paste, it is not de-identified.
+
+[Name]{.pill} [ID or iqama number]{.pill} [File number]{.pill} [Phone or email]{.pill}
+
+[Address]{.pill} [Exact date of birth]{.pill} [Exact dates]{.pill} [Photograph]{.pill}
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.card .tint .fragment}
+[Any combination]{.t}
+
+Details rare enough to point to one person: a rare condition, a small town, a date.
+:::
+:::
+::: {.column width="50%"}
+::: {.card .teal .fragment}
+[The test]{.t}
+
+Can a person be identified, directly or indirectly, from what you paste?
+:::
+:::
+:::
+
+::: notes
+**2:30.** This list is a floor, not a ceiling: name, any ID or iqama number, the file number, phone or email, address, exact date of birth, and a photograph. Exact dates count, not only birth dates. Then the one people underestimate: a combination. A rare condition, a small town and a date can each look harmless; together they can point to one person. The real test is whether a person can be identified, directly or indirectly, from what you paste, by a colleague, a neighbor, or the family. Judge it as a stranger would, and as the family would.
+
+**Do.** Click once for the combination, once for the test. Take a question or two aloud (Speak); keep the chat for the next slides.
+:::
+
+## De-identify, then re-read {#deidentify}
+
+::: {.flow}
+::: {.step}
+Remove
+:::
+::: {.step}
+Replace
+:::
+::: {.step}
+Generalize
+:::
+::: {.step}
+Re-read as a stranger
+:::
+:::
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.card .dashed}
+[Before (fictional)]{.t}
+
+[Patient name], 64, file [file number], admitted to [hospital name] on [exact date] with pneumonia and discharged on [exact date]. Lives in [small town]; [her daughter is a nurse on the same ward]{.fragment .highlight-red}.
+:::
+:::
+::: {.column width="50%"}
+::: {.card .teal .fragment}
+[After]{.t}
+
+A woman in her 60s was admitted with pneumonia and discharged on day 4. She lives outside the city with family.
+:::
+
+::: {.fragment}
+[A judgment, not a guarantee. When in doubt, use a case card.]{.muted .small}
+:::
+:::
+:::
+
+::: {.move .chat}
+[Chat · 90 sec]{.tag} Type every identifier, and every detail that could point to one person.
+:::
+
+::: notes
+**3:00.** Four steps: remove every identifier; replace with neutral labels, such as "the patient"; generalize, so an age becomes a decade, a place "outside the city", a date "day 3"; then re-read as a stranger. The note is fictional, built on Case B, and the brackets stand for real values that never appear in this course. After the chat, click once to land on the detail people leave in: a daughter who is a nurse on the same ward names no one, yet points to someone, and adds nothing, so it goes. Click again for the after: a woman in her 60s with pneumonia describes no one in particular. Close on the last line: a judgment, not a guarantee.
+
+**Do.** Chat 90 seconds, then read out two or three answers. Instead of pasting: an approved tool, de-identify, or a synthetic case.
+:::
+
+## Beyond the text {#formats-that-leak}
+
+| Format | What it can carry |
+|---|---|
+| Screenshot of the chart | Name, file number, date of birth in the banner |
+| Photograph | A face, a wristband, a tattoo, a room, a date stamp |
+| PDF or lab report | Headers, footers, barcodes, the ordering clinician |
+| Audio recording | A name spoken aloud, a voice |
+| The filename | `FirstName_LastName_discharge_final.docx` |
+
+::: {.move .chat}
+[Chat · 45 sec]{.tag} Which of these surprised you? Type one.
+:::
+
+::: {.fragment}
+**Turning off chat history does not make a consumer tool an approved one.**
+:::
+
+::: {.fragment}
+[Not sure? Do not paste.]{.pill .teal} [Privacy checklist](../reference/privacy-checklist.qmd)
+:::
+
+::: notes
+**1:30.** Identifiers hide outside the text. Walk the table in thirty seconds: the screenshot carries its banner; the photograph a face, a wristband, a tattoo or a date stamp; the lab PDF its headers, footers and barcodes; the recording a spoken name and the voice itself; even the filename can identify. Run the chat. Then the settings line: turning off chat history, or changing any privacy setting, does not turn a consumer tool into an approved one. Only your institution's approval does. Close with: not sure, do not paste, and point to the privacy checklist.
+
+**Do.** Chat 45 seconds: which of these surprised you? Read out two answers. Do not ask who has done it. Then click once for the settings line, once for the close.
+:::
+
+# Where doctors get this wrong [15 min]{.time} {#where-doctors-go-wrong}
+
+::: notes
+**Goal.** Everyone can spot the identifier and the path it took in a realistic situation, and name what to do instead.
+
+**Have ready.** The privacy checklist open in a tab, a visible timer, and the chat in view.
+
+**Watch for.** "I would have done the same": treat the motive as reasonable; the fix is a route, not a scolding. The first situation swallowing time: hold three minutes each. A legal debate: park it with the data protection officer or legal team. A real case from someone's own practice, typed or spoken: stop them before any detail and say "keep it general; no real patient goes into this call."
+
+**If asked.** What if the patient consented? Consent to care is not consent to send information to a tool your institution has not approved; whether consent changes anything is for your data protection officer or legal team. Everyone in my department does this: common is not approved; if it has happened, the checklist steps apply, including reporting through your institution's process. A photo of a rash or a scan, no face? Images can carry a face, a tattoo, a wristband, a date stamp or a header; imaging AI is outside this course, so ask what your institution approves.
+
+**Bridge.** "Break, ten minutes. When you come back, have one output from your weekend ready, from Day One or Day Two, not the one from Lab Three. We run the three questions on it."
+:::
+
+## Four situations, all invented {#vignette-frame}
+
+Nobody in them is careless. They are busy, the tool was open, and the shortcut looked harmless.
+
+::: {.flow}
+::: {.step}
+[1]{.num} Read the situation
+:::
+::: {.step}
+[2]{.num} Type what is wrong, and what should happen instead
+:::
+::: {.step}
+[3]{.num} Compare with the reveal
+:::
+:::
+
+::: {.callout-important appearance="simple"}
+## Keep it general
+No real patient goes into the chat. Describe a kind of situation, not a person.
+:::
+
+::: notes
+**1:00.** Four situations, all invented: no real patient, colleague, hospital or incident. The people in them are busy, not careless: the tool was open and the shortcut looked harmless. The routine is the same each time. I read the situation, you type what is wrong and what should happen instead, I read out two answers, then we compare with the reveal. One request: keep it general. No real patient goes into the chat, not even with the name left off. The fourth situation is a bonus; I may skip it if we are short on time.
+
+**Do.** Say it once, then click on. For each situation, invite a volunteer to unmute and read it aloud (Speak), or read it yourself.
+:::
+
+## "Just to clean up the wording" {#vignette-cleanup}
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.small}
+[Fictional, invented for this course]{.pill}
+:::
+
+::: {.card}
+A physician finishing a long clinic pastes a full discharge summary into a free chatbot on a personal account: "tidy the language before I sign."
+:::
+
+::: {.move .chat}
+[Chat · 90 sec]{.tag} Type what is wrong, and what should happen instead.
+:::
+:::
+::: {.column width="50%"}
+::: {.cards .stack}
+::: {.card .red .fragment}
+[What is wrong]{.t}
+
+Identifiers attached to a full clinical picture went to a consumer tool nobody vetted. Deleting the chat does not undo it.
+:::
+::: {.card .teal .fragment}
+[What should happen instead]{.t}
+
+Use the approved tool, or write it yourself. Paste only de-identified text or a synthetic case.
+:::
+:::
+:::
+:::
+
+::: {.cards}
+::: {.card .dark .fragment}
+**The line.** Take the wording to the tool. Leave the patient behind.
+:::
+:::
+
+::: notes
+**3:00.** Read the situation aloud, or ask a volunteer to unmute and read it. Run the chat for 90 seconds, then read out two answers, pushing for the specifics: which identifiers, and where did they go. The summary opens with the name and file number, then the dates, the family's town, the diagnoses and the medicines: identifiers attached to a full clinical picture. It went from the institution's records to a personal account on a consumer tool nobody vetted or contracted, and deleting the chat does not undo it. The tidied text also comes back unchecked, so Module 6 applies: check it against the original before signing. Then the line.
+
+**Do.** Chat 1:30, two answers read out 0:30, then three clicks: wrong, instead, the line.
+:::
+
+## "The screenshot" {#vignette-screenshot}
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.small}
+[Fictional, invented for this course]{.pill}
+:::
+
+::: {.card}
+On a night shift, a doctor pastes a screenshot of a lab result, top banner included, into a consumer chatbot: "what does the pattern suggest?" No name was typed.
+:::
+
+::: {.move .chat}
+[Chat · 90 sec]{.tag} Type what is wrong, and what should happen instead.
+:::
+:::
+::: {.column width="50%"}
+::: {.cards .stack}
+::: {.card .red .fragment}
+[What is wrong]{.t}
+
+The banner carries name, file number and date of birth. An image carries everything inside it.
+:::
+::: {.card .teal .fragment}
+[What should happen instead]{.t}
+
+Ask a senior colleague, or retype only the values you need into an approved tool, with no dates.
+:::
+:::
+:::
+:::
+
+::: {.cards}
+::: {.card .dark .fragment}
+**The line.** The banner is part of the picture.
+:::
+:::
+
+::: notes
+**3:00.** Same routine: read the situation, chat for 90 seconds, read out two answers. Push for what was in the image that nobody typed. The banner across the top of the record carries the name, file number and date of birth, and the report may add a barcode and the ordering clinician. Nothing identifying was typed and it left anyway, because an image carries everything inside it. Cropping helps only if you have checked every other part of the image and the file's metadata. The answer that comes back is a draft: the doctor decides. Instead: ask a senior colleague through the institution's own channels, or retype only the values you need, age as a decade and no dates, into an approved tool if there is one, and check any answer against a primary source.
+
+**Do.** Chat 1:30, two answers 0:30, then three clicks.
+:::
+
+## "My own scribe" {#vignette-phone-scribe}
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.small}
+[Fictional, invented for this course]{.pill}
+:::
+
+::: {.card}
+A resident records a visit on a free phone app and pastes the transcript into a chatbot to draft the note: "the hospital has scribes too." The patient was never told.
+:::
+
+::: {.move .chat}
+[Chat · 90 sec]{.tag} Type what is wrong. How do the Day Two scribes differ?
+:::
+:::
+::: {.column width="50%"}
+::: {.cards .stack}
+::: {.card .red .fragment}
+[What is wrong]{.t}
+
+A name and a voice reached two services no institution approved: the app, then the chatbot.
+:::
+::: {.card .teal .fragment}
+[What should happen instead]{.t}
+
+Use the scribe your institution approved. If there is none, write the note yourself.
+:::
+:::
+:::
+:::
+
+::: {.cards}
+::: {.card .dark .fragment}
+**The line.** A scribe is approved by your institution, not by how well it works.
+:::
+:::
+
+::: notes
+**3:00.** Same routine. Push for the path, not only the content. The recording holds a name spoken aloud, a voice, and everything the family said during the visit. It lands on a free app's servers, then, as a transcript, in a second consumer tool: two disclosures, both to services no institution approved. The patient was never told. The Day Two scribes were put in place by institutions; that was the institution's decision, not an individual doctor's, and it is the difference. Instead: use the scribe your institution approved, the way it says. If there is none, take your own notes, write the note yourself, and ask whether one is planned.
+
+**Do.** Chat 1:30, two answers 0:30, then three clicks.
+:::
+
+## "It's anonymized" {#vignette-anonymized}
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.small}
+[Fictional, invented for this course]{.pill} [Bonus]{.pill .teal}
+:::
+
+::: {.card}
+A teaching case is "anonymized": no name anywhere. It describes a child with a very rare condition, the small town, and the exact admission date.
+:::
+
+::: {.move .chat}
+[Chat · 60 sec]{.tag} Type who could name this family, and what to change.
+:::
+:::
+::: {.column width="50%"}
+::: {.cards .stack}
+::: {.card .red .fragment}
+[What is wrong]{.t}
+
+Each detail may pass alone; together they point to one family. The name was step one of four.
+:::
+::: {.card .teal .fragment}
+[What should happen instead]{.t}
+
+Generalize: age band, region, "day 3". If the rare condition gives it away, change the story.
+:::
+:::
+:::
+:::
+
+::: {.cards}
+::: {.card .dark .fragment}
+**The line.** No name is not the same as no identity.
+:::
+:::
+
+::: notes
+**2:00.** Bonus: drop this slide first if you are running behind, and say its line on the next one. A doctor preparing a teaching case for an AI-drafted deck calls it anonymized, because no name appears. Same routine, faster: 60 seconds in the chat. Ask who could name this family: anyone in that town, or any doctor who saw the case. Each detail might pass alone; together they point to one family. That is what "any combination of details rare enough to point to one person" means. Removing the name was step one of four. Instead: generalize until the details point nowhere, an age band, a region, "day 3" for a date. If the rare condition is the giveaway and the teaching point survives without it, keep the point and change the story: that makes it a synthetic case. Unsure: ask the data protection officer.
+
+**Do.** Chat 1:00, then two answers and the reveal in the last minute.
+:::
+
+## Three ways it leaks {#vignette-lines}
+
+::: {.cards}
+::: {.card .red}
+[In the text]{.t}
+
+Take the wording to the tool. Leave the patient behind.
+:::
+::: {.card .red}
+[In the image]{.t}
+
+The banner is part of the picture.
+:::
+::: {.card .red}
+[In the recording]{.t}
+
+A scribe is approved by your institution, not by how well it works.
+:::
+:::
+
+[Instead:]{.teal} an approved tool, de-identify, or a synthetic case.
+
+If it already happened: stop, write down what was pasted, report it. Steps: [privacy checklist](../reference/privacy-checklist.qmd).
+
+::: {.move .chat}
+[Chat · 90 sec]{.tag} Where in your own week could this happen? Type the place, not a patient.
+:::
+
+::: notes
+**2:30.** Three leaks, one rule: the text, the image, the recording. If you skipped the bonus, add its line: no name is not the same as no identity. Before any paste, ask: is this tool approved for patient information? If not, is what I am pasting synthetic or fully de-identified, with no identifier in the text or the file, and nothing that would let someone who knows this person recognize them? If you cannot say yes, do not paste. If it already happened: stop, write down what was pasted, into which tool and when, report it through your institution's process and to its data protection officer, and do not assume deleting the chat undoes it. Leave the last 30 seconds for the bridge to the break.
+
+**Do.** Chat 1:30: read out two places, no stories about patients.
+:::

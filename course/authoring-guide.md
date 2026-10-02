@@ -1,9 +1,10 @@
 # Authoring guide
 
-The contract for anyone writing or editing a page in this repository: fixed vocabulary, markup,
-voice, and the limits on what a page may claim. Read `CLAUDE.md` (the three rules) and
+The contract for anyone writing or editing a page or a deck in this repository: fixed vocabulary, markup,
+voice, and the limits on what a page may claim. Read `CLAUDE.md` (the five rules) and
 `course/BRIEF.md` (the source of truth) first. Every page is written for **doctors who are not
-technical**, of any specialty, in a room that asks questions.
+technical**, of any specialty, on a call where people type their questions. The course is online
+first: section 9 says what that rules out.
 
 ## 1. The fixed vocabulary — use these exact words
 
@@ -67,7 +68,7 @@ your report so the card can be extended in one place.
 
 | Where | Card |
 |---|---|
-| Module 1, "how these tools work" room exercise | none — a plain-language sentence-completion exercise |
+| Module 1, "how these tools work" chat exercise | none — a plain-language sentence-completion exercise |
 | Module 2 §7 "Structure fixes it" (SOAP note) | **A** |
 | Module 2 §8 "Three more jobs": referral letter / discharge summary / patient handout | **C** / **B** / **D** |
 | Lab 1 template test | **A** |
@@ -84,7 +85,7 @@ that all draw on it).
 
 ## 3. Page anatomy and markup
 
-Every module and lab page:
+Every module and lab page (the handout; the deck is in section 10):
 
 ```markdown
 ---
@@ -119,8 +120,8 @@ timed section. **Never** put a `[N min]{.time}` badge anywhere except a timed he
 
 **Each timed section** has, in this order: (1) one or two sentences framing why a doctor cares;
 (2) the teaching, in short paragraphs, tables, and lists; (3) a worked example from a case card, with
-the full prompt; (4) where useful, a two-minute room activity; (5) exactly one closing line in a
-tip callout titled "Keep this".
+the full prompt; (4) where useful, a two-minute activity on the call, written with one of the
+moves in section 9; (5) exactly one closing line in a tip callout titled "Keep this".
 
 **Callouts** (always `appearance="simple"`):
 
@@ -129,7 +130,7 @@ tip callout titled "Keep this".
 | `callout-tip` | "Keep this" — the one-line takeaway closing each timed section |
 | `callout-warning` | "Watch for" — a specific pitfall |
 | `callout-important` | a non-negotiable safety rule (the privacy line, verify every number) |
-| `callout-note` | an aside, a room activity ("Try it"), or an illustrative output |
+| `callout-note` | an aside, an activity ("Try it"), or an illustrative output |
 
 ```markdown
 ::: {.callout-tip appearance="simple"}
@@ -150,7 +151,8 @@ ROLE: ...
 ````
 
 The slug is lowercase-kebab and unique across the repository. The marker is metadata only (HTML
-comments are dropped from the page). `python tools/build_prompt_library.py` collects them.
+comments are dropped from the page). `python tools/build_prompt_library.py` collects them. Markers live
+in the handout pages only: a deck shows a prompt without one, and links to the library for the rest.
 
 **Illustrative outputs** — an example of what a tool "might" return — are always labeled, never
 shown as a measurement, and never claim to come from a named product:
@@ -212,45 +214,131 @@ abstract: name the tool behavior, then the clinical consequence. American spelli
 ("revolutionary", "game-changing", "unlock", "leverage"), no exclamation marks, no emoji, no
 scolding. Respect the reader's expertise: they know medicine; this course is about a tool. Define a
 technical word once, in plain terms, the first time it appears on a page. Every paragraph should
-give a clinician something they can do on Monday.
+give a clinician something they can do on Monday. Titles and subtitles say what the reader needs and
+no more: no stock third item ("· English"), no tagline, nothing that reads as generated.
 
-## 6. Instructor material (`course/dayN-talking-points.md`)
+## 6. Speaker notes and the trainer's guide
 
-One block per timed topic, in run-of-show order, headed
-`## Topic N — Title (X min)` with a line linking the participant page and stating the deck status
-(`new`, or `kept` with the existing slide id). The existing deck's slide ids are: `cover`, `why`,
-`outcomes`, `agenda`, `day1-divider`, `rule`, `gutcheck`, `extra-words`, `structure-fix`,
-`tool-types`, `geography`, `quota`, `lab1`, `day2-divider`, `four-places`, `notes-right`,
-`saudi-scribes`, `case-to-deck`, `teaching-ai`, `lab2`, `day3-divider`, `confidently-wrong`,
-`privacy-rule`, `back-to-rule`, `assessment`, `closing`. Blocks contain:
-
-- **Goal** — one sentence: what the room can do or say afterward.
-- **Slides** — each with an id (existing, or a proposed new one), a headline, the on-slide text
-  (three items at most), a visual note in the deck's style (card row, before/after, big number,
-  flow, table; DM Sans; indigo/teal on `#0F172A` / `#FBFBFD`), and `Notes:` — plain text of at most
-  900 characters that can be pasted straight into the deck's speaker notes.
-- **Say** — the talking points in order, with clock cues ("0:00–2:00"), as a script an instructor
-  can glance at, not a transcript.
-- **Do** — any live demo or room activity, as numbered steps, including what to have open beforehand.
-- **If asked** — three to five questions a room of doctors actually asks, each with a short answer.
-- **Watch for** — misconceptions and the moment that goes wrong.
-- **Bridge** — the sentence into the next topic.
-
-Labs end the day's file with a **Lab N — facilitation** section: before class, materials,
-minute-by-minute, what good looks like, common problems and fixes, debrief prompts, and (Lab 3)
-the prepared backup examples with their answers.
+The decks carry the script. There is no separate talking-points file: open a deck, press `S` for the
+speaker view, and the notes under each slide are what to say and do. `course/instructor-guide.md` holds what
+does not belong on a slide: the run-of-show, the online moves and their fallbacks, what to have open before each
+day, risks, and the decisions still open.
 
 ## 7. Size
 
-A page is as long as its minutes justify and no longer: about 100 to 130 words of participant text per
-minute of class time, plus the prompts and tables. A lab page is 1,300 to 2,000 words. Talking points
-run 250 to 450 words per topic plus slide specs. Padding is worse than brevity.
+A handout page is as long as its minutes justify and no longer: about 100 to 130 words of participant text per
+minute of class time, plus the prompts and tables. A lab page is 1,300 to 2,000 words. A deck has two to
+six working slides per topic; a slide holds one idea and no more than about forty words. Padding is worse than brevity.
 
 ## 8. Before you say you are done
 
-- `python tools/check_timing.py --allow-missing` passes for your pages (anchors and badges).
-- Every prompt worth reusing has its `<!-- prompt: ... -->` marker; no marker precedes anything else.
+- `python tools/check_timing.py --allow-missing` passes for your pages and decks (anchors and badges).
+- Every prompt worth reusing has its `<!-- prompt: ... -->` marker in the handout; no marker precedes anything else.
 - Every clinical fact traces to a case card or the practice source; no invented number, source, or link.
-- Every example output is in an "Illustrative output" callout.
+- Every example output is labeled illustrative.
 - The exact wording of the rule, the three questions, the four parts, and the privacy line matches section 1.
+- `python tools/lint_content.py` and `python tools/check_decks.py` pass, and nothing assumes a shared room.
 - You edited only the files you were assigned.
+
+## 9. Online first
+
+The course runs on a video call. Everyone is on their own device with their own assistant; nobody sits next to
+anybody. Write every activity so that it works there. Each interactive moment is one of five moves, and a slide
+announces it the same way every time, with a label and a time (for example "Chat · 1 min").
+
+| Move | What happens | Use it for |
+|---|---|---|
+| **Chat** | Everyone types an answer at once; the trainer reads a few out | A vote (type 1, 2 or 3), a one-sentence answer, the next word |
+| **Speak** | Two or three people unmute when asked | A short answer, a debrief |
+| **Share** | One person shares a screen when asked | An output shown beside its source |
+| **Pair** | A breakout room of two, three to six minutes | Checking each other's work, and only that |
+| **Solo** | Your own device, your own assistant, quietly | The labs |
+
+How to write for it:
+
+- **Chat first.** If an activity can be done in the chat, it is. A chat answer takes longer to type than to say, so
+  give sixty to ninety seconds for one sentence.
+- **Pair only where a second person catching what you missed is the point.** That is Lab 3 part 1 and the Day Three pair
+  check. Every pair step carries its fallback in the speaker notes: the same step done in the chat, or alone.
+- **Nothing physical.** No worksheet to collect, no wall to write on, nothing to hand over. Say "your notes", "the
+  chalkboard (press B in a deck)", "share your screen".
+- **Say the group.** Write "everyone", "the group" or "the call", and "have ready" in place of "bring".
+- **No platform feature beyond chat and screen sharing**, except breakout rooms for the pair steps. A tool the
+  platform may not have is a dependency (rule 4).
+
+Words that give a page away are blocked by `tools/lint_content.py` in pages, decks and the trainer's notes. Written
+here as an example of what not to put in front of participants, inside a fence so the lint skips it:
+
+```text
+"Tell your neighbor." "Turn to the person next to you." "Show of hands." "Hands up." "In pairs."
+"Walk the room." "The whiteboard." "On paper." "Print this page." "Project the page." "In the room."
+```
+
+## 10. Decks (`slides/`)
+
+Each module and lab has a deck, built with reveal.js through Quarto, in the same look as the SDAIA course decks: a white
+ground, left-aligned text, a hairline under each title, dark topic slides, a teal progress bar. A deck has the
+same file name and the same anchors as its handout (`day1/m2-prompting.qmd` and `slides/m2-prompting.qmd`).
+The shared options and theme are `slides/_metadata.yml` and `slides/theme.scss`; a deck's own front matter is its
+title, subtitle and `format: revealjs`. **revealjs is never a project-level format** (CLAUDE.md).
+
+**Order.** The title slide (from the front matter); `## In this module {#plan}` holding
+`{{< include _plan-<deck>.md >}}`, a table generated from `timing.json`; then one topic slide per timed section,
+`# Title [N min]{.time} {#anchor}` with the minutes and anchor from `timing.json`, each followed by two to six working
+slides `## Title {#id}`. Slide ids are lowercase kebab, unique in the deck, and are the slide's URL (`#/id`).
+
+**Speaker notes** are `::: notes` at the end of the slide, plain markdown, at most 900 characters (1,600 on a topic
+slide). A working slide's notes open with its time budget (`**1:30.**`, minutes and seconds, adding up to the topic's
+minutes), then **Say** in the voice of the trainer, then **Do** in terms of the five moves. A topic slide's notes are the
+topic's brief: **Goal.** **Have ready.** **Watch for.** **If asked.** **Bridge.** Never put a lab answer key in a
+note; never put `[TRAINER TO CONFIRM]` in one (an open decision goes in `instructor-guide.md`).
+
+**Components** (CSS in `theme.scss`; use only these):
+
+````markdown
+::: {.cards}
+::: {.card}
+[Short title]{.t}
+
+One or two lines. `.card .teal` for the teal edge, `.dashed` for "not this", `.tint` for emphasis, `.dark` for a dark card.
+:::
+:::
+
+[01]{.num}              <!-- a big numeral at the top of a card -->
+
+::: {.flow}
+::: {.step}
+[1]{.num} Draft with AI
+:::
+::: {.step}
+[2]{.num} Cross-check the source
+:::
+:::
+
+::: {.columns}
+::: {.column width="50%"}
+left
+:::
+::: {.column width="50%"}
+right
+:::
+:::
+
+::: {.move .chat}
+[Chat · 1 min]{.tag} Type your answer.
+:::
+````
+
+A move strip is `.move` plus one of `.chat`, `.speak`, `.share`, `.pair`, `.solo`; the label is the first span. Other
+helpers: `[text]{.illustrative}` (the label every invented output carries), `[text]{.pill}`, `[text]{.huge}`,
+`[text]{.big}`, `.muted`, `.small`, and `.vc` to push a short slide's content toward the middle. Tables,
+blockquotes, callouts and ```` ```text ```` prompt blocks (they get a "Copy prompt" button) are styled already.
+Reveals are `::: {.fragment}`.
+
+**Never** write a `##` or `###` heading inside a `:::` div (pandoc turns it into a nested slide; use a `[Title]{.t}`
+paragraph), put a `::: notes` block before the first heading (it becomes an empty slide), or add an image. A slide's
+text is what a doctor needs to see, not the script: the script is in the notes.
+
+**Check a deck** without rendering: `python tools/check_decks.py slides/<deck>.qmd` and
+`python tools/lint_content.py slides/<deck>.qmd`. Render with `quarto render slides/<deck>.qmd`, then run
+`tools/deck_audit.js` in the browser on the result: it reports overflow, nested slides, low contrast and missing notes.

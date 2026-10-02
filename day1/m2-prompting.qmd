@@ -9,6 +9,9 @@ A chatbot is fast at producing text and indifferent to whether it is the text yo
 Time
 :   35 minutes, four topics
 
+Slides
+:   [Open the deck](../slides/m2-prompting.qmd): the same module, one idea to a slide.
+
 Uses
 :   [Case A](../reference/case-cards.qmd#case-a), [Case B](../reference/case-cards.qmd#case-b), [Case C](../reference/case-cards.qmd#case-c), [Case D](../reference/case-cards.qmd#case-d)
 
@@ -59,8 +62,8 @@ A hedge is not a safety check. "Clinical correlation is advised" tells the next 
 :::
 
 ::: {.callout-note appearance="simple"}
-## Try it
-One minute. Think of the last thing you typed into an assistant. Which of the four did you leave open: audience, length, structure or tone? Tell your neighbor.
+## Try it (1 minute, in the chat)
+Think of the last thing you typed into an assistant. Which of the four did you leave open: audience, length, structure or tone? Type your answer in the chat.
 :::
 
 ::: {.callout-tip appearance="simple"}
@@ -146,8 +149,8 @@ Every missing part leaves a recognizable mark. Read the right column, then look 
 | Constraints | Hedges, disclaimers, unrequested advice, units that drift |
 
 ::: {.callout-note appearance="simple"}
-## Try it
-Two minutes, in pairs. Each prompt below is missing exactly one of the four parts. Which?
+## Try it (2 minutes, in the chat)
+Each prompt below is missing exactly one of the four parts. Which? Type your answers in the chat, for example "1: Format".
 
 ```text
 1. ROLE: You are a family physician, writing for a cardiologist.

@@ -7,7 +7,7 @@ theory pages plus hands-on labs, rendered straight into the site, nothing execut
 time. Read this before adding a page, changing a minute, or touching `_quarto.yml`.
 The house style for prose, markup and vocabulary is `course/authoring-guide.md`.
 
-## The four rules everything else serves
+## The five rules everything else serves
 
 **1. The clock adds up.** Each day is exactly 120 minutes including its 10-minute break.
 `course/timing.json` is the single source of every minute; each timed section on the site
@@ -39,15 +39,24 @@ literature-grounded tool, the assistant's own search mode, or a plain literature
 Vera Health once was a requirement; a trainer who is not a clinician cannot register for it, and its public
 terms do not say how credentials are checked. `tools/lint_content.py` blocks the phrasings that made it one.
 
+**5. The course is delivered online, and nothing assumes a shared room.** Everyone is on a video call with their
+own device and their own assistant. No page, deck or note may tell anyone to turn to a neighbor, raise a hand, look
+at a board or a projector, write on paper, or hand something over. Every activity is one of five moves (Chat,
+Speak, Share, Pair, Solo; `course/authoring-guide.md`, section 9), chat first. A Pair step (a breakout room of two) is
+used only where a second person catching what you missed is the point, and carries a no-breakout fallback in its
+notes. Say "the group", not "the room". `tools/lint_content.py` blocks the wording that gives a page away, in the
+pages, the decks and the trainer's notes.
+
 ## Layout
 
 | Path | What |
 |---|---|
-| `index.qmd`, `setup.qmd`, `assessment.qmd` | site root pages |
-| `day1/`, `day2/`, `day3/` | the modules (`mN-*.qmd`) and labs (`labN-*.qmd`), in run-of-show order |
+| `index.qmd`, `setup.qmd`, `assessment.qmd` | site root pages; `index.qmd` is the course map, one card per module and lab |
+| `day1/`, `day2/`, `day3/` | the **handouts**: the modules (`mN-*.qmd`) and labs (`labN-*.qmd`), in run-of-show order, with the prompts |
+| `slides/` | the **decks**: one reveal.js deck per module and lab, same file name and anchors as its handout, speaker notes under every slide; `_metadata.yml`, `theme.scss`, `section.lua`, and the generated `_glance-dayN.md` / `_plan-*.md` tables |
 | `reference/` | case cards, practice source, prompt library (generated), tool guide, glossary, privacy guide, troubleshooting |
-| `course/` | trainer-facing: instructor guide, per-day talking points and slide text, accreditation notes, the source brief, `timing.json`. **Not rendered to the site, but the repository is public** — nothing in it may be a secret |
-| `tools/` | `check_timing.py`, `build_prompt_library.py`, `check_placeholders.py`, `lint_content.py`, `check_links.py`, and `contrast_audit.js` (a browser-console contrast audit) |
+| `course/` | trainer-facing: the instructor guide, the Lab 3 examples, accreditation notes, the authoring guide, the source brief, `timing.json`. The script is the speaker notes in the decks. **Not rendered to the site, but the repository is public** — nothing in it may be a secret |
+| `tools/` | `check_timing.py`, `check_decks.py`, `build_prompt_library.py`, `check_placeholders.py`, `lint_content.py`, `check_links.py`, and two browser-console audits, `contrast_audit.js` (pages) and `deck_audit.js` (decks) |
 | `.github/workflows/publish.yml` | timing check, prompt-library check, render, link audit, deploy |
 
 ## The prompt library is generated
@@ -65,6 +74,7 @@ HTML shows. Before calling a page done:
 
 ```
 python tools/check_timing.py
+python tools/check_decks.py
 python tools/build_prompt_library.py --check
 python tools/check_placeholders.py
 python tools/lint_content.py
@@ -73,17 +83,26 @@ python tools/check_links.py        # every internal link and #fragment in _site/
 ```
 
 then look at the rendered page in **both** light and dark mode and at phone width — the labs
-are used on phones in the room. Mermaid diagrams must have become `<svg>`, not raw text.
-Run `tools/contrast_audit.js` in the browser too: contrast worked out on paper is not the
+are used on laptops and phones during the call. Mermaid diagrams must have become `<svg>`, not raw text.
+Run `tools/contrast_audit.js` in the browser too: contrast worked out by hand is not the
 contrast that renders (the first audit of this site found Bootstrap's grey on the dark breadcrumb
-bar at 2.85:1, and a blockquote at 3.7:1, in a palette that passed on paper).
+bar at 2.85:1, and a blockquote at 3.7:1, in a palette that passed on paper). A deck is audited the
+same way with `tools/deck_audit.js` (overflow, nested slides, contrast, missing notes), and looked at
+in the browser at 1280 x 720. The browser caches a deck page hard: add `?v=2` to the address after a re-render.
 
 ## Site gotchas (inherited from the sibling sites — binding here)
 
 - **Never write a linked image as its own paragraph** (`[![x](y)](z)`): Quarto's implicit-figures
   pass silently drops the `<a>`. Use raw HTML. (This site has almost no images; keep it that way.)
 - **Don't add `revealjs` as a project-level format.** It makes Quarto render every page twice and
-  the render dies. If a page ever needs slides, render that one file with `--to revealjs`.
+  the render dies. A deck says `format: revealjs` in its own front matter (the shared options are in
+  `slides/_metadata.yml`), and only that page renders as slides: this is how the decks in `slides/` work.
+- **A heading inside a `:::` div becomes a nested slide.** pandoc turns it into a `<section>` and
+  reveal.js makes the whole slide a vertical stack. In a deck use a `[Title]{.t}` paragraph in a card.
+  `tools/check_decks.py` catches it in the source; `deck_audit.js` catches it in the render.
+- **`::: notes` before a deck's first heading becomes an empty slide.** Notes go under a heading.
+- **Quarto bakes the slide menu icons into a data-URI**, so `color` does not recolour them; the theme
+  uses a `filter` on dark slides (`slides/theme.scss`).
 - **`execute: enabled: false` project-wide is deliberate.** Nothing on this site runs; every
   block is read or copied by a participant.
 - **A page not listed in the sidebar `contents:` will not show in navigation** even if it
@@ -110,6 +129,8 @@ bar at 2.85:1, and a blockquote at 3.7:1, in a palette that passed on paper).
 ## Public repository: what must never be committed
 
 - a real patient's data in any form, or a screenshot that contains any;
+- the **Lab 3 examples' source cards and the answer keys on the site** (`course/lab3-examples.md` holds them for the
+  trainer; they are never in a page, a deck or a deck's notes, and the instructor shares them from a private deck);
 - the **scored assessment quiz and its answer key** (the practice bank on `assessment.qmd` is
   deliberately not the scored quiz; if the scored one is built as a form, its answer-position
   and answer-length balancing rules from the trainer's workspace apply, and it stays out of this repo);

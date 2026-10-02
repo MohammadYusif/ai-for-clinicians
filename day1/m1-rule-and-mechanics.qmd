@@ -9,8 +9,11 @@ This module sets up everything that follows: the one-line rule for the weekend, 
 Time
 :   25 minutes, four topics
 
+Slides
+:   [Open the deck](../slides/m1-rule-and-mechanics.qmd): the same module, one idea to a slide.
+
 Uses
-:   [Case A](../reference/case-cards.qmd#case-a) in topic 4. Topic 3 uses a spoken sentence-completion exercise and no case.
+:   [Case A](../reference/case-cards.qmd#case-a) in topic 4. Topic 3 uses a sentence-completion exercise in the chat and no case.
 
 You leave with
 :   The rule that governs every tool in this course, a working picture of why fluent text can still be wrong, and a three-question check for any AI draft.
@@ -41,11 +44,15 @@ Most of you already have a chatbot open between patients. This weekend makes tha
 | Two | Applications | Notes, presentations, and teaching prep, hands-on: [Module 4](../day2/m4-notes-and-audiences.qmd), [Module 5](../day2/m5-talks-and-teaching.qmd), [Lab 2](../day2/lab2-one-case-three-outputs.qmd) |
 | Three | Safety & Ethics | Verification, privacy, and the final assessment: [Module 6](../day3/m6-confidently-wrong.qmd), [Lab 3](../day3/lab3-spot-the-error.qmd), [Module 7](../day3/m7-privacy.qmd), [Module 8](../day3/m8-back-to-the-rule.qmd), [assessment](../assessment.qmd) |
 
-### Three ground rules for the room
+### Three ground rules
 
 1. **Every case is synthetic.** Each lab uses a [case card](../reference/case-cards.qmd): a fictional patient, never a real one.
-2. **Say so when a tool fails.** The labs are built to make tools fail, so a failure in the room is data, not embarrassment.
-3. **Ask when it comes up.** Someone else has the same question.
+2. **Say so when a tool fails.** The labs are built to make tools fail, so a failure is data, not embarrassment.
+3. **Ask when it comes up.** Type it in the chat or unmute. Someone else has the same question.
+
+### How we use the call
+
+Every activity is one of five moves, and the slide says which, with a time. **Chat**: everyone types at once. **Speak**: two or three of you unmute when asked. **Share**: one person shares a screen. **Pair**: a breakout room of two, a few minutes. **Solo**: your own device and your own assistant. Keep the slides in one window and your assistant in another.
 
 ::: {.callout-important appearance="simple"}
 ## The privacy line
@@ -87,8 +94,8 @@ The note, the letter and the handout carry your name, and the tool's part in the
 The rule does not loosen for better tools. On Day Two you will meet ambient scribes, tools built to listen to a visit and draft the note, and that note is still read line by line.
 
 ::: {.callout-note appearance="simple"}
-## Try it (1 minute)
-Think of the last thing you asked an AI tool to write. Which half did you do: the draft or the decision? Tell your neighbor in one sentence.
+## Try it (1 minute, in the chat)
+Think of the last thing you asked an AI tool to write. Which half did you do: the draft or the decision? Type one sentence in the chat.
 :::
 
 ::: {.callout-tip appearance="simple"}
@@ -107,8 +114,8 @@ The tool you type into is a *language model*: a program trained on a very large 
 By itself, it has no step where it checks a statement against the world. It produces text that fits the pattern of everything before it. That is the whole mechanism, at the level you need.
 
 ::: {.callout-note appearance="simple"}
-## Try it (2 minutes)
-Your instructor reads a line and stops. Say the next word out loud, together. Nobody is being tested.
+## Try it (2 minutes, in the chat)
+Your instructor shows a line and stops. Type the next word in the chat, and send it when the count reaches "three, two, one". Nobody is being tested.
 
 1. "Twinkle, twinkle, little ..."
 2. "Take one tablet twice a ..."
@@ -222,7 +229,7 @@ The questions never change. The effort behind each one does.
 
 The check sits inside a four-step routine that Day Three develops: Draft with AI → Cross-check the source → Confirm or correct → Use. Nothing reaches "Use" without passing the middle two.
 
-You run the check in [Lab 1, part 2](lab1-templates-and-limits.qmd#part-2) on an answer the tool makes up, in [Lab 3](../day3/lab3-spot-the-error.qmd) on a neighbor's, and in [Back to the rule](../day3/m8-back-to-the-rule.qmd#back-to-the-rule) on an output of your own. The one-page card is the [three-question check](../reference/three-question-check.qmd): keep it open beside the tool.
+You run the check in [Lab 1, part 2](lab1-templates-and-limits.qmd#part-2) on an answer the tool makes up, in [Lab 3](../day3/lab3-spot-the-error.qmd) on another participant's output, and in [Back to the rule](../day3/m8-back-to-the-rule.qmd#back-to-the-rule) on an output of your own. The one-page card is the [three-question check](../reference/three-question-check.qmd): keep it open beside the tool.
 
 ::: {.callout-tip appearance="simple"}
 ## Keep this

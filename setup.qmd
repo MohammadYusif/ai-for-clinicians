@@ -1,17 +1,17 @@
 ---
-title: "Before you arrive"
+title: "Before the first call"
 subtitle: "Ten minutes of setup, done once"
 ---
 
-Nothing to install. You need a laptop (best) or a phone, a web browser, and **one account**: an AI assistant. Nothing else in this course depends on a particular tool, a verification step, or anyone's approval.
+Nothing to install. You need a device that can join the call, a second window (or a second device) for your AI assistant, a web browser, and **one account**: an AI assistant. Nothing else in this course depends on a particular tool, a verification step, or anyone's approval.
 
 ## 1. One account
 
 | Tool | Why you need it | What to do |
 |---|---|---|
-| **A general assistant**: ChatGPT, Claude, or Gemini (any one; a free account is enough), or another you already use | Drafting and structuring in every lab | Sign up with your own email and sign in on the device you will bring |
+| **A general assistant**: ChatGPT, Claude, or Gemini (any one; a free account is enough), or another you already use | Drafting and structuring in every lab | Sign up with your own email and sign in on the device you will use for the labs |
 
-Use your own account on your own device. Do not use a shared login. No account yet, or it will not open? Pair with a neighbor and share one screen: you can still do every exercise.
+Use your own account on your own device. Do not use a shared login. No account yet, or it will not open? Say so in the chat: follow a shared screen and you can still do every exercise.
 
 ## 2. The second option, for the tool comparisons
 
@@ -30,29 +30,50 @@ Vera Health is one example. It is for healthcare professionals, in practice or i
 
 Every lab uses the [case cards](reference/case-cards.qmd): five fictional patients. **Do not type a real patient's name, ID, or details into any tool during this course.** The reason is the whole of Day Three, but the rule starts now. If you want to use a case of your own, read the [privacy checklist](reference/privacy-checklist.qmd) first, and if you are not certain it is safe, use a card.
 
-## 4. What to bring each day
+## 4. Your screen on the call
 
-| Day | Bring |
+- **Best:** one laptop with two windows side by side, the call and the slides in one and your assistant in the other.
+- **Also good:** the call on one screen or device and your assistant on another.
+- **A phone alone** is a squeeze for a lab. If it is all you have, say so in the chat and your instructor will adjust.
+- **The slides.** Your instructor shares them, and the link goes in the chat. Open it in a window of your own: you can go at your own pace, and copy a prompt straight from a slide.
+- **Join a few minutes early** to check that you can hear, be heard, and type in the chat. Mute when you are not speaking.
+
+## 5. How you take part
+
+Every activity is one of five moves, and the slide says which, with a time.
+
+| Move | What happens |
+|---|---|
+| **Chat** | Everyone types at once; the instructor reads a few out |
+| **Speak** | Two or three of you unmute when asked |
+| **Share** | One person shares a screen when asked |
+| **Pair** | A breakout room of two, a few minutes |
+| **Solo** | Your own device, your own assistant |
+
+## 6. What to have ready each day
+
+| Day | Have ready |
 |---|---|
 | **One** | Your device, your assistant signed in, and a place to save prompts (a notes app is fine, with no patient information in it) |
 | **Two** | Your favorite prompt from Day One, and an idea of a *type* of case you present or teach (no patient information) |
 | **Three** | Your saved output from Lab 1, "break it on purpose", with its warning line, and one AI output from Days One and Two to put through the three-question check |
 
-## 5. Check your setup
+## 7. Check your setup
 
 Two minutes. Tick each one.
 
-- [ ] I can open my general assistant, sign in, and send it a message.
+- [ ] I can join the call, hear, and type in the chat.
+- [ ] I can open my general assistant, sign in, and send it a message, with the call open beside it.
 - [ ] I know which second option I will try first for the comparisons in Labs 1 and 2. Any of the three is fine.
 - [ ] I can copy text from a web page and paste it into a chat.
 - [ ] I have somewhere to save text, and I know where it is.
-- [ ] I can read this site on my device, in light and dark mode.
+- [ ] I can open the slides link in a window of its own.
 
-## 6. Ground rules for the room
+## 8. Ground rules for the call
 
-- **Candor over polish.** The labs are built to make the tools fail. A tool failing is the point, and saying so out loud helps the room.
+- **Candor over polish.** The labs are built to make the tools fail. A tool failing is the point, and saying so in the chat helps everyone.
 - **Synthetic only.** No real patient information, in any lab, in any tool.
 - **Your device, your account.** Do not sign in with an institutional account you would not want to explain.
-- **Ask.** This is a room that asks questions, and the best ones usually start with "but what if".
+- **Ask.** Type it in the chat or unmute. The best questions usually start with "but what if".
 
 If something goes wrong, the [troubleshooting page](reference/troubleshooting.qmd) covers the common cases.

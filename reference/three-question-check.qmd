@@ -31,7 +31,7 @@ A source the tool *names* is not verification until you have opened it. Asking t
 1. **Read** the whole output once, slowly.
 2. **Mark** every number, name, date, dose, and source.
 3. **Check** each mark against the chart or the source, not against the tool.
-4. **Ask** the three questions out loud.
+4. **Ask** yourself the three questions, in full, one at a time.
 5. **Decide:** use it, fix it, or discard it.
 
 ## How hard to check depends on the stakes
@@ -57,7 +57,7 @@ When you find one, say which kind it is. The names carry across every document:
 - **Altered:** a value, negation, side, date, or unit changed.
 - **Fabricated citation:** a reference or guideline that does not exist or does not say that.
 
-## Your log (print this)
+## Your log (copy this into your notes)
 
 | Output | Q1 defend | Q2 verify | Q3 catch | What I checked | Use / fix / discard | Kind of error |
 |---|---|---|---|---|---|---|

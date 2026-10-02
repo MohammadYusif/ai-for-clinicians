@@ -1,0 +1,659 @@
+---
+title: "Module 4 — Notes and audiences"
+subtitle: "Day Two · 40 min"
+format: revealjs
+---
+
+## In this module {#plan}
+
+{{< include _plan-m4-notes-and-audiences.md >}}
+
+::: {.callout-note appearance="simple"}
+## The same five moves as Day One
+Chat, Speak, Share, Pair, Solo. Each activity names its move and its minutes.
+:::
+
+::: {.move .chat}
+[Chat · 30 sec]{.tag} Used an AI tool since yesterday? Type 1 for yes, 2 for no.
+:::
+
+::: notes
+**While people join.** Welcome everyone back and run the chat vote; glance at the count and move on. If anyone describes a patient, say we return to that on Day Three. The clock starts at the next slide.
+:::
+
+# Four places AI already fits [10 min]{.time} {#four-places}
+
+::: notes
+**Goal.** Everyone can name the four places AI already fits, the trap in each, and the one question of the three that guards it.
+
+**Have ready.** This deck on the plan slide. The Case A card and the prompt library open in two tabs, and `orient-and-verify` ready in your assistant.
+
+**Watch for.** "It's only a question" stops being harmless when the answer changes what happens to a patient. A real patient story in the chat: stop kindly, say the privacy line, switch to a card. A recap that runs past two minutes: cut it.
+
+**If asked.** Can I use it for decisions between patients? Orientation, yes; the decision, no. AI drafts. You decide. A literature-grounded tool shows citations: that makes question 2 faster, and opening the source is still your job. My hospital has approved nothing? Practice on these cards; for real patients, no patient identifiers into a consumer AI tool. Ever. Full stop. Ask your institution what is approved.
+
+**Bridge.** "The second place is the one you will meet first: the progress note. Five minutes on doing it right."
+:::
+
+## Day One in three lines {#day1-recap}
+
+::: {.cards}
+::: {.card}
+[The rule]{.t}
+
+::: {.fragment}
+AI drafts. You decide.
+:::
+:::
+::: {.card .teal}
+[The check]{.t}
+
+::: {.fragment}
+1. Could I defend this to a colleague?
+2. Does it point to something I can verify?
+3. Would I catch it if it were wrong?
+:::
+:::
+::: {.card}
+[The framework]{.t}
+
+::: {.fragment}
+Role · Context · Format · Constraints
+:::
+:::
+:::
+
+::: {.move .chat}
+[Chat · 1 min]{.tag} I say the start of each line. Type the rest. Three, two, one, send.
+:::
+
+::: notes
+**1:30.** **Say.** "Yesterday was the rule, the check and the framework, and today you use them on real jobs. I will say the start of each line, and you type the rest." AI drafts. You... Could I defend this to a... Who it is, what it knows, what shape to return, what to... And the privacy line: No patient identifiers into a consumer AI tool. Ever. Full... Say once: "If the answer to any of these is no, that's the signal to slow down, not the finding to accept." This is a recap, not a re-teach: ninety seconds, then we move on.
+
+**Do.** Chat: say each start, then "three, two, one, send". Glance at the endings, then click to show each card. If the chat is quiet, finish the first line yourself and ask again.
+:::
+
+## Four places, each with a safe way in {#four-places-cards}
+
+::: {.cards}
+::: {.card}
+[01]{.num}
+
+[Daily questions]{.t}
+
+Orientation between patients, never the decision.
+:::
+::: {.card .teal}
+[02]{.num}
+
+[Progress notes]{.t}
+
+A fixed template, and you read every line.
+:::
+:::
+
+::: {.cards}
+::: {.card}
+[03]{.num}
+
+[Presentations]{.t}
+
+A case with no identifiers.
+:::
+::: {.card .teal}
+[04]{.num}
+
+[Teaching prep]{.t}
+
+Only text you may share, and a key that quotes it.
+:::
+:::
+
+::: notes
+**1:15.** **Say.** "Four places, and you meet all of them every week." Daily questions: orientation between patients, the kind of question you would put to a well-read colleague in the corridor, never the decision. Progress notes: the place where you control the most, because the facts are yours and the tool only arranges them. Presentations: a case with no identifiers. Teaching prep: only text you are allowed to share, and an answer key that quotes it. Each place has a safe way in, a trap, and one of the three questions that guards it. Traps next.
+
+**Do.** No move on this slide. Ask nobody what they use. Keep to a minute and a quarter.
+:::
+
+## The trap in each, and the question that guards it {#places-traps}
+
+| Place | The trap | Guarded by |
+|------|--------------|------|
+| Daily questions | A calm tone on a wrong answer; a made-up citation | **Question 2** |
+| Progress notes | A dropped fact or a changed value, in a smooth draft | **Question 3** |
+| Presentations | An identifier left on a slide; numbers the tool supplied | **Question 1** |
+| Teaching prep | Made-up citations; a confident wrong answer key | **Question 2** |
+
+::: notes
+**1:15.** **Say.** "Each place has one trap, and each trap is guarded by one question." Daily questions: the tone is calm whether the answer is right or wrong, and a made-up citation has the shape of a real one; question 2, does it point to something I can verify. Progress notes: a smooth draft that dropped a fact or changed a value; question 3, would I catch it if it were wrong. Presentations: an identifier rides along onto a slide, or the numbers came from the tool and not your source; question 1, could I defend this to a colleague. Teaching prep: made-up citations and a wrong key said with confidence; question 2.
+
+**Do.** No move yet; the vote is next. Keep the order the same each time: place, trap, question.
+:::
+
+## Which question guards it? {#guard-it}
+
+::: {.columns}
+::: {.column width="56%"}
+| | The situation | Question |
+|---|--------------------|-------|
+| **A** | A drug-interaction answer, read straight into an order | [2]{.fragment} |
+| **B** | A note that lists a medicine the patient never took | [3]{.fragment} |
+| **C** | A slide with a scan that has a name in the corner | [1]{.fragment} |
+| **D** | An answer key that cites a paper nobody opened | [2]{.fragment} |
+:::
+::: {.column width="44%"}
+::: {.cards .stack}
+::: {.card}
+**1.** Could I defend this to a colleague?
+:::
+::: {.card .teal}
+**2.** Does it point to something I can verify?
+:::
+::: {.card}
+**3.** Would I catch it if it were wrong?
+:::
+:::
+:::
+:::
+
+::: {.move .chat}
+[Chat · 90 sec]{.tag} Type four numbers, A to D: the question that guards each.
+:::
+
+::: notes
+**2:00.** **Say.** "I will read four situations. For each one, decide which of the three questions would have stopped it, and type four numbers in order." Then the answers. A, an answer read straight into an order: 2, because nothing was verified. B, a medicine the patient never took: 3, because you only catch it by comparing. C, a scan with a name in the corner: 1, you could not defend that to a colleague; and the privacy line, once: no patient identifiers into a consumer AI tool. Ever. Full stop. D, an answer key that cites a paper nobody opened: 2.
+
+**Do.** Read A to D aloud, then run the Chat for about a minute. Read out the spread, not names. Click to reveal each answer. A split vote is a good result: say which question fits best, and why.
+:::
+
+## Orient, then verify {#orient-and-verify}
+
+::: {.flow}
+::: {.step}
+[1]{.num} Draft with AI
+:::
+::: {.step}
+[2]{.num} Cross-check the source
+:::
+::: {.step}
+[3]{.num} Confirm or correct
+:::
+::: {.step}
+[4]{.num} Use
+:::
+:::
+
+Situation, no identifiers: an adult with new ankle swelling after starting amlodipine.
+
+[Prompt library: orient-and-verify](../reference/prompt-library.qmd#p-orient-and-verify)
+
+::: {.move .chat}
+[Chat · 90 sec]{.tag} Your turn: rewrite a question from this week with no patient detail. Type it, and the source where you would confirm the answer.
+:::
+
+::: notes
+**3:30.** **Say.** "Here is the safe pattern for the first place. The prompt asks for orientation, then makes the tool list what I must confirm, and where." Name the three parts: a short answer, the points to confirm, the kind of source for each. "Now the workflow. I read part two, open one source named in part three, and look for the same statement. If I cannot find it, the answer stays unverified and does not change what I do. Your turn: a question from this week, with no patient detail, and the source you would use."
+
+**Do.** Share your screen and run `orient-and-verify` on the ankle swelling situation. Open one named source. Then the Chat: read out two or three, and point out any that still carry patient detail. Then the bridge.
+:::
+
+# Notes, done right [5 min]{.time} {#notes-done-right}
+
+::: notes
+**Goal.** Everyone can run a 60-second review on an AI-drafted note and find what was invented, omitted or altered.
+
+**Have ready.** The Case A card and the Module 4 draft in two tabs, side by side on your shared screen, and a timer you can see.
+
+**Watch for.** Finding all three quickly feels like mastery; there is no announced count in clinic, so say so. Reviewing against your memory of the visit instead of the facts you wrote down. A fluent note that gets skimmed: the smoother it reads, the faster the eye moves. Asking the tool to redo a flawed note instead of correcting it yourself; a new draft needs a new review.
+
+**If asked.** Doesn't reading every line cancel the time saved? Whether you save time is what you measured in Lab One; the review is the job either way. Can I try this on my real notes? Not in a consumer AI tool: no patient identifiers, ever; ask your institution which tool is approved. Do I have to record that AI helped? I cannot give legal advice; follow your institution's policy and ask its data protection officer or legal team.
+
+**Bridge.** "That was a note written by prompting a chat assistant. In some Saudi clinics the prompt disappears: the tool listens to the consultation. Ten minutes on that."
+:::
+
+## Notes, done right {#notes-right}
+
+::: {.cards}
+::: {.card}
+[01]{.num}
+
+**A fixed template**, every time.
+:::
+::: {.card}
+[02]{.num}
+
+**An explicit length limit.**
+:::
+::: {.card .teal}
+[03]{.num}
+
+**You read every line** before it is saved.
+:::
+:::
+
+A saved note is trusted, copied forward and read by the next doctor.
+
+::: notes
+**0:40.** **Say.** "A saved note gets trusted, copied forward and read by the next doctor, so a mistake in it outlives a mistake in a chat window. Day One's template test gave you the first two habits: a fixed template, so a gap shows, and a length limit, so padding has nowhere to go. They shape the output. The third habit is the safety step, and it is yours. With a real patient the note stays in an approved tool: no patient identifiers into a consumer AI tool. Ever. Full stop."
+
+**Do.** No move; forty seconds.
+:::
+
+## The 60-second review {#sixty-second-review}
+
+::: {.cards}
+::: {.card}
+[1]{.num}
+
+[Source to draft]{.t}
+
+Tick each fact off in the draft. What you cannot tick was **omitted**.
+:::
+::: {.card .teal}
+[2]{.num}
+
+[Draft to source]{.t}
+
+Find each line in your facts. Not there: **invented**. A different value: **altered**.
+:::
+:::
+
+::: {.card .tint}
+[Check first]{.t}
+
+Numbers and units. Medicines. Allergies. Negations. Dates. Side. The plan.
+:::
+
+::: notes
+**1:00.** **Say.** "Two passes of thirty seconds, always against the facts you wrote down, never against your memory of the visit. Pass one, source to draft: tick each fact of your source off in the draft; whatever you cannot tick was omitted. Pass two, draft to source: find each line of the draft in your source; a line you cannot find was invented, and a line with a different value was altered. Spend the time where a slip costs most: 'no chest pain' must never become 'chest pain'. A smooth note is not a correct note."
+
+**Do.** No move yet; the next slide puts both passes to work.
+:::
+
+## Three problems, one of each kind {#find-three}
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.card .dashed}
+[The source]{.t}
+
+[Case A card](../reference/case-cards.qmd#case-a)
+:::
+:::
+::: {.column width="50%"}
+::: {.card .tint}
+[The draft]{.t}
+
+[Case A note, Module 4 section 2](../day2/m4-notes-and-audiences.qmd#notes-done-right)
+:::
+:::
+:::
+
+[Illustrative, written for this course]{.illustrative}
+
+Open both. The draft has three ordinary problems: one invented, one omitted, one altered.
+
+::: {.move .chat}
+[Chat · 90 sec]{.tag} Two passes, 30 seconds each. Then type what you found, and its kind.
+:::
+
+::: notes
+**1:50.** **Say.** "This draft was written for the course, not by any tool. It has three ordinary problems, one of each kind, and I will not say which. Open the card and the draft side by side. Thirty seconds for pass one, source to draft. Thirty seconds for pass two, draft to source. Then type what you found, and the word for it."
+
+**Do.** Paste both links in the chat. Share your screen with the card on one half and the draft on the other, with the answers table below the draft out of view. Say "start" and, at thirty seconds, "switch". Read out the first three finds from the chat without confirming them yet. If fewer than three turn up, say so and go on; the next slide has them.
+:::
+
+## What the two passes find {#three-finds}
+
+| What it finds | Kind |
+|---------------------|----|
+| The home diary average reads 164/92; the card says 146/92 | **Altered** |
+| The plan drops the repeat creatinine and potassium in 2 weeks | **Omitted** |
+| "Advise walking 30 minutes daily" is not on the card | **Invented** |
+
+[Illustrative, written for this course]{.illustrative}
+
+In clinic nobody announces the count. Run both passes every time.
+
+::: {.small .muted}
+The MISSING line under Assessment is not a fourth problem: the card gives none, so you write it.
+:::
+
+::: notes
+**1:00.** **Say.** "Draft to source: the home diary average reads 164/92 and the card says 146/92. Altered. Source to draft: the plan leaves out the repeat creatinine and potassium in 2 weeks. Omitted. Draft to source again: 'Advise walking 30 minutes daily' is on no card, because nobody discussed it. Invented. The MISSING line under Assessment is not a fourth problem: the card gives no assessment, so that is the template working, and you write it. You found these because I said there were three. In clinic nobody tells you, so the two passes are the same every time. Correct the note yourself; a new draft needs a new review."
+
+**Do.** Name the kind each time you confirm a find from the chat. Credit a find nobody was sure of: the point is the method, not the speed.
+:::
+
+# Already live in Saudi clinics [10 min]{.time} {#saudi-scribes}
+
+::: notes
+**Goal.** Everyone can say what an ambient scribe is, read the Sahl AI numbers correctly, and list what to ask before a clinic adopts one.
+
+**Have ready.** The two source links from the Module 4 page, to paste in the chat. Check each tool's current status and read the Sahl AI abstract yourself before class; everything here is as of September 2026.
+
+**Watch for.** The title says live, so say piloted for Sahl AI and announced for Augnito; neither source says routine use. The score turned into a percentage: it is a rating scale. Any claim that scribes are better than prompting: nobody compared them.
+
+**If asked.** Is a scribe legal in my clinic? I cannot give legal advice: the PDPL, enforced by SDAIA, treats health data as sensitive personal data; ask your institution's data protection officer or legal team. Which is better, Sahl AI or Augnito? The sources behind this course do not compare them. Where can I read the pilot? The Module 4 page links the paper; its abstract describes a single-arm pilot.
+
+**Bridge.** "Whether the note comes from a prompt or a scribe, one clinical event still has to be told three ways: to the chart, to the patient, and to the colleague who takes over. That is the next 15 minutes."
+:::
+
+## What an ambient scribe is {#what-is-a-scribe}
+
+An ambient scribe listens to the consultation and drafts the note. You do not dictate, type or write a prompt.
+
+| | Prompting a chat assistant | An ambient scribe |
+|---|---|---|
+| Input | The facts you type or paste | The consultation itself |
+| Who deploys it | You | An institution |
+| Who reads every line | You | You |
+
+::: notes
+**1:15.** **Say.** "Notes have a second answer: skip the typing and the prompting, and let a tool listen. An ambient scribe works in the background during the consultation and drafts the note. Set it beside what you did yesterday: a chat assistant needs you to supply the facts, and a scribe takes them from the visit itself. You choose your chat assistant; both examples today sit inside institutions. And in both, the same person reads every line: you."
+
+**Do.** No move; keep it to a minute. If someone asks which tool is better, say the sources do not compare them.
+:::
+
+## Two examples, as of September 2026 {#saudi-scribes-cards}
+
+::: {.columns}
+::: {.column width="50%"}
+::: {.card .teal}
+[Sahl AI]{.t}
+
+[A pilot]{.pill .teal}
+
+A bilingual Arabic-English scribe, piloted in Riyadh clinics. Reported: 42.2 of 45 for documentation quality, rated by clinicians.
+:::
+:::
+::: {.column width="50%"}
+::: {.card .dashed}
+[Augnito at Almoosa Health]{.t}
+
+[An announcement]{.pill}
+
+Omni AI Scribe, multi-lingual including Arabic dialects. Announced January 2025: it *will* be integrated with the hospital's record system, in phases. No accuracy figures.
+:::
+:::
+:::
+
+Sources: [the Sahl AI pilot paper](https://medinform.jmir.org/2026/1/e83335) and [the Augnito announcement](https://www.prnewswire.com/news-releases/augnito-secures-major-enterprise-partnership-with-almoosa-health-302365216.html).
+
+::: notes
+**1:45.** **Say.** "As of September 2026, and availability can change. Sahl AI is a Saudi-built bilingual Arabic-English scribe, piloted across outpatient, inpatient and primary care clinics in Riyadh; the pilot was published in JMIR Medical Informatics in March 2026. Augnito's Omni AI Scribe covers Arabic dialects, and in January 2025 an agreement was announced to integrate it with Almoosa Specialist Hospital's record system, in a phased rollout. Note the tense: that says what was agreed, not how the tool performs, and no accuracy figures are reported. So I say piloted, and announced. Whether either is in routine use where you work is a question for your institution."
+
+**Do.** Paste the two source links in the chat. Do not compare the two tools; the sources do not.
+:::
+
+## Reading the numbers like a clinician {#read-the-numbers}
+
+::: {.columns}
+::: {.column width="54%"}
+::: {.card .teal}
+[What the pilot reports]{.t}
+
+[42.2 of 45]{.big}
+
+Documentation quality, rated by clinicians (modified PDQI-9).
+
+[4.35 of 5]{.big}
+
+The accuracy rating.
+:::
+:::
+::: {.column width="46%"}
+::: {.card .dashed}
+[What it does not show]{.t}
+
+A comparison with prompting a chat assistant. Patient outcomes. Perfect accuracy.
+:::
+:::
+:::
+
+4.35 of 5 is short of the maximum, so the note is still read line by line.
+
+::: notes
+**1:15.** **Say.** "Two numbers, one careful reading. 42.2 of 45 is a documentation-quality score on a modified Physician Documentation Quality Instrument, rated by clinicians in a pilot. 4.35 of 5 is the accuracy rating alone. The paper describes a single-arm pilot: there was no comparison group, and patient outcomes were not measured, so neither claim can be made from it. It is a rating scale, so do not turn it into a percentage. And 4.35 of 5 is short of the maximum, which is why the note is still read line by line."
+
+**Do.** No move; the vote is next. Do not say which tool is better.
+:::
+
+## What does the pilot support? {#pilot-supports}
+
+| A statement to judge | Does the pilot support it? |
+|----------------|---------|
+| "Scribes are better than prompting a chat assistant." | [No: nobody compared them]{.fragment} |
+| "Clinicians rated the notes 42.2 of 45 in a pilot." | [Yes]{.fragment} |
+| "Patients did better." | [No: outcomes were not measured]{.fragment} |
+
+::: {.move .chat}
+[Chat · 1 min]{.tag} For each statement, type yes or no. For a no, add the evidence it would need.
+:::
+
+::: notes
+**1:30.** **Say.** "Three statements. Type yes if the pilot supports it, no if it does not, and for a no, the evidence it would need. One: scribes are better than prompting a chat assistant. No: nobody compared them, so the pilot cannot say. Two: clinicians rated the notes 42.2 of 45 in a pilot. Yes, that is what was reported. Three: patients did better. No: outcomes were not measured. A no is not a criticism of the pilot. It names a different study."
+
+**Do.** Read each statement aloud and run the Chat for a minute. Click to reveal each row. Then Speak: ask two people to unmute and say what evidence a no would need, or read two answers from the chat.
+:::
+
+## Before your clinic adopts a scribe {#scribe-questions}
+
+::: {.cards}
+::: {.card}
+[Review and errors]{.t}
+
+Who reviews and signs the note? What happens when it makes an error?
+:::
+::: {.card .teal}
+[Patients and data]{.t}
+
+How are patients told, and how do they say no? Where are audio and text stored, and who can open them?
+:::
+::: {.card}
+[Language and records]{.t}
+
+Which Arabic dialects, and what about a switch to English? How does it connect to our record system?
+:::
+:::
+
+::: {.move .chat}
+[Chat · 90 sec]{.tag} Type the two questions you would ask first, and who at your institution could answer them.
+:::
+
+::: notes
+**2:15.** **Say.** "Six questions for the vendor and for your institution; they are questions, not legal conclusions. Who reviews and signs the note before it enters the record, and what happens on an error. How patients are told and how they say no; where the audio and text are stored, for how long, and who can open them. Which Arabic dialects, what happens when the visit moves between Arabic and English, and how it connects to your record system. Health data is sensitive personal data under Saudi Arabia's Personal Data Protection Law, which SDAIA enforces. For what that means for your clinic, ask your institution's data protection officer or legal team. This is education, not legal advice."
+
+**Do.** Run the Chat and read out three answers, with who each person would ask. If someone asks whether a scribe is legal, say you cannot give legal advice and point to the same two people.
+:::
+
+## A transcription app on your own phone {#phone-app}
+
+A free transcription app is a consumer tool. A recording of a consultation is patient information.
+
+::: {.callout-important appearance="simple"}
+## The privacy line
+No patient identifiers into a consumer AI tool. Ever. Full stop.
+:::
+
+::: {.move .chat}
+[Chat · 1 min]{.tag} Pick an app you downloaded yourself. How many of the six questions can you answer? Type a number from 0 to 6.
+:::
+
+Before any recording goes anywhere: the [privacy checklist](../reference/privacy-checklist.qmd).
+
+::: notes
+**1:30.** **Say.** "One more tool you may already have: a free transcription app on your own phone. It turns speech into text. It is a consumer tool, and a recording of a consultation is patient information, so the privacy line applies: no patient identifiers into a consumer AI tool. Ever. Full stop. Try the six questions on an app you downloaded yourself, and notice how many you cannot answer. Day Three returns to exactly this, and the privacy checklist is what to use before any recording goes anywhere."
+
+**Do.** Run the Chat for a minute and read out the spread of numbers, not anyone's app. Then the bridge.
+:::
+
+# Same note, three audiences [15 min]{.time} {#three-audiences}
+
+::: notes
+**Goal.** Everyone can write a source-of-truth sheet once, draw three outputs from it, and check that the constant facts agree.
+
+**Have ready.** The Case E card on screen and the consistency table from the Module 4 page in a tab. All four prompts run once in the assistant you will demo, the outputs saved as a recorded backup and read against that table, so no mismatch is a surprise.
+
+**Watch for.** The patient version losing a limit: "if needed", "with food", "maximum 4 g in 24 h". The letter asking the colleague for something that is not on the sheet. A fact fixed inside one output instead of the sheet: the next run brings it back. Time: three live runs will not fit, so run one and show two.
+
+**If asked.** Why not one prompt that returns all three? You can, but a wrong fact is then hard to trace and has no single place to fix. Isn't the sheet as much work as the note? It is facts only, and Lab Two is where you try it on your own case. Can it write the patient version in Arabic? It can draft; a fluent Arabic reader must check it before it reaches a patient.
+
+**Bridge.** "That was one story for three readers. The next reader is an audience of colleagues: from a case to a slide deck."
+:::
+
+## One event, three readers {#three-audiences-flow}
+
+::: {.columns}
+::: {.column width="36%"}
+::: {.card .tint}
+[One event]{.t}
+
+[Case E](../reference/case-cards.qmd#case-e): the morning after a planned gallbladder operation, going home today.
+:::
+:::
+::: {.column width="64%"}
+::: {.cards .stack}
+::: {.card}
+[Chart note]{.t} The surgical team, in clinical shorthand.
+:::
+::: {.card .teal}
+[Discharge instructions]{.t} The patient, in plain language.
+:::
+::: {.card}
+[Colleague letter]{.t} The community physician, focused.
+:::
+:::
+:::
+:::
+
+Only the audience changes. The new skill: checking that the three agree.
+
+::: notes
+**2:00.** **Say.** "One clinical event, three readers, and only the audience changes. Case E: a woman the morning after a planned laparoscopic gallbladder operation, going home today. The chart note is for the surgical team, in clinical shorthand. The discharge instructions are for the patient, in plain language. The letter is for the community physician: focused, what they must know and do next. On Day One the framework traveled across three jobs and three cases. Today the case stays the same, and the skill is new: checking that the three outputs agree with each other. A patient told one thing while the letter says another is the failure we are guarding against."
+
+**Do.** Paste the Case E link in the chat. No other move; two minutes.
+:::
+
+## Write the facts once {#source-of-truth}
+
+::: {.flow}
+::: {.step}
+[1]{.num} One sheet: facts only, checked against the card
+:::
+::: {.step}
+[2]{.num} Three prompts draw on it; only the audience changes
+:::
+::: {.step}
+[3]{.num} Check the three outputs against each other
+:::
+:::
+
+An error in the sheet is copied into all three outputs. Fix a fact in the sheet, never inside one output.
+
+[Prompt library: source-of-truth-sheet](../reference/prompt-library.qmd#p-source-of-truth-sheet)
+
+::: notes
+**1:30.** **Say.** "The sheet is the fix for drift. Three prompts that each start from memory will disagree in small ways. Three prompts that start from one checked sheet can be compared with it. The sheet is facts only, one per line: the procedure, how the patient is today, medicines and doses, activity limits, follow-up, and the return-sooner list. The return-sooner list is yours: you write it, and the tool copies it. If a fact changes, change the sheet and run the prompts again."
+
+**Do.** Share your screen. Paste the Case E card into your assistant under the `source-of-truth-sheet` prompt and send it; the sheet will be ready for the next slide. No move for the group.
+:::
+
+## Check the sheet first {#check-the-sheet}
+
+::: {.card .tint}
+[The 60-second review, on the sheet]{.t}
+
+1. Source to draft: what was **omitted**?
+2. Draft to source: what was **invented** or **altered**?
+
+Read twice: the medicines, the intervals, the return-sooner list.
+:::
+
+Fix the sheet itself, never one output.
+
+::: {.move .chat}
+[Chat · 90 sec]{.tag} Check the sheet against the Case E card. Type one line you checked twice, or one you would fix.
+:::
+
+::: notes
+**2:30.** **Say.** "Now the step that matters most. Check the sheet against the Case E card with the two passes from the last section: source to draft, then draft to source. Read the medicines, the intervals and the return-sooner list twice. If something is wrong, fix the sheet itself, by hand. It is the only place a fact is corrected, and from here on every prompt pastes the sheet, not the card. If the sheet is clean, say so: agreement is a result of the check, not a reason to skip it."
+
+**Do.** Show the sheet beside the card on your shared screen. Run the Chat for ninety seconds and read out two or three lines people checked twice. Fix any error live, in the sheet.
+:::
+
+## Three prompts, one sheet {#three-prompts}
+
+| | Chart note | Patient instructions | Colleague letter |
+|----|---------|---------|---------|
+| **Role** | A surgeon, for the clinicians who read the chart next | A surgical nurse educator, for the patient | A surgeon, for the community physician |
+| **Format** | Clinical register, up to 200 words | Plain language, up to 250 words | A short letter, up to 150 words |
+| **Facts** | The checked sheet | The checked sheet | The checked sheet |
+
+::: {.small}
+In the letter, the name and file number stay a placeholder you add yourself.
+
+Prompt library: [chart-note-from-sheet](../reference/prompt-library.qmd#p-chart-note-from-sheet), [patient-instructions-from-sheet](../reference/prompt-library.qmd#p-patient-instructions-from-sheet), [colleague-letter-from-sheet](../reference/prompt-library.qmd#p-colleague-letter-from-sheet).
+:::
+
+::: notes
+**3:00.** **Say.** "Across the three prompts only two lines change: ROLE and FORMAT. The FACTS block is the same checked sheet each time, and each prompt tells the tool to use every item of your return-sooner list, so it cannot shorten it or add to it. In the letter, the patient's name and file number stay a placeholder that you add yourself, in your own system, after the draft. Time is short, so I run one prompt live and show the other two from a saved run."
+
+**Do.** Share your screen. Run `patient-instructions-from-sheet` on the checked sheet. Show the chart note and the letter from your backup, and say they are a recorded run. Do not read the outputs out; the next slides are how to check them.
+:::
+
+## What changes, what must not {#consistency-check}
+
+::: {.columns}
+::: {.column width="42%"}
+::: {.card}
+[Changes with the reader]{.t}
+
+Register. Length. Order. Vocabulary: "jaundice" becomes "yellow eyes or skin".
+:::
+:::
+::: {.column width="58%"}
+::: {.card .tint}
+[Must not change]{.t}
+
+The procedure and why. Every medicine, dose, interval and maximum. Every number and unit. The follow-up. The return-sooner list: the same five items.
+:::
+:::
+:::
+
+::: {.callout-warning appearance="simple"}
+## Watch for
+The return-sooner list is yours. You write it; the tool only words it.
+:::
+
+::: notes
+**1:30.** **Say.** "The left card is what should differ between the outputs, and the right card is what may not. The patient version can leave out lab values and most vital signs. It cannot leave out a medicine, an interval or a return-sooner item. And the return-sooner list is a clinical judgment, and it is yours. If you ask a tool to suggest warning signs, it will, plausibly, without knowing this patient. A tool that adds a warning you did not choose has made a clinical decision."
+
+**Do.** No move; read each card slowly. Say the three words once more: invented, omitted, altered.
+:::
+
+## Check that all three agree {#check-the-three}
+
+| Constant fact | Chart note | Patient instructions | Colleague letter |
+|------|-----|-------|------|
+| Procedure and reason | | | |
+| Paracetamol | | | |
+| Ibuprofen | | | |
+| Lifting and desk work | | | |
+| Wounds | | | |
+| Follow-up | | | |
+| Return sooner | | | |
+
+::: {.small}
+Copy it into your notes. Mark a cell only when that output matches the sheet.
+:::
+
+::: {.move .chat}
+[Chat · 90 sec]{.tag} With 30 seconds, which row do you check first, and why?
+:::
+
+::: notes
+**4:00.** **Say.** "Reading each output against the sheet is not enough, because the drift you are hunting is between outputs. So take the constant facts and read each across all three. A word may change; a number, a unit, an interval or a list item may not. A medicine, an interval or a return-sooner item missing from any output is a failure. If an output disagrees with the sheet, the output is wrong: fix it and check again. If the sheet was wrong, fix the sheet and regenerate all three. Agreement is a result, not a reason to skip the check."
+
+**Do.** Chat first; read out two or three rows with their reasons. Then fill the table aloud, return-sooner first: read the row across the three outputs, and everyone types match or mismatch. Three rows are enough. Everyone copies the table into their notes for Lab Two.
+:::

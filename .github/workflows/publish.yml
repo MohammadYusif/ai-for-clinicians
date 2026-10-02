@@ -18,6 +18,7 @@ on:
       - "day2/**"
       - "day3/**"
       - "reference/**"
+      - "slides/**"
       - "course/timing.json"
       - "_quarto.yml"
       - "theme-*.scss"
@@ -47,8 +48,11 @@ jobs:
         with:
           version: 1.10.18
 
-      - name: The clock adds up (every day is 120 minutes, every badge matches)
+      - name: The clock adds up (every day is 120 minutes, every badge matches, on the pages and the decks)
         run: python3 tools/check_timing.py --quiet
+
+      - name: The decks are well formed (no heading inside a div, no empty slide, unique ids)
+        run: python3 tools/check_decks.py
 
       - name: The prompt library matches the pages that teach the prompts
         run: python3 tools/build_prompt_library.py --check
@@ -56,7 +60,7 @@ jobs:
       - name: No unfinished placeholders in published pages
         run: python3 tools/check_placeholders.py
 
-      - name: Canonical wording present, banned claims absent, one "Keep this" per timed section
+      - name: "Canonical wording present, banned claims absent, nothing that assumes a shared room"
         run: python3 tools/lint_content.py
 
       - name: Render

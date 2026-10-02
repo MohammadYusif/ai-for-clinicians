@@ -19,10 +19,10 @@ statement only after approval.
 | Likely needed | Where it is |
 |---|---|
 | Course outline with timings | `course/timing.json`; the run-of-show in `course/instructor-guide.md` |
-| Outcomes | the four on `index.qmd` and the deck's `outcomes` slide |
-| Delivery format | three days, two hours each, in person or synchronous online: [TRAINER TO CONFIRM] |
+| Outcomes | the four on `index.qmd` and the `outcomes` slide in the Module 1 deck |
+| Delivery format | three days, two hours each, live on a video call (synchronous online): [TRAINER TO CONFIRM that this is what is submitted] |
 | Assessment method | the closing quiz on Day Three, plus hands-on labs: [TRAINER TO CONFIRM the quiz's format and any pass mark] |
-| Materials | this site and the deck |
+| Materials | this site: the decks, the handouts and the reference cards |
 
 "Likely needed" is my inference from how CPD accreditation generally works, not from SCFHS rules: confirm
 the actual submission requirements with SCFHS or your CPD partner.

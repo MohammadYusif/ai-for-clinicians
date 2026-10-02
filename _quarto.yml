@@ -7,6 +7,7 @@ project:
     - "day2/*.qmd"
     - "day3/*.qmd"
     - "reference/*.qmd"
+    - "slides/*.qmd"
   preview:
     port: 4731
 
@@ -26,19 +27,43 @@ website:
         text: Home
       - href: setup.qmd
         text: Setup
-      - text: Day One
+      - text: Slides
+        menu:
+          - href: slides/m1-rule-and-mechanics.qmd
+            text: "Module 1 · The rule and how these tools work"
+          - href: slides/m2-prompting.qmd
+            text: "Module 2 · Anatomy of a good prompt"
+          - href: slides/m3-choosing-tools.qmd
+            text: "Module 3 · Choosing the right tool"
+          - href: slides/lab1-templates-and-limits.qmd
+            text: "Lab 1 · Templates and limits"
+          - text: "---"
+          - href: slides/m4-notes-and-audiences.qmd
+            text: "Module 4 · Notes and audiences"
+          - href: slides/m5-talks-and-teaching.qmd
+            text: "Module 5 · Talks and teaching"
+          - href: slides/lab2-one-case-three-outputs.qmd
+            text: "Lab 2 · One case, three outputs"
+          - text: "---"
+          - href: slides/m6-confidently-wrong.qmd
+            text: "Module 6 · Confidently wrong"
+          - href: slides/lab3-spot-the-error.qmd
+            text: "Lab 3 · Spot the error"
+          - href: slides/m7-privacy.qmd
+            text: "Module 7 · Patient privacy"
+          - href: slides/m8-back-to-the-rule.qmd
+            text: "Module 8 · Back to the rule"
+      - text: Handouts
         menu:
           - day1/m1-rule-and-mechanics.qmd
           - day1/m2-prompting.qmd
           - day1/m3-choosing-tools.qmd
           - day1/lab1-templates-and-limits.qmd
-      - text: Day Two
-        menu:
+          - text: "---"
           - day2/m4-notes-and-audiences.qmd
           - day2/m5-talks-and-teaching.qmd
           - day2/lab2-one-case-three-outputs.qmd
-      - text: Day Three
-        menu:
+          - text: "---"
           - day3/m6-confidently-wrong.qmd
           - day3/lab3-spot-the-error.qmd
           - day3/m7-privacy.qmd

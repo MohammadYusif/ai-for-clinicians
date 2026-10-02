@@ -7,12 +7,17 @@ Errors (exit 1):
   * a banned claim appears in a published page: "outperform", "beats generic prompting",
     "studies show", PDPL article numbers or fine amounts, an external URL nobody vouched for,
     an AI attribution line;
-  * a timed section does not carry exactly one "Keep this" closing callout.
+  * a timed section does not carry exactly one "Keep this" closing callout;
+  * wording that assumes people share a room (a neighbor, a show of hands, a whiteboard, paper, a
+    projector): the course is delivered online (CLAUDE.md, rule 5). Use the chat, a breakout pair, or
+    a shared screen, as course/authoring-guide.md section 9 describes;
+  * a deck's speaker notes run past the limit (900 characters, 1,600 on a topic slide).
 
 Warnings (printed, exit 0): percentages and exclamation marks in prose outside the case cards,
 which need a human to decide whether they are a case fact or an invented claim.
 
-    python tools/lint_content.py
+    python tools/lint_content.py                       # everything
+    python tools/lint_content.py slides/m2-prompting.qmd   # just these files (for an author mid-edit)
 """
 from __future__ import annotations
 
@@ -21,7 +26,10 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-GLOBS = ["*.qmd", "day1/*.qmd", "day2/*.qmd", "day3/*.qmd", "reference/*.qmd"]
+GLOBS = ["*.qmd", "day1/*.qmd", "day2/*.qmd", "day3/*.qmd", "reference/*.qmd", "slides/*.qmd"]
+# Trainer-facing notes are held to the same online-first wording. BRIEF.md is the source brief, kept verbatim.
+COURSE_DOCS = ["course/*.md"]
+VERBATIM = {"course/BRIEF.md"}
 
 REQUIRED: dict[str, list[str]] = {
     "day1/m1-rule-and-mechanics.qmd": [
@@ -47,6 +55,25 @@ REQUIRED: dict[str, list[str]] = {
     "day3/m6-confidently-wrong.qmd": ["Draft with AI", "Cross-check the source", "Confirm or correct", "Tone is not a signal"],
     "day3/m7-privacy.qmd": ["No patient identifiers into a consumer AI tool. Ever. Full stop."],
     "reference/privacy-checklist.qmd": ["No patient identifiers into a consumer AI tool. Ever. Full stop."],
+    # The decks teach the same sentences, so they carry the same canonical wording as the pages.
+    "slides/m1-rule-and-mechanics.qmd": [
+        "AI drafts. You decide.",
+        "Could I defend this to a colleague?",
+        "Does it point to something I can verify?",
+        "Would I catch it if it were wrong?",
+        "If the answer to any of these is no, that's the signal to slow down, not the finding to accept.",
+        "No patient identifiers into a consumer AI tool. Ever. Full stop.",
+    ],
+    "slides/m2-prompting.qmd": [
+        "ROLE:",
+        "CONTEXT:",
+        "FORMAT:",
+        "CONSTRAINTS:",
+        "Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.",
+        "Who it is, what it knows, what shape to return, what to avoid",
+    ],
+    "slides/m6-confidently-wrong.qmd": ["Draft with AI", "Cross-check the source", "Confirm or correct", "Tone is not a signal"],
+    "slides/m7-privacy.qmd": ["No patient identifiers into a consumer AI tool. Ever. Full stop."],
 }
 
 BANNED = [
@@ -60,6 +87,24 @@ BANNED = [
     # verification step or a specific product a requirement; they must not come back.
     (re.compile(r"verified for your account|professional verification before|complete .{0,30}professional verification|Vera Health verification|\b(two|both) accounts\b|neighbor who has access", re.I), "makes a specific tool or a verification step a requirement (CLAUDE.md, rule 4)"),
 ]
+# The course is delivered online (CLAUDE.md, rule 5). Everyone is on their own device, so nothing may
+# assume a neighbor, a whiteboard, paper or a projector. Checked on prose only, so a fenced block that
+# shows a forbidden phrase as an example (the authoring guide does) is not itself an error.
+ONLINE_WHY = "assumes people share a room; the course runs online (CLAUDE.md, rule 5): use the chat, a breakout pair, or a shared screen"
+ONLINE = [
+    # "a colleague, a neighbor, or the family" is about who might recognize a patient, not about who sits where.
+    re.compile(r"\bneighbou?rs?\b(?!, or the family)", re.I),
+    re.compile(r"next to you|beside you|next to each other|person next|sitting next", re.I),
+    re.compile(r"\bin pairs\b|\bpair (up|with)\b|\bpair people\b|\bin triads?\b|\bswap (screens?|with)\b", re.I),
+    re.compile(r"show of hands|\bhands? up\b|raise (your|a) hand|hold(s)? up (one|two|three|\d)|finger game|\bfingers\b", re.I),
+    re.compile(r"walk (around|the room)|round the room|go round the", re.I),
+    re.compile(r"\bthe (whole |entire )?room\b|\ba room of\b|training room|\bvenue\b|\barrive\b", re.I),
+    re.compile(r"whiteboard|flip ?chart|\bon paper\b|\bprojector\b|\bproject(s|ed)? (the|it|this|one|them|a)\b", re.I),
+    re.compile(r"\bprint(ed|able)?\b|\bhand(ed)? out\b|in person|in-person|classroom", re.I),
+]
+NOTES_OPEN = re.compile(r"^:::\s*notes\s*$")
+NOTES_LIMIT, TOPIC_NOTES_LIMIT = 900, 1600
+
 # The course's fixed vocabulary (authoring guide, section 1). A reader who meets a differently
 # worded name will assume it is a different tool, so drift is worth a warning.
 VOCAB = [
@@ -121,28 +166,48 @@ def prose_lines(path: Path):
             yield no, line
 
 
+def deck_notes_errors(rel: str, lines: list[str]) -> list[str]:
+    """A deck's speaker notes: at most NOTES_LIMIT characters, TOPIC_NOTES_LIMIT on a "#" topic slide."""
+    out: list[str] = []
+    level, in_notes, start, buf, fenced = 0, False, 0, [], False
+    for no, line in enumerate(lines, 1):
+        if line.lstrip().startswith(("```", "~~~")):
+            fenced = not fenced
+        if fenced:
+            continue
+        if in_notes:
+            if DIV_CLOSE.match(line):
+                size = len(" ".join(buf).strip())
+                limit = TOPIC_NOTES_LIMIT if level == 1 else NOTES_LIMIT
+                if size > limit:
+                    out.append(f"{rel}:{start}: speaker notes are {size} characters, the limit is {limit}")
+                in_notes, buf = False, []
+            elif line.strip():
+                buf.append(line.strip())
+            continue
+        m = re.match(r"^(#{1,2})\s", line)
+        if m:
+            level = len(m.group(1))
+        elif NOTES_OPEN.match(line):
+            in_notes, start = True, no
+    return out
+
+
 def main() -> int:
     if hasattr(sys.stdout, "reconfigure"):
         sys.stdout.reconfigure(encoding="utf-8")
     errors: list[str] = []
     warnings: list[str] = []
+    only = {Path(a).resolve() for a in sys.argv[1:]}
 
     for rel, needles in REQUIRED.items():
         path = ROOT / rel
-        if not path.exists():
+        if not path.exists() or (only and path.resolve() not in only):
             continue
         text = path.read_text(encoding="utf-8")
         for needle in needles:
             if needle not in text:
                 errors.append(f"{rel}: missing the canonical wording: {needle!r}")
-
-    # Speaker notes in the talking-points files are meant to be pasted into the deck: at most 900 characters.
-    for tp in sorted((ROOT / "course").glob("day*-talking-points.md")):
-        for no, line in enumerate(tp.read_text(encoding="utf-8").splitlines(), 1):
-            if " Notes: " in line:
-                notes = line.split(" Notes: ", 1)[1]
-                if len(notes) > 900:
-                    errors.append(f"course/{tp.name}:{no}: speaker notes are {len(notes)} characters, the limit is 900")
 
     for rel, card in CARD_COPIES.items():
         path = ROOT / rel
@@ -155,11 +220,33 @@ def main() -> int:
                 if bullet not in body:
                     errors.append(f"{rel}: the pasted Case {card.upper()} block has drifted from the card; missing: {bullet[:80]!r}")
 
-    pages = sorted({p for g in GLOBS for p in ROOT.glob(g)})
+    # The trainer's notes are held to the online-first wording too (and nothing else here).
+    for g in COURSE_DOCS:
+        for path in sorted(ROOT.glob(g)):
+            rel = path.relative_to(ROOT).as_posix()
+            if rel in VERBATIM or (only and path.resolve() not in only):
+                continue
+            for no, line in prose_lines(path):
+                for pattern in ONLINE:
+                    if pattern.search(line):
+                        errors.append(f"{rel}:{no}: {ONLINE_WHY}: {line.strip()[:110]}")
+                        break
+
+    pages = sorted({p for g in GLOBS for p in ROOT.glob(g) if not p.name.startswith("_")})
+    if only:
+        pages = [p for p in pages if p.resolve() in only]
     for path in pages:
         rel = path.relative_to(ROOT).as_posix()
         text = path.read_text(encoding="utf-8")
         lines = text.splitlines()
+
+        for no, line in prose_lines(path):
+            for pattern in ONLINE:
+                if pattern.search(line):
+                    errors.append(f"{rel}:{no}: {ONLINE_WHY}: {line.strip()[:110]}")
+                    break
+        if rel.startswith("slides/"):
+            errors += deck_notes_errors(rel, lines)
 
         for pattern, why in BANNED:
             for no, line in enumerate(lines, 1):
@@ -211,7 +298,7 @@ def main() -> int:
 
         if rel != "reference/case-cards.qmd" and rel != "reference/practice-source.qmd":
             for no, line in prose_lines(path):
-                if PERCENT.search(line) and not re.search(r"SpO2|HbA1c", line):
+                if PERCENT.search(line) and not re.search(r"SpO2|HbA1c", line) and not line.lstrip().startswith(":::"):
                     warnings.append(f"{rel}:{no}: percentage in prose (case fact or invented claim?): {line.strip()[:100]}")
                 if "!" in line and not line.lstrip().startswith(("<!--", "#", ":::", "|")) and "![" not in line:
                     warnings.append(f"{rel}:{no}: exclamation mark: {line.strip()[:100]}")

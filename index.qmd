@@ -11,7 +11,206 @@ A practical, hands-on course in using AI tools well: in daily practice, in docum
 **AI drafts. You decide.** Every tool. Every task. All three days.
 :::
 
-You do not need a technical background. You do need a laptop or a phone and one AI assistant account, as the [setup page](setup.qmd) explains. Nothing in the course depends on any one tool. Every patient in this course is fictional, on the [case cards](reference/case-cards.qmd), and nothing you do here puts a real patient's information into any tool.
+The course runs online. You do not need a technical background. You do need a device that can join the call, a second window for one AI assistant account, and the [setup page](setup.qmd), which takes ten minutes. Nothing in the course depends on any one tool. Every patient is fictional, on the [case cards](reference/case-cards.qmd), and nothing you do here puts a real patient's information into any tool.
+
+## The course
+
+Each module has **slides**, which your instructor shares on the call and you can open in a window of your own, and a **handout** with the prompts to copy. Each lab has slides and a **lab page**, which is where you work. Every day is two hours, a ten-minute break included.
+
+::: {.course-grid}
+
+::: {.course-card .start}
+[Start here]{.kicker} [10 min]{.mins-fixed}
+
+### Setup, done once
+One AI assistant account, a second window, and how the call works.
+
+::: {.links}
+[Setup](setup.qmd){.btn .btn-primary .btn-sm}
+[Case cards](reference/case-cards.qmd){.btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+:::
+
+### Day One: Foundations
+
+::: {.course-grid .two}
+
+::: {.course-card data-block="m1-rule-and-mechanics"}
+[Module 1]{.kicker} [25 min]{.mins}
+
+### The rule and how these tools work
+The one-line rule, a plain picture of why fluent text can be wrong, and the three-question check.
+
+::: {.links}
+[Slides](slides/m1-rule-and-mechanics.qmd){.btn .btn-primary .btn-sm}
+[Handout](day1/m1-rule-and-mechanics.qmd){.btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+::: {.course-card data-block="m2-prompting"}
+[Module 2]{.kicker} [35 min]{.mins}
+
+### Anatomy of a good prompt
+The four-part prompt, run on a note, a letter, a discharge summary and a patient handout.
+
+::: {.links}
+[Slides](slides/m2-prompting.qmd){.btn .btn-primary .btn-sm}
+[Handout](day1/m2-prompting.qmd){.btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+::: {.course-card data-block="m3-choosing-tools"}
+[Module 3]{.kicker} [20 min]{.mins}
+
+### Choosing the right tool
+Which type of tool for which job, who can use it, and one question put to two tools.
+
+::: {.links}
+[Slides](slides/m3-choosing-tools.qmd){.btn .btn-primary .btn-sm}
+[Handout](day1/m3-choosing-tools.qmd){.btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+::: {.course-card .lab data-block="lab1-templates-and-limits"}
+[Lab 1]{.kicker} [30 min]{.mins}
+
+### Templates and limits
+Time a templated note against an untemplated one, break a tool on purpose, and compare two ways of answering.
+
+::: {.links}
+[Slides](slides/lab1-templates-and-limits.qmd){.btn .btn-primary .btn-sm}
+[Lab page](day1/lab1-templates-and-limits.qmd){.btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+:::
+
+### Day Two: Applications
+
+::: {.course-grid}
+
+::: {.course-card data-block="m4-notes-and-audiences"}
+[Module 4]{.kicker} [40 min]{.mins}
+
+### Notes and audiences
+Notes done right, the scribes already live in Saudi clinics, and one event written for three audiences.
+
+::: {.links}
+[Slides](slides/m4-notes-and-audiences.qmd){.btn .btn-primary .btn-sm}
+[Handout](day2/m4-notes-and-audiences.qmd){.btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+::: {.course-card data-block="m5-talks-and-teaching"}
+[Module 5]{.kicker} [35 min]{.mins}
+
+### Talks and teaching
+A case turned into a checked slide deck, and an AI-made quiz graded before you use it.
+
+::: {.links}
+[Slides](slides/m5-talks-and-teaching.qmd){.btn .btn-primary .btn-sm}
+[Handout](day2/m5-talks-and-teaching.qmd){.btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+::: {.course-card .lab data-block="lab2-one-case-three-outputs"}
+[Lab 2]{.kicker} [35 min]{.mins}
+
+### One case, three outputs
+Build one fact sheet, write three outputs from it, and check that they agree.
+
+::: {.links}
+[Slides](slides/lab2-one-case-three-outputs.qmd){.btn .btn-primary .btn-sm}
+[Lab page](day2/lab2-one-case-three-outputs.qmd){.btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+:::
+
+### Day Three: Safety and ethics
+
+::: {.course-grid .two}
+
+::: {.course-card data-block="m6-confidently-wrong"}
+[Module 6]{.kicker} [10 min]{.mins}
+
+### Confidently wrong
+The five moves that check any output against its source.
+
+::: {.links}
+[Slides](slides/m6-confidently-wrong.qmd){.btn .btn-primary .btn-sm}
+[Handout](day3/m6-confidently-wrong.qmd){.btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+::: {.course-card .lab data-block="lab3-spot-the-error"}
+[Lab 3]{.kicker} [25 min]{.mins}
+
+### Spot the error
+Find what is wrong in an output you did not write.
+
+::: {.links}
+[Slides](slides/lab3-spot-the-error.qmd){.btn .btn-primary .btn-sm}
+[Lab page](day3/lab3-spot-the-error.qmd){.btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+::: {.course-card data-block="m7-privacy"}
+[Module 7]{.kicker} [25 min]{.mins}
+
+### Patient privacy
+The rule that is not optional, and the realistic ways doctors slip.
+
+::: {.links}
+[Slides](slides/m7-privacy.qmd){.btn .btn-primary .btn-sm}
+[Handout](day3/m7-privacy.qmd){.btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+::: {.course-card data-block="m8-back-to-the-rule"}
+[Module 8]{.kicker} [50 min]{.mins}
+
+### Back to the rule
+The check on your own output, the assessment, the certificate, and your first two weeks.
+
+::: {.links}
+[Slides](slides/m8-back-to-the-rule.qmd){.btn .btn-primary .btn-sm}
+[Handout](day3/m8-back-to-the-rule.qmd){.btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+:::
+
+### Reference
+
+::: {.course-grid .two}
+
+::: {.course-card .ref}
+[Reference]{.kicker}
+
+### The cards you keep
+The three-question check, the prompt library, the privacy checklist, the case cards, the glossary.
+
+::: {.links}
+[Three questions](reference/three-question-check.qmd){.btn .btn-outline-primary .btn-sm}
+[Prompt library](reference/prompt-library.qmd){.btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+::: {.course-card .ref}
+[Assessment]{.kicker}
+
+### How the weekend closes
+What the quiz draws on, and a practice bank to find what you are unsure of.
+
+::: {.links}
+[Assessment](assessment.qmd){.btn .btn-outline-primary .btn-sm}
+:::
+:::
+
+:::
 
 ## What you leave with
 
@@ -19,37 +218,8 @@ You do not need a technical background. You do need a laptop or a phone and one 
 |---|---|---|
 | **A prompting method** | Write a prompt that gets a usable note, letter, or handout on the first pass, using *role, context, format, constraints* | You time and compare a templated draft against an untemplated one in [Lab 1](day1/lab1-templates-and-limits.qmd) |
 | **A short list of tools** | Say which tool fits which job, which do not fit clinical work, and which you cannot use at all | You run the same question through two tools in Labs 1 and 2 and judge the result yourself |
-| **A working check** | Catch AI mistakes before they reach a chart, using three questions and a verification workflow | In [Lab 3](day3/lab3-spot-the-error.qmd) you find what is wrong in a neighbor's output |
+| **A working check** | Catch AI mistakes before they reach a chart, using three questions and a verification workflow | In [Lab 3](day3/lab3-spot-the-error.qmd) you find what is wrong in an output you did not write |
 | **A clear line** | State what never goes into a consumer AI tool, and what to do instead | You work through realistic slips on Day Three, then apply the check to your own output |
-
-## The three days
-
-Each module is short teaching with worked examples; each lab is hands-on, in pairs, on the case cards. Labs are where the learning happens, so they get the most time.
-
-::: {.grid}
-
-::: {.g-col-12 .g-col-md-4}
-### Day One — Foundations
-Why these tools sound sure whether they are right or wrong. The four-part prompt. The three-question check. Choosing a tool, and finding out which ones you can even use.
-
-[Module 1](day1/m1-rule-and-mechanics.qmd) · [Module 2](day1/m2-prompting.qmd) · [Module 3](day1/m3-choosing-tools.qmd) · [Lab 1](day1/lab1-templates-and-limits.qmd)
-:::
-
-::: {.g-col-12 .g-col-md-4}
-### Day Two — Applications
-Notes done right. The scribes already live in Saudi clinics. One clinical event written for three audiences. Talks and teaching prep, and how to grade your own AI-made quiz.
-
-[Module 4](day2/m4-notes-and-audiences.qmd) · [Module 5](day2/m5-talks-and-teaching.qmd) · [Lab 2](day2/lab2-one-case-three-outputs.qmd)
-:::
-
-::: {.g-col-12 .g-col-md-4}
-### Day Three — Safety & Ethics
-Confidently wrong, and how to find out. Spot the error in someone else's output. The privacy rule that is not optional. The rule applied to your own work, then the assessment.
-
-[Module 6](day3/m6-confidently-wrong.qmd) · [Lab 3](day3/lab3-spot-the-error.qmd) · [Module 7](day3/m7-privacy.qmd) · [Module 8](day3/m8-back-to-the-rule.qmd)
-:::
-
-:::
 
 ## The two sentences everything follows from
 
@@ -59,16 +229,9 @@ Confidently wrong, and how to find out. Spot the error in someone else's output.
 
 The first is the rule. The second is why the rule needs a habit behind it: these tools sound exactly as sure when they are wrong as when they are right, so you cannot judge an answer by how it reads. Most of Day One teaches you to get a better draft. Most of Days Two and Three teach you to check it.
 
-## Before you arrive
+## Before the first call
 
 ::: {.callout-note appearance="simple"}
 ## Ten minutes, done once
 Create one general-assistant account. That is the only account the course needs. The rest is on the [setup page](setup.qmd).
 :::
-
-## What is on this site
-
-- **Modules** are the teaching, one page per block of the day, with the prompts you will use.
-- **Labs** are the hands-on work, with time boxes and a results sheet you can print.
-- **[Reference](reference/three-question-check.qmd)** holds the cards you will keep: the three-question check, the prompt library, the privacy checklist, the case cards, the glossary.
-- **[Assessment](assessment.qmd)** explains how the weekend closes and has a practice bank to check yourself against.
