@@ -25,7 +25,7 @@ Most of you already have a chatbot open between patients. This weekend makes tha
 
 | You get | What it means in this course |
 |---|---|
-| Time back | A method for the writing jobs that pile up: notes, letters, handouts, slides. You time yourself in Lab 1, so the number is yours, not ours. |
+| Time back | A method for the writing jobs that pile up: notes, letters, handouts, slides. In Lab 1 you compare two drafts yourself, so the result is yours, not ours. |
 | Fewer mistakes | A habit for catching AI errors before they reach a chart. |
 | A clear line | What never goes into a consumer AI tool, and why. |
 
@@ -52,7 +52,12 @@ Most of you already have a chatbot open between patients. This weekend makes tha
 
 ### How we use the call
 
-Every activity is one of five moves, and the slide says which, with a time. **Chat**: everyone types at once. **Speak**: two or three of you unmute when asked. **Share**: one person shares a screen. **Pair**: a breakout room of two, a few minutes. **Solo**: your own device and your own assistant. Keep the slides in one window and your assistant in another.
+Every activity is one of five moves, and the slide says which, with a time. **Chat**: everyone types at once. **Speak**: two or three of you unmute when asked. **Share**: one person shares a screen. **Pair**: a breakout room of two, a few minutes. **Solo**: your own device and your own assistant, while the instructor does the same step on the shared screen. On the call you need three tabs: the call, the slides (the instructor pastes the link in the chat), and your assistant. Every prompt has a Copy prompt button on its slide, and the instructor pastes it in the chat too. To check that it works, copy this and send it to your assistant:
+
+<!-- paste: call-test | Setup test: one word back -->
+```text
+Reply with the single word: ready.
+```
 
 ::: {.callout-important appearance="simple"}
 ## The privacy line

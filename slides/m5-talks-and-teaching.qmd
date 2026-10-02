@@ -8,8 +8,10 @@ format: revealjs
 
 {{< include _plan-m5-talks-and-teaching.md >}}
 
+[A case becomes slides, then a full talk, then a quiz, then a key you can trust.]{.big}
+
 ::: notes
-Thirty-five minutes in four topics: a case becomes slides, then a full talk, then a quiz, then a key you can trust. Same five moves as Module 4. Lab Two starts after the break.
+**Before the clock.** Thirty-five minutes in four topics: a case becomes slides, then a full talk, then a quiz, then a key you can trust. Same five moves as Module 4, and we do every step together: I run it on this screen, you run it on yours. Everything to paste has a Copy prompt button on its slide, and I paste it in the chat too. Paste this deck's link in the chat: people copy each prompt from their own slide, or from the chat. Lab Two starts after the break.
 :::
 
 # From case to slide deck [8 min]{.time} {#case-to-deck}
@@ -17,9 +19,11 @@ Thirty-five minutes in four topics: a case becomes slides, then a full talk, the
 ::: notes
 **Goal.** Everyone can run the four-step flow on Case A, take identifiers out before the first paste, and check an outline against the card.
 
-**Have ready.** The Case A card in a tab, the `case-outline` prompt in your assistant, and one saved run as a backup. Paste the case cards link in the chat.
+**Have ready.** Your own assistant, signed in, in a window you can share, to run each step as the group does. The `case-outline` prompt, Case A and the teaching points are on the slides: click Copy prompt and paste each into the chat. One saved run as a backup.
 
-**Watch for.** An outline that gains a learning objective, guideline or medicine the card does not contain. The outline treated as finished: it is step 2 of 4. A promised time saving: give no number, because they timed their own in Lab One. A real case pasted "just this once": the privacy line, then the card.
+**Clock.** 0:00 four steps. 1:00 identifiers out. 2:30 the prompt. 3:00 Case A. 3:30 teaching points, run it, tick every number. 6:00 read it against the card. 8:00 time.
+
+**Watch for.** An outline that gains a learning objective, guideline or medicine the card does not contain. The outline treated as finished: it is step 2 of 4. A promised time saving: give no number: the site has none, and Lab One compared drafts, not minutes. A real case pasted "just this once": the privacy line, then the card.
 
 **If asked.** A real patient's scan on a slide? An image can identify even with the caption removed; your institution's consent and image policy decides, so ask its data protection officer or legal team. I cannot give legal advice. The name is removed, so is it de-identified? That is one step; rare details can still point to one person, so when in doubt, use a card. Do I tell the audience AI helped? Follow your institution's or the meeting's policy.
 
@@ -28,25 +32,16 @@ Thirty-five minutes in four topics: a case becomes slides, then a full talk, the
 
 ## Four steps, two owners {#four-steps}
 
-::: {.flow}
-::: {.step}
-[1]{.num} Case notes: yours, de-identified
+::: {.lane}
+[1 · Case notes: yours, de-identified]{.node .dark .grow} [→]{.op} [2 · Outline: AI drafts, you check]{.node .grow} [→]{.op} [3 · Slide draft: text, notes, visual idea]{.node .grow} [→]{.op} [4 · Edit and delivery: yours]{.node .dark .grow}
 :::
-::: {.step}
-[2]{.num} Structured outline: AI drafts, you check
-:::
-::: {.step}
-[3]{.num} AI slide draft: text, notes, visual idea
-:::
-::: {.step}
-[4]{.num} Your edit and delivery: yours
-:::
-:::
+
+[▲ Dark boxes are yours. The light ones are the tool's draft, and you check them.]{.pointer}
 
 Whatever you paste at step 1 is inherited by every step after it.
 
 ::: notes
-**1:15.** Four steps, two owners. Steps 1 and 4 are yours: the case notes, de-identified, and the edit and delivery. Steps 2 and 3 are the tool's draft, which you check: the outline, then the slide text. Whatever you paste at step 1 is inherited by everything after it, so step 1 is where identifiers come out. The page says every step after the outline is faster with AI. Whether it is faster for you is what you timed in Lab One, so promise no saving.
+**1:00.** Four steps, two owners. The dark boxes, steps 1 and 4, are yours: the case notes, de-identified, and the edit and delivery. The light boxes, steps 2 and 3, are the tool's draft, which you check: the outline, then the slide text. Whatever you paste at step 1 is inherited by everything after it, so step 1 is where identifiers come out. The handout says every step after the outline is faster with AI. Whether it is faster for you is yours to judge, so promise no saving.
 
 **Do.** No move here. Say it once and go on.
 :::
@@ -74,52 +69,80 @@ Rare details together can still point to one person. When in doubt, use a card.
 > **No patient identifiers into a consumer AI tool. Ever. Full stop.**
 
 ::: notes
-**1:45.** The privacy line, once more, word for word: no patient identifiers into a consumer AI tool, ever, full stop. For a teaching slide it covers two things: the prompt that builds the slide, and the slide itself. Leave out names and initials; file, ID and phone numbers; dates of birth and exact dates, so write six weeks ago, not the calendar date. Images need more care than text: a face, a tattoo or a distinctive scar identifies someone even with the caption removed, and a scan or ECG may carry a name in the corner. Rare details together can still point to one person; when in doubt, use a card. Your institution's policy on teaching material comes first. Day Three returns to this.
+**1:30.** The privacy line, once more, word for word: no patient identifiers into a consumer AI tool, ever, full stop. For a teaching slide it covers two things: the prompt that builds the slide, and the slide itself. Leave out names and initials; file, ID and phone numbers; dates of birth and exact dates, so write six weeks ago, not the calendar date. Images need more care than text: a face, a tattoo or a distinctive scar identifies someone even with the caption removed, and a scan or ECG may carry a name in the corner. Rare details together can still point to one person; when in doubt, use a card. Your institution's policy on teaching material comes first. Day Three returns to this.
 
 **Do.** Read the line aloud and pause for three seconds. No move here.
 :::
 
-## Run it on Case A {#run-outline}
+## The outline prompt {#outline-prompt}
 
-[Prompt library: case-outline](../reference/prompt-library.qmd#p-case-outline). Facts: the [Case A card](../reference/case-cards.qmd#case-a).
-
-::: {.card .tint}
-[Teaching points to paste]{.t}
-
-1. Compare what the patient says with what the diary and the clinic show.
-2. Record what is new since the drug was started.
-3. Build the next checks into the plan.
+::: {.paste-long}
+{{< include _paste-case-outline.md >}}
 :::
 
+[▲ Copy prompt on your slide. A new chat, this prompt first. Case A and your teaching points go in next.]{.pointer}
+
 ::: {.move .solo}
-[Solo · 2 min]{.tag} Run it. Tick every number against the card.
+[Solo · 30 sec]{.tag} New chat. Paste the prompt. Set the audience. Do not send it yet.
 :::
 
 ::: notes
-**3:00.** Thirty seconds on the prompt: the four parts from Day One, plus your teaching points in your own words, and a cap on the outline so you can check all of it. The facts come from the card and nothing else goes in. Then two minutes of quiet running. Writing your own teaching points is fine. If a tool is slow, share your own saved run so nobody waits with nothing to read.
+**0:30.** The prompt is the four parts from Day One, Role, Context, Format and Constraints, plus two things a talk adds. Your teaching points go in, in your own words, so the outline is built around what you want the audience to learn. And the outline is capped, so you can check all of it. Open a new chat and paste the prompt; the case and the points go in next, in place of the lines in brackets.
 
-**Do.** Solo for two minutes. Watch the chat for stuck tools and answer there. Anyone with no tool follows your shared screen. At the one-minute mark, say once more: tick every number against the card.
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too. Open a new chat on your screen as they open theirs, and paste the prompt. Change only the placeholders.
+:::
+
+## Case A: the facts {#outline-case}
+
+::: {.paste-long}
+{{< include _paste-case-a.md >}}
+:::
+
+[▲ Copy prompt on your slide. Put it under FACTS. The outline may say only what it says.]{.pointer}
+
+::: {.move .solo}
+[Solo · 30 sec]{.tag} Replace the bracket under FACTS with the whole block.
+:::
+
+::: notes
+**0:30.** The facts come from the card and nothing else goes in. This is Case A, a fictional patient, and the only source for this outline: it may say only what Case A says. Replace the line in brackets under FACTS with the whole block.
+
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too. Put it under FACTS on your screen as they do on theirs.
+:::
+
+## Your teaching points {#outline-points}
+
+::: {.lane}
+[Prompt]{.node .same} [+]{.op} [Case A]{.node .same} [+]{.op} [Your teaching points]{.node .change .grow} [→]{.op} [Outline: three slides]{.node .out .grow}
+:::
+
+{{< include _paste-m5-teaching-points.md >}}
+
+[▲ Copy prompt on your slide. Under TEACHING POINTS, or write your own. Then send the prompt.]{.pointer}
+
+::: {.move .solo}
+[Solo · 2 min]{.tag} Send it. Tick every number against the card.
+:::
+
+::: notes
+**2:30.** Under TEACHING POINTS, paste these three or write your own: writing your own is fine. Then send the prompt, and keep Case A in front of you. When the outline comes back, tick every number against the card, not against how it reads. If a tool is slow, share your own saved run so nobody waits with nothing to read.
+
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too. Run the step on the shared screen while the group runs it on theirs. Watch the chat for stuck tools and answer there; anyone with no tool follows your shared screen. At the one-minute mark, say once more: tick every number against the card.
 :::
 
 ## Read it against the card {#read-outline}
 
-::: {.cards}
-::: {.card}
-[Invented]{.t}
+::: {.lane .sm}
+[Invented]{.node .red .grow} [Card: nothing there]{.node .ghost .grow} [→]{.op} [Outline: a new fact]{.node .red .grow}
+:::
+::: {.lane .sm}
+[Omitted]{.node .grow} [Card: a fact]{.node .same .grow} [→]{.op} [Outline: nothing there]{.node .ghost .grow}
+:::
+::: {.lane .sm}
+[Altered]{.node .change .grow} [Card: a value, dose, side or unit]{.node .same .grow} [→]{.op} [Outline: a different one]{.node .change .grow}
+:::
 
-On the outline, not on the card.
-:::
-::: {.card .teal}
-[Omitted]{.t}
-
-On the card, missing from the outline. Fine if you chose it.
-:::
-::: {.card}
-[Altered]{.t}
-
-A value, dose, side or unit changed.
-:::
-:::
+[▲ Omitted is fine if you chose it. It is a problem when the tool chose it and the talk depends on it.]{.pointer}
 
 ::: {.move .chat}
 [Chat · 1 min]{.tag} Type one thing your outline left out, and whether you would have left it out too.
@@ -136,7 +159,9 @@ A value, dose, side or unit changed.
 ::: notes
 **Goal.** Everyone can turn an approved outline into slide text, one speaker note and one visual idea per slide, and check the result before anyone else sees it.
 
-**Have ready.** Case A, the approved three-slide outline from the last topic, and the `full-talk-slides` prompt in your assistant, with a saved run as a backup. The handout's illustrative output open in a tab.
+**Have ready.** Case A, the approved three-slide outline from the last topic, and the `full-talk-slides` prompt in your assistant, with a saved run as a backup. The handout's illustrative output in a window of your own, to show the VISUAL line for slide 2.
+
+**Clock.** 0:00 three things per slide. 1:15 the ledger. 1:45 run it. 5:00 a picture is a suggestion. 7:45 slide check. 10:45 one slide at a time. 11:30 "more convincing". 12:00 time.
 
 **Watch for.** A visual suggestion treated as data: if a tool draws a line of daily readings, every point on it is made-up. Slide text that grows past three lines, or a statistic nobody asked for. The ledger treated as proof: tick against the card. Asking for the whole deck again: it can change slides you already checked.
 
@@ -146,6 +171,14 @@ A value, dose, side or unit changed.
 :::
 
 ## One level past the outline {#three-things}
+
+::: {.lane}
+[One slide of your approved outline]{.node .same .grow}
+:::
+
+::: {.fan}
+[▼]{.a} [▼]{.a} [▼]{.a}
+:::
 
 ::: {.cards}
 ::: {.card}
@@ -165,59 +198,66 @@ A value, dose, side or unit changed.
 :::
 :::
 
-Ask for a full slide, and every extra line becomes yours to verify.
+[▲ Ask for these three and nothing more. Every extra line becomes yours to verify.]{.pointer}
 
 ::: notes
-**1:30.** The outline gave you the order. The hours go into the words on each slide, what you will say, and the picture, and that is where a tool has the most room to add things you did not ask for. So ask for exactly three things per slide: the slide text, one line of speaker notes, and one visual suggestion. The short list is the discipline. Ask for a full slide and you may get paragraphs, a supporting statistic and a source line, and all three become yours to verify. Ask for three things and you have three things to check.
+**1:15.** The outline gave you the order. The hours go into the words on each slide, what you will say, and the picture, and that is where a tool has the most room to add things you did not ask for. So ask for exactly three things per slide: the slide text, one line of speaker notes, and one visual suggestion. The short list is the discipline. Ask for a full slide and you may get paragraphs, a supporting statistic and a source line, and all three become yours to verify. Ask for three things and you have three things to check.
 
-**Do.** No move here. Keep it to ninety seconds.
+**Do.** No move here. Keep it to seventy-five seconds.
+:::
+
+## The prompt ends with a list to tick {#ledger}
+
+::: {.lane}
+[Slide 1]{.node .out .grow} [Slide 2]{.node .out .grow} [Slide 3]{.node .out .grow} [+]{.op} [NUMBERS USED]{.node .ghost .grow}
+:::
+
+[▲ The last block is the tool's own list of every number. A list to tick, not proof.]{.pointer}
+
+[]{.chk} Tick every number on the slides against the card, not against the list.
+
+::: notes
+**0:30.** One more thing in the prompt, at the end: NUMBERS USED, every number on the slides, each with the fact it came from. That ledger is a list for you to tick, not proof. Tick against the card, not against the tool's own list.
+
+**Do.** No move here. Say it once and go to the prompt.
 :::
 
 ## Run it on your outline {#run-slides}
 
-[Prompt library: full-talk-slides](../reference/prompt-library.qmd#p-full-talk-slides). Facts: the [Case A card](../reference/case-cards.qmd#case-a). Outline: your approved slides.
-
-::: {.card .tint}
-[NUMBERS USED]{.t}
-
-Every number on the slides, with the fact it came from. A list to tick, not proof.
+::: {.paste-long}
+{{< include _paste-full-talk-slides.md >}}
 :::
+
+[▲ Copy prompt on your slide, then Case A. Case A under FACTS, your approved outline under OUTLINE.]{.pointer}
 
 ::: {.move .solo}
 [Solo · 3 min]{.tag} Run it. Tick every number against the card, not the ledger.
 :::
 
 ::: notes
-**3:30.** Paste the card under FACTS and your approved outline under OUTLINE. The FORMAT block does the work: three capped things per slide, under fixed labels. At the end it adds NUMBERS USED, every number with the fact it came from. That ledger is a list for you to tick, not proof: tick against the card, not against the tool's own list. Change only the placeholders.
+**3:15.** Paste Case A under FACTS and your approved outline under OUTLINE; I paste Case A into the chat again so it is close at hand. The FORMAT block does the work: three capped things per slide, under fixed labels. Change only the placeholders. Tick every number against the card, not the ledger.
 
-**Do.** Solo for three minutes. Run it yourself on your shared screen so anyone with a slow tool can follow. Keep a saved run as a backup. Watch the chat for stuck tools and answer there.
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too, then paste Case A under it. Run it on the shared screen while the group runs it on theirs, so anyone with a slow tool can follow: solo for three minutes. Keep a saved run as a backup. Watch the chat for stuck tools and answer there.
 :::
 
 ## A picture is a suggestion, not data {#visual-trap}
 
-::: {.columns}
-::: {.column width="50%"}
-::: {.card .teal}
-[Case A gives]{.t}
+::: {.lane}
+[Case A gives one home number: average 146/92, last 2 weeks, mornings]{.node .teal .grow} [→]{.op} [A chart with a point for every day]{.node .change .grow}
+:::
 
-One home number: average 146/92, last 2 weeks, mornings.
+::: {.lane .sm}
+[Daily readings: not on the card]{.node .ghost .grow} [→]{.op} [Every point on the chart would be made-up]{.node .red .grow}
 :::
-:::
-::: {.column width="50%"}
-::: {.card .dashed}
-[A chart of daily readings]{.t}
 
-Every point on it would be made-up.
-:::
-:::
-:::
+[▲ The numbers in a chart come from you and the source, never from the tool.]{.pointer}
 
 ::: {.move .chat}
 [Chat · 1 min]{.tag} Look at the VISUAL line for the diary slide. Does it ask for daily readings? Type yes or no.
 :::
 
 ::: notes
-**3:00.** Here is the trap. A visual suggestion is a suggestion. If a tool proposes a chart of the home blood pressure diary, ask which points it would plot. Case A gives only the two-week average, so any daily value on that chart would be made-up. The numbers in a chart come from you and the source, never from the tool: AI drafts. You decide. On the page's illustrative output, the VISUAL line for slide 2 says no daily values: that is the constraint working.
+**2:45.** Here is the trap. A visual suggestion is a suggestion. If a tool proposes a chart of the home blood pressure diary, ask which points it would plot. Case A gives only the two-week average, so any daily value on that chart would be made-up. The numbers in a chart come from you and the source, never from the tool: AI drafts. You decide. On the handout's illustrative output, the VISUAL line for slide 2 says no daily values: that is the constraint working.
 
 **Do.** Chat, yes or no, then read out two or three VISUAL lines. If one asks for daily readings, ask what to do next: delete it, or ask for a table of the average beside the clinic readings.
 :::
@@ -228,19 +268,21 @@ Every point on it would be made-up.
 ::: {.card}
 [Numbers]{.t}
 
-Every number and chart value matches the source.
+[]{.chk} Every number and chart value matches the source.
 :::
 ::: {.card .teal}
 [Identifiers]{.t}
 
-None on the slide or in the image.
+[]{.chk} None on the slide or in the image.
 :::
 ::: {.card}
 [Claims]{.t}
 
-Each one sourced. One idea per slide.
+[]{.chk} Each one sourced. One idea per slide.
 :::
 :::
+
+[▲ Three ticks for each slide, before anyone else sees it.]{.pointer}
 
 ::: {.move .share}
 [Share · 3 min]{.tag} A volunteer shares a screen with their three slides. Everyone types one finding: a mismatch, something not on the card, or "clean".
@@ -254,30 +296,32 @@ Each one sourced. One idea per slide.
 
 ## Change one slide at a time {#one-slide}
 
-::: {.columns}
-::: {.column width="50%"}
-::: {.card .teal}
-[Do]{.t}
-
-Ask for that slide only, and say what to change.
-:::
-:::
-::: {.column width="50%"}
-::: {.card .dashed}
-[Not]{.t}
-
-The whole deck again. It can change slides you already checked.
-:::
-:::
+::: {.lane}
+[Do: slide 2 only]{.node .teal .fixed} [Slide 1: checked]{.node .same .grow} [Slide 2: redo it, say what to change]{.node .change .grow} [Slide 3: checked]{.node .same .grow}
 :::
 
-::: {.callout-warning appearance="simple"}
-## Watch for: "make it more convincing"
-It invites a statistic, a guideline name or a "Source:" line. The tool cannot know whether any is real.
+::: {.lane}
+[Not: the whole deck again]{.node .red .fixed} [Slide 1: can change]{.node .red .grow} [Slide 2: redone]{.node .red .grow} [Slide 3: can change]{.node .red .grow}
 :::
+
+[▲ Asking for the whole deck again can change slides you already checked.]{.pointer}
 
 ::: notes
-**1:00.** If a slide is wrong, change that slide only: ask for it alone and say what to change. Asking for the whole deck again can alter slides you already checked. And a request to make it more convincing invites a statistic, a guideline name or a Source line. The tool cannot know whether any of them is real, so treat it as made-up until you have found the original yourself.
+**0:45.** If a slide is wrong, change that slide only: ask for it alone and say what to change. Asking for the whole deck again can alter slides you already checked.
+
+**Do.** No move here. Say it once and go on.
+:::
+
+## "Make it more convincing" {#convincing}
+
+::: {.lane}
+["Make it more convincing"]{.node .change .grow} [→]{.op} [A statistic? A guideline name? A "Source:" line?]{.node .ghost .grow} [→]{.op} [Made-up until you find the original]{.node .red .grow}
+:::
+
+[▲ The tool cannot know whether any of them is real.]{.pointer}
+
+::: notes
+**0:30.** A request to make a slide more convincing invites a statistic, a guideline name or a Source line. The tool cannot know whether any of them is real, so treat it as made-up until you have found the original yourself.
 
 **Do.** No move here. Leave them with the line: the tool suggests the slide and the picture; the numbers come from you and the source. AI drafts. You decide. Then the bridge from the topic slide.
 :::
@@ -287,7 +331,9 @@ It invites a statistic, a guideline name or a "Source:" line. The tool cannot kn
 ::: notes
 **Goal.** Everyone can get quiz questions from a source they may share, and check whether the correct answers are balanced by position and length.
 
-**Have ready.** The practice source open in a tab, the `quiz-from-source` prompt in your assistant, and a saved run as a backup. Paste the practice source link in the chat. Everyone keeps their own quiz open: the next topic uses it.
+**Have ready.** The `quiz-from-source` prompt and the practice source are on the slides: click Copy prompt and paste each into the chat. A saved run as a backup. Everyone keeps their own quiz open: the next topic uses it.
+
+**Clock.** 0:00 three uses. 0:45 only from this text. 1:45 the prompt. 2:15 the source, run it. 4:45 check the letters and the lengths. 7:00 the fix. 8:00 time.
 
 **Watch for.** The prompt already asks for balance, so a live run may pass: check anyway, and if it balanced, say so and do not manufacture a failure. A rewrite that fixes the letters but changes a fact. A trainee pasting a real note "just to tidy it": the privacy line. Questions asked for from general memory: a wrong question reads exactly like a right one.
 
@@ -316,79 +362,108 @@ Ask for the prompt and the source, then check together.
 :::
 :::
 
-You practice summaries in [Lab 2, part 2](../day2/lab2-one-case-three-outputs.qmd#part-2).
+You practice summaries in Lab 2, part 2.
 
 ::: notes
-**1:00.** Three uses, one line each. Quiz questions written only from a source you paste, then checked against it. Study summaries with the same discipline as a note: a fixed shape, a word limit, numbers copied exactly, and you read every line before a trainee does. Supervising: when a trainee brings an AI draft, ask to see the prompt and the source, then run the three-question check on it together. Say the privacy line to trainees too: a trainee in a hurry may paste a real note just to tidy it.
+**0:45.** Three uses, one line each. Quiz questions written only from a source you paste, then checked against it. Study summaries with the same discipline as a note: a fixed shape, a word limit, numbers copied exactly, and you read every line before a trainee does. Supervising: when a trainee brings an AI draft, ask to see the prompt and the source, then run the three-question check on it together. Say the privacy line to trainees too: a trainee in a hurry may paste a real note just to tidy it.
 
-**Do.** No move here. Keep it to a minute.
+**Do.** No move here. Keep it to forty-five seconds.
 :::
 
 ## Only from this text {#only-from-text}
 
-::: {.columns}
-::: {.column width="50%"}
-::: {.card .teal}
-[Paste the source]{.t}
-
-Say: use ONLY this text. Every question then has an answer on the page.
+::: {.lane}
+[A topic: "home blood pressure monitoring"]{.node .same .grow} [→]{.op} [The tool's memory]{.node .ghost .grow} [→]{.op} [Questions that may be wrong]{.node .red .grow}
 :::
-:::
-::: {.column width="50%"}
-::: {.card .dashed}
-[Check what you may paste]{.t}
 
+::: {.lane}
+[Your source]{.node .teal .grow} [+]{.op} ["Use ONLY this text"]{.node .change .grow} [→]{.op} [Questions with an answer on the page]{.node .out .grow}
+:::
+
+[▲ A wrong question reads exactly like a right one. The source is how you tell.]{.pointer}
+
+::: {.callout-warning appearance="simple"}
+## Check what you may paste
 Only material you may share with a third-party tool. A published paper is not automatically yours to paste.
-:::
-:::
 :::
 
 ::: notes
-**1:15.** Ask for questions on home blood pressure monitoring and the tool writes them from whatever it absorbed in training, and a wrong question reads exactly like a right one. Paste the source and tell it to use nothing else, and every question has an answer you can find on the page in front of you. Only paste what you may share with a third-party tool. Your own teaching notes are the easy case; a published paper is not automatically yours to paste. If you do not know, do not paste: ask your library or your institution's legal team.
+**1:00.** Ask for questions on home blood pressure monitoring and the tool writes them from whatever it absorbed in training, and a wrong question reads exactly like a right one. Paste the source and tell it to use nothing else, and every question has an answer you can find on the page in front of you. Only paste what you may share with a third-party tool. Your own teaching notes are the easy case; a published paper is not automatically yours to paste. If you do not know, do not paste: ask your library or your institution's legal team.
 
 **Do.** No move here. If asked, repeat the paste rule.
 :::
 
-## Run it on the practice source {#run-quiz}
+## The quiz prompt {#quiz-prompt}
 
-[Prompt library: quiz-from-source](../reference/prompt-library.qmd#p-quiz-from-source), on the nine lines of the [practice source](../reference/practice-source.qmd).
-
-::: {.card .tint}
-[Protocol HBP-1]{.t}
-
-Fictional, written for this course. Every rule has a number, so any question can be checked against a line.
+::: {.paste-long}
+{{< include _paste-quiz-from-source.md >}}
 :::
 
+[▲ Copy prompt on your slide. A new chat, this prompt first. The practice source goes under SOURCE next.]{.pointer}
+
 ::: {.move .solo}
-[Solo · 2 min]{.tag} Run it. Keep the quiz open: the key comes next.
+[Solo · 30 sec]{.tag} New chat. Paste the prompt. Set the audience. Do not send it yet.
 :::
 
 ::: notes
-**2:00.** Open the practice source and copy the nine numbered lines of Protocol HBP-1. It is fictional and carries no authority. Its use is that every rule has a number, so any question can be checked against a line. Paste the lines under SOURCE, change only the placeholders, and run it. Keep this quiz open: the next topic uses it.
+**0:30.** This is the quiz prompt: the four parts again, with a SOURCE block and a format that asks for balance, one letter correct no more than twice and options of about the same length. The last line, ANSWER LETTERS, is there so you can check the balance at a glance. Open a new chat and paste the prompt; the source goes in next, in place of the line in brackets.
 
-**Do.** Solo for two minutes. Paste the practice source link in the chat. Watch the chat for stuck tools; anyone with none follows your shared screen. Keep a saved run as a backup.
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too. Open a new chat on your screen as they open theirs, and paste the prompt. Change only the placeholders.
+:::
+
+## The practice source {#quiz-source}
+
+::: {.paste-long}
+{{< include _paste-practice-source.md >}}
+:::
+
+[▲ Copy prompt on your slide. Fictional, written for this course. Every rule has a number, so any question can be checked against a line.]{.pointer}
+
+::: {.move .solo}
+[Solo · 2 min]{.tag} Put it under SOURCE and send. Keep the quiz open: the key comes next.
+:::
+
+::: notes
+**2:30.** This is the practice source, Protocol HBP-1: nine numbered lines. It is fictional and carries no authority. Its use is that every rule has a number, so any question can be checked against a line. Paste the lines under SOURCE, change only the placeholders, and send it. Keep this quiz open: the next topic uses it.
+
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too. Run it on the shared screen while the group runs it on theirs: solo for two minutes. Watch the chat for stuck tools; anyone with none follows your shared screen. Keep a saved run as a backup.
 :::
 
 ## The habit to check {#mcq-habit}
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.cards}
 ::: {.card .dashed}
 [ANSWER LETTERS]{.t}
 
-**1-C, 2-C, 3-C, 4-B, 5-C**
+[1-C]{.pill .red} [2-C]{.pill .red} [3-C]{.pill .red} [4-B]{.pill} [5-C]{.pill .red}
+
+Does one letter carry most of the answers?
+:::
+::: {.card .teal}
+[Question 2: how long is each option?]{.t}
+
+::: {.nextword}
+::: {.row}
+[A]{.w} []{.fill style="width:5.3em"}
+:::
+::: {.row}
+[B]{.w} []{.fill style="width:5.8em"}
+:::
+::: {.row}
+[C]{.w} []{.fill .flat style="width:12em"}
+:::
+::: {.row}
+[D]{.w} []{.fill style="width:4.5em"}
+:::
+:::
+
+Is the correct option the longest?
+:::
+:::
+
+[▲ Four of five answers are C, and in question 2 the correct option (teal) is also the longest.]{.pointer}
 
 [Illustrative, written for this course]{.illustrative}
-:::
-:::
-::: {.column width="50%"}
-::: {.card .teal}
-[Check two things]{.t}
-
-Does one letter carry most answers? Is the correct option the longest, more than once or twice?
-:::
-:::
-:::
 
 ::: {.move .chat}
 [Chat · 1 min]{.tag} Type your ANSWER LETTERS, then balanced or not.
@@ -402,16 +477,22 @@ Does one letter carry most answers? Is the correct option the longest, more than
 
 ## Ask for the fix in plain words {#plain-words-fix}
 
-```text
-In questions [numbers] the correct option is the longest and sits at [letter]. Rewrite so the four options in each question are about the same length, and spread the correct letters across A to D.
-```
+::: {.lane}
+[A check fails]{.node .red} [→]{.op} [Reply in the same chat: which questions, what is wrong, what you want]{.node .change .grow} [→]{.op} [Check the new quiz against the source again]{.node .teal .grow}
+:::
 
-Then check the new questions against the source again. A rewrite can change a fact.
+{{< include _paste-m5-quiz-fix.md >}}
+
+[▲ Copy prompt on your slide. Fill in the brackets from your own quiz. A rewrite can change a fact.]{.pointer}
+
+::: {.move .solo}
+[Solo · 1 min]{.tag} If a check failed, fill the brackets and send it. If your quiz balanced, leave it.
+:::
 
 ::: notes
-**1:30.** If either check fails, reply in the same chat, in plain words: say which questions, say what is wrong, say what you want. Then check the rewritten questions against the source again, because a rewrite can change a fact; fixing the letters while changing a number is a bad trade. The questions are checked against the source. The key is the part people forget, because a wrong key looks like an authority.
+**1:00.** If either check fails, reply in the same chat, in plain words: say which questions, say what is wrong, say what you want. Then check the rewritten questions against the source again, because a rewrite can change a fact; fixing the letters while changing a number is a bad trade. If your quiz already balanced, say so and do not manufacture a failure. The questions are checked against the source. The key is the part people forget, because a wrong key looks like an authority.
 
-**Do.** Read the reply aloud. Leave them with the line: paste the source and say only from this text, then check whether the answer positions and lengths are balanced; do not assume they are. Then the bridge from the topic slide.
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too. Read the reply aloud. Leave them with the line: paste the source and say only from this text, then check whether the answer positions and lengths are balanced; do not assume they are. Then the bridge from the topic slide.
 :::
 
 # Grading yourself [7 min]{.time} {#grading-yourself}
@@ -419,9 +500,11 @@ Then check the new questions against the source again. A rewrite can change a fa
 ::: notes
 **Goal.** Everyone can ask for an answer key with a quotation for every answer, and spot-check the riskiest line against the real source.
 
-**Have ready.** The quiz from the last topic open, the practice source in a second window, and the `answer-key-with-quotes` prompt in your assistant. Share the practice source page when you reach line 6.
+**Have ready.** The quiz from the last topic open, and the practice source as you pasted it in the chat, to point at when you reach line 6. The `answer-key-with-quotes` prompt is on a slide: click Copy prompt and paste it into the chat.
 
-**Watch for.** Checking the tool's copy of the source, or its quotation, instead of the real page. "It passed, so the rest is fine": a pass verifies one line, and the quotations only make the others quick to check. A quotation that is nearly right: shortened, or one word changed. Running long: the spot-check is the point, the discussion is optional.
+**Clock.** 0:00 grade the key. 1:00 ask for quotations, run it, check the riskiest line. 3:30 key versus source. 5:30 the same check. 7:00 time.
+
+**Watch for.** Checking the tool's copy of the source, or its quotation, instead of the real source. "It passed, so the rest is fine": a pass verifies one line, and the quotations only make the others quick to check. A quotation that is nearly right: shortened, or one word changed. Running long: the spot-check is the point, the discussion is optional.
 
 **If asked.** Isn't it enough to check everything? If you have time, yes; the spot-check is the minimum, and it says what to do when the minimum fails. How can a quotation be wrong if it came from the source? It can be shortened, altered or from the wrong line. Can a second tool check the first one's key? It can point you at lines to look at; agreement between two tools is not a source. What if the source itself is wrong? Then the key is faithful to a wrong source; check against the guideline or label you trust.
 
@@ -432,17 +515,13 @@ Then check the new questions against the source again. A rewrite can change a fa
 
 A wrong key marks the right trainee wrong, in the same confident voice as a right one.
 
-::: {.flow}
-::: {.step}
-[1]{.num} Ask for the key with a quotation for every answer
+::: {.lane}
+[Practice source]{.node .same .fixed} [→]{.op} [Your quiz]{.node .out .grow} [→]{.op} [Key: a quotation for every answer]{.node .change .grow} [→]{.op} [You check it against the source]{.node .teal .grow}
 :::
-::: {.step}
-[2]{.num} Check the riskiest question against the real source
-:::
-::: {.step}
-[3]{.num} If that check fails, the rest is unchecked, not fine
-:::
-:::
+
+Checked line by line: &emsp; []{.chk} 1 &emsp; []{.chk} 2 &emsp; []{.chk} 3 &emsp; []{.chk} 4 &emsp; []{.chk} 5
+
+[▲ Riskiest first: a number, an exception, a threshold or a negation. If it fails, the rest is unchecked, not fine.]{.pointer}
 
 ::: notes
 **1:00.** A quiz is an assessment. If its key is wrong, a trainee who answered correctly is marked wrong. The tool writes a wrong key line in the same confident voice as a right one, so "does this look right" is not a test. Ask for the key in the same conversation as the questions, with a quotation for every answer. Then check the riskiest question first: the one with a number, an exception, a threshold or a negation. If that check fails, the rest is unchecked, not fine.
@@ -452,55 +531,40 @@ A wrong key marks the right trainee wrong, in the same confident voice as a righ
 
 ## Ask for a quotation with every answer {#ask-for-quotes}
 
-[Prompt library: answer-key-with-quotes](../reference/prompt-library.qmd#p-answer-key-with-quotes). Same chat as the questions.
-
-::: {.cards}
-::: {.card}
-[The letter]{.t}
-
-Which option is correct.
+::: {.lane .sm}
+[The letter]{.node .same .grow} [+]{.op} [The exact words, in quotation marks]{.node .teal .grow} [+]{.op} [The line they come from]{.node .same .grow}
 :::
-::: {.card .teal}
-[The exact words]{.t}
 
-Copied word for word, in quotation marks.
+::: {.paste-long}
+{{< include _paste-answer-key-with-quotes.md >}}
 :::
-::: {.card}
-[The line]{.t}
 
-Where in the source they appear.
-:::
-:::
+[▲ Copy prompt on your slide. The same chat as your quiz, so it is the same quiz.]{.pointer}
 
 ::: {.move .solo}
-[Solo · 2 min]{.tag} Run it on your quiz. Check your riskiest question's quotation against the practice source.
+[Solo · 2 min]{.tag} Run it. Check your riskiest question's quotation against the practice source in the chat.
 :::
 
 ::: notes
-**2:30.** Run it in the same conversation as the questions, so it is the same quiz. For each answer you get the letter, the exact words from the source inside quotation marks, and the line or heading they come from. A quotation turns "is this answer right" into "does this line say that", which you settle with the page open. If no words support an answer, the prompt makes the tool write NOT SUPPORTED instead. Riskiest means a trap: a number, an exception, a threshold or a negation.
+**2:30.** Run it in the same conversation as the questions, so it is the same quiz. For each answer you get the letter, the exact words from the source inside quotation marks, and the line or heading they come from. A quotation turns "is this answer right" into "does this line say that", which you settle with the source in front of you. If no words support an answer, the prompt makes the tool write NOT SUPPORTED instead. Riskiest means a trap: a number, an exception, a threshold or a negation.
 
-**Do.** Solo for two minutes: run it, then check the riskiest quotation against the real page. Then Chat: pass or fail? If the clock is short, cut the second minute; the spot-check is the point.
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too. Run it on the shared screen while the group runs it on theirs: solo for two minutes, then check the riskiest quotation against the practice source in the chat. Then Chat: pass or fail? If the clock is short, cut the second minute; the spot-check is the point.
 :::
 
 ## Key versus source {#key-vs-source}
 
-::: {.columns}
-::: {.column width="50%"}
-::: {.card .dashed}
-[The key says, question 3]{.t}
+::: {.lane}
+[The key says, question 3: A, all readings from days 1 to 7. "Average all readings."]{.node .red .grow} [≠]{.op .fragment data-fragment-index="1"} [The source says, line 6: "Discard the readings from day 1. Average all remaining readings."]{.node .teal .grow .fragment data-fragment-index="1"}
+:::
 
-A, all readings from days 1 to 7. "Average all readings."
+[Illustrative: the key is written for this course]{.illustrative}
 
-[Illustrative, written for this course]{.illustrative}
-:::
-:::
-::: {.column width="50%"}
-::: {.card .teal .fragment}
-[The source says, line 6]{.t}
+::: {.fragment data-fragment-index="2"}
+[]{.chk .no} The quotation is in line 6, word for word.
 
-"**Discard the readings from day 1.** Average all **remaining** readings."
-:::
-:::
+[]{.chk .on} It says what the key claims.
+
+[]{.chk .no} The line supports the letter in the key.
 :::
 
 ::: {.move .chat}
@@ -510,10 +574,14 @@ A, all readings from days 1 to 7. "Average all readings."
 ::: notes
 **2:00.** The spot-check, on an illustrative key written for this course. Three things to check on the riskiest line: the quotation appears word for word, it says what the key claims, and it supports the letter given. Question 3 asks which readings are averaged. The key says all readings from days 1 to 7, quoting "Average all readings." The real source, line 6, reads "Discard the readings from day 1. Average all remaining readings." The quotation is not there: it is shortened and drops the discard, and the key's answer follows it. If it fails, the rest is unchecked; if it passes, one line is verified.
 
-**Do.** Share the practice source page. Chat: yes or no. Click to show line 6. Ask what to do with the other questions: check each, or discard the set.
+**Do.** Show the practice source you pasted, so line 6 is in view. Chat: yes or no. Click to show line 6, then the three checks. Ask what to do with the other questions: check each, or discard the set.
 :::
 
 ## The same check, in your words {#same-check}
+
+::: {.lane .sm}
+[Draft with AI: the key]{.node .grow} [→]{.op} [Cross-check the source]{.node .teal .grow} [→]{.op} [Confirm or correct]{.node .grow} [→]{.op} [Use]{.node .dark .grow}
+:::
 
 ::: {.cards}
 ::: {.card}
@@ -539,4 +607,21 @@ If the answer to any of these is no, that's the signal to slow down, not the fin
 **1:30.** This is the verification workflow: Draft with AI → Cross-check the source → Confirm or correct → Use. The key is the draft; the source is the cross-check. Then the three questions, word for word. The key line for question 3 fails the first one the moment a colleague opens line 6. The quotation is what makes the second answerable. You pass the third only by opening the source, which is why the spot-check is a required step. Then the no rule, word for word.
 
 **Do.** Read the no rule aloud and pause. Leave them with the line: ask for a quotation with every answer and check the riskiest line first; if it fails, the rest is unchecked, not fine. Then the bridge from the topic slide.
+:::
+
+## After the call {#after}
+
+[Next: a 10-minute break, then Lab Two: one case, three outputs.]{.big}
+
+- [The module page](../day2/m5-talks-and-teaching.qmd): every step, to redo at your own pace
+- [The prompt library](../reference/prompt-library.qmd)
+- [Case A](../reference/case-cards.qmd#case-a) and the other four cases
+- [The practice source](../reference/practice-source.qmd)
+- [The three-question card](../reference/three-question-check.qmd)
+- [The privacy checklist](../reference/privacy-checklist.qmd)
+
+::: notes
+**Not timed.** Paste these links into the chat at the very end, once. They are for afterwards: nothing on the call needed them. Then the break: ten minutes, and Lab Two after it.
+
+**Do.** Paste the links, say the break time aloud and write it in the chat.
 :::

@@ -19,6 +19,11 @@ You leave with
 :   You can name the four parts of a prompt and say which one is missing when an answer goes wrong. You have a saved skeleton to paste into any tool. You can turn jotted facts into a SOAP note, a referral letter, a discharge summary or a plain-language handout, and you know which parts of each to check.
 :::
 
+::: {.callout-note appearance="simple"}
+## On the call
+You need three tabs: the call, the slides (your instructor pastes the link in the chat), and your general assistant, signed in. Copy each prompt from its slide with the Copy prompt button; your instructor pastes it in the chat too. This page is the take-home version: every prompt and every illustrative output again, to redo at your own pace.
+:::
+
 ::: {.callout-important appearance="simple"}
 ## Synthetic cases only
 Every patient on this page comes from a fictional [case card](../reference/case-cards.qmd). No patient identifiers into a consumer AI tool. Ever. Full stop. The [privacy checklist](../reference/privacy-checklist.qmd) says what that means at your desk.
@@ -152,6 +157,7 @@ Every missing part leaves a recognizable mark. Read the right column, then look 
 ## Try it (2 minutes, in the chat)
 Each prompt below is missing exactly one of the four parts. Which? Type your answers in the chat, for example "1: Format".
 
+<!-- paste: m2-spot-the-gap | Three prompts, each missing one of the four parts -->
 ```text
 1. ROLE: You are a family physician, writing for a cardiologist.
    CONTEXT: A referral. Use ONLY the facts below. Write [MISSING: what] if something is absent.
@@ -372,6 +378,7 @@ Verify first:
 
 Case D says the mother prefers written instructions in Arabic. Add one line to the end of the prompt.
 
+<!-- paste: m2-arabic-language-line | One added line that asks for the patient handout in Arabic -->
 ```text
 LANGUAGE: The mother prefers written instructions in Arabic. Write the handout in Arabic, in simple everyday words a parent would use at home. Then give the English version below it so I can compare the two.
 ```

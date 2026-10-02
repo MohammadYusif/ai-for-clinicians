@@ -14,7 +14,7 @@ Every patient in this repository is fictional. This is educational material, not
 
 | Day | Modules | Lab |
 |---|---|---|
-| **One** — Foundations | 1 The rule and how these tools work · 2 Anatomy of a good prompt · 3 Choosing the right tool | Lab 1: templates, limits, and a tool face-off (30 min) |
+| **One** — Foundations | 1 The rule and how these tools work · 2 Anatomy of a good prompt · 3 Choosing the right tool | Lab 1: two prompts side by side, a question it can only guess at, and one question answered two ways (30 min) |
 | **Two** — Applications | 4 Notes and audiences (with the Saudi scribes) · 5 Talks and teaching | Lab 2: one case, three outputs (35 min) |
 | **Three** — Safety & Ethics | 6 Confidently wrong · 7 Patient privacy · 8 Back to the rule | Lab 3: spot the error (25 min) |
 

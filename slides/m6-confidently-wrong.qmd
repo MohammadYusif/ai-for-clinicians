@@ -14,11 +14,11 @@ Chat, Speak, Share, Pair, Solo: each activity names its move and its minutes on 
 :::
 
 ::: {.move .chat}
-[Chat · 30 sec]{.tag} Is your Lab One practice output open, with its PRACTICE OUTPUT line at the top? Type 1 for yes, 2 for no.
+[Chat · 30 sec]{.tag} Is your Lab One practice output saved, with its PRACTICE OUTPUT line at the top? Type 1 for yes, 2 for no.
 :::
 
 ::: notes
-**Do.** Welcome everyone to Day Three: output hurts a patient two ways, wrong and nobody notices, or right and it should never have left your hands. Run the chat vote, then start the clock at the next slide.
+**Do.** Welcome everyone to Day Three: output hurts a patient two ways, wrong and nobody notices, or right and it should never have left your hands. Run the chat vote, then start the clock at the next slide. Paste this deck's link in the chat: people copy each prompt from their own slide, or from the chat.
 :::
 
 # Confidently wrong [10 min]{.time} {#confidently-wrong}
@@ -26,113 +26,239 @@ Chat, Speak, Share, Pair, Solo: each activity names its move and its minutes on 
 ::: notes
 **Goal.** By the end, everyone can say why a confident tone proves nothing and can name the five steps of the check, which is all Lab Three needs.
 
-**Have ready.** Module 6 and the Case A card open in two tabs, so you can paste both links into the chat. Ask in the chat (the plan slide's vote) who has the Lab One practice output open, with its PRACTICE OUTPUT line at the top; a fresh one takes two minutes, so whoever typed 2 makes it when Lab Three opens. Ask everyone to keep one output from Day One or Two, not the Lab Three one, for the end-of-day check.
+**Have ready.** The Case A block, to paste into the chat from its own slide. The plan slide's vote shows who has the Lab One practice output saved with its PRACTICE OUTPUT line at the top; a fresh one takes two minutes, so whoever typed 2 makes it when Lab Three opens. Ask everyone to keep one output from Day One or Two, not the Lab Three one, for the end-of-day check.
+
+**Clock.** 0:00 voice. 0:40 lane. 1:30 five steps. 2:50 kinds. 3:30 Case A. 4:00 claims. 6:20 marks. 7:20 omission. 7:50 sources. 9:20 stakes.
 
 **Watch for.** "It has citations" heard as "verified". Could-not-find drifting into "probably fine". Someone in the chat proposing a second tool "to double-check": send them to the ladder. A real patient story typed into the chat: stop it before the detail and go back to the card. Running long: shorten the stakes slide before you shorten the lab.
 
-**If asked.** Can the tool check its own answer? It can list claims; it cannot be the check. How often is it wrong? No number would apply to your tool on your task, so quote none; even the strongest accuracy score reported on Day Two was short of the maximum. Does a literature-grounded tool solve this? It gives you something to open; you still open it and read the line it supports.
+**If asked.** Can the tool check its own answer? It can list claims (the last slide has the prompt); it cannot be the check. How often is it wrong? No number would apply to your tool on your task, so quote none; even the strongest accuracy score reported on Day Two was short of the maximum. Does a literature-grounded tool solve this? It gives you something to open; you still open it and read the line it supports.
 
 **Bridge.** "You have five steps and a card. Now see whether they catch an error you did not plant: in Lab Three you swap your Lab One output with a partner."
 :::
 
 ## Same voice, right or wrong {#tone-not-signal}
 
+::: {.cards}
+::: {.card}
+[A reference that exists]{.t}
+
+::: {.nextword}
+::: {.row}
+[sounds sure]{.w} []{.fill style="width:7em"}
+:::
+:::
+:::
+::: {.card}
+[A reference made up]{.t}
+
+::: {.nextword}
+::: {.row}
+[sounds sure]{.w} []{.fill style="width:7em"}
+:::
+:::
+:::
+:::
+
+[▲ Same voice, same bar. Nothing in the tone tells you which one is real.]{.pointer}
+
 [Tone is not a signal. A verification step is.]{.big}
 
-::: {.flow}
-::: {.step}
-[1]{.num} Draft with AI
-:::
-::: {.step}
-[2]{.num} Cross-check the source
-:::
-::: {.step}
-[3]{.num} Confirm or correct
-:::
-::: {.step}
-[4]{.num} Use
-:::
-:::
-
-Steps 2 and 3 are where you decide.
+[Illustrative picture, drawn for this course]{.illustrative}
 
 ::: notes
-**1:30.** Days One and Two were about getting good output. Today is the other half of the rule: a draft is only as safe as the check you put behind it. The tool writes a made-up citation in the same steady voice it uses for a correct one, so there is no hesitation to listen for. You will hear the word hallucination elsewhere; say it once, then say what happened: something invented, omitted or altered, or a citation fabricated. What separates right from wrong is a step you do yourself between the draft and the use. The two middle steps are where you decide.
+**0:40.** Days One and Two were about getting good output. Today is the other half of the rule: a draft is only as safe as the check you put behind it. The tool writes a made-up citation in the same steady voice it uses for a correct one, so there is no hesitation to listen for. You will hear the word hallucination elsewhere; say it once, then say what happened: something invented, omitted or altered, or a citation fabricated. The bars are the same length on purpose.
 
-**Do.** Point at steps 2 and 3 on the flow. No chat on this slide.
+**Do.** Point at the two bars, then at the last line. No chat on this slide.
+:::
+
+## Between the draft and the use {#check-lane}
+
+::: {.lane}
+[Draft with AI]{.node .dark .fixed} [→]{.op} [Cross-check the source]{.node .change .grow} [→]{.op} [Confirm or correct]{.node .change .grow} [→]{.op} [Use]{.node .out .fixed}
+:::
+
+::: {.lane}
+[Step 2: could not find it]{.node .ghost .grow} [→]{.op} [Treat as wrong]{.node .red .grow} [→]{.op} [Step 3: correct it, or delete it]{.node .change .grow}
+:::
+
+[▲ Steps 2 and 3 are where you decide. Could-not-find counts as wrong.]{.pointer}
+
+::: notes
+**0:50.** What separates a right answer from a wrong one is a step you do yourself between the draft and the use: Draft with AI, Cross-check the source, Confirm or correct, then Use. The two middle steps are where you decide. And if you cannot find the source, treat the claim as wrong, then correct it or delete it.
+
+**Do.** Point at steps 2 and 3, then trace the second lane with your cursor. No chat on this slide.
 :::
 
 ## Five steps, every time {#verify-five-moves}
 
-::: {.cards}
-::: {.card}
-[1]{.num}
-
-**Extract** every checkable claim
+::: {.flow}
+::: {.step}
+[1]{.num} Extract every claim
 :::
-::: {.card}
-[2]{.num}
-
-**Find** each source yourself
+::: {.step}
+[2]{.num} Find each source yourself
 :::
-::: {.card .teal}
-[3]{.num}
-
-**Mark** each claim
+::: {.step}
+[3]{.num} Mark each claim
 :::
-::: {.card}
-[4]{.num}
-
-**Fix** it, or discard it
+::: {.step}
+[4]{.num} Fix it, or discard it
 :::
-::: {.card}
-[5]{.num}
-
-**Name** the error
+::: {.step}
+[5]{.num} Name the error
 :::
 :::
 
-Confirmed, wrong, or could-not-find. **Could-not-find counts as wrong.**
+[▲ Step 3 has three marks. Could-not-find counts as wrong.]{.pointer}
 
-Name it: [Invented]{.pill} [Omitted]{.pill} [Altered]{.pill} [Fabricated citation]{.pill}
+[✓ Confirmed]{.pill .teal} [✗ Wrong]{.pill .red} [? Could not find: treat as wrong]{.pill}
 
 ::: notes
-**2:00.** This is the whole method, and Lab Three uses only this. One: pull out every checkable claim, anything a colleague could answer with "says who?": numbers, names, citations, dates, doses, guideline references. Two: find each source yourself; never ask the tool to confirm itself, because "are you sure?" returns the same voice. Three: mark each claim confirmed, wrong or could-not-find; could-not-find counts as wrong. Then read the source against the output once, for what was left out. Four: fix it, or discard the output if the errors run all through it. Five: name the kind of error. On Day One the three questions ended with a rule: "If the answer to any of these is no, that's the signal to slow down, not the finding to accept." These five steps are what slowing down looks like.
+**1:20.** This is the whole method, and Lab Three uses only this. One: pull out every checkable claim, anything a colleague could answer with "says who?": numbers, names, citations, dates, doses, guideline references. Two: find each source yourself; never ask the tool to confirm itself, because "are you sure?" returns the same voice. Three: mark each claim confirmed, wrong or could-not-find; could-not-find counts as wrong. Then read the source against the output once, for what was left out. Four: fix it, or discard the output if the errors run all through it. Five: name the kind of error. On Day One the three questions ended with a rule: "If the answer to any of these is no, that's the signal to slow down, not the finding to accept." These five steps are what slowing down looks like.
 
-**Do.** Paste the Case A card and Module 6 links in the chat; the next slide needs the card.
+**Do.** Point at each step as you say it. No chat; the next slide names the kinds of error.
+:::
+
+## Four ways it goes wrong {#error-kinds}
+
+::: {.cards}
+::: {.card}
+[Invented]{.t}
+
+[Source: A B]{.node .same}
+
+[Output: A B C]{.node .change}
+
+Added. Not in the source.
+:::
+::: {.card}
+[Omitted]{.t}
+
+[Source: A B C]{.node .same}
+
+[Output: A B]{.node .change}
+
+Dropped. It was in the source.
+:::
+::: {.card}
+[Altered]{.t}
+
+[Source: A B C]{.node .same}
+
+[Output: A B X]{.node .change}
+
+A value, negation, side, date or unit changed.
+:::
+::: {.card}
+[Fabricated citation]{.t}
+
+[Source: no such paper]{.node .ghost}
+
+[Output: cites it]{.node .red}
+
+Looks real. Is not, or does not say that.
+:::
+:::
+
+[▲ Step 5 of the check: say which one it is.]{.pointer}
+
+::: notes
+**0:40.** Step five is naming the error, in these words. Invented: added, not in the source. Omitted: dropped, though it was in the source. Altered: a value, negation, side, date or unit changed. Or a fabricated citation: a reference that looks real and is not, or does not say what it is cited for. The letters are only a picture: the source holds some things, and the output differs from it in one way.
+
+**Do.** Read the four cards left to right, pointing at the ringed box on each. No chat on this slide.
+:::
+
+## The source: Case A {#case-a-source}
+
+::: {.paste-long}
+{{< include _paste-case-a.md >}}
+:::
+
+[▲ Copy prompt on your slide. It is the source for the check. You do not paste it into your assistant.]{.pointer}
+
+::: {.move .solo}
+[Solo · 30 sec]{.tag} Read it. A summary of it comes next, and you check that against this.
+:::
+
+::: notes
+**0:30.** A tool was given this fictional card and asked for a short summary for a colleague. The card is the source, the only place to look for this check, and nothing else about a patient goes into the chat. Read it once: the next slide's summary has to be checked against it. You do not paste it into your assistant.
+
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too. Say the time left at fifteen seconds, then move on.
 :::
 
 ## Worked example: Case A {#case-a-claims}
 
-> 52-year-old man with hypertension, taking amlodipine 5 mg daily for 6 weeks. Headaches are now more frequent; new ankle swelling. Home BP averages 146/92. Plan: add losartan 50 mg daily, continue amlodipine, review in 6 weeks. This follows current guidelines.
+::: {.card .teal}
+[The summary says, one claim to a row]{.t}
+
+[]{.chk} 52-year-old man with hypertension, on amlodipine 5 mg daily for 6 weeks
+
+[]{.chk} Headaches are now more frequent
+
+[]{.chk} New ankle swelling
+
+[]{.chk} Home BP averages 146/92
+
+[]{.chk} Add losartan 50 mg daily, continue amlodipine
+
+[]{.chk} Review in 6 weeks
+
+[]{.chk} "This follows current guidelines"
+:::
 
 [Illustrative, written for this course]{.illustrative}
 
 ::: {.move .chat}
-[Chat · 2 min]{.tag} Check one claim against the [Case A card](../reference/case-cards.qmd#case-a). Type the claim and your mark.
+[Chat · 2 min]{.tag} Pick one claim and find it on the Case A block in the chat. Type the claim and your mark: confirmed, wrong or could-not-find.
 :::
 
 ::: notes
-**2:20.** A tool was given the Case A card and asked for a short summary for a colleague. This is what came back, written for this course and not captured from a real tool. Open the Case A card in another tab: the card is the source. Everyone picks one claim, finds it on the card, marks it confirmed, wrong or could-not-find, and types the claim with the mark. Do not reveal anything yet. Read out five or six answers, grouped by mark, and ask how each person found the line on the card.
+**2:20.** A tool was given the Case A card and asked for a short summary for a colleague. This is what came back, one claim to a row: written for this course and not captured from a real tool. The card in the chat is the source. Everyone picks one claim, finds it on the card, marks it confirmed, wrong or could-not-find, and types the claim with the mark. Do not reveal anything yet. Read out five or six answers, grouped by mark, and ask how each person found the line on the card.
 
-**Do.** Chat · 2 min. If the chat is quiet, take the first claim yourself ("52-year-old man") and mark it. Only the card: if someone starts describing a real patient, stop them before any detail and go back to the card.
+**Do.** Chat · 2 min. Take one claim yourself on the shared screen as they take theirs. If the chat is quiet, take the first ("52-year-old man") and mark it. Only the card: if someone starts describing a real patient, stop them before any detail and go back to the card.
 :::
 
 ## What the check finds {#case-a-key}
 
-| In the summary | On the card | Result |
-|----------------|----------------|-----------|
-| Headaches more frequent | Less frequent | Wrong: altered |
-| Review in 6 weeks | Review in 4 weeks | Wrong: altered |
-| "Follows current guidelines" | No guideline named | Could-not-find: treat as wrong |
-| Nothing about blood tests | Repeat creatinine and potassium in 2 weeks | Omitted |
+::: {.tight}
 
-Omissions only show up when you read the source against the output.
+| | In the summary | On the card | Result |
+|:----:|----------------------------------|--------------------|--------------------------|
+| []{.chk .on} | 52-year-old man with hypertension, amlodipine 5 mg daily, 6 weeks | Same | Confirmed |
+| []{.chk .no} | Headaches more frequent | Less frequent | Wrong: altered |
+| []{.chk .on} | New ankle swelling | Same | Confirmed |
+| []{.chk .on} | Home BP averages 146/92 | Same | Confirmed |
+| []{.chk .on} | Add losartan 50 mg, continue amlodipine | Same | Confirmed |
+| []{.chk .no} | Review in 6 weeks | Review in 4 weeks | Wrong: altered |
+| []{.chk .no} | "Follows current guidelines" | No guideline named | Could-not-find: treat as wrong |
+
+:::
+
+[▲ Two altered values. One claim with no source.]{.pointer}
+
+[Illustrative, written for this course]{.illustrative}
 
 ::: notes
-**1:30.** Three lines fail. The summary says headaches are more frequent; the card says less frequent: altered. It says review in 6 weeks; the card says 4: altered. "Follows current guidelines" names no guideline and the card has none: could-not-find, so wrong until someone names it and opens it. The rest check out: the amlodipine, the swelling, the home readings and the losartan line. One finding comes from no line of the output: the card plans a repeat creatinine and potassium in 2 weeks and the summary never says so. That is omitted, and it only shows when you read the source against the output, once, for what was left out. Then step four: correct the two values, restore the blood test, delete the unsupported sentence.
+**1:00.** Three lines fail. The summary says headaches are more frequent; the card says less frequent: altered. It says review in 6 weeks; the card says 4: altered. "Follows current guidelines" names no guideline and the card has none: could-not-find, so wrong until someone names it and opens it. The other four check out: the patient line, the swelling, the home readings and the losartan line. One more finding comes from no line of the output, and it is on the next slide.
 
-**Do.** Read the table out row by row. No chat; keep it brisk.
+**Do.** Read the table out row by row, pointing at each box. No chat; keep it brisk.
+:::
+
+## What no line shows {#case-a-omitted}
+
+::: {.lane}
+[On the card: repeat creatinine and potassium in 2 weeks]{.node .same .grow} [→]{.op} [In the summary: nothing]{.node .ghost .grow} [→]{.op} [Omitted]{.node .red .fixed}
+:::
+
+[▲ Omissions only show up when you read the source against the output.]{.pointer}
+
+Step 4, fix it: [correct the two values]{.pill .teal} [restore the blood test]{.pill .teal} [delete the unsupported sentence]{.pill .teal}
+
+::: notes
+**0:30.** One finding comes from no line of the output. The card plans a repeat creatinine and potassium in 2 weeks, and the summary never says so: that is omitted. It only shows when you read the source against the output, once, for what was left out. Then step four: correct the two values, restore the blood test, delete the unsupported sentence.
+
+**Do.** Point at the empty middle box, then at the three fixes. No chat on this slide.
 :::
 
 ## Where the source comes from {#source-ladder}
@@ -164,23 +290,62 @@ Open every one.
 :::
 
 ::: notes
-**1:50.** Where you look matters as much as whether you look. Best is the primary source: the guideline, the drug label, the paper itself. Next is your institution's formulary or guideline: local rules, which can differ from a published one, and what colleagues will hold you to. Now the poll, before the third rung shows. Then reveal it: a second AI is not a source. Two tools agreeing is two predictions, not a check, because neither was checked against anything. Asking a tool for citations does not fix this, because citations can be fabricated. Open every one and read the line it is supposed to support.
+**1:30.** Where you look matters as much as whether you look. Best is the primary source: the guideline, the drug label, the paper itself. Next is your institution's formulary or guideline: local rules, which can differ from a published one, and what colleagues will hold you to. Now the poll, before the third rung shows. Then reveal it: a second AI is not a source. Two tools agreeing is two predictions, not a check, because neither was checked against anything. Asking a tool for citations does not fix this, because citations can be fabricated. Open every one and read the line it is supposed to support.
 
 **Do.** Chat · 30 sec: "A second tool agrees with the first. Verified?" Show the count, click to reveal the third rung, then say no, and why. Do not ask who has used a second tool.
 :::
 
 ## Effort follows the stakes {#stakes}
 
-| What it contains | How hard you check |
-|--------------------|-------------------------------------|
-| Wording, tone, formatting | Low: read it, fix what you would not say. |
-| A summary of a document you have | Medium: each number and name against that document. |
-| A dose, an allergy, a diagnosis, anything in a chart | The primary source, always. |
+::: {.lane .sm}
+[Wording, tone, formatting]{.node .same .fixed} [→]{.op} [Low: read it, fix what you would not say]{.node .grow}
+:::
+::: {.lane .sm}
+[A summary of a document you have]{.node .out .fixed} [→]{.op} [Medium: each number and name against that document]{.node .grow}
+:::
+::: {.lane .sm}
+[A dose, an allergy, a diagnosis, anything in a chart]{.node .change .fixed} [→]{.op} [The primary source, always]{.node .grow}
+:::
 
-Next: Lab Three uses only the [verification card](../day3/m6-confidently-wrong.qmd#the-verification-card).
+[▲ How hard you check follows the stakes.]{.pointer}
+
+[If you cannot find the source, treat the claim as wrong.]{.big}
+
+Next: Lab Three. Its only tool is these five steps.
 
 ::: notes
-**0:50.** How hard you check follows the stakes. Wording: read it and fix what you would not say. A summary of a document you have: check each number and name against that document. Doses, allergies, diagnoses and anything that goes into a chart: always the primary source, however routine it looks. That is the topic: tone tells you nothing, a step you do yourself does, and if you cannot find the source the claim counts as wrong. Open the verification card now; it is at the end of Module 6, and Lab Three uses nothing else. In a moment you swap your Lab One output with a partner and see what they catch.
+**0:40.** How hard you check follows the stakes. Wording: read it and fix what you would not say. A summary of a document you have: check each number and name against that document. Doses, allergies, diagnoses and anything that goes into a chart: always the primary source, however routine it looks. That is the topic: tone tells you nothing, a step you do yourself does, and if you cannot find the source the claim counts as wrong. In a moment you swap your Lab One output with a partner and see what they catch.
 
-**Do.** Paste the verification card link in the chat again. No vote; hand over to Lab Three.
+**Do.** No vote; hand over to Lab Three, which uses only the five steps.
+:::
+
+## After the call {#after}
+
+- [The verification card](../day3/m6-confidently-wrong.qmd#the-verification-card): the five steps, for anything you would put in a chart
+- [Case A](../reference/case-cards.qmd#case-a) and the other four cases
+- [The three-question card](../reference/three-question-check.qmd)
+- [The prompt library](../reference/prompt-library.qmd#p-claim-list), with the claim-list prompt
+
+::: notes
+**Not timed.** Paste these four links into the chat at the very end, once. They are for afterwards: nothing on the call needed them. Lab Three comes straight after this module and has its own deck.
+
+**Do.** Paste the links, then close.
+:::
+
+## If asked: let the tool list the claims {#claim-list}
+
+::: {.lane}
+[Text to check]{.node .same .fixed} [→]{.op} [The tool lists every claim]{.node .change .grow} [→]{.op} [You check each one]{.node .out .fixed}
+:::
+
+::: {.paste-long}
+{{< include _paste-claim-list.md >}}
+:::
+
+[▲ Copy prompt on your slide. It can miss a claim, so you still read the text. It lists; it is not the check.]{.pointer}
+
+::: notes
+**Not timed.** Use this only if someone asks whether the tool can do step one. It can list the claims; it cannot be the check, and it can miss one, so read the text yourself. The text you paste under FACTS must hold no patient identifiers: no patient identifiers into a consumer AI tool, ever, full stop.
+
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too. The demo is your own run: paste the Case A summary from the handout under FACTS on the shared screen while the group watches. There is no group step.
 :::

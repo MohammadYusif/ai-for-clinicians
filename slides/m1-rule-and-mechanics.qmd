@@ -29,7 +29,7 @@ Most of you already have a chatbot open between patients. This weekend makes tha
 ::: {.card}
 [Time back]{.t}
 
-A method for the writing jobs that pile up. You time yourself in Lab One, so the number is yours.
+A method for the writing jobs that pile up. In Lab One you compare two drafts yourself.
 :::
 ::: {.card .teal}
 [Fewer mistakes]{.t}
@@ -48,7 +48,7 @@ What never goes into a consumer AI tool, and why.
 :::
 
 ::: notes
-**0:50.** Start with what is already true: many of you have a chatbot open between patients, and nobody needs to confess. This weekend makes that use deliberate. Three benefits. Time back: a method for the writing jobs that pile up, and you time yourself in Lab One, so the number is yours, not mine. Fewer mistakes: a habit for catching AI errors before they reach a chart. A clear line: what never goes into a consumer AI tool, and why.
+**0:50.** Start with what is already true: many of you have a chatbot open between patients, and nobody needs to confess. This weekend makes that use deliberate. Three benefits. Time back: a method for the writing jobs that pile up, and in Lab One you compare two drafts yourself, so the result is yours, not mine. Fewer mistakes: a habit for catching AI errors before they reach a chart. A clear line: what never goes into a consumer AI tool, and why.
 
 **Do.** Run the chat vote, glance at the count, move on. Do not ask anyone what they typed into a tool.
 :::
@@ -137,22 +137,38 @@ Two hours a day, break included, and a hands-on lab every day.
 **0:50.** Three ground rules. Every lab uses synthetic case cards, never a real patient: open the case cards page for ten seconds and say "these five people are the only patients in this course". Be candid when a tool fails; the labs are built to make tools fail. Ask as you go, in the chat or by unmuting. Then the privacy line, once, in these exact words: no patient identifiers into a consumer AI tool, ever, full stop. Day Three gives the reasons.
 :::
 
+## Three tabs, and nothing else {#two-tabs}
+
+::: {.lane}
+[Tab 1: the call]{.node .same .grow} [+]{.op} [Tab 2: these slides]{.node .grow} [+]{.op} [Tab 3: your assistant]{.node .teal .grow}
+:::
+
+{{< include _paste-call-test.md >}}
+
+[▲ Click Copy prompt on your slide, paste it into your assistant, and send it. This is how every step works.]{.pointer}
+
+::: {.move .chat}
+[Chat · 30 sec]{.tag} Copy it, send it to your assistant, and type "sent" in the chat.
+:::
+
+::: notes
+**0:30.** Three tabs, nothing else. Tab one is this call. Tab two is these slides: the link is in the chat, and you can follow the shared screen or go at your own pace. Tab three is your assistant. Whenever a step needs text, a prompt or a case, click Copy prompt on its slide, and I paste it in the chat too. Every hands-on step, I do it on the shared screen while you do it on yours.
+
+**Do.** Paste this deck's link in the chat first. Then click Copy prompt on the block and paste it into the chat too, for anyone who has not opened the slides. Watch for "sent". Anyone who joins late may not see earlier chat messages: paste again for them.
+:::
+
 ## How we use the call {#call}
 
 | | | |
 |---|---|---|
-| **Chat** | Everyone types at once, then I read a few out | Most quick questions |
-| **Speak** | Two or three of you unmute when I ask | Short answers and debriefs |
+| **Chat** | Everyone types at once, then I read a few out | Quick questions |
+| **Speak** | Two or three of you unmute when I ask | Short answers |
 | **Share** | One person shares a screen when asked | Showing an output |
 | **Pair** | A breakout room of two, a few minutes | Checking each other's work |
-| **Solo** | Your own device, your own assistant | The labs |
-
-Keep these slides in one window and your assistant in another.
+| **Solo** | Your own device and assistant, while I do the same on screen | Every hands-on step |
 
 ::: notes
-**1:00.** Every activity this weekend uses one of five moves, and each is announced on the slide with a label and a time. Chat: everyone types at once. Speak: a few of you unmute when I ask. Share: one person shares a screen. Pair: a breakout room of two. Solo: your own device. If breakout rooms are not available, the pair step is done in the chat instead and I will say so. Open this deck link in a second window if your screen allows it.
-
-**Do.** Paste the deck link into the chat now.
+**0:30.** Every activity this weekend uses one of five moves, and each is announced on the slide with a label and a time. Chat: everyone types at once. Speak: a few of you unmute when I ask. Share: one person shares a screen. Pair: a breakout room of two. Solo: your own device, while I do the same step on this screen. If breakout rooms are not available, the pair step is done in the chat instead and I will say so.
 :::
 
 # The rule for the weekend [5 min]{.time} {#rule}
@@ -180,6 +196,12 @@ Every tool. Every task. All three days.
 :::
 
 ## What the tool does, what you do {#drafts-decide}
+
+::: {.lane}
+[Your facts]{.node .same} [→]{.op} [AI drafts]{.node} [→]{.op} [You check]{.node .teal} [→]{.op} [You decide and sign]{.node .dark}
+:::
+
+[▲ The tool writes one box. The check and the decision are yours.]{.pointer}
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -247,44 +269,105 @@ The output goes into the chart, the inbox or the patient's hands exactly as the 
 
 ## It predicts the next word {#next-word}
 
-::: {.fragment}
-Twinkle, twinkle, little [\_\_\_\_]{.accent}
+::: {.cards}
+::: {.card}
+[Twinkle, twinkle, little [\_\_\_\_]{.accent}]{.t}
+
+::: {.nextword .fragment data-fragment-index="1"}
+::: {.row}
+[star]{.w} []{.fill style="width:5em"}
+:::
+::: {.row}
+[bat]{.w} []{.fill style="width:0.4em"}
+:::
+::: {.row}
+[one]{.w} []{.fill style="width:0.2em"}
 :::
 
-::: {.fragment}
-Take one tablet twice a [\_\_\_\_]{.accent}
+One word fits.
+:::
+:::
+::: {.card}
+[Take one tablet twice a [\_\_\_\_]{.accent}]{.t}
+
+::: {.nextword .fragment data-fragment-index="1"}
+::: {.row}
+[day]{.w} []{.fill style="width:5em"}
+:::
+::: {.row}
+[week]{.w} []{.fill style="width:0.5em"}
+:::
+::: {.row}
+[month]{.w} []{.fill style="width:0.2em"}
 :::
 
-::: {.fragment}
-The guideline that covers this was published in [\_\_\_\_]{.accent}
+One word fits. Which drug?
+:::
+:::
+::: {.card .teal}
+[The guideline was published in [\_\_\_\_]{.accent}]{.t}
+
+::: {.nextword .fragment data-fragment-index="1"}
+::: {.row}
+[2018]{.w} []{.fill .flat style="width:3.4em"}
+:::
+::: {.row}
+[2019]{.w} []{.fill .flat style="width:3.1em"}
+:::
+::: {.row}
+[2020]{.w} []{.fill .flat style="width:3.5em"}
+:::
+::: {.row}
+[2021]{.w} []{.fill .flat style="width:3.3em"}
+:::
+
+Many fit. It picks one.
+:::
+:::
 :::
 
 ::: {.move .chat}
-[Chat · 2 min]{.tag} For each line, type the next word. Wait for "three, two, one", then everyone sends at once.
+[Chat · 2 min]{.tag} Type the next word for each line. Wait for "three, two, one", then everyone sends at once.
 :::
 
-::: notes
-**2:30.** Show one line at a time and say "three, two, one, send". Line one comes out the same for everyone: star. Line two comes just as easily, yet nobody said which drug, and everyone just completed a dosing instruction. Line three gets different years, all plausible, none checked. That is the mechanism: the tool continues text with what is likely, given everything before it. Very fast autocomplete. Most of the time likely and true line up. When they do not, the tool has no step that notices. Nobody is being tested.
+[Bars show how likely each word is. Illustrative: drawn for this course, not measured.]{.illustrative}
 
-**Do.** If the chat is quiet, answer line one yourself, then invite the chat on lines two and three.
+::: notes
+**2:30.** Show the three lines with no bars and say "three, two, one, send". Line one comes out the same for everyone: star. Line two comes just as easily, yet nobody said which drug, and everyone just completed a dosing instruction. Line three gets different years, all plausible, none checked. Then click: the bars show the idea. One word fits the first two, so the tool is nearly always right. Several fit the third, so it picks one and says it in the same voice. That is the mechanism: it continues text with what is likely. Very fast autocomplete. The bars are drawn for this course, not measured.
+
+**Do.** If the chat is quiet, answer line one yourself, then invite the chat on lines two and three. Click once to show the bars.
 :::
 
 ## Sounding sure is not being right {#sure-not-right}
 
-::: {.columns}
-::: {.column width="50%"}
-> "The guideline that covers this was published in 2018."
+::: {.cards}
+::: {.card}
+[Answer 1]{.t}
+
+"The guideline that covers this was published in 2018."
+
+::: {.nextword}
+::: {.row}
+[sounds sure]{.w} []{.fill style="width:4em"}
 :::
-::: {.column width="50%"}
-> "The guideline that covers this was published in 2021."
+:::
+:::
+::: {.card}
+[Answer 2]{.t}
+
+"The guideline that covers this was published in 2021."
+
+::: {.nextword}
+::: {.row}
+[sounds sure]{.w} []{.fill style="width:4em"}
+:::
+:::
 :::
 :::
 
-[Same tone either way.]{.teal} [Illustrative, written for this course]{.illustrative}
+[These two cannot both be right. The voice is identical, so the voice cannot tell you which is.]{.pointer}
 
-- Fluent is what it was built to produce.
-- No built-in "I'm unsure" signal.
-- **Tone is not a signal.**
+[**Tone is not a signal.**]{.big} [Illustrative, written for this course]{.illustrative}
 
 ::: notes
 **2:00.** Fluent, confident prose is what these tools were built to produce. Right or wrong, the sentence reads the same: no warning light, no change in tone when the tool is guessing. You will hear the word hallucination for this; say it once and then use made-up or fabricated, because that is what it is: text that reads as plausible and is false. The lesson is not to distrust everything. It is that tone tells you nothing, so the checking has to come from you. That is what the three questions are for, and we build them in a few minutes.
@@ -292,25 +375,15 @@ The guideline that covers this was published in [\_\_\_\_]{.accent}
 
 ## What it knows {#what-it-knows}
 
-::: {.cards}
-::: {.card}
-[The conversation]{.t}
-
-What you typed and pasted.
-:::
-::: {.card .teal}
-[Its training]{.t}
-
-General text, up to a cutoff.
-:::
-::: {.card .dashed}
-[Not]{.t}
-
-Your patient, your protocol, or news after the cutoff, unless it searches.
-:::
+::: {.lane}
+[The conversation: what you typed and pasted]{.node .grow} [→]{.op} [Writes the next word]{.node .dark .fixed} [←]{.op} [Its training: general text, up to a cutoff]{.node .teal .grow}
 :::
 
-What you leave out, it fills with something plausible.
+::: {.lane}
+[Not there: your patient, your protocol, news after the cutoff]{.node .ghost .grow} [→]{.op} [A gap]{.node .ghost .fixed} [→]{.op} [Filled with something plausible]{.node .red .grow}
+:::
+
+[▲ What you leave out, it fills in. Unless it searches, it cannot look anything up.]{.pointer}
 
 ::: notes
 **2:00.** Two sources only. The conversation: whatever you typed or pasted in this chat. And its training: a very large amount of general text, up to a cutoff date. It has no memory of your other chats unless a memory feature is switched on. It does not know your patient, your hospital's protocol, or anything after its cutoff, and it has no internet unless the tool searches. Whatever you leave out, it fills with plausible, generic content, which is where most made-up detail comes from. Tools that search and cite change part of this picture; we meet them in Module 3, later today.

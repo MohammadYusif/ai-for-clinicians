@@ -19,6 +19,11 @@ You leave with
 :   The privacy line, a working list of what counts as an identifier, a four-step routine for de-identifying text, and four situations you will now recognize.
 :::
 
+::: {.callout-note appearance="simple"}
+## On the call
+You need the call, with its chat, and the slides (your instructor pastes the link). The slides carry the note and the four situations, and you type your answers in the chat; nothing in this module is pasted into an assistant. This page is the take-home version: the same module, to reread at your own pace.
+:::
+
 ## 1. The rule that isn't optional [10 min]{.time} {#the-rule}
 
 The habit that protects your patients is small: know what you are about to paste, and where it is going.

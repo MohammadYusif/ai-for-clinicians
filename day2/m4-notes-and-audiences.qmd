@@ -19,6 +19,11 @@ You leave with
 :   Run a 60-second review pass on any AI-drafted note. Read a scribe's published score for what it does and does not show. Produce a chart note, patient instructions and a colleague letter from one fact sheet, and check that they agree.
 :::
 
+::: {.callout-note appearance="simple"}
+## On the call
+You need three tabs: the call, the slides (your instructor pastes the link in the chat), and your general assistant, signed in. Copy each prompt from its slide with the Copy prompt button; your instructor pastes it in the chat too. This page is the take-home version, with every prompt and example in full.
+:::
+
 ## 1. Four places AI already fits [10 min]{.time} {#four-places}
 
 Day One gave you a rule, a check and a framework. Today you use them on the work you do every week, and this first section shows where AI already fits in that week and how each place goes wrong.

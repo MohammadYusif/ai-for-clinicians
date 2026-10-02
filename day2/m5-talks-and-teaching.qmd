@@ -21,6 +21,11 @@ You leave with
 :   A case turned into a checked slide outline. A three-slide draft with speaker notes and a visual idea for each slide. A quiz written only from a source you may share. An answer key with a quotation for every answer, and a spot-check for the riskiest line.
 :::
 
+::: {.callout-note appearance="simple"}
+## On the call
+You need three tabs: the call, the slides (your instructor pastes the link in the chat), and your general assistant, signed in. Copy each prompt from its slide with the Copy prompt button; your instructor pastes it in the chat too. This page is the take-home version: every step again, to redo at your own pace.
+:::
+
 ## 1. From case to slide deck [8 min]{.time} {#case-to-deck}
 
 The slow part of a case talk is rarely the medicine. It is turning a page of jotted notes into an order another person can follow. A tool is quick at that. It does not know which teaching point matters to your audience, and it must never see who the patient is.
@@ -80,9 +85,12 @@ CONSTRAINTS: Do not add findings, doses, or diagnoses that are not in the facts.
 
 Under FACTS, paste the bullets from the [Case A card](../reference/case-cards.qmd#case-a). Under TEACHING POINTS, paste these, or write your own:
 
+<!-- paste: m5-teaching-points | Teaching points for the Case A outline -->
+```text
 - Compare what the patient says with what the diary and the clinic show.
 - Record what is new since the drug was started.
 - Build the next checks into the plan.
+```
 
 ::: {.callout-note appearance="simple"}
 ## Illustrative output — written for this course, not captured from a real tool
@@ -305,6 +313,13 @@ Check every quiz the same way:
 1. Read ANSWER LETTERS. If one letter carries most of the answers, the quiz is guessable.
 2. In each question, find the longest option. Is it the correct one more than once or twice?
 3. If either check fails, reply in the same chat, in plain words: "In questions 2, 3, and 5 the correct option is the longest and sits at C. Rewrite so the four options in each question are about the same length, and spread the correct letters across A to D."
+
+To save typing, copy this and fill in the brackets from your own quiz:
+
+<!-- paste: m5-quiz-fix | Reply that fixes a guessable quiz -->
+```text
+In questions [numbers] the correct option is the longest and sits at [letter]. Rewrite so the four options in each question are about the same length, and spread the correct letters across A to D.
+```
 
 Then check the rewritten questions against the source again. A rewrite can change a fact.
 

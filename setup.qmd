@@ -3,7 +3,7 @@ title: "Before the first call"
 subtitle: "Ten minutes of setup, done once"
 ---
 
-Nothing to install. You need a device that can join the call, a second window (or a second device) for your AI assistant, a web browser, and **one account**: an AI assistant. Nothing else in this course depends on a particular tool, a verification step, or anyone's approval.
+Nothing to install. The course runs on Google Meet. You need a device that can join the call, a web browser with three tabs (the call, the slides, and your AI assistant), and **one account**: an AI assistant. Nothing else in this course depends on a particular tool, a verification step, or anyone's approval.
 
 ## 1. One account
 
@@ -32,10 +32,12 @@ Every lab uses the [case cards](reference/case-cards.qmd): five fictional patien
 
 ## 4. Your screen on the call
 
-- **Best:** one laptop with two windows side by side, the call and the slides in one and your assistant in the other.
+- **Three tabs, and nothing else.** Tab one is the call. Tab two is the slides: your instructor pastes the link in the chat, and you can follow the shared screen or go at your own pace. Tab three is your AI assistant. You do not need to open any other page during the call.
+- **Copy from the slide.** Every prompt, case and source text has its own slide with a **Copy prompt** button. Click it, paste into your assistant, and do the step with the instructor, who does it on the shared screen at the same time. The instructor pastes it into the chat too, in case your slides are not open.
 - **Also good:** the call on one screen or device and your assistant on another.
 - **A phone alone** is a squeeze for a lab. If it is all you have, say so in the chat and your instructor will adjust.
-- **The slides.** Your instructor shares them, and the link goes in the chat. Open it in a window of your own: you can go at your own pace, and copy a prompt straight from a slide.
+- **Two short comparisons** (Lab 1 part 3 and Lab 2 part 2) add one more tab, for the second option, for a few minutes. The slide says when.
+- **Late, or missed it?** Open the slides link and say the slide title in the chat if you are lost; the instructor pastes anything you missed again.
 - **Join a few minutes early** to check that you can hear, be heard, and type in the chat. Mute when you are not speaking.
 
 ## 5. How you take part
@@ -48,7 +50,7 @@ Every activity is one of five moves, and the slide says which, with a time.
 | **Speak** | Two or three of you unmute when asked |
 | **Share** | One person shares a screen when asked |
 | **Pair** | A breakout room of two, a few minutes |
-| **Solo** | Your own device, your own assistant |
+| **Solo** | Your own device, your own assistant, while the instructor does the same step on the shared screen |
 
 ## 6. What to have ready each day
 
@@ -63,11 +65,11 @@ Every activity is one of five moves, and the slide says which, with a time.
 Two minutes. Tick each one.
 
 - [ ] I can join the call, hear, and type in the chat.
-- [ ] I can open my general assistant, sign in, and send it a message, with the call open beside it.
+- [ ] I can open my general assistant in a tab next to the call, sign in, and send it a message.
+- [ ] I can open the slides link in a tab of its own and click **Copy prompt**.
 - [ ] I know which second option I will try first for the comparisons in Labs 1 and 2. Any of the three is fine.
-- [ ] I can copy text from a web page and paste it into a chat.
+- [ ] I can copy text from the call's chat and paste it into my assistant.
 - [ ] I have somewhere to save text, and I know where it is.
-- [ ] I can open the slides link in a window of its own.
 
 ## 8. Ground rules for the call
 

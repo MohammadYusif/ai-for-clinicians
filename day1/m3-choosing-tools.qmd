@@ -19,6 +19,11 @@ You leave with
 :   You can say which type of tool fits a task and which does not. You know what to check before you recommend a tool: who can sign up, and whether your institution has approved it. You can compare two tools on one question without over-reading the result. You have five habits for spending a limited quota on purpose.
 :::
 
+::: {.callout-note appearance="simple"}
+## On the call
+You need three tabs: the call, the slides (your instructor pastes the link in the chat), and your general assistant, signed in. The slides carry everything. In the live demo your instructor pastes the question into the chat; you can run it in your own assistant too, or just watch. Part 3 of Lab One adds one more tab for your second option, for five minutes: any of the [three](#second-option) will do. This page is the take-home version.
+:::
+
 ## 1. Not all AI is the same [5 min]{.time} {#tool-types}
 
 Asking a general assistant for a citation, and asking a literature tool to write your referral letter, are the same mistake: right question, wrong tool. Choosing first saves you from checking the wrong thing afterward.

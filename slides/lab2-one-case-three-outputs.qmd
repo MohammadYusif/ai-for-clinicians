@@ -4,9 +4,25 @@ subtitle: "Day Two · 35 min"
 format: revealjs
 ---
 
-## In this lab {#plan}
+## In this lab: one sheet, three readers {#plan}
 
 {{< include _plan-lab2-one-case-three-outputs.md >}}
+
+[Make one output, **check three facts**, then make the next. Never all three at once.]{.big}
+
+::: notes
+**Before the clock starts.** Lab Two is one case, three readers. Part 1, twenty minutes: build one sheet from a case card and check it, then make a chart note, a patient handout and three slides from it, one at a time, checking three facts after each. Part 2, ten minutes: the same source in two tools, looking for one thing. Part 3, five minutes: a share-out where we apply the three-question check together. We do every step together: I run it on this screen, you run it on yours.
+:::
+
+## Three tabs, and nothing else {#setup}
+
+::: {.lane}
+[Tab 1: the call]{.node .same .grow} [+]{.op} [Tab 2: these slides]{.node .grow} [+]{.op} [Tab 3: your assistant, signed in]{.node .teal .grow}
+:::
+
+[▲ Every prompt has a Copy prompt button on its slide. I paste it in the chat too.]{.pointer}
+
+- Part 2 adds a one more tab for your second option, for ten minutes.
 
 ::: {.callout-important appearance="simple"}
 ## The privacy line
@@ -14,217 +30,332 @@ No patient identifiers into a consumer AI tool. Ever. Full stop. Case cards only
 :::
 
 ::: notes
-**Before the clock starts.** Lab Two is one case, three readers. Part 1, twenty minutes: build one sheet from a case card, check it, draw a chart note, a patient handout and three slides from it, then fill in the grid. Part 2, ten minutes: Day One's tool comparison again, on a Day Two task. Part 3, five minutes: a share-out where we apply the three-question check together. The privacy line applies to every prompt you paste.
+**Before the clock starts.** Three tabs: the call, these slides (the link is in the chat), and the assistant, signed in. Every prompt and the case has a Copy prompt button on its slide, and I paste it in the chat too. Part 2 adds a one more tab for the second option from Lab One, for ten minutes. Case A is the default because its card is written for exactly these three outputs; anyone who wants another card says so in the chat and I paste it. Anyone without a tool yet follows your shared screen for the sheet and one output. The privacy line applies to every prompt you paste.
 
-**Do.** Paste the lab page link in the chat. You keep the time: call each clock cue aloud and type it in the chat.
+**Do.** Chat, thirty seconds: everyone types "ready" when the three tabs are open. Start part 1 when most have typed it.
 :::
 
-## Have these open before the clock starts {#setup}
-
-- Your general assistant, and your second option from Lab One ([Module 3](../day1/m3-choosing-tools.qmd#second-option))
-- [Case A](../reference/case-cards.qmd#case-a), or any [case card](../reference/case-cards.qmd)
-- The [prompt library](../reference/prompt-library.qmd)
-- A notes app, for the two grids
-
-This deck keeps the time. The workspace is the [lab page](../day2/lab2-one-case-three-outputs.qmd): keep the lab page open in another window.
+# Part 1: One sheet, three outputs [20 min]{.time} {#part-1}
 
 ::: notes
-**Before the clock starts.** Give people a minute to open these. Case A is the default because its card is written for exactly these three outputs; any card is allowed. Anyone without a tool yet follows your shared screen for the sheet and one output. If a tool misbehaves, point them to the troubleshooting page. This deck is the clock; the lab page is the workspace.
+**Goal.** Everyone leaves part 1 with a sheet they checked, and a chart note, a patient handout and a three-slide teaching version, each checked on three facts before the next was made.
 
-**Do.** Chat, thirty seconds: everyone types "ready" when their tabs are open. Start part 1 when most have typed it.
-:::
+**Have ready.** Your own assistant open in a window you can share, to run each step as the group does. Case A, and your own full run of part 1, so you know what a mismatch looks like. A saved backup set to share on screen if a tool goes down.
 
-# Part 1: One case, three outputs [20 min]{.time} {#part-1}
+**Clock.** 0:00 the picture. 0:30 the sheet. 4:00 chart note: make, then check. 9:00 handout: make, then check. 14:00 slides: make, then check. 19:00 what your table found, in the chat. 20:00 time.
 
-::: notes
-**Goal.** Everyone leaves part 1 with a sheet they checked, a chart note, a patient handout and a three-slide teaching version made from it, and a grid showing whether the three agree.
-
-**Have ready.** Case A, and your own full run of part 1 with the grid filled in, so you know what a mismatch looks like. A saved backup set to share on screen if a tool goes down. The lab page link in the chat.
-
-**Clock.** Minutes 0 to 4, the sheet. 4 to 14, the three outputs: at 4 "new chat for each output", at 9 "second output by now", at 12 "take what you have and move on". 14 to 20, the grid.
-
-**Watch for.** Skipping the sheet check to reach the outputs faster: the commonest failure. Judging by fluency: "this one reads better". A grid full of ok that nobody looked at.
+**Watch for.** Skipping the sheet check to reach the outputs faster: the commonest failure. Making all three outputs and checking none: stop them after each one. Judging by fluency: "this one reads better". A table full of ticks that nobody looked at.
 
 **If asked.** Why a new chat for each output? An error in one cannot leak into the next, and each draws on the sheet, not on the others. Can I use my own case? A card is safer; if you do, apply the privacy checklist first.
 
-**Bridge.** "Same comparison as Day One, new task: compare what you can see, not which answer sounded better."
+**Bridge.** "Same comparison as Day One, new task: look at what the tool added, not which answer sounded better."
 :::
 
-## Step 1: Build the sheet, then fix it {#p1-sheet}
+## One sheet, three readers {#p1-picture}
 
-[Prompt library: source-of-truth-sheet](../reference/prompt-library.qmd#p-source-of-truth-sheet), run on your card's bullets.
-
-Then check the sheet against the card, line by line: **invented**, **omitted**, **altered**. Fix it by hand.
-
-An error left here is copied into all three outputs. [Lab page, part 1](../day2/lab2-one-case-three-outputs.qmd#part-1).
-
-::: {.move .solo}
-[Solo · 4 min]{.tag} Build the sheet, then check it against the card.
+::: {.lane}
+[Case card]{.node .same .fixed} [→]{.op} [The sheet: facts only, checked by you]{.node .change .grow}
 :::
 
-::: notes
-**4:00.** One case, three readers, one sheet. Build the sheet and fix it yourself before anything else. No patient identifiers into a consumer AI tool. Ever. Full stop. Cards only. Then check the sheet against the card line by line for invented, omitted, altered. This step decides everything after it: an error left in the sheet is copied into all three outputs. It is the verification workflow one level up, with the card as the source.
-
-**Do.** Solo. Watch the chat and answer questions there. Near minute 3, ask everyone to type "sheet checked" as they finish; do not move on while many are still reading. At minute 4 say: new chat for each output.
+::: {.fan}
+[▼]{.a} [▼]{.a} [▼]{.a}
 :::
-
-## Step 2: Three outputs, each in a new chat {#p1-outputs}
 
 ::: {.cards}
-::: {.card}
+::: {.card .teal}
 [Chart note]{.t}
 
-[Prompt library: chart-note-from-sheet](../reference/prompt-library.qmd#p-chart-note-from-sheet)
+For the record.
 :::
 ::: {.card .teal}
 [Patient handout]{.t}
 
-[Prompt library: patient-instructions-from-sheet](../reference/prompt-library.qmd#p-patient-instructions-from-sheet)
+In plain language.
 :::
-::: {.card}
-[Teaching version]{.t}
+::: {.card .teal}
+[Three slides]{.t}
 
-[Prompt library: full-talk-slides](../reference/prompt-library.qmd#p-full-talk-slides)
+For colleagues.
 :::
 :::
 
-Paste the sheet into each chat. Change only the placeholders. [Lab page, part 1](../day2/lab2-one-case-three-outputs.qmd#part-1).
+[▲ Every fact in every output comes from the sheet, never from another output.]{.pointer}
+
+::: notes
+**0:30.** One event, three readers: the chart, the patient and your colleagues. The facts must not change as the words do. The way to keep them still is the sheet: build it once, check it once, and draw every output from it. Never from another output. Then you make one output, check it, and only then make the next.
+
+**Do.** Say the time left at fifteen seconds.
+:::
+
+## Step 1: build the sheet, then fix it {#p1-sheet}
+
+::: {.paste-long}
+{{< include _paste-source-of-truth-sheet.md >}}
+:::
+
+[▲ Copy prompt on your slide, with Case A under it. Paste both into a new chat. Then check the sheet against the card: **invented, omitted, altered**.]{.pointer}
 
 ::: {.move .solo}
-[Solo · 10 min]{.tag} About three minutes each. If one runs long, take what you have and move on.
+[Solo · 3 min 30 sec]{.tag} Build the sheet, check it, fix it by hand.
 :::
 
 ::: notes
-**10:00.** A new chat for each output, with the sheet pasted into each one: an error in one cannot leak into the next, and each draws on the sheet, not on the others. Paste each prompt as taught and change only its placeholders, plus any setting words that do not fit your case, such as a clinic visit instead of an operation. For the slides, the three titles to type under OUTLINE are on the lab page. About three minutes per output. The check in step 3 is the point of the lab.
+**3:30.** Build the sheet and fix it yourself before anything else. No patient identifiers into a consumer AI tool. Ever. Full stop. Cards only. Then check the sheet against the card line by line for invented, omitted, altered. This step decides everything after it: an error left in the sheet is copied into all three outputs. It is the verification workflow one level up, with the card as the source.
 
-**Do.** Solo. Cues by the part clock: at 9, "second output by now"; at 12, "take what you have and move on". Watch the chat for stuck tools; share your saved backup set for anyone without a working tool.
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too, then paste Case A under it. Run it on your screen as they run it on theirs. Near minute 3, ask everyone to type "sheet checked" as they finish; do not move on while many are still reading. At 4:00 say: new chat for each output.
 :::
 
-## Step 3: Do the three outputs agree? {#p1-grid}
+## Output 1: the chart note {#p1-note}
 
-Mark each constant fact in each output: **ok**, **altered**, **omitted** or **n/a**. The last row is **invented**.
+::: {.paste-long}
+{{< include _paste-chart-note-from-sheet.md >}}
+:::
 
-If two outputs disagree, the sheet and the card decide, not whichever output reads better. [Lab page, part 1](../day2/lab2-one-case-three-outputs.qmd#part-1).
+[▲ Copy prompt on your slide. A new chat, this prompt, your checked sheet under it.]{.pointer}
 
 ::: {.move .solo}
-[Solo · 5 min]{.tag} Fill in the grid on the lab page. Every cell gets a mark.
+[Solo · 2 min 30 sec]{.tag} Make the chart note.
 :::
 
 ::: notes
-**5:00.** Now find out whether the three outputs agree. For each constant fact, find it in each output and mark the cell: ok, altered, omitted, or n/a when it was left out on purpose. The last row is invented. If two outputs disagree, go to the sheet and the card, not to whichever output reads better, then ask whether the sheet itself was the source. Case A names no warning signs to return for: a handout that lists some did not get them from the card.
+**2:30.** A new chat, with the prompt and your checked sheet pasted in. Change only the placeholders. About two minutes to make it. Then we check it before we make the next one: the check is the point of the lab.
 
-**Do.** Solo. Share the Module 4 consistency check slide for a minute as the model. Early finishers: another card through the same three prompts, or a handout in Arabic for Case C or D, which a fluent Arabic reader must check.
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too, and say "new chat, paste it, then your sheet under it". Run it on your screen. Say "check it" at 6:30 on the part clock.
 :::
 
-## Part 1: what good looks like {#p1-good}
+## Check the chart note {#p1-note-check}
 
-::: {.cards}
-::: {.card}
-[01]{.num}
-
-The sheet was fixed before any output existed.
-:::
 ::: {.card .teal}
-[02]{.num}
+[Against the sheet, tick each one]{.t}
 
-Doses, intervals and readings are identical everywhere, copied from the sheet.
-:::
+[]{.chk} Losartan 50 mg once daily, with amlodipine 5 mg
+
+[]{.chk} Creatinine and potassium in 2 weeks
+
+[]{.chk} Review in 4 weeks
 :::
 
-::: {.cards}
-::: {.card}
-[03]{.num}
+[Tick it if it matches. If not, write **altered** or **omitted**.]{.pointer}
 
-Where the card is silent: [MISSING: ...] or nothing.
+::: {.move .solo}
+[Solo · 2 min 30 sec]{.tag} Check the three facts.
 :::
+
+::: notes
+**2:30.** Stop and check three facts against the sheet: the medicines and doses, the repeat blood tests and when, and the review. Tick the box if the note says exactly what the sheet says. If not, write one word: altered, or omitted. If two disagree, go to the sheet and the card, not to whichever output reads better. Then ask whether the sheet itself was the source of the error.
+
+**Do.** Tick your own on the shared screen as they tick theirs. Say "new chat" at 9:00 on the part clock, and "second output next" at 8:30. Watch the chat for stuck tools; share your saved backup set for anyone without a working tool.
+:::
+
+## Output 2: the patient handout {#p1-handout}
+
+::: {.paste-long}
+{{< include _paste-patient-instructions-from-sheet.md >}}
+:::
+
+[▲ Copy prompt on your slide. A new chat, this prompt, your checked sheet under it.]{.pointer}
+
+::: {.move .solo}
+[Solo · 2 min 30 sec]{.tag} Make the handout.
+:::
+
+::: notes
+**2:30.** Same loop, a different reader. A new chat, the patient-instructions prompt, the sheet under it. Change only the placeholders. A handout may leave a fact out on purpose, as a handout need not carry every reading.
+
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too. Run it on your screen. Say "check it" at 11:30 on the part clock.
+:::
+
+## Check the handout {#p1-handout-check}
+
 ::: {.card .teal}
-[04]{.num}
+[Against the sheet, tick each one]{.t}
 
-Every grid cell is marked. A clean grid is fine if you checked.
+[]{.chk} Losartan 50 mg once daily, with amlodipine 5 mg
+
+[]{.chk} Creatinine and potassium in 2 weeks
+
+[]{.chk} Review in 4 weeks
+
+[]{.chk} Nothing the sheet does not say
 :::
+
+[Friendly advice, warnings and reassurance are the usual extras. Case A names no warning signs.]{.pointer}
+
+::: {.move .solo}
+[Solo · 2 min 30 sec]{.tag} Check the three facts, then read it once more.
 :::
+
+::: notes
+**2:30.** The same three facts. A fact left out on purpose gets a dash. Then read the handout once more for anything the sheet does not say: friendly advice, warnings, reassurance. Extra content is easiest to miss here. Case A names no warning signs to return for, so a handout that lists some did not get them from the card: delete the list, or write your own.
+
+**Do.** Tick your own on the shared screen. Watch the chat for the first "it added a warning list"; thank them. Say "new chat" at 14:00 on the part clock.
+:::
+
+## Output 3: three slides {#p1-slides}
+
+::: {.paste-long}
+{{< include _paste-full-talk-slides.md >}}
+:::
+
+[▲ Copy prompt on your slide. A new chat. Your sheet under FACTS. Under OUTLINE: "The case", "What was found", "The plan and the next checks".]{.pointer}
+
+::: {.move .solo}
+[Solo · 2 min 30 sec]{.tag} Make the three slides.
+:::
+
+::: notes
+**2:30.** The last output: three slides for colleagues. A new chat, the sheet under FACTS, and the three titles under OUTLINE: the case, what was found, the plan and the next checks. Three titles give you three slides. If the slides run long, take what you have and move on: the check is the point. The slides carry no identifiers.
+
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too, and type the three titles under it. Run it on your screen. Say "check it" at 16:30 on the part clock.
+:::
+
+## Check the slides {#p1-slides-check}
+
+::: {.card .teal}
+[Against the sheet, tick each one]{.t}
+
+[]{.chk} Losartan 50 mg once daily, with amlodipine 5 mg
+
+[]{.chk} Creatinine and potassium in 2 weeks
+
+[]{.chk} Review in 4 weeks
+:::
+
+[Same ticks, third reader. Take what you have and move on.]{.pointer}
+
+::: {.move .solo}
+[Solo · 2 min 30 sec]{.tag} Check the three facts.
+:::
+
+::: notes
+**2:30.** The same three facts, a third time. By now you know what a mismatch looks like. The slides carry no identifiers. Where the card is silent, an output says MISSING or nothing, never a filled gap.
+
+**Do.** Tick your own on the shared screen. Say "one minute left" at 18:00 on the part clock. At 19:00 go to the chat.
+:::
+
+## What good looks like {#p1-good}
+
+| The fact | Chart note | Handout | Slides |
+|--------------------------------------|:-------:|:-------:|:-------:|
+| Losartan 50 mg once daily, with amlodipine 5 mg | []{.chk} | []{.chk} | []{.chk} |
+| Creatinine and potassium in 2 weeks | []{.chk} | []{.chk} | []{.chk} |
+| Review in 4 weeks | []{.chk} | []{.chk} | []{.chk} |
+
+Every box has a tick, a word or a dash. A table with no mismatch is a good result if you checked.
 
 ::: {.move .chat}
-[Chat · 30 sec]{.tag} Type what your grid found: mismatch, extra content, or clean.
+[Chat · 1 min]{.tag} Type what your table found: all matched, one differed, or extra content.
 :::
 
 ::: notes
-**1:00.** Check yourself against these four: the sheet fixed before any output existed; every dose, interval and reading identical wherever it appears, copied from the sheet; where the card is silent, MISSING or nothing, never a filled gap; every grid cell marked. A grid with no mismatch is a good result if you checked; a grid nobody filled in is not. If the chat has room: which fact was hardest to keep still across the three outputs?
+**1:00.** Check yourself against this: the sheet fixed before any output existed; each output checked before the next was made; every box with a tick, a word or a dash. A table with no mismatch is a good result if you checked; a table nobody filled in is not.
 
-**Do.** Chat, thirty seconds: type what your grid found. Pick three volunteers for part 3 from the answers: one mismatch, one whose handout added content, one clean. Ask each by name in the chat to be ready to share. Leave them with the line: one sheet, three outputs, one grid; an output that disagrees with the sheet is wrong, however fluent it sounds. Then the bridge from the topic slide.
+**Do.** Chat, one minute: type what your table found. Pick three volunteers for part 3 from the answers: one mismatch, one whose handout added content, one clean. Ask each by name in the chat to be ready to share. Leave them with the line: one sheet, three outputs, three facts; an output that disagrees with the sheet is wrong, however fluent it sounds.
 :::
 
-# Part 2: Tool check, again [10 min]{.time} {#part-2}
+# Part 2: Same source, two tools [10 min]{.time} {#part-2}
 
 ::: notes
 **Goal.** Everyone repeats Day One's comparison on a Day Two task and says what held and what did not, from what they could see.
 
-**Have ready.** The practice source open in a tab, the study-summary prompt in your assistant, and a saved run to share on screen. The lab page link in the chat.
+**Have ready.** Your two tool windows from Day One open for the shared screen. A saved run to share on screen if a tool goes down.
 
-**Clock.** Minute 0 to 1, choose the task and copy the source. 1 to 5, run the prompt in both. 5 to 9, the table. 9 to 10, the two closing lines.
+**Clock.** 0:00 read the source. 1:00 paste the prompt and the source into both tools. 4:00 read each against the source, two rows. 8:00 the two closing lines. 10:00 time.
 
 **Watch for.** Part 2 turning into a brand debate: point at the table. Judging by fluency: "this one reads better". A tool that will not take the pasted text, or answers from its own sources: they write it down; that is a result, not a failure.
 
-**If asked.** Which tool won? That is not the result: the four questions in the table are. Which task? The default is the study summary; the Case C referral letter is the other option, on the lab page.
+**If asked.** Which tool won? That is not the result: the two rows in the table are. A second option that cannot take pasted text, as a plain literature search cannot: ask both for the evidence behind one number in the source, such as the 135/85 threshold, and compare what each lets you check.
 
 **Bridge.** "Last five minutes: do together what you have been doing alone. Pick the one output you would least want to be wrong."
 :::
 
-## Run the same task in both {#p2-run}
+## The source: read it first {#p2-source}
 
-::: {.cards .stack}
+::: {.paste-long}
+{{< include _paste-practice-source.md >}}
+:::
+
+[▲ Copy prompt on your slide. A short fictional protocol: both summaries may say only what it says.]{.pointer}
+
+::: {.move .solo}
+[Solo · 1 min]{.tag} Read it. Open your second option in a one more tab.
+:::
+
+::: notes
+**1:00.** This is the practice source: a one-page fictional protocol, written for the course. It is short, it has exact numbers, and you can check any summary against it in seconds. Read it now, and open your second option in a one more tab, whichever of the three you can open today. You will paste the same prompt and the same source into both.
+
+**Do.** Tell them to click Copy prompt on their slide, and paste the source into the chat. Say the time left at thirty seconds.
+:::
+
+## One source, two tools {#p2-run}
+
+::: {.lane .sm}
+[Practice source]{.node .same .fixed} [→]{.op} [General assistant]{.node .grow} [→]{.op} [A summary]{.node .out .fixed}
+:::
+::: {.lane .sm}
+[Practice source]{.node .same .fixed} [→]{.op} [Second option]{.node .teal .grow} [→]{.op} [A summary]{.node .out .fixed}
+:::
+
+::: {.paste-long}
+{{< include _paste-teaching-summary-from-source.md >}}
+:::
+
+[▲ Copy prompt on your slide. Same prompt, source under SOURCE, unchanged, in both tools.]{.pointer}
+
+::: {.move .solo}
+[Solo · 3 min]{.tag} Run it in both. A tool that will not take your text? Write it down.
+:::
+
+::: notes
+**3:00.** Same comparison as Day One, new task. Paste the same prompt, with the source under SOURCE, unchanged, into both tools. If the second option cannot take pasted text, as a plain literature search cannot, ask both for the evidence behind one number in the source, such as the 135/85 threshold. A tool that will not take your text, or answers from its own sources, gives you a result: write it down.
+
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too. Run it in both of your windows. At minute 2 say: "take what you have; the two rows are next". Watch the chat for stuck tools; share your saved run for anyone without one.
+:::
+
+## Look for one thing {#p2-look}
+
+[Did it add anything the source does not say?]{.big}
+
+| | General assistant | Second option |
+|---------------------------------------------|-------------------|-------------------|
+| Added something the source does not say? | yes / no | yes / no |
+| Every number copied exactly? | yes / no | yes / no |
+
+If a tool cited something, open it before you believe it.
+
+::: {.move .solo}
+[Solo · 4 min]{.tag} Read each summary against the source and fill in the two rows.
+:::
+
+::: notes
+**4:00.** Read each summary against the source. Two rows only. Did it add anything that the source does not say? A finding, a threshold, a caveat, a number. And did it copy every number exactly as the source wrote it? If a tool cited something, open it before you believe it. Compare what you can see, not which answer sounded better.
+
+**Do.** Read your own two summaries on the shared screen and answer the two rows aloud. At minute 3 of the part, say: one minute left on the table. If the group drifts into which tool is better, point at the two rows.
+:::
+
+## One line each {#p2-line}
+
+::: {.cards}
 ::: {.card}
-[The task]{.t} A study summary from the [practice source](../reference/practice-source.qmd). [Prompt library: teaching-summary-from-source](../reference/prompt-library.qmd#p-teaching-summary-from-source)
+[Same pattern as Day One?]{.t}
+
+What held, and what did not.
 :::
 ::: {.card .teal}
-[If your second option cannot take pasted text]{.t} Ask both for the evidence behind one number, such as 135/85.
-:::
-:::
+[For this job I would use...]{.t}
 
-[Lab page, part 2](../day2/lab2-one-case-three-outputs.qmd#part-2)
+...because of something you saw.
+:::
+:::
 
 ::: {.move .solo}
-[Solo · 5 min]{.tag} Paste the same prompt, unchanged, into both tools. A tool that will not take your text? Write it down.
+[Solo · 2 min]{.tag} Finish the two lines.
 :::
 
 ::: notes
-**5:00.** Same comparison as Day One, new task. The default is a study summary from the practice source; the Case C referral letter with the Day One referral prompt is the alternative, on the lab page. Paste the same prompt, unchanged, into both tools. If the second option cannot take pasted text, as a plain literature search cannot, ask both for the evidence behind one number in the practice source, such as the 135/85 threshold, and compare what each lets you check. A tool that will not take your text, or answers from its own sources, gives you a result: write it down.
+**2:00.** Finish the two lines: did the Day One pattern hold, and which tool you would use for this job, and why. Good looks like this. You compared on things you can see. If a tool cited something, you opened it. Your because names something you observed, not a feeling about the tool. You can close the one more tab now.
 
-**Do.** Solo. At minute 1 say: "task chosen, source copied, now run it in both". At minute 4 say: "take what you have; the table is next". Watch the chat for stuck tools; share your saved run for anyone without one.
-:::
-
-## Compare what you can see {#p2-compare}
-
-The table on the lab page asks what each tool stayed inside, added, cited and copied exactly.
-
-[Not which one sounded better.]{.big}
-
-If a tool cited something, open it before you believe it. [Lab page, part 2](../day2/lab2-one-case-three-outputs.qmd#part-2).
-
-::: {.move .solo}
-[Solo · 4 min]{.tag} Fill in the table.
-:::
-
-::: notes
-**4:00.** Compare what you can see, not which answer sounded better. The table asks four things: did it stay inside the text, did it add anything that is not in it, did it cite something and could you open it, and did it copy every number exactly. If a tool cited something, open it before you believe it. The two lines under the table come in the last minute.
-
-**Do.** Solo. At minute 8 of the part, say: one minute left on the table. Watch the chat and answer questions there. If the group drifts into which tool is better, point at the table.
-:::
-
-## Part 2: what good looks like {#p2-good}
-
-- You compared what you can see, not which answer sounded better.
-- You opened any citation before you believed it.
-- Your "because" names something you observed.
-
-::: {.move .solo}
-[Solo · 1 min]{.tag} Finish the two lines under the table: did the Day One pattern hold, and which tool you would use for this job.
-:::
-
-::: notes
-**1:00.** Finish the two lines under the table: did the Day One pattern hold, and which tool you would use for this job, and why. Good looks like this. You compared on things you can see. If a tool cited something, you opened it. Your because names something you observed, not a feeling about the tool. If the chat has room, ask what the second tool did differently and what you would use each for.
-
-**Do.** Solo for the two lines. Read out two "because" lines from the chat if people post them. Leave them with the line: same task, two ways of answering; compare what each stayed inside, added and cited. Which one sounded better is not a result. Then the bridge from the topic slide.
+**Do.** Say your own two lines aloud. Read out two "because" lines from the chat if people post them. Leave them with the line: same task, two ways of answering; look at what each added. Which one sounded better is not a result.
 :::
 
 # Part 3: Share-out [5 min]{.time} {#part-3}
@@ -234,7 +365,7 @@ If a tool cited something, open it before you believe it. [Lab page, part 2](../
 
 **Have ready.** Your three volunteers from part 1: one with a mismatch, one whose handout added content, one clean. A saved backup output to share if nobody can. The three questions are on the slides.
 
-**Clock.** Minute 0 to 1, everyone picks the output they would least want to be wrong. 1 to 4, two or three volunteers share. 4 to 5, everyone writes one thing to change.
+**Clock.** 0:00 everyone picks the output they would least want to be wrong. 1:00 two or three volunteers share. 4:00 everyone writes one thing to change. 5:00 time.
 
 **Watch for.** "It looked fine" instead of a named fact and where it was checked. A "no" with no next step. The group questioning the person, not the output. Losing this part: protect these five minutes and shorten part 2 instead.
 
@@ -307,16 +438,30 @@ If the answer to any of these is no, that's the signal to slow down, not the fin
 **Do.** Solo for the last minute. Read out two or three changes if people post them in the chat. Leave them with the line: fluent is not verified; say what you checked, against what, and what you would still check. Then the bridge from the topic slide: Day Three tomorrow, and what to have ready.
 :::
 
+## After the call {#after}
+
+- [The lab page](../day2/lab2-one-case-three-outputs.qmd): every step, to redo at your own pace
+- [The prompt library](../reference/prompt-library.qmd)
+- [The case cards](../reference/case-cards.qmd) and the [practice source](../reference/practice-source.qmd)
+- [The privacy checklist](../reference/privacy-checklist.qmd)
+
+::: notes
+**Not timed.** Paste these links into the chat at the very end, once. They are for afterwards: nothing on the call needed them.
+
+**Do.** Paste the links, then close.
+:::
+
 ## If it goes wrong {#fixes}
 
 | Problem | Fix |
 |----------|---------------------|
-| A real case turns up | Stop and use a card. Already pasted something? Follow the [privacy checklist](../reference/privacy-checklist.qmd). |
-| Tool slow, or quota gone | Switch to your other tool, or follow the trainer's shared backup set. Never use anyone else's login. |
+| A real case turns up | Stop and use a card. Already pasted something? Follow the privacy checklist. |
+| Tool slow, or quota gone | Switch to your other tool, or follow my shared backup set. Never use anyone else's login. |
 | The sheet is prose, or longer than the card | Facts only, one per line. |
 | The handout lists warning signs | Case A names none. Delete the list, or write your own. |
 | Two outputs disagree | The sheet and the card decide. Fix the sheet, then rerun that output in a new chat. |
 | A tool will not take your text | Write it down. That is a result, not a failure. |
+| Missed what was pasted | Ask in the chat. I paste it again. |
 
 ::: notes
 **On demand, no clock.** Keep this slide for when something goes wrong; do not present it. Answer in the chat with the row that fits. A real case is the one to stop for: say it without blame, send them to a card, and point to the privacy checklist for what to do next; Day Three covers why. A slow tool is not a failure of the lab: the sheet and two outputs are enough, then follow your backup set on screen.

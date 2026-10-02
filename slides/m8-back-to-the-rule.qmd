@@ -9,7 +9,7 @@ format: revealjs
 {{< include _plan-m8-back-to-the-rule.md >}}
 
 ::: notes
-Not on the clock. This block starts at 1:10 on the Day Three clock, straight after the break, and ends the course: your own output through the check, the quiz, then the close.
+Not on the clock. This block starts at 1:10 on the Day Three clock, straight after the break, and ends the course: your own output through the check, the quiz, then the close. Paste this deck's link in the chat: people copy each prompt from their own slide, or from the chat.
 :::
 
 # Back to the rule, applied to a real case [20 min]{.time} {#back-to-the-rule}
@@ -17,7 +17,7 @@ Not on the clock. This block starts at 1:10 on the Day Three clock, straight aft
 ::: notes
 **Goal.** Each doctor runs the three questions on one of their own outputs, decides use, fix or discard, and posts one Monday line.
 
-**Have ready.** The three-question card and the module page open in tabs, to paste both links in the chat. For anyone with no output, the referral-letter prompt in the prompt library, which holds Case C. Breakout rooms of two (one of three if the count is odd). A tally on the chalkboard (press B): Q1, Q2 and Q3 for "no", then invented, omitted, altered, fabricated citation.
+**Have ready.** One of your own outputs from Days One or Two, open in your assistant, to check on the shared screen as the group checks theirs. Breakout rooms of two (one of three if the count is odd). A tally on the chalkboard (press B): Q1, Q2 and Q3 for "no", then invented, omitted, altered, fabricated citation. For anyone with no output, the referral-letter slide holds a prompt with Case C's facts inside it.
 
 **Watch for.** "It looks right" as the evidence, or "I asked the tool" as the source. The Lab Three output picked again: this round is for the output that looks fine. Real patient detail: stop it and switch to a synthetic case. Tool debates in the synthesis: steer back to the three questions.
 
@@ -28,60 +28,118 @@ Not on the clock. This block starts at 1:10 on the Day Three clock, straight aft
 
 ## Back to the rule {#back-to-rule}
 
+::: {.lane}
+[One of your outputs]{.node .dark .fixed} [→]{.op} [The three questions]{.node .change .grow} [→]{.op} [Use, fix or discard]{.node .out .fixed}
+:::
+
+[▲ The check is the step in the middle. Tone is not a signal. A verification step is.]{.pointer}
+
 Pick one output from Day One or Two that looks fine, not the one from Lab Three. Only outputs made from the course's synthetic cases.
-
-[Could I defend this to a colleague?]{.pill}
-
-[Does it point to something I can verify?]{.pill}
-
-[Would I catch it if it were wrong?]{.pill}
-
-No output? Run [Prompt library: referral-letter](../reference/prompt-library.qmd#p-referral-letter), then check it against [Case C](../reference/case-cards.qmd#case-c).
 
 ::: notes
 **0:30.** **Say.** This is not a recap. On Day One the three questions were a card you were handed; today they are a habit you either have or do not. Pick one output from Day One or Two that looks fine, not the one you took apart in Lab Three. Only outputs from the course's synthetic cases, nothing from a real patient. Four steps: alone, a breakout pair, the group, then your Monday line.
 
-**Do.** Paste the module page link and the three-question card link in the chat. No output? The referral-letter prompt in the library, run on Case C, makes one in two minutes; the clock does not stop.
+**Do.** Read the line under the picture once. Everyone finds their output in their assistant now; anyone with no output follows on the next slide. Share your own output on screen: you will check it live as the group checks theirs.
 :::
 
-## The check card {#check-card}
+## No output? Make one {#no-output}
 
-| The card | What you write |
-|---|---|
-| 1. Could I defend this to a colleague? | Yes or no, and the evidence |
-| 2. Does it point to something I can verify? | Yes or no, and the evidence |
-| 3. Would I catch it if it were wrong? | Yes or no, and the evidence |
-| Decision | Use, fix, or discard |
-| Kind of error | Invented, omitted, altered, fabricated citation, or none found |
+::: {.paste-xl}
+{{< include _paste-referral-letter.md >}}
+:::
+
+[▲ Copy prompt on your slide. Only if you have no output of your own.]{.pointer}
 
 ::: {.move .solo}
-[Solo · 2 min]{.tag} Copy the card from the [module page](../day3/m8-back-to-the-rule.qmd#back-to-the-rule) into your notes. Mark every number, name, date, dose and source. Check against the case card, not the tool.
+[Solo · 30 sec]{.tag} Copy it into your assistant and send it.
 :::
 
 ::: notes
-**2:30.** **Say.** This is the card on the module page, laid out for one output. Copy it into your notes. For each question write yes or no, and the evidence: exactly what you opened. Finding nothing wrong is a valid result; an empty evidence line is not. Check against the source, not against the tool: here the source is the case card. Then decide, and name the kind of error. Leave the Monday line for the end. A no is not a failure; it is the check working.
+**0:30.** **Say.** No output to check? This makes one in a minute or two, from a fictional patient: a referral letter written only from the facts inside the prompt. Those facts are your source, so you check the letter against them. Everyone else: do not paste this, find your output. The clock does not stop.
 
-**Do.** Solo: start a two-minute timer and keep this slide up. Post "30 seconds left" in the chat. Answer card questions in the chat; do not judge anyone's output.
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too. Run it on the shared screen if you have no output of your own, while the group runs it on theirs. If a tool has no quota left, share one of your own outputs on screen and the group checks that one.
+:::
+
+## One output, checked {#worked-example}
+
+::: {.lane .sm}
+[The source]{.node .dark} [An allergy is listed. No timeframe is given.]{.node .same .grow}
+:::
+::: {.lane .sm}
+[The draft]{.node .dark}["Allergies: none known." "...your opinion within two weeks."]{.node .red .grow}
+:::
+
+::: {.cards}
+::: {.card .red}
+[1 · Defend it?]{.t}
+
+No. The allergy line disagrees.
+:::
+::: {.card}
+[2 · Verify it?]{.t}
+
+Allergy: yes, I compared it. Timeframe: no source.
+:::
+::: {.card .red}
+[3 · Catch it?]{.t}
+
+Only with the source beside it.
+:::
+:::
+
+[Decision: fix]{.pill .teal} [Kind of error: altered, invented]{.pill .teal}
+
+[Illustrative, written for this course, not from a real tool]{.illustrative}
+
+::: notes
+**1:00.** **Say.** One way to fill it in, on an excerpt written for this course. The source lists an allergy; the draft says none known, and gives a timeframe the source never mentions. Question 1: no. Question 2: the allergy line, yes, I compared it; the timeframe, no source. Question 3: only because the source was beside it; on a busy afternoon I would have read past it. Decision: fix. Kind of error: altered, and invented. The evidence is what you opened.
+
+**Do.** Talk it through without clicking. This excerpt is illustrative, not a measurement of any tool. Then: "Now yours."
+:::
+
+## Now yours {#check-card}
+
+::: {.lane}
+[Mark every number, name, date, dose and source]{.node .same .grow} [→]{.op} [Check each against what you pasted above it]{.node .change .grow} [→]{.op} [Fill in the card]{.node .out .grow}
+:::
+
+::: {.cards}
+::: {.card}
+[1]{.num}
+
+Could I defend this to a colleague?
+:::
+::: {.card .teal}
+[2]{.num}
+
+Does it point to something I can verify?
+:::
+::: {.card}
+[3]{.num}
+
+Would I catch it if it were wrong?
+:::
+:::
+
+[▲ Each one: yes or no, and the evidence. Then use, fix or discard, and the kind of error.]{.pointer}
+
+::: {.move .solo}
+[Solo · 2 min]{.tag} Your own output, the card in your notes. I do the same on screen.
+:::
+
+::: notes
+**2:15.** **Say.** This is the card from the last slide, for your own output. Mark every number, name, date, dose and source. For each question write yes or no, and the evidence: exactly what you opened. The source is the case or sheet you pasted above the output, in the same chat: not the tool. Finding nothing wrong is a valid result; an empty evidence line is not. Then decide, and name the kind of error. Leave the Monday line for the end. A no is not a failure; it is the check working.
+
+**Do.** Solo: run the check on one of your own outputs on the shared screen while the group runs it on theirs, saying aloud what you mark and what you open. Start a two-minute timer and post "30 seconds left" in the chat. Answer card questions in the chat; do not judge anyone's output.
 :::
 
 ## Defend it to a colleague {#defend-it}
 
-::: {.columns}
-::: {.column width="50%"}
-::: {.card}
-[You]{.t}
+::: {.lane}
+[You: show your marked output and card. Say your decision.]{.node .grow} [↔]{.op} [Your partner: "Where did that come from?" about each mark.]{.node .teal .grow}
+:::
 
-Share your marked output and card, on screen or in the breakout chat. Say your decision aloud. Change the card wherever they find something.
-:::
-:::
-::: {.column width="50%"}
-::: {.card .teal}
-[Your partner]{.t}
-
-Ask "where did that come from?" about each mark. Point at anything unmarked.
-:::
-:::
-:::
+[▲ On screen or in the breakout chat. Change your card wherever they find something.]{.pointer}
 
 If you disagree, the source decides: not either of you, and not another AI.
 
@@ -90,7 +148,7 @@ If you disagree, the source decides: not either of you, and not another AI.
 :::
 
 ::: notes
-**6:30.** **Say.** You checked alone first, so whatever your partner catches is something you really missed. Partner: ask "where did that come from?" about each mark, and point at anything unmarked. Change your card wherever they find something. If you disagree, the source decides, not either of you and not another AI. Swap at three minutes. This is the last breakout step of the weekend.
+**6:15.** **Say.** You checked alone first, so whatever your partner catches is something you really missed. Partner: ask "where did that come from?" about each mark, and point at anything unmarked. Change your card wherever they find something. If you disagree, the source decides, not either of you and not another AI. Swap at three minutes. This is the last breakout step of the weekend.
 
 **Do.** Pair: rooms of two for 6 minutes, with reminders at 3 minutes and 1 minute left. Look in on a few rooms; if you hear "looks right" with nothing opened, ask "what did you open?" **No breakout rooms:** everyone types their decision (use, fix or discard) and the one mark they are least sure of in the chat; read three aloud while the group asks "where did that come from?"
 :::
@@ -98,17 +156,17 @@ If you disagree, the source decides: not either of you, and not another AI.
 ## What did you decide? {#group-vote}
 
 ::: {.cards}
-::: {.card}
+::: {.card .teal}
 [1]{.num}
 
 Use
 :::
-::: {.card .teal}
+::: {.card}
 [2]{.num}
 
 Fix
 :::
-::: {.card}
+::: {.card .red}
 [3]{.num}
 
 Discard
@@ -128,7 +186,7 @@ Discard
 :::
 
 ::: notes
-**6:00.** **Say.** Back together. Type the decision you made on your own output: 1 use, 2 fix, 3 discard. I will read out the count. Now two or three of you unmute: what was the output, and what kind of error did you find, or none found? Last question, in the chat: what did your partner catch that you missed?
+**5:30.** **Say.** Back together. Type the decision you made on your own output: 1 use, 2 fix, 3 discard. I will read out the count. Now two or three of you unmute: what was the output, and what kind of error did you find, or none found? Last question, in the chat: what did your partner catch that you missed?
 
 **Do.** Chat: count by eye, say the tally, and write it on the chalkboard (press B). Click once for the Speak step: pick one person who typed 3 and one who typed 1, ask each "what did you open?", and keep each to a minute. Click again for the last question and read out three answers. If everyone typed 1, ask what the evidence for question 2 was.
 :::
@@ -160,28 +218,32 @@ What would you change to catch it faster?
 :::
 
 ::: notes
-**2:30.** **Say.** Three questions, one at a time. First: which question most often came out no? Type 1, 2 or 3. Second: which kind of error came up most? Type the word: invented, omitted, altered, fabricated citation, or none. Third: what would you change to catch it faster? One sentence. Whatever the group finds is a measure of these outputs, not of any tool.
+**2:15.** **Say.** Three questions, one at a time. First: which question most often came out no? Type 1, 2 or 3. Second: which kind of error came up most? Type the word: invented, omitted, altered, fabricated citation, or none. Third: what would you change to catch it faster? One sentence. Whatever the group finds is a measure of these outputs, not of any tool.
 
 **Do.** Chat: click once per question; read the counts and two or three answers. Tally on the chalkboard (press B). If the chat turns to which tool is best, steer back: which of the three questions would have caught it?
 :::
 
 ## Your Monday line {#monday-line}
 
-| Too vague | Specific enough |
-|---|---|
-| Be more careful with AI. | Open the source for every number and name before I use a draft. |
-| Follow the rule. | Read every instruction in a patient handout against the source before I give it out. |
+::: {.lane}
+[An action]{.node .grow} [+]{.op} [A thing to check]{.node .grow} [+]{.op} [A moment]{.node .grow} [→]{.op} [Your Monday line]{.node .dark .grow}
+:::
 
-Each specific line names an action, a thing to check, and a moment.
+::: {.lane .sm}
+[Too vague: "Be more careful with AI."]{.node .red .fixed} [→]{.op} [Specific: "Open the source for every number and name before I use a draft."]{.node .out .grow}
+:::
+::: {.lane .sm}
+[Too vague: "Follow the rule."]{.node .red .fixed} [→]{.op} [Specific: "Read every instruction in a patient handout against the source before I give it out."]{.node .out .grow}
+:::
 
 ::: {.move .chat}
 [Chat · 90 sec]{.tag} Write your Monday line on your card, then post it in the chat. One sentence, starting with a verb.
 :::
 
 ::: notes
-**2:00.** **Say.** The first day you are back at work is the test of the whole weekend. Make your line small enough to do that day and specific enough that you would know if you had not: an action, a thing to check, a moment. Write it as the last row of your card, then post it in the chat.
+**1:45.** **Say.** The first day you are back at work is the test of the whole weekend. Make your line small enough to do that day and specific enough that you would know if you had not: an action, a thing to check, a moment. Write it as the last row of your card, then post it in the chat.
 
-**Do.** Chat: give 90 seconds, then read three aloud. If one is vague, ask what the action is, what gets checked and when. In the last 30 seconds, the bridge: "You have checked your own work. The last check of the day is on the whole weekend: twenty minutes, all three days."
+**Do.** Chat: give 90 seconds, then read three aloud. If one is vague, ask what the action is, what gets checked and when. In the last 15 seconds, the bridge: "You have checked your own work. The last check of the day is on the whole weekend: twenty minutes, all three days."
 :::
 
 # Assessment quiz [20 min]{.time} {#assessment}
@@ -189,7 +251,7 @@ Each specific line names an action, a thing to check, and a moment.
 ::: notes
 **Goal.** Every doctor takes the quiz under the same, clearly stated conditions and knows where to practice afterward.
 
-**Have ready.** Your confirmed quiz sheet: open or closed book, how it is delivered and handed in, what to do when finished. Settle every item before Day Three; the list is in the instructor guide (Open decisions, Assessment). The practice bank on the assessment page open in a tab.
+**Have ready.** Your confirmed quiz sheet: open or closed book, how it is delivered and handed in, what to do when finished. Settle every item before Day Three; the list is in the instructor guide (Open decisions, Assessment). The link to the practice bank on the assessment page, to paste at the end.
 
 **Watch for.** Improvising a policy under pressure: "let me confirm" beats a guess. Hints, and anyone reaching for an assistant by habit: state the rule before it starts. Anxiety: say once that the quiz shows what stuck, not a judgment of them as doctors.
 
@@ -198,29 +260,56 @@ Each specific line names an action, a thing to check, and a moment.
 **Bridge.** "Quiz done. Ten minutes left: your certificate, four things to keep, and a plan for your first two weeks."
 :::
 
-## Assessment and certificate {#assessment-cards}
+## What the quiz draws on {#assessment-draws}
 
 ::: {.cards}
-::: {.card .tint}
-[The quiz]{.t}
+::: {.card}
+[Day One]{.t}
 
-A short quiz covering all three days. It shows what stuck.
+How the tools work, how to prompt them, how to choose one.
 :::
 ::: {.card .teal}
-[The certificate]{.t}
+[Day Two]{.t}
 
-A certificate of completion for every doctor who finishes the weekend.
+Notes, audiences, slides and teaching.
+:::
+::: {.card}
+[Day Three]{.t}
+
+Verification and privacy.
 :::
 :::
+
+::: {.fan}
+[▼]{.a} [▼]{.a} [▼]{.a}
+:::
+
+::: {.lane}
+[A short quiz covering all three days. It shows what stuck.]{.node .dark .grow}
+:::
+
+::: notes
+**0:45.** **Say.** A short quiz closes Day Three and covers all three days: how the tools work and how to prompt them, notes, audiences and teaching, verification and privacy. It shows what stuck; it is not a trick, and not a judgment of you as a doctor. The practice bank is for afterward and is separate from the quiz, so it is not a preview.
+
+**Do.** Talk it through without clicking. Do not name or hint at any question.
+:::
+
+## How it runs {#assessment-runs}
+
+::: {.lane}
+[I explain how it runs]{.node .dark .grow} [→]{.op} [You work on your own]{.node .change .grow} [→]{.op} [You hand in as I explained]{.node .out .grow}
+:::
+
+[▲ Once it starts, logistics questions only.]{.pointer}
 
 ::: {.move .chat}
 [Chat · 1 min]{.tag} Type any question about how the quiz runs. Once it starts, logistics only.
 :::
 
 ::: notes
-**2:00.** **Say.** A short quiz closes Day Three and covers all three days. It shows what stuck; it is not a trick, and not a judgment of you as a doctor. Then give the logistics from your confirmed sheet: open or closed book, how it is delivered and handed in, and what to do when you finish. The certificate follows the quiz.
+**1:45.** **Say.** Give the logistics from your confirmed sheet: open or closed book, how it is delivered and handed in, and what to do when you finish. Then take questions for a minute. The certificate follows the quiz.
 
-**Do.** Say the logistics aloud and paste them in the chat. Chat: take questions for a minute; if an item is not on your sheet, say so and say when you will tell them. The items to settle are in the instructor guide (Open decisions, Assessment).
+**Do.** Say the logistics aloud and paste them in the chat. Chat: take questions; if an item is not on your sheet, say so and say when you will tell them. The items to settle are in the instructor guide (Open decisions, Assessment).
 :::
 
 ## The quiz is open {#quiz-running}
@@ -236,32 +325,25 @@ Logistics questions only, in the chat.
 :::
 
 ::: notes
-**15:00.** **Say.** Almost nothing. At the start: "Begin. Logistics questions only, in the chat." Call the time at halfway and at five minutes out, counted from the quiz length on your confirmed sheet. No hints and no teaching, and the same answer for everyone: post it in the chat.
+**14:30.** **Say.** Almost nothing. At the start: "Begin. Logistics questions only, in the chat." Call the time at halfway and at five minutes out, counted from the quiz length on your confirmed sheet. No hints and no teaching, and the same answer for everyone: post it in the chat.
 
 **Do.** Solo: stay quiet and visible. If someone asks for a clue, say you cannot help with the content. If anyone reaches for an assistant by habit, the rule from your confirmed sheet applies; you stated it before the start. The quiz's own length comes from the sheet; this budget is the rest of the twenty minutes.
 :::
 
-## After the quiz {#after-quiz}
+## After the quiz {#quiz-done}
 
-::: {.cards}
-::: {.card}
-[Your reading list]{.t}
+::: {.lane}
+[Handed in]{.node .out .fixed} [→]{.op} [Note the topics that made you hesitate]{.node .change .grow} [→]{.op} [Your reading list for two weeks]{.node .dark .grow}
+:::
 
-Note the topics that made you hesitate. They are your reading list for the next two weeks.
-:::
-::: {.card .teal}
-[The practice bank]{.t}
-
-On the [assessment page](../assessment.qmd). Separate from the quiz you took. Use it to find what you are unsure of.
-:::
-:::
+[▲ The practice bank is separate from the quiz you took. Use it to find what you are unsure of. The link is on the last slide.]{.pointer}
 
 ::: {.move .chat}
 [Chat · 1 min]{.tag} Type "done" when you have handed yours in.
 :::
 
 ::: notes
-**3:00.** **Say.** Thank you. Whatever the result, keep a note of the topics that made you hesitate: that is your reading list for the next two weeks. The practice bank on the assessment page is separate from the quiz; use it to find what you are unsure of.
+**3:00.** **Say.** Thank you. Whatever the result, keep a note of the topics that made you hesitate: that is your reading list for the next two weeks. The practice bank on the assessment page is separate from the quiz; use it to find what you are unsure of. The link comes on the last slide.
 
 **Do.** Chat: collect or confirm submission as your confirmed sheet says, and ask for "done". Tell early finishers what the sheet says to do. In the last 30 seconds, the bridge: "Quiz done. Ten minutes left: your certificate, four things to keep, and a plan for your first two weeks."
 :::
@@ -271,7 +353,7 @@ On the [assessment page](../assessment.qmd). Separate from the quiz you took. Us
 ::: notes
 **Goal.** Each doctor knows what the certificate is, can say the four things to keep, and has written down one low-risk task and one colleague to teach.
 
-**Have ready.** Certificates ready, to be issued by the process on your confirmed sheet. The feedback link, ready to paste in the chat. The closing section of the module page open for the plan's wording.
+**Have ready.** Certificates ready, to be issued by the process on your confirmed sheet. The feedback link, ready to paste in the chat. The closing section of the module page, for the plan's wording.
 
 **Watch for.** A CME, CPD or accreditation claim slipping in, from the group or from you. The closing crowding out the plan: cut "what this course did not cover" to one minute before you shorten the first two weeks. Tool endorsements: the course recommends none.
 
@@ -282,11 +364,11 @@ On the [assessment page](../assessment.qmd). Separate from the quiz you took. Us
 
 ## Your certificate {#certificate}
 
-::: {.vc}
-[A certificate of completion]{.big}
-
-For every doctor who finishes the weekend. No CME, CPD or accreditation is claimed.
+::: {.lane}
+[Day One]{.node .same} [+]{.op} [Day Two]{.node .same} [+]{.op} [Day Three]{.node .same} [→]{.op} [A certificate of completion]{.node .out .grow}
 :::
+
+[▲ For every doctor who finishes the weekend. No CME, CPD or accreditation is claimed.]{.pointer}
 
 ::: notes
 **1:00.** **Say.** Every doctor who finishes the weekend receives a certificate of completion. That is what it is, and all it claims to be: no CME, no CPD, no accreditation. Say how and when it is issued, from your confirmed sheet. Then on to what you take back to work.
@@ -304,76 +386,75 @@ For every doctor who finishes the weekend. No CME, CPD or accreditation is claim
 
 [No patient identifiers into a consumer AI tool. Ever. Full stop.]{.big}
 
-Not sure something counts as an identifier? Do not paste it. [Privacy checklist](../reference/privacy-checklist.qmd)
+Not sure something counts as an identifier? Do not paste it.
 
 ::: {.move .chat}
 [Chat · 1 min]{.tag} Type both lines. Send together on "three, two, one".
 :::
 
 ::: notes
-**1:00.** **Say.** If you keep nothing else from the weekend, keep two lines, in these exact words. The rule: AI drafts. You decide. The privacy line: No patient identifiers into a consumer AI tool. Ever. Full stop. A consumer AI tool is a general assistant you sign up for yourself. If you are not sure whether something counts as an identifier, do not paste it; the privacy checklist has the list.
+**1:00.** **Say.** If you keep nothing else from the weekend, keep two lines, in these exact words. The rule: AI drafts. You decide. The privacy line: No patient identifiers into a consumer AI tool. Ever. Full stop. A consumer AI tool is a general assistant you sign up for yourself. If you are not sure whether something counts as an identifier, do not paste it; the privacy checklist has the list, and its link is on the last slide.
 
 **Do.** Chat: everyone types both lines, then sends together on "three, two, one, send". Read them aloud once.
 :::
 
-## Keep these two tools {#keep-two-tools}
+## Keep the three questions {#keep-questions}
 
-::: {.columns}
-::: {.column width="50%"}
+::: {.cards}
 ::: {.card}
-[The three questions]{.t}
+[1]{.num}
 
-1. Could I defend this to a colleague?
-2. Does it point to something I can verify?
-3. Would I catch it if it were wrong?
+**Could I defend this to a colleague?**
 :::
-:::
-::: {.column width="50%"}
 ::: {.card .teal}
-[The four parts]{.t}
+[2]{.num}
 
-[Role]{.pill} [Context]{.pill} [Format]{.pill} [Constraints]{.pill}
-
-Who it is, what it knows, what shape to return, what to avoid.
+**Does it point to something I can verify?**
 :::
+::: {.card}
+[3]{.num}
+
+**Would I catch it if it were wrong?**
 :::
 :::
 
 If the answer to any of these is no, that's the signal to slow down, not the finding to accept.
 
-::: {.small}
-[Three-question card](../reference/three-question-check.qmd) · [Prompt library](../reference/prompt-library.qmd)
-:::
+[Name the mistake: invented, omitted, altered.]{.pointer}
 
 ::: notes
-**1:00.** **Say.** Two tools to keep. The three questions: Could I defend this to a colleague? Does it point to something I can verify? Would I catch it if it were wrong? If the answer to any of these is no, that's the signal to slow down, not the finding to accept. When you find a mistake, name it: invented, omitted, altered. The four parts of a prompt: Role, Context, Format, Constraints. Who it is, what it knows, what shape to return, what to avoid.
+**0:30.** **Say.** The first tool to keep. The three questions, in these exact words: Could I defend this to a colleague? Does it point to something I can verify? Would I catch it if it were wrong? If the answer to any of these is no, that's the signal to slow down, not the finding to accept. When you find a mistake, name it: invented, omitted, altered.
 
-**Do.** Read the three questions once, then the memory line. Paste the links to the three-question card and the prompt library in the chat.
+**Do.** Read the three questions once, then the line under them.
+:::
+
+## Keep the four parts {#keep-parts}
+
+::: {.lane}
+[Role]{.node} [Context]{.node} [Format]{.node} [Constraints]{.node} [→]{.op} [One prompt]{.node .change}
+:::
+
+Who it is, what it knows, what shape to return, what to avoid.
+
+::: notes
+**0:30.** **Say.** The second tool to keep. The four parts of a prompt: Role, Context, Format, Constraints. Who it is, what it knows, what shape to return, what to avoid.
+
+**Do.** Read the four once. The three-question card and the prompt library are on the last slide.
 :::
 
 ## Your first two weeks {#first-two-weeks}
 
-::: {.cards}
-::: {.card}
-[01]{.num}
-
-**Week 1.** Pick one low-risk task. Run the check on every output.
+::: {.lane .sm}
+[Week 1]{.node .dark} [→]{.op} [Pick one low-risk task. Run the check on every output.]{.node .grow}
 :::
-::: {.card}
-[02]{.num}
-
-**Week 1.** Keep a prompt library, with a placeholder where the facts go.
+::: {.lane .sm}
+[Week 1]{.node .dark} [→]{.op} [Keep a prompt library, with a placeholder where the facts go.]{.node .grow}
 :::
-::: {.card}
-[03]{.num}
-
-**Week 1.** Ask your institution about its policy and approved tools.
+::: {.lane .sm}
+[Week 1]{.node .dark} [→]{.op} [Ask your institution about its policy and approved tools.]{.node .grow}
 :::
-::: {.card .teal}
-[04]{.num}
-
-**Week 2.** Teach one colleague, for ten minutes.
-:::
+::: {.lane .sm}
+[Week 2]{.node .teal} [→]{.op} [Teach one colleague, for ten minutes.]{.node .teal .grow}
 :::
 
 [Until you have an answer, the privacy line is your policy.]{.teal}
@@ -385,10 +466,14 @@ If the answer to any of these is no, that's the signal to slow down, not the fin
 ::: notes
 **3:00.** **Say.** Four steps, in order, each small on purpose. At the start of week one, pick one low-risk task, such as rewording an email to a colleague or a first outline for a talk, and run the check on every output; keep patient data out of it. Also in week one, keep a prompt library: prompts that gave a draft you would use, with a placeholder where the facts go, never the facts. Ask your institution whether it has a policy on AI tools and which it has approved. In week two, teach one colleague for ten minutes, on a synthetic case.
 
-**Do.** Solo: two minutes, two lines in their own notes. Nothing is posted or collected.
+**Do.** Solo: two minutes, two lines in their own notes, while you write yours on screen. Nothing is posted or collected.
 :::
 
 ## What this course did not cover {#not-covered}
+
+::: {.lane}
+[This weekend: text. Drafting, summarizing and checking.]{.node .out .grow}
+:::
 
 ::: {.cards}
 ::: {.card .dashed}
@@ -430,10 +515,27 @@ AI built into it, in depth.
 [AI for Clinicians]{.big}
 
 AI drafts. You decide. Run the check every time.
+
+Tone is not a signal. A verification step is.
 :::
 
 ::: notes
-**2:30.** **Say.** Thank everyone. Give the feedback link from your confirmed sheet and say how to reach it; ask for it now, while everyone is still on the call. Remind them of the two things they wrote down: the low-risk task and the colleague. Say the last line once: AI drafts. You decide. Run the check every time.
+**2:30.** **Say.** Thank everyone. Give the feedback link from your confirmed sheet and say how to reach it; ask for it now, while everyone is still on the call. Remind them of the two things they wrote down: the low-risk task and the colleague. Say the two sentences everything follows from, once: AI drafts. You decide. Tone is not a signal. A verification step is. Then: run the check every time.
 
 **Do.** Chat: paste the feedback link. Leave this slide up while certificates go out by the process on your confirmed sheet (instructor guide, Open decisions, Closing). Then the bridge to Monday: "Take the low-risk task you just wrote down and run the check on its first output. AI drafts. You decide."
+:::
+
+## After the call {#after}
+
+- [The module page](../day3/m8-back-to-the-rule.qmd): the check card and the plan, to redo at your own pace
+- [The prompt library](../reference/prompt-library.qmd)
+- [The three-question card](../reference/three-question-check.qmd)
+- [The privacy checklist](../reference/privacy-checklist.qmd)
+- [The case cards](../reference/case-cards.qmd)
+- [The practice bank](../assessment.qmd): separate from the quiz you took
+
+::: notes
+**Not timed.** Paste these links into the chat at the very end, once. They are for afterwards: nothing on the call needed them.
+
+**Do.** Paste the links, then close.
 :::

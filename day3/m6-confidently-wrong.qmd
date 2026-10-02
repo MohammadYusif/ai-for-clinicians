@@ -19,6 +19,11 @@ You leave with
 :   A five-step way to check any AI output against a real source, and the verification card you will use in Lab 3.
 :::
 
+::: {.callout-note appearance="simple"}
+## On the call
+You need three tabs: the call, the slides (your instructor pastes the link in the chat), and your general assistant, signed in. Copy each prompt from its slide with the Copy prompt button; your instructor pastes it in the chat too. This page is the take-home version.
+:::
+
 ## 1. Confidently wrong [10 min]{.time} {#confidently-wrong}
 
 Day Three is safety and ethics, in three parts: checking what AI tells you (this module and [Lab 3](lab3-spot-the-error.qmd)), protecting your patients' information ([Module 7](m7-privacy.qmd)), and then applying both to your own work from the weekend ([Module 8](m8-back-to-the-rule.qmd)).
@@ -122,7 +127,7 @@ If the answer to any of these is no, that's the signal to slow down, not the fin
 
 ### The verification card
 
-Have this open for [Lab 3](lab3-spot-the-error.qmd), and use it on anything you would put in a chart.
+[Lab 3](lab3-spot-the-error.qmd) uses only this card; use it too on anything you would put in a chart.
 
 - [ ] **1. Extract** every number, name, date, dose, citation, and guideline reference.
 - [ ] **2. Find each source yourself:** the primary source, then your institution's guideline. Not the same tool, not a second AI.

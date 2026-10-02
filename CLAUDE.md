@@ -29,7 +29,7 @@ A fact about a named product or a law comes from the "Research already gathered"
 `course/BRIEF.md`, is worded no more strongly than that source, and carries an as-of date
 where availability could change. Example AI outputs are *illustrative*: written by the course
 author, labeled as such in a callout, never presented as a measurement of any tool. What the
-room measures for itself in a lab (time, word count, edit count) is theirs, not a claim of the
+room sees for itself in a lab (ticks against a card, sources it could open) is theirs, not a claim of the
 site's. Do not soften the labels and do not add a number without a source.
 
 **4. The course relies on no tool but one general assistant.** No lab, demo or setup step may require a
@@ -47,13 +47,19 @@ used only where a second person catching what you missed is the point, and carri
 notes. Say "the group", not "the room". `tools/lint_content.py` blocks the wording that gives a page away, in the
 pages, the decks and the trainer's notes.
 
+**The call is three tabs.** The course runs on Google Meet. A participant has the call, the slides (the trainer pastes the
+link; each prompt, case and source has a Copy prompt button on its slide, and goes into the chat too for anyone without the
+deck) and one assistant, and nothing else. The group does each step with the trainer, who runs it on the shared screen too. So a deck never links to another page and never tells
+anyone to open one (the lint blocks it), a block to paste is pulled into its slide from the handout by
+`tools/build_prompt_library.py` (`slides/_paste-*.md`, generated, never hand-edited), and a handout is for afterwards.
+
 ## Layout
 
 | Path | What |
 |---|---|
 | `index.qmd`, `setup.qmd`, `assessment.qmd` | site root pages; `index.qmd` is the course map, one card per module and lab |
 | `day1/`, `day2/`, `day3/` | the **handouts**: the modules (`mN-*.qmd`) and labs (`labN-*.qmd`), in run-of-show order, with the prompts |
-| `slides/` | the **decks**: one reveal.js deck per module and lab, same file name and anchors as its handout, speaker notes under every slide; `_metadata.yml`, `theme.scss`, `section.lua`, and the generated `_glance-dayN.md` / `_plan-*.md` tables |
+| `slides/` | the **decks**: one reveal.js deck per module and lab, same file name and anchors as its handout, speaker notes under every slide; `_metadata.yml`, `theme.scss`, `section.lua`, and the generated `_glance-dayN.md` / `_plan-*.md` tables and `_paste-*.md` blocks (every prompt, lab paste block, case card and the practice source, written by `build_prompt_library.py`; a slide includes them, never retypes them) |
 | `reference/` | case cards, practice source, prompt library (generated), tool guide, glossary, privacy guide, troubleshooting |
 | `course/` | trainer-facing: the instructor guide, the Lab 3 examples, accreditation notes, the authoring guide, the source brief, `timing.json`. The script is the speaker notes in the decks. **Not rendered to the site, but the repository is public** — nothing in it may be a secret |
 | `tools/` | `check_timing.py`, `check_decks.py`, `build_prompt_library.py`, `check_placeholders.py`, `lint_content.py`, `check_links.py`, and two browser-console audits, `contrast_audit.js` (pages) and `deck_audit.js` (decks) |

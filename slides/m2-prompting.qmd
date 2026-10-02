@@ -8,8 +8,10 @@ format: revealjs
 
 {{< include _plan-m2-prompting.md >}}
 
+[Four decisions, one skeleton, four documents. We run each one together.]{.big}
+
 ::: notes
-Four topics, 35 minutes. Say the plan in one breath; the clock starts at the next slide, and Lab One after the break puts the skeleton on your own clock.
+Four topics, 35 minutes. Say the plan in one breath; the clock starts at the next slide. We do every step together: you click Copy prompt on your slide (I paste it in the chat too), and I run it on this screen as you run it on yours. Paste this deck's link in the chat: people copy each prompt from their own slide, or from the chat. Lab One after the break puts the skeleton to the test on your own screen.
 :::
 
 # Where the extra words come from [5 min]{.time} {#extra-words}
@@ -17,7 +19,9 @@ Four topics, 35 minutes. Say the plan in one breath; the clock starts at the nex
 ::: notes
 **Goal.** Everyone can explain why a vague prompt returns hedged, padded text in a different shape each time, and that the fix is in the prompt.
 
-**Have ready.** The Case A card open in a tab. No live tool; the slides carry the examples.
+**Have ready.** Nothing live: the slides carry the examples.
+
+**Clock.** 0:00 chat: what you delete first. 1:30 the two runs. 3:30 what you leave open. 5:00 time.
 
 **Watch for.** The two runs heard as the output of a named product: keep the label, and never attribute them to a tool. "So the tool is bad": the lesson is the choices left open. Running long: this topic only frames the problem; the fix is the next topic.
 
@@ -28,9 +32,11 @@ Four topics, 35 minutes. Say the plan in one breath; the clock starts at the nex
 
 ## A vague prompt gets a vague answer {#vague-prompt}
 
-::: {.vc}
-[Hedged, padded, and inconsistent in structure.]{.big}
+::: {.lane}
+[One line: "Write a progress note"]{.node .dark .grow} [→]{.op} [Left open: audience, length, structure, tone]{.node .ghost .grow} [→]{.op} [Filled with the typical]{.node .red .grow}
 :::
+
+[▲ Hedged, padded, and inconsistent in structure.]{.pointer}
 
 ::: {.fragment}
 [The fix isn't a better model. It's a better prompt.]{.big .accent}
@@ -43,16 +49,18 @@ Four topics, 35 minutes. Say the plan in one breath; the clock starts at the nex
 ::: notes
 **1:30.** Start with the chat: when a wall of text comes back, what do you delete first? Read out three answers; expect disclaimers and openers. Then the reason. Every choice you leave open, the audience, the length, the structure, the tone, the tool fills with the most typical pattern. The typical pattern for a clinical answer includes hedges, padding and a generic layout, so that is what comes back. Not because the tool is broken, but because the decisions were left to it. Then click for the line to remember: the fix is not a better model, it is a better prompt.
 
-**Do.** Chat, one minute. Read out three answers, then click once.
+**Do.** Chat, one minute. Read out three answers, then click once. Nothing to paste on this slide.
 :::
 
 ## Same vague prompt, two runs {#two-runs}
 
-```text
-Write a progress note for this patient.
+::: {.lane}
+[Write a progress note for this patient. + the Case A facts underneath]{.node .dark .grow}
+:::
 
-[paste the Case A facts]
-```
+::: {.fan}
+[▼ Run 1]{.a} [▼ Run 2]{.a}
+:::
 
 ::: {.columns}
 ::: {.column width="50%"}
@@ -71,12 +79,14 @@ Patient Summary. Key Findings. Considerations. Suggested Next Steps. Disclaimer.
 :::
 :::
 
-[Left open: audience, length, structure, tone.]{.teal} [Illustrative, written for this course, not from a real tool]{.illustrative}
+[▲ Left open: audience, length, structure, tone.]{.pointer}
+
+[Illustrative: written for this course, not from a real tool]{.illustrative}
 
 ::: notes
-**1:30.** Same vague prompt, the Case A facts pasted underneath, two runs. Say twice that these are illustrative, written for this course, not captured from any tool and not a measurement. Run 1 is prose full of stock hedges, and it ends by telling the treating physician to consult the treating physician: the tool guessed the audience, and guessed wrong. Run 2 is headings ending in a disclaimer, and it turns the real plan on the card into "medication adjustment". Different shapes, because nothing said which. The words look careful and say nothing. A hedge is not a safety check; the real risk is the long, padded draft you skim, because skimming is how a changed dose gets through.
+**2:00.** Same vague prompt, the Case A facts underneath, two runs. Say twice that these are illustrative, written for this course, not captured from any tool and not a measurement. Run 1 is prose full of stock hedges, and it ends by telling the treating physician to consult the treating physician: the tool guessed the audience, and guessed wrong. Run 2 is headings ending in a disclaimer, and it turns the real plan on the card into "medication adjustment". Different shapes, because nothing said which. The words look careful and say nothing. A hedge is not a safety check; the real risk is the long, padded draft you skim, because skimming is how a changed dose gets through.
 
-**Do.** Ask aloud, no typing: which line would you delete first? Who chose the length? The structure? Nobody did.
+**Do.** No group step: these are not live runs. Ask aloud, no typing: which line would you delete first? Who chose the length? The structure? Nobody did.
 :::
 
 ## What you leave open, the tool fills {#left-open}
@@ -103,11 +113,13 @@ Patient Summary. Key Findings. Considerations. Suggested Next Steps. Disclaimer.
 ::: notes
 **Goal.** Everyone can name the four parts, say what each is for, and find the missing part in a weak prompt.
 
-**Have ready.** The prompt library open in a second tab, so you can paste its link in the chat. No live tool; the demo comes in Module 3.
+**Have ready.** Nothing live: the skeleton is on the slide, to paste into the chat. The demo comes in Module 3.
+
+**Clock.** 0:00 the four parts. 2:00 the skeleton, saved. 4:00 which part is missing. 6:30 the answer. 7:45 the symptoms. 8:45 fix the prompt. 10:00 time.
 
 **Watch for.** Role inflation ("You are a world-class..."): ask who the reader is. Real patient details creeping into FACTS: facts means a case card, not your patient. `[MISSING: what]` treated as a guarantee: it is not, you still read the output. Replying "no, shorter" in the same chat: fix the prompt instead.
 
-**If asked.** Does the role really matter? It sets the register and the reader; it cannot supply a finding you did not give it. Do I need all four every time? For anything that reaches a chart, a colleague or a patient, yes; for a quick brainstorm less is fine, and the check still applies. Is this a lot of typing for one note? Write the skeleton once and save it; only the facts change. Whether it saves you time is what Lab One part 1 measures, on your own clock.
+**If asked.** Does the role really matter? It sets the register and the reader; it cannot supply a finding you did not give it. Do I need all four every time? For anything that reaches a chart, a colleague or a patient, yes; for a quick brainstorm less is fine, and the check still applies. Is this a lot of typing for one note? Write the skeleton once and save it; only the facts change. Whether it saves you time is yours to judge: Lab One part 1 puts two drafts side by side.
 
 **Bridge.** "You have the framework. Now watch it work on a real note: same case, one prompt."
 :::
@@ -161,83 +173,123 @@ What to avoid.
 :::
 :::
 
-Four decisions, made on purpose, in the same order every time.
-
-::: notes
-**3:30.** The last topic showed what vagueness costs. The fix is four decisions, made on purpose, in the same order every time, and it works on any prompt, not only notes. Click through one part at a time. Role: who the AI is writing as, and for whom; it sets the register, not the facts, so a world-class cardiologist adds no knowledge. Context: the facts it may use and what the output is for, only those. Format: the exact shape; "short" is a wish, "maximum 150 words" is a limit you can check. Constraints: name the forbidden thing; "do not add doses" works, "be accurate" does not. The common mistake in each: a flattering role and no audience, no "use only these", adjectives for length, constraints written as hopes.
-
-**Do.** Click once per part. No activity here; watch the chat for questions after the fourth part.
+::: {.fragment}
+::: {.fan}
+[▼]{.a} [▼]{.a} [▼]{.a} [▼]{.a}
 :::
 
-## The skeleton {#skeleton}
+::: {.lane .sm}
+[One prompt: nothing left for the tool to guess]{.node .out .grow}
+:::
 
-```text
-ROLE: You are [role], writing for [audience].
-CONTEXT: [What this is for.] Use ONLY the facts below. If something needed is missing, write [MISSING: what] instead of guessing.
-FACTS:
-[paste the facts]
-FORMAT: [Exact template or headings.] Maximum [N] words.
-CONSTRAINTS: Do not add findings, doses, or diagnoses that are not in the facts. No hedging phrases. [Units, reading level, abbreviations.]
-```
-
-[Who it is, what it knows, what shape to return, what to avoid.]{.big}
-
-FACTS is not a fifth part: it is the slot under CONTEXT where your facts go. [Prompt library: four-part-skeleton](../reference/prompt-library.qmd#p-four-part-skeleton)
+[Who it is, what it knows, what shape to return, what to avoid.]{.accent}
+:::
 
 ::: notes
-**1:30.** This is the skeleton. It is on the handout page and in the prompt library; copy it from either, or from the button on the slide. FACTS is not a fifth part: it is the slot under Context where your facts go. The line to memorize is in Context: use only the facts below, and if something needed is missing, write MISSING and say what, instead of guessing. That turns a silent invention into a visible gap you can see and fill. It is not a guarantee, so you still read the output. Say the memory line aloud: who it is, what it knows, what shape to return, what to avoid.
+**2:00.** The last topic showed what vagueness costs. The fix is four decisions, made on purpose, in the same order every time, on any prompt, not only notes. Click through one part at a time. Role: who it writes as, and for whom; it sets the register, not the facts, so "a world-class cardiologist" adds no knowledge. Context: the facts it may use and what the output is for, only those. Format: the exact shape; "short" is a wish, "maximum 150 words" a limit you can check. Constraints: name the forbidden thing; "do not add doses" works, "be accurate" does not. Common mistakes: a flattering role and no audience, no "use only these", adjectives for length, constraints written as hopes. Last click: say the memory line.
 
-**Do.** Paste the library link in the chat and ask everyone to save the skeleton in their notes app now; Lab One part 1 uses it.
+**Do.** Click once per part, then once more. No activity here; watch the chat for questions.
+:::
+
+## The skeleton: copy it and save it {#skeleton}
+
+::: {.lane .sm}
+[Role]{.node} [Context]{.node .teal} [Facts: the slot]{.node .same} [Format]{.node} [Constraints]{.node .teal}
+:::
+
+[▲ FACTS is not a fifth part. It is the slot under CONTEXT where your facts go.]{.pointer}
+
+::: {.paste-long style="font-size:1.5em"}
+{{< include _paste-four-part-skeleton.md >}}
+:::
+
+[▲ Copy prompt on your slide. Paste it into a note on your device.]{.pointer}
+
+::: {.move .solo}
+[Solo · 1 min]{.tag} Save it as "four-part skeleton". Lab One uses it.
+:::
+
+::: notes
+**2:00.** This is the skeleton, and you copy it now. FACTS is not a fifth part: it is the slot under Context where your facts go. The line to memorize is in Context: use only the facts below, and if something needed is missing, write MISSING and say what, instead of guessing. That turns a silent invention into a visible gap you can see and fill. It is not a guarantee, so you still read the output. Point back at the memory line: who it is, what it knows, what shape to return, what to avoid.
+
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too. Everyone saves it in a note on their device; Lab One part 1 uses it. Solo, one minute. No assistant needed for this step.
 :::
 
 ## Which part is missing? {#spot-the-gap}
 
-::: {.small}
-```text
-1. ROLE: You are a family physician, writing for a cardiologist.
-   CONTEXT: A referral. Use ONLY the facts below. Write [MISSING: what] if something is absent.
-   FACTS: [facts]
-   CONSTRAINTS: Add no findings, doses, or diagnoses. No hedging.
-
-2. ROLE: You are a pediatrician, writing for a baby's parents.
-   CONTEXT: A home-care handout. Use ONLY the facts below.
-   FACTS: [facts]
-   FORMAT: Three short headings. Maximum 150 words.
-
-3. ROLE: You are a hospital physician, writing for the family doctor.
-   FORMAT: Five headings. Maximum 250 words.
-   CONSTRAINTS: Add no findings, doses, or diagnoses. No hedging.
-   Write a discharge summary for my patient.
-```
+::: {.lane .sm}
+[Role]{.node} [Context]{.node .teal} [Format]{.node} [Constraints]{.node .teal}
 :::
+
+::: {.paste-long style="font-size:1.1em"}
+{{< include _paste-m2-spot-the-gap.md >}}
+:::
+
+[▲ Copy prompt on your slide. Each prompt is missing exactly one part. Read all three.]{.pointer}
 
 ::: {.move .chat}
-[Chat · 90 sec]{.tag} Type your three answers in the chat, in the form "1: Role".
+[Chat · 90 sec]{.tag} Type your three answers, in the form "1: Role".
 :::
 
-[1: no Format]{.pill .teal .fragment} [2: no Constraints]{.pill .teal .fragment} [3: no Context, no facts]{.pill .teal .fragment}
+::: notes
+**2:30.** Three prompts, each missing exactly one part. Everyone reads them in the chat, then types three answers in ninety seconds, in the form "1: Role". Read out a few answers before you click on. Nobody has to argue with an output: the prompt itself shows what is wrong, and the next slide gives the answers.
+
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too. Chat, 90 seconds. Read out three answers and do not say yet which are right.
+:::
+
+## What each prompt left out {#gap-answer}
+
+::: {.lane .sm .fragment}
+[Prompt 1]{.node .dark} [Role]{.node} [Context]{.node .teal} [Format: missing]{.node .ghost} [Constraints]{.node .teal}
+:::
+
+::: {.lane .sm .fragment}
+[Prompt 2]{.node .dark} [Role]{.node} [Context]{.node .teal} [Format]{.node} [Constraints: missing]{.node .ghost}
+:::
+
+::: {.lane .sm .fragment}
+[Prompt 3]{.node .dark} [Role]{.node} [Context and facts: missing]{.node .ghost} [Format]{.node} [Constraints]{.node .teal}
+:::
+
+[▲ The dashed box is the part that prompt left to the tool. Nobody had to argue with an output.]{.pointer}
 
 ::: notes
-**3:00.** Three prompts, each missing exactly one part. Give everyone ninety seconds to type three answers, then read out a few before you click. Reveal one at a time and ask for each: what would you see in the output? Prompt 1 has no Format, so layout and length are left to the tool and the shape drifts from run to run. Prompt 2 has no Constraints: expect hedges, unrequested advice and drifting units. Prompt 3 has no Context and no facts: the tool has nothing to work from, so whatever it writes is filled in, not drawn from your patient. Nobody had to argue with an output; the prompt showed what was wrong.
+**1:15.** Reveal one at a time and ask for each: what would you see in the output? Prompt 1 has no Format, so layout and length are left to the tool and the shape drifts from run to run. Prompt 2 has no Constraints: expect hedges, unrequested advice and drifting units. Prompt 3 has no Context and no facts: the tool has nothing to work from, so whatever it writes is filled in, not drawn from your patient. The prompt showed what was wrong.
 
-**Do.** Chat, 90 seconds. Read out three answers, then click once per answer and take each "what would you see" from the table on the next slide.
+**Do.** Click once per answer. Take each "what would you see" from the chat, then confirm it on the next slide.
 :::
 
 ## Every missing part leaves a mark {#symptoms}
 
-| Missing part | The symptom you see |
-|-----------|-----------------------------|
-| Role | Wrong reader: a chart note that talks to the patient, a letter that reads like a textbook |
-| Context | Details you never gave it, or generic filler where your facts belong |
-| Format | A different layout on every run, and a length you did not choose |
-| Constraints | Hedges, disclaimers, unrequested advice, units that drift |
+::: {.cards}
+::: {.card .red}
+[Missing: Role]{.t}
 
-Read the right column, then look left.
+Wrong reader: a chart note that talks to the patient, a letter that reads like a textbook.
+:::
+::: {.card .red}
+[Missing: Context]{.t}
+
+Details you never gave it, or generic filler where your facts belong.
+:::
+::: {.card .red}
+[Missing: Format]{.t}
+
+A different layout on every run, and a length you did not choose.
+:::
+::: {.card .red}
+[Missing: Constraints]{.t}
+
+Hedges, disclaimers, unrequested advice, units that drift.
+:::
+:::
+
+[▲ Read the symptom, then name the missing part.]{.pointer}
 
 ::: notes
-**0:45.** When an answer goes wrong, read this table from the right. A chart note that talks to the patient, or a letter that reads like a textbook: no Role. Details you never gave it: no Context. A new layout every run: no Format. Hedges and drifting units: no Constraints. The symptom tells you which decision was left to the tool.
+**1:00.** When an answer goes wrong, read these from the symptom. A chart note that talks to the patient, or a letter that reads like a textbook: no Role. Details you never gave it: no Context. A new layout every run: no Format. Hedges and drifting units: no Constraints. The symptom tells you which decision was left to the tool.
 
-**Do.** No activity. If someone names a symptom from their own use, match it to a row.
+**Do.** No activity. If someone names a symptom from their own use, match it to a card.
 :::
 
 ## Fix the prompt, not the answer {#fix-the-prompt}
@@ -266,14 +318,14 @@ Replying "no, shorter" in the same chat.
 ::: {.card .teal}
 [This]{.t}
 
-Save the version that works. Your list can start from the [prompt library](../reference/prompt-library.qmd).
+Save the version that works. Your list can start from the course's prompt library.
 :::
 :::
 
 ::: notes
-**0:45.** When an answer is wrong, resist replying "no, shorter" in the same chat. Find the symptom in the table, name the missing part, fix the prompt, and run it again in a fresh chat. A prompt you have fixed once is a prompt you can keep, so save the ones that work. The prompt library holds every reusable prompt from this course, and your own list can grow from it.
+**1:15.** When an answer is wrong, resist replying "no, shorter" in the same chat. Find the symptom, name the missing part, fix the prompt, and run it again in a fresh chat. A prompt you have fixed once is a prompt you can keep, so save the ones that work. The course's prompt library holds every reusable prompt from today, and your own list can grow from it.
 
-**Do.** No activity. Paste the library link in the chat if you have not already.
+**Do.** No activity. The links go into the chat at the end of the call.
 :::
 
 # Structure fixes it (notes) [5 min]{.time} {#structure-notes}
@@ -281,46 +333,51 @@ Save the version that works. Your list can start from the [prompt library](../re
 ::: notes
 **Goal.** Everyone can see the one-line template prompt as the four parts squeezed into a line, and can run three passes on a drafted note.
 
-**Have ready.** The SOAP prompt open in the prompt library and the handout page open at the illustrative note, in two tabs. The Case A card in a third.
+**Have ready.** Your own assistant on a new chat, to run the SOAP prompt as the group does. The handout's illustrative note is your fallback if a tool misbehaves.
 
-**Watch for.** The A line: a tool is most tempted to add a diagnosis there, so read it against the facts. The illustrative note treated as what a tool will return: it was written for this course. Walking the prompt line by line: this is five minutes, so point at the four labels and move on.
+**Clock.** 0:00 the one line against the template. 1:30 run the SOAP prompt. 3:00 three passes, and the chat. 5:00 time.
 
-**If asked.** Can I just use the one-line version? For a quick draft, yes; the full prompt adds the role and the only-these-facts line, which is the documentation-safety part. Does it obey the 150-word limit? Count; a limit is a request, not a lock, and if it dropped a fact to fit, raise the limit. My hospital uses a different note format: replace the FORMAT line with your template and change nothing else. Will this save me time? Lab One part 1 measures that for you; there is no number from us.
+**Watch for.** The A line: a tool is most tempted to add a diagnosis there, so read it against the facts. A draft read as what every tool returns: the handout's illustrative note was written for this course, and your own run is one run. Walking the prompt line by line: this is five minutes, so point at the four labels and move on.
+
+**If asked.** Can I just use the one-line version? For a quick draft, yes; the full prompt adds the role and the only-these-facts line, which is the documentation-safety part. Does it obey the 150-word limit? Count; a limit is a request, not a lock, and if it dropped a fact to fit, raise the limit. My hospital uses a different note format: replace the FORMAT line with your template and change nothing else. Will this save me time? Lab One part 1 puts two drafts side by side so you can judge; there is no number from us.
 
 **Bridge.** "Same skeleton, different fills. Next: a referral letter, a discharge summary and a handout, three cases, fifteen minutes."
 :::
 
 ## Structure fixes it {#structure-fix}
 
-::: {.columns}
-::: {.column width="50%"}
-::: {.card .dashed}
-[Without a template]{.t}
-
-**"Write a progress note for this patient."**
-
-Tends to come back long, hedged, and shaped differently each time.
-:::
-:::
-::: {.column width="50%"}
-::: {.card .tint}
-[With a template]{.t}
-
-**"Write a SOAP note in this exact format: [template]. Under 150 words. No hedging language."**
-
-A fixed structure you can review in one pass. Lab One measures the difference.
-:::
-:::
+::: {.lane}
+[Case A facts]{.node .same .fixed} [+]{.op} [One line: "Write a progress note for this patient."]{.node .change .grow} [→]{.op} [Long, hedged, a new shape each run]{.node .red .fixed}
 :::
 
-[The four parts, squeezed into one line: a format, a length, a constraint.]{.accent}
+::: {.lane}
+[Case A facts]{.node .same .fixed} [+]{.op} [A template: SOAP note, exact format, under 150 words, no hedging]{.node .change .grow} [→]{.op} [One fixed structure]{.node .out .fixed}
+:::
 
-[Prompt library: soap-note](../reference/prompt-library.qmd#p-soap-note)
+[▲ The four parts, squeezed into one line: a format, a length, a constraint.]{.pointer}
 
 ::: notes
-**2:30.** Back to the slide from the start of the module, now as one application of the framework. Left: write a progress note for this patient; it tends to come back long, hedged and shaped differently each time. Right: write a SOAP note in this exact format, under 150 words, no hedging language. That right-hand prompt is the four parts squeezed into one line: a format, a length and a constraint. Spread out, with a role and an only-these-facts context, it is the full Case A prompt in the library. Point at the four labels, then stop. The A line asks only for a restatement of what the facts already say; that is deliberate.
+**1:30.** Back to the vague prompt from the start of the module, now as one application of the framework. Top: write a progress note for this patient; it tends to come back long, hedged and shaped differently each time. Bottom: write a SOAP note in this exact format, under 150 words, no hedging language. That is the four parts squeezed into one line: a format, a length and a constraint. Spread out, with a role and an only-these-facts context, it is the full Case A prompt on the next slide. Point at the four labels, then stop. Lab One shows you the difference.
 
-**Do.** Share your screen on the soap-note prompt in the library (link on the slide). Do not read it line by line.
+**Do.** No group step. Click on; do not read the prompt line by line.
+:::
+
+## Run it: the SOAP note {#soap-run}
+
+::: {.paste-long style="font-size:0.8em"}
+{{< include _paste-soap-note.md >}}
+:::
+
+[▲ Copy prompt on your slide. Case A's facts are inside. Paste it into a new chat in your assistant.]{.pointer}
+
+::: {.move .solo}
+[Solo · 1 min 30 sec]{.tag} Run it. Take the first draft.
+:::
+
+::: notes
+**1:30.** This is the Case A prompt: a role, a context with the only-these-facts line, the facts copied from the card, a format and constraints. Paste it into a new chat and take the first draft. The A line asks only for a restatement of what the facts already say; that is deliberate. Count the words later; for now, run it.
+
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too. Run it on your screen as the group runs it on theirs. Anyone whose assistant misbehaves follows your screen. The handout holds an illustrative note to share if needed; say it was written for this course, not taken from a tool.
 :::
 
 ## Three passes before it goes near a chart {#three-passes}
@@ -331,34 +388,34 @@ A fixed structure you can review in one pass. Lab One measures the difference.
 
 [Numbers]{.t}
 
-Every value and unit against the card.
+[]{.chk} Every value and unit against the facts.
 :::
 ::: {.card .teal}
 [2]{.num}
 
 [Medicines]{.t}
 
-Name, dose, frequency, new or continued.
+[]{.chk} Name, dose, frequency, new or continued.
 :::
 ::: {.card}
 [3]{.num}
 
 [Plan]{.t}
 
-Every item present, none added.
+[]{.chk} Every item present, none added.
 :::
 :::
 
-[Lab One, part 1](../day1/lab1-templates-and-limits.qmd#part-1) puts this on a clock.
+[▲ Run all three on your own draft. Lab One, part 1, puts them on a clock.]{.pointer}
 
 ::: {.move .chat}
-[Chat · 1 min]{.tag} On the [illustrative SOAP note](../day1/m2-prompting.qmd#structure-notes), Case A: which medicine is new, and how many plan items are there? Type both.
+[Chat · 1 min]{.tag} In your note: which medicine is new, and how many plan items are there? Type both.
 :::
 
 ::: notes
-**2:00.** Three short passes, the same every time. Numbers: every value and unit against the source. Medicines: name, dose, frequency, and whether each is new or continued. Plan: every item present, none added; read the A line with it, because that line is where a tool is most tempted to add a diagnosis you did not make. Each pass is short because the structure tells you where to look. These passes are where "invented, omitted, altered" show up in a note. On Case A, amlodipine stays at 5 mg and losartan 50 mg is new; the plan has six items. Count the words too: a limit is a request, not a lock, and if a fact was dropped to fit it, raise the limit.
+**2:00.** Three short passes, the same every time, on your own draft. Numbers: every value and unit against the source. Medicines: name, dose, frequency, new or continued. Plan: every item present, none added; read the A line with it, because that is where a tool is most tempted to add a diagnosis you did not make. These passes are where "invented, omitted, altered" show up in a note. On Case A, amlodipine stays at 5 mg and losartan 50 mg is new; the plan has six items. Count the words too: a limit is a request, not a lock; if a fact was dropped to fit, raise the limit.
 
-**Do.** Share your screen on the handout, at the illustrative note; say it was written for this course, not taken from a tool. Chat, 60 seconds. Read out two answers.
+**Do.** Chat, 60 seconds. Read out two answers. Tick your own draft on the shared screen as the group ticks theirs.
 :::
 
 # Same framework, three more jobs [15 min]{.time} {#three-more-jobs}
@@ -366,9 +423,11 @@ Every item present, none added.
 ::: notes
 **Goal.** Everyone can see one skeleton produce three different documents, name the hot spot to check in each, and say who supplies the numbers and the red flags.
 
-**Have ready.** The handout page open at this topic and the Case B, C and D cards in tabs. Share your screen only to show an illustrative output, and never read a prompt aloud.
+**Have ready.** Your own assistant, to run each prompt as the group does; the handout's illustrative outputs are your fallback if a tool misbehaves. Never read a prompt aloud.
 
-**Watch for.** Time: fifteen minutes becomes twenty, so give each document about four minutes. "Just this once, let it write the red flags": hold the line, kindly. Drift into Day Two's demo: today is three cases and one skeleton, not one event in three audiences. Any comment on how good a tool is at Arabic: say only that a fluent reader checks it. Real cases offered as examples: redirect to the card.
+**Clock.** 0:00 the three jobs. 1:15 referral, run and check. 4:15 discharge summary, run and check. 7:30 handout, run and check. 9:45 the gap. 11:15 Arabic (optional). 12:00 your constraint. 15:00 time.
+
+**Watch for.** Time: fifteen minutes becomes twenty, so give each document about three minutes. "Just this once, let it write the red flags": hold the line, kindly. Drift into Day Two's demo: today is three cases and one skeleton, not one event in three audiences. Any comment on how good a tool is at Arabic: say only that a fluent reader checks it. Real cases offered as examples: redirect to the card.
 
 **If asked.** Can the tool write the red flags if I ask? It can produce a list, but a red flag the tool wrote is a clinical decision you did not make; write your own, put them in FACTS, and let the tool word them. Why copy the medicine list exactly? The next doctor acts on it, and a tool tidying a list can merge lines, round a dose or shorten a duration, all fluently. Can I use this on my own patient? The framework, yes; the identifiers, no. No patient identifiers into a consumer AI tool. Ever. Full stop.
 
@@ -377,79 +436,158 @@ Every item present, none added.
 
 ## One skeleton, three jobs {#three-jobs}
 
-| Job | Reader | Format | Matters most |
-|-----------|-------------|-------------|-------------|
-| [Referral letter](../reference/prompt-library.qmd#p-referral-letter) [Case C]{.pill .teal} | A cardiologist who has not met the patient | The question first; 200 words at most | The allergy must appear |
-| [Discharge summary](../reference/prompt-library.qmd#p-discharge-summary) [Case B]{.pill .teal} | The family doctor taking over | Five fixed headings; 250 words at most | Medicines copied exactly as listed |
-| [Patient handout](../reference/prompt-library.qmd#p-patient-handout) [Case D]{.pill .teal} | The baby's parents | Short headings, plain words; 200 words at most | No warning signs or doses you did not give |
+::: {.lane .sm}
+[Case C facts]{.node .same .grow} [→]{.op} [Referral letter, for a cardiologist]{.node .grow} [→]{.op} [Question first. 200 words at most.]{.node .out .grow} [→]{.op} [The allergy must appear]{.node .red .grow}
+:::
+
+::: {.lane .sm}
+[Case B facts]{.node .same .grow} [→]{.op} [Discharge summary, for the family doctor]{.node .grow} [→]{.op} [Five fixed headings. 250 words at most.]{.node .out .grow} [→]{.op} [Medicines copied exactly as listed]{.node .red .grow}
+:::
+
+::: {.lane .sm}
+[Case D facts]{.node .same .grow} [→]{.op} [Patient handout, for the baby's parents]{.node .grow} [→]{.op} [Short headings, plain words. 200 words at most.]{.node .out .grow} [→]{.op} [No warning signs or doses you did not give]{.node .red .grow}
+:::
+
+[▲ Left to right: the facts, the job and its reader, the format, the one constraint that matters most.]{.pointer}
 
 ::: notes
-**1:00.** The skeleton does not change. Four things do: the reader, the format, the constraint that matters most, and what you check afterward. Three documents you write every week, each on its own case card. A referral for a cardiologist who has not met the patient: the allergy must appear. A discharge summary for the family doctor taking over: the medicines copied exactly as listed. A handout for a baby's parents: no warning signs and no doses you did not give. Day Two turns this around, one case for three audiences. Today it is three cases and one skeleton.
+**1:15.** The skeleton does not change. Four things do: the reader, the format, the constraint that matters most, and what you check afterward. Three documents you write every week, each with its own case inside the prompt. A referral for a cardiologist who has not met the patient: the allergy must appear. A discharge summary for the family doctor taking over: the medicines copied exactly as listed. A handout for a baby's parents: no warning signs and no doses you did not give. Day Two turns this around, one case for three audiences. Today it is three cases and one skeleton.
 
-**Do.** No activity. The three job names on the slide link to their prompts in the library; paste the library link in the chat so everyone can open them.
+**Do.** No group step. Trace one lane aloud: the facts, the job and its reader, the format, the one constraint that matters most.
 :::
 
-## Referral letter: the question comes first {#referral-letter}
+## Referral letter: the question comes first {#referral-run}
 
-[Case C](../reference/case-cards.qmd#case-c): new atrial fibrillation, referral to cardiology.
-
-::: {.cards}
-::: {.card}
-[Format]{.t}
-
-Paragraph 1: the question, then the urgency. Maximum 200 words.
+::: {.paste-long style="font-size:0.8em"}
+{{< include _paste-referral-letter.md >}}
 :::
+
+[▲ Copy prompt on your slide. Case C (new atrial fibrillation) is inside. Paste it into a new chat.]{.pointer}
+
+::: {.move .solo}
+[Solo · 1 min 15 sec]{.tag} Run it. Take the first draft.
+:::
+
+::: notes
+**1:15.** A referral is read by a busy colleague with no context, so the order changes: the question first, then the urgency, then only the facts that bear on the question. The allergy is the one fact a letter cannot leave out, so the prompt says so. The tool must not answer the question: the rate versus rhythm strategy and the anticoagulation decision belong to the cardiologist. Case C, a fictional patient, is inside the prompt. New chat, paste it, first draft only.
+
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too. Run it on your screen as the group runs it on theirs. Anyone whose assistant misbehaves follows your screen.
+:::
+
+## Check the letter {#referral-check}
+
 ::: {.card .teal}
-[Constraints]{.t}
+[Against the facts you pasted, tick each one]{.t}
 
-The allergy must appear. Do not answer the question or recommend a treatment.
+[]{.chk} The question is in paragraph 1, and the tool has not answered it
+
+[]{.chk} The allergy: penicillin (rash), not upgraded
+
+[]{.chk} Pulse about 108 and ECG rate 112, neither replaced the other
+
+[]{.chk} Not done yet: echocardiogram, anticoagulation
 :::
-:::
+
+[▲ A tick if it matches. If not, write altered or omitted.]{.pointer}
 
 ::: {.move .chat}
-[Chat · 1 min]{.tag} In the [illustrative letter](../day1/m2-prompting.qmd#referral-letter-case-c): where is the allergy? Did the tool answer the question?
+[Chat · 1 min]{.tag} Where is the allergy in your letter? Did the tool answer the question? Type both.
 :::
 
 ::: notes
-**3:00.** A referral is read by a busy colleague with no context, so the order changes: the question first, then the urgency, then only the facts that bear on the question. The allergy is the one fact a letter cannot leave out, so the prompt says so. The tool must not answer the question: the rate versus rhythm strategy and the anticoagulation decision belong to the cardiologist. The slide shows only the FORMAT and CONSTRAINTS lines, not the whole prompt. Then the chat: where is the allergy in the illustrative letter, and did the tool answer the question? The allergy is penicillin (rash), in the last paragraph; the question sits in paragraph one, worded as asked.
+**1:45.** Check your letter against the four ticks. The question is in paragraph one, worded as asked, and the tool has not answered it. The allergy is present and still penicillin (rash): not dropped, not upgraded. The two heart rates are two measurements, pulse about 108 on exam and ventricular rate 112 on the ECG; neither may replace the other. What is not done, no echocardiogram and no anticoagulation, is stated. In the handout's illustrative letter the allergy sits in the last paragraph.
 
-**Do.** Share your screen on the handout, at the illustrative letter. Chat, one minute. Read out two answers.
+**Do.** Tick your own letter on the shared screen as the group ticks theirs. Chat, one minute. Read out two answers.
 :::
 
-## Where to look first {#hot-spots}
+## Discharge summary: copy the medicines exactly {#discharge-run}
 
-::: {.cards}
-::: {.card}
-[Case C]{.pill}
-
-[Referral letter]{.t}
-
-The question, the allergy, the two heart rates.
+::: {.paste-long style="font-size:0.75em"}
+{{< include _paste-discharge-summary.md >}}
 :::
+
+[▲ Copy prompt on your slide. Case B (pneumonia) is inside. Paste it into a new chat.]{.pointer}
+
+::: {.move .solo}
+[Solo · 1 min 15 sec]{.tag} Run it. Take the first draft.
+:::
+
+::: notes
+**1:15.** The reader is the doctor who takes over, often days later and without the chart open, so the format is five fixed headings, and one rule the tool must not bend: the discharge medicines are copied exactly as listed. This is the job where altered costs the most, because the next doctor acts on it. Case B, a fictional patient, is inside the prompt; the first line gives the diagnosis. New chat, paste it, first draft only.
+
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too. Run it on your screen as the group runs it on theirs. Anyone whose assistant misbehaves follows your screen.
+:::
+
+## Check the discharge summary {#discharge-check}
+
 ::: {.card .teal}
-[Case B]{.pill .teal}
+[Against the facts you pasted, tick each one]{.t}
 
-[Discharge summary]{.t}
+[]{.chk} Medicines copied exactly: name, dose, frequency, duration
 
-Durations and doses, pending results, follow-up.
+[]{.chk} "3 more days at home" and the 7-day total, not merged
+
+[]{.chk} Both cultures pending, none turned "negative"
+
+[]{.chk} Chest imaging at 6 weeks "only if symptoms persist"
+
+[]{.chk} Vaccination: not documented, not "up to date"
 :::
-::: {.card}
-[Case D]{.pill}
 
-[Patient handout]{.t}
-
-Warning signs, doses, the "no antibiotics" line.
-:::
-:::
+[▲ Safest habit: delete the tool's medicine list and paste in the real one.]{.pointer}
 
 ::: {.move .chat}
-[Chat · 1 min]{.tag} Open [Case B](../reference/case-cards.qmd#case-b). Which two results are still pending? Type them.
+[Chat · 1 min]{.tag} Which two results are still pending in your summary? Type them.
 :::
 
 ::: notes
-**3:30.** Every document has hot spots, and the structure tells you where they are. Discharge summary, Case B: five fixed headings, and the medicines copied exactly, because altered costs the most here; the next doctor acts on it. Read the medicine list line by line, and check that 3 more days at home and the 7-day total were not merged. Pending means pending: no growth at 48 h with a final result pending is never negative. The other two follow the same idea: the referral's question, allergy and two heart rates (pulse about 108, ventricular rate 112); the handout's warning signs, doses and "no antibiotics" line.
+**2:00.** Case B: five fixed headings, and the medicines copied exactly, because altered costs the most here. Read the medicine list line by line; check that 3 more days at home and the 7-day total were not merged. Pending means pending: no growth at 48 h with a final result pending is never negative. The two pending are the blood cultures' final result and the sputum culture. Follow-up keeps "only if symptoms persist", and all five reasons to return sooner are there. A tool tidying a list can merge two lines, round a dose or shorten a duration, and each reads fluently. Safest habit: delete the tool's medicine list and paste in the real one.
 
-**Do.** Chat, one minute: everyone opens Case B and types the two pending results. Read out two. Then point at the medicine lines and "only if symptoms persist". Safest habit: delete the tool's medicine list and paste in the real one.
+**Do.** Tick your own summary on the shared screen. Chat, one minute: everyone types the two pending results. Read out two, then point at the medicine lines.
+:::
+
+## Patient handout: plain words for a parent {#handout-run}
+
+::: {.paste-long style="font-size:1.1em"}
+{{< include _paste-patient-handout.md >}}
+:::
+
+[▲ Copy prompt on your slide. Case D (a baby with bronchiolitis) is inside. Paste it into a new chat.]{.pointer}
+
+::: {.move .solo}
+[Solo · 1 min 15 sec]{.tag} Run it. Take the first draft.
+:::
+
+::: notes
+**1:15.** Now the reader is a worried parent, not a colleague: short sentences, plain words, no jargon, and only the diagnosis, the home plan and when to return. Case D lists no warning signs beyond "sooner if worse", so the prompt tells the tool to leave a gap rather than write its own. Case D, a fictional baby, is inside the prompt. New chat, paste it, first draft only.
+
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too. Run it on your screen as the group runs it on theirs. Anyone whose assistant misbehaves follows your screen.
+:::
+
+## Check the handout {#handout-check}
+
+::: {.card .teal}
+[Against the facts you pasted, tick each one]{.t}
+
+[]{.chk} No warning signs, except the ones you gave
+
+[]{.chk} No medicine or dose added: "no antibiotics" and "no bronchodilators" kept
+
+[]{.chk} "24 to 48 hours" and "sooner if worse" unchanged
+
+[]{.chk} The plain-words explanation of the illness: accurate, and kind
+:::
+
+[▲ A tick if it matches. If not, write altered, omitted or invented.]{.pointer}
+
+::: {.move .solo}
+[Solo · 1 min]{.tag} Tick each one in your handout.
+:::
+
+::: notes
+**1:00.** Check your handout against the four ticks. Warning signs: only yours; if one appears that you did not supply, delete it, because a red flag the tool wrote is a clinical decision you did not make. Medicines and doses: none added, and "no antibiotics" and "no bronchodilators" are still negatives. Timing: "24 to 48 hours" and "sooner if worse" unchanged, with no recovery time added. The explanation of the illness is the tool's general knowledge, not your facts: read it as you would a colleague's.
+
+**Do.** Solo, one minute. Tick your own handout on the shared screen as the group ticks theirs.
 :::
 
 ## The gap is the point {#you-supply}
@@ -462,16 +600,20 @@ Warning signs, doses, the "no antibiotics" line.
 
 [Illustrative, written for this course]{.illustrative}
 
+::: {.lane .sm}
+[No warning signs in the facts]{.node .ghost .grow} [→]{.op} [The tool leaves a visible gap]{.node .out .grow} [→]{.op} [You write the red flags]{.node .change .grow}
+:::
+
 [You supply the numbers and the red flags.]{.big}
 
 [The tool only words them.]{.big .accent}
 
 ::: {.move .chat}
-[Chat · 30 sec]{.tag} [Case D](../reference/case-cards.qmd#case-d) lists no warning signs. Who decides what goes under "When to come back"? One word.
+[Chat · 30 sec]{.tag} Case D lists no warning signs. Who decides what goes under "When to come back"? One word.
 :::
 
 ::: notes
-**3:30.** Now the reader is a worried parent: short sentences, plain words, no jargon, and only the diagnosis, the home plan and when to return. Case D lists no warning signs beyond "sooner if worse", so the prompt tells the tool to leave a gap rather than write its own. The gap is the tool doing what you asked, and it is the point of this module. Filling it is your clinical judgment: write the signs you would tell this family, add them to FACTS, and run it again. A red flag the tool wrote is a clinical decision you did not make; the same goes for doses and durations in a discharge summary. You supply the numbers and the red flags. The tool only words them.
+**1:30.** Case D lists no warning signs beyond "sooner if worse", so the prompt tells the tool to leave a gap rather than write its own. If your handout shows this line, the tool did what you asked, and the gap is the point of this module. Filling it is your clinical judgment: write the signs you would tell this family, add them to FACTS, and run it again. A red flag the tool wrote is a clinical decision you did not make; the same goes for doses and durations in a discharge summary. You supply the numbers and the red flags. The tool only words them.
 
 **Do.** Chat, 30 seconds. Read out a few answers. Do not collect red flags from the group.
 :::
@@ -484,28 +626,59 @@ Case D: the mother prefers written instructions in Arabic.
 [A fluent Arabic reader must check the Arabic before it reaches a family.]{.big}
 :::
 
+{{< include _paste-m2-arabic-language-line.md >}}
+
+[▲ Copy prompt on your slide. An optional line for the end of the handout prompt.]{.pointer}
+
 Question 3: Would I catch it if it were wrong?
 
-[Handout: the LANGUAGE line](../day1/m2-prompting.qmd#optional-an-arabic-version)
+::: {.move .solo}
+[Solo · optional]{.tag} Try it only if you read Arabic well enough to check it.
+:::
 
 ::: notes
-**1:00.** Optional: use it if the group reads Arabic or someone asks, otherwise skip it and give the minute to the last slide. Case D says the mother prefers written instructions in Arabic, so one added line asks for the handout in simple everyday Arabic, with the English underneath. The English lets you compare, but it does not replace a fluent reader. A fluent Arabic reader must check the Arabic before it reaches a family. If you cannot read the Arabic yourself, question three is a no, and that is the signal to slow down, not the finding to accept. I make no claim about how well any tool writes Arabic: ask a colleague, or do not send it.
+**0:45.** Optional: use it if the group reads Arabic or someone asks; otherwise skip it and give the time to the last slide. Case D says the mother prefers written instructions in Arabic, so one added line asks for the handout in simple everyday Arabic, with the English underneath. The English lets you compare, but it does not replace a fluent reader. A fluent Arabic reader must check the Arabic before it reaches a family. If you cannot read the Arabic yourself, question three is a no, and that is the signal to slow down, not the finding to accept. I make no claim about how well any tool writes Arabic: ask a colleague, or do not send it.
 
-**Do.** Say the check aloud; no activity. The LANGUAGE line is on the handout, linked on the slide.
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat too. Say the check aloud. Only those who read Arabic run it; the rest follow your screen.
 :::
 
 ## Your document, your constraint {#your-constraint}
 
-1. Pick the document you write most often.
-2. Which of the four parts would you change?
-3. Write the one CONSTRAINTS line that matters most for it. Save it with your skeleton.
+::: {.flow}
+::: {.step}
+[1]{.num} Pick the document you write most often
+:::
+::: {.step}
+[2]{.num} Which of the four parts would you change?
+:::
+::: {.step}
+[3]{.num} Write the one CONSTRAINTS line that matters most
+:::
+:::
+
+::: {.move .solo}
+[Solo · 1 min]{.tag} Write your line. Save it with your skeleton.
+:::
 
 ::: {.move .chat}
-[Chat · 2 min]{.tag} Write your one CONSTRAINTS line, then post it. No patient details.
+[Chat · 1 min 30 sec]{.tag} Post your one CONSTRAINTS line. No patient details.
 :::
 
 ::: notes
-**2:30.** Pick the document you write most often. Which of the four parts would you change from the prompts we just saw? Write the one CONSTRAINTS line that matters most for it, and save it with your skeleton. Give people a minute to think and write quietly, then another to post. Read out two or three. Close on the line of the whole module: you supply the numbers and the red flags; the tool only words them. Then the bridge to the next module.
+**3:00.** Pick the document you write most often. Which of the four parts would you change from the prompts we just ran? Write the one CONSTRAINTS line that matters most for it, and save it with your skeleton. A minute to think and write quietly, then ninety seconds to post. Read out two or three. Close on the line of the whole module: you supply the numbers and the red flags; the tool only words them. Then the bridge to the next module.
 
 **Do.** Solo for the first minute, then Chat: everyone posts their CONSTRAINTS line, with no patient details. Read out two or three.
+:::
+
+## After the call {#after}
+
+- [The handout for this module](../day1/m2-prompting.qmd): every prompt and illustrative output, to redo at your own pace
+- [The prompt library](../reference/prompt-library.qmd): the skeleton and the document prompts
+- [The case cards](../reference/case-cards.qmd): Cases A to D
+- [The three-question card](../reference/three-question-check.qmd)
+
+::: notes
+**Not timed.** Paste these links into the chat at the very end, once. They are for afterwards: nothing on the call needed them.
+
+**Do.** Paste the links, then close.
 :::

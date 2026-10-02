@@ -19,9 +19,9 @@
         {"n": 11, "title": "Live demo: same question, two tools",     "min": 5,  "brief_min": 10, "ref": "day1/m3-choosing-tools.qmd#live-demo"},
         {"n": 12, "title": "Spend your quota on purpose",             "min": 5,  "brief_min": 5,  "ref": "day1/m3-choosing-tools.qmd#quota"},
         {"n": 13, "title": "Break",                                   "min": 10, "brief_min": 10, "break": true},
-        {"n": 14, "title": "Lab One, part 1 — Template test",         "min": 12, "brief_min": 15, "ref": "day1/lab1-templates-and-limits.qmd#part-1"},
-        {"n": 15, "title": "Lab One, part 2 — Break it on purpose",   "min": 8,  "brief_min": 10, "ref": "day1/lab1-templates-and-limits.qmd#part-2"},
-        {"n": 16, "title": "Lab One, part 3 — Tool face-off",         "min": 5,  "brief_min": 5,  "ref": "day1/lab1-templates-and-limits.qmd#part-3"},
+        {"n": 14, "title": "Lab One, part 1 — Same case, two prompts",         "min": 12, "brief_min": 15, "ref": "day1/lab1-templates-and-limits.qmd#part-1"},
+        {"n": 15, "title": "Lab One, part 2 — Ask for what it cannot know",   "min": 8,  "brief_min": 10, "ref": "day1/lab1-templates-and-limits.qmd#part-2"},
+        {"n": 16, "title": "Lab One, part 3 — One question, two ways of answering",         "min": 5,  "brief_min": 5,  "ref": "day1/lab1-templates-and-limits.qmd#part-3"},
         {"n": 17, "title": "Lab One — Debrief",                       "min": 5,  "brief_min": 5,  "ref": "day1/lab1-templates-and-limits.qmd#debrief"}
       ]
     },
@@ -38,8 +38,8 @@
         {"n": 7,  "title": "Teaching with AI",                        "min": 8,  "brief_min": 8,  "ref": "day2/m5-talks-and-teaching.qmd#teaching-with-ai"},
         {"n": 8,  "title": "Grading yourself",                        "min": 7,  "brief_min": 7,  "ref": "day2/m5-talks-and-teaching.qmd#grading-yourself"},
         {"n": 9,  "title": "Break",                                   "min": 10, "brief_min": 10, "break": true},
-        {"n": 10, "title": "Lab Two, part 1 — One case, three outputs", "min": 20, "brief_min": 20, "ref": "day2/lab2-one-case-three-outputs.qmd#part-1"},
-        {"n": 11, "title": "Lab Two, part 2 — Tool check, again",     "min": 10, "brief_min": 10, "ref": "day2/lab2-one-case-three-outputs.qmd#part-2"},
+        {"n": 10, "title": "Lab Two, part 1 — One sheet, three outputs", "min": 20, "brief_min": 20, "ref": "day2/lab2-one-case-three-outputs.qmd#part-1"},
+        {"n": 11, "title": "Lab Two, part 2 — Same source, two tools",     "min": 10, "brief_min": 10, "ref": "day2/lab2-one-case-three-outputs.qmd#part-2"},
         {"n": 12, "title": "Lab Two, part 3 — Share-out",             "min": 5,  "brief_min": 5,  "ref": "day2/lab2-one-case-three-outputs.qmd#part-3"}
       ]
     },

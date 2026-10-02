@@ -4,22 +4,26 @@ subtitle: "Day One · 30 min"
 format: revealjs
 ---
 
-## In this lab {#plan}
+## In this lab: three comparisons {#plan}
 
 {{< include _plan-lab1-templates-and-limits.md >}}
 
+[Each part changes **one thing** and gives you **two results side by side**. You are not timing or counting edits. You are looking.]{.big}
+
 ::: notes
-**Before the clock.** Show this for ten seconds: four parts, thirty minutes, on your own device with your own assistant. Case A is the only patient in this lab. The clock starts at part 1.
+**Before the clock.** Show this for ten seconds: three comparisons and a debrief, thirty minutes, on your own device with your own assistant, doing each step with me. In each part you change one thing and put two results side by side, so you can see the difference. Case A is the only patient in this lab. The clock starts at part 1.
 :::
 
-## Have these open before the clock starts {#setup}
+## Three tabs, and nothing else {#setup}
 
-- A general assistant on your own account, signed in
-- Your second option for part 3: any of the [three](../day1/m3-choosing-tools.qmd#second-option)
-- A stopwatch, and a notes app or blank document
-- [Case A](../reference/case-cards.qmd#case-a) in a second tab
+::: {.lane}
+[Tab 1: the call]{.node .same .grow} [+]{.op} [Tab 2: these slides]{.node .grow} [+]{.op} [Tab 3: your assistant, signed in]{.node .teal .grow}
+:::
 
-Keep the [lab page](../day1/lab1-templates-and-limits.qmd) open in another window.
+[▲ Every prompt has a Copy prompt button on its slide. I paste it in the chat too.]{.pointer}
+
+- Part 3 adds a one more tab for your second option, for five minutes.
+- No assistant, or it will not open? Follow my screen and tick the checks.
 
 ::: {.callout-important appearance="simple"}
 ## Case A is the only patient in this lab
@@ -27,169 +31,279 @@ No patient identifiers into a consumer AI tool. Ever. Full stop.
 :::
 
 ::: notes
-**Before the clock.** This is the end of the break: check that everyone is ready. Read the four items and paste the lab page link in the chat. Anyone with no assistant account, or no working second option, follows your shared screen and still fills in the grid. Then read the callout once: Case A is the only patient in this lab. No patient identifiers into a consumer AI tool. Ever. Full stop. Do not swap in a real patient, even to save time.
+**Before the clock.** This is the end of the break: check that everyone is ready. Three tabs: the call, these slides (the link is in the chat), and the assistant, signed in. Every prompt and the case has a Copy prompt button on its slide, and I paste it in the chat too. Part 3 adds a one more tab for the second option, for five minutes, and any of the three is fine. Anyone with no assistant account follows your shared screen and still ticks the checks. Read the callout once: Case A is the only patient in this lab. No patient identifiers into a consumer AI tool. Ever. Full stop. Do not swap in a real patient.
 
-**Do.** Paste the lab page link in the chat. When you are ready, move on: the clock starts at part 1.
+**Do.** Paste this deck's link in the chat. Say: "Three tabs, ready?" and wait for a few typed answers. When you are ready, move on: the clock starts at part 1.
 :::
 
-# Part 1: Template test [12 min]{.time} {#part-1}
+# Part 1: Same case, two prompts [12 min]{.time} {#part-1}
 
 ::: notes
-**Goal.** Every participant leaves part 1 with their own numbers: both columns filled, at least one content fix in each round, and one sentence on what the template changed.
+**Goal.** Everyone sees, with their own eyes, what one change to the prompt does: two drafts side by side, ticked against six checks, and one sentence on what changed.
 
-**Have ready.** A visible countdown for 12 minutes, shared on your screen, with the time typed into the chat at each cue. The lab page and Case A open in two tabs. Your own Rounds A and B, run once beforehand; never quote your numbers as typical, because the site has no such figure. Questions come in through the chat: answer in one line and keep the clock moving.
+**Have ready.** A visible countdown for 12 minutes, shared on your screen, with the time typed into the chat at each cue. Your own assistant open in a window you can share, to run each round as the group does. Your own Rounds A and B, run once beforehand; never quote your result as typical, because the site has no such figure.
 
-**Clock.** 0:00 set-up. 1:30 Round A. 6:00 say "New chat" and start Round B. 10:30 fill the table and write one sentence. 11:40 time.
+**Clock.** 0:00 the one change. 0:30 read the case. 1:30 Round A. 4:30 say "New chat" and start Round B. 7:30 side by side, six checks. 10:30 chat: A or B, and one sentence. 11:40 time.
 
-**Watch for.** A result read as "the tool is so much better": there is no such number, and the numbers are theirs. A real patient detail in a chat: say the privacy line once, no shaming. Part 1 running over: shorten question two's independent check in part 2 from two minutes to one; never cut the save step or the debrief.
+**Watch for.** "B is so much better": one run of one case, and the count is theirs. A draft edited before it is checked: the first draft is the thing being compared. A real patient detail in a chat: say the privacy line once, no shaming. Part 1 running over: take the vote from the chat and shorten the sentence; never cut part 2's save step.
 
-**Bridge.** "Time. Part 2: break it on purpose."
+**Bridge.** "Time. Part 2: ask for something it cannot know, and see how sure a wrong answer sounds."
 :::
 
-## Set up: one case, two chats {#p1-setup}
+## One case, one change {#p1-change}
 
-- **One case:** the Case A facts block, the same in both rounds.
-- **Two fresh chats**, one per round, in the same tool.
-- **First draft only:** no re-prompting.
-- **Four counts per round:** minutes, words, edits, and errors (invented, omitted, altered).
+::: {.lane}
+[Case A facts]{.node .same .fixed} [+]{.op} [One line: "Write a progress note"]{.node .change .grow} [→]{.op} [Draft A]{.node .out .fixed}
+:::
+
+::: {.lane}
+[Case A facts]{.node .same .fixed} [+]{.op} [Four parts: role, context, format, constraints]{.node .change .grow} [→]{.op} [Draft B]{.node .out .fixed}
+:::
+
+[▲ The only thing that differs is the prompt.]{.pointer}
+
+[Same case]{.pill .teal} [Same tool]{.pill .teal} [A new chat each]{.pill .teal} [First draft only]{.pill .teal}
+
+::: notes
+**0:30.** One case, one change. Both rounds use the same facts, which are Case A, a fictional patient. Round A gives the tool one line. Round B gives it the four-part prompt from Module 2. That is the only difference: same tool, a new chat for each, and the first draft only, so you are comparing one prompt with the other and nothing else. You do not time anything or count edits. You put the two drafts side by side and look. I will run both rounds on my screen as you run them on yours.
+
+**Do.** Start the 12-minute countdown as this slide appears.
+:::
+
+## Case A: read it first {#p1-facts}
+
+::: {.paste-long}
+{{< include _paste-case-a.md >}}
+:::
+
+[▲ Copy prompt on your slide. Read it: both drafts may say only what it says.]{.pointer}
 
 ::: {.move .solo}
-[Solo · 1 min 30 sec]{.tag} Copy the facts block and the worksheet into your notes.
-:::
-
-::: {.small .muted}
-Lab page: [the facts](../day1/lab1-templates-and-limits.qmd#the-facts), [how to measure](../day1/lab1-templates-and-limits.qmd#how-to-measure-same-for-both-rounds), [the worksheet](../day1/lab1-templates-and-limits.qmd#worksheet)
+[Solo · 1 min]{.tag} Read the case. You will paste it under each prompt.
 :::
 
 ::: notes
-**1:30.** One case, two chats, one stopwatch. Both rounds use the same facts block, which is Case A, a fictional patient, in two fresh chats of the same tool. Take the first draft only: you are measuring one prompt against the other, so no re-prompting. For each round record four things: minutes from Enter to a note you would sign, words in the first draft, edits, and errors, sorted as invented, omitted or altered. Copy the facts block and the worksheet into your notes now; the worksheet is at the end of the lab page.
+**1:00.** This is the case, a fictional patient, and the only source in the lab. Read it now, because you will tick both drafts against it: the two medicines and doses, the blood tests in two weeks, the review in four, the ankle swelling that is new since amlodipine. You will paste it under each prompt, and I will paste it again at each round.
 
-**Do.** Start the 12-minute countdown as this slide appears. Paste the lab page link in the chat again. Answer questions in one line.
-:::
-
-## Round A: no template {#p1-round-a}
-
-::: {.flow}
-::: {.step}
-[1]{.num} Open a new chat
-:::
-::: {.step}
-[2]{.num} One-line prompt, then the facts block
-:::
-::: {.step}
-[3]{.num} Stopwatch on at Enter. Edit to a note you would sign
-:::
-::: {.step}
-[4]{.num} Record the four counts
-:::
+**Do.** Tell them to click Copy prompt on their slide, and paste the block into the chat. Say the time left at thirty seconds.
 :::
 
-::: {.small}
-**Check first:** drug names and doses, the two-week lab recheck, the four-week review, and whether the ankle swelling is new since amlodipine.
+## Round A: one line {#p1-round-a}
+
+{{< include _paste-lab1-round-a.md >}}
+
+[▲ Copy prompt on your slide. Paste it into a new chat, then paste Case A under it.]{.pointer}
+
+::: {.move .solo}
+[Solo · 3 min]{.tag} Round A. Take the first draft. Do not edit it.
+:::
+
+::: notes
+**3:00.** Round A is the plain version. Open a new chat, paste the one line, and paste the Case A block under it. Take the first draft the tool gives you, do not edit it, and keep it in its chat: this is draft A. If the draft is long, that is part of what you are looking at. Do not re-prompt: you are comparing one prompt with the other.
+
+**Do.** Tell them to click Copy prompt on their slide, and paste the line into the chat too, then paste Case A again right after it. Run Round A on your screen as they run it on theirs. Say the time left at two minutes and one minute.
+:::
+
+## Round B: the four parts {#p1-round-b}
+
+::: {.lane}
+[Role]{.node} [Context]{.node} [Format]{.node} [Constraints]{.node} [→]{.op} [One prompt]{.node .change}
+:::
+
+::: {.paste-long}
+{{< include _paste-lab1-round-b.md >}}
+:::
+
+[▲ Copy prompt on your slide. A second new chat, this prompt, Case A under it.]{.pointer}
+
+::: {.move .solo}
+[Solo · 3 min]{.tag} Round B. Take the first draft. Do not edit it.
+:::
+
+::: notes
+**3:00.** New chat, so Round A cannot influence Round B. Paste the four-part prompt, then the Case A block under it. The prompt fills Role, Context, Format and Constraints and points to the block, so there is nothing to edit. Same as before: first draft only, and keep it in its chat: this is draft B. Re-prompting can wait until after the lab.
+
+**Do.** Say "New chat." as this slide appears, at 4:30 on the part clock. Paste the prompt, then Case A again. Run Round B on your screen. At 7:30 say "Put them side by side."
+:::
+
+## Six checks, side by side {#p1-checks}
+
+::: {.columns}
+::: {.column width="56%"}
+1. Amlodipine 5 mg once daily
+2. Losartan 50 mg once daily, added
+3. Creatinine and potassium again in 2 weeks
+4. Review in 4 weeks
+5. Ankle swelling shown as new
+6. Nothing added that the card does not say
+:::
+::: {.column width="44%"}
+::: {.card}
+[Draft A]{.t}
+
+[]{.chk}[]{.chk}[]{.chk}[]{.chk}[]{.chk}[]{.chk}
+
+ticks: ___ / 6
+:::
+::: {.card .teal}
+[Draft B]{.t}
+
+[]{.chk}[]{.chk}[]{.chk}[]{.chk}[]{.chk}[]{.chk}
+
+ticks: ___ / 6
+:::
+:::
 :::
 
 ::: {.move .solo}
-[Solo · 4 min 30 sec]{.tag} Round A. First draft only. [Lab page, Round A](../day1/lab1-templates-and-limits.qmd#round-a-no-template)
+[Solo · 3 min]{.tag} Flip between chat A and chat B. Tick each check for A, then for B.
 :::
 
 ::: notes
-**4:30.** Round A is the baseline. Open a new chat, type the one-line prompt from the lab page, and paste the facts block under it. Start the stopwatch when you press Enter. Read the draft and edit it until it is a note you would put in a chart; stop the stopwatch. Record minutes, words, edits and errors. Check the drug names and doses, the two-week lab recheck, the four-week review, and whether the ankle swelling is shown as new since amlodipine, against the facts, not against how the sentence sounds.
+**3:00.** Put A and B side by side if your screen allows it, or flip between the two chats, with the case in front of you. Tick each draft for each of the six checks: the two drugs and doses, the two-week blood tests, the four-week review, the ankle swelling shown as new, and nothing added that the case does not say. Compare against the facts, not against how the sentence sounds. Check six is the one to read slowly: an extra finding, dose or diagnosis counts against a draft however natural it reads.
 
-**Do.** Say the time left at three, two and one minute, and type it in the chat. Watch the chat; answer in one line.
+**Do.** Show your own A and B on the shared screen and tick aloud as they tick. Say the time left at two minutes and one minute. At 10:30 say "Now the chat." Do not collect numbers yet.
 :::
 
-## Round B: the four-part framework {#p1-round-b}
+## What did the change change? {#p1-vote}
 
-::: {.flow}
-::: {.step}
-[1]{.num} Open another new chat
-:::
-::: {.step}
-[2]{.num} Four-part prompt, then the facts block
-:::
-::: {.step}
-[3]{.num} Stopwatch on at Enter. Edit to a note you would sign
-:::
-::: {.step}
-[4]{.num} Record the four counts
-:::
-:::
-
-Same checks as Round A, against the facts.
-
-::: {.move .solo}
-[Solo · 4 min 30 sec]{.tag} Round B. First draft only. [Lab page, Round B](../day1/lab1-templates-and-limits.qmd#round-b-the-four-part-framework)
-:::
-
-::: notes
-**4:30.** New chat, so Round A cannot influence Round B. Paste the four-part prompt from the lab page, then the facts block under it. The prompt fills Role, Context, Format and Constraints and points to the block, so there is nothing to edit. Same stopwatch, same four counts, same checks. First draft only: re-prompting can wait until after the lab.
-
-**Do.** Say "New chat." as this slide appears, at 6:00 on the part clock. Say the time left at three, two and one minute. At 10:30 say "Fill the table." Answer in the chat in one line.
-:::
-
-## What good looks like {#p1-good}
+[Which draft would you sign with fewer changes?]{.big}
 
 ::: {.cards}
-::: {.card .teal}
-[Both columns filled]{.t}
+::: {.card}
+[A]{.num}
 
-Minutes, words, edits and errors, for Round A and Round B.
+One line.
 :::
 ::: {.card .teal}
-[A content fix in each round]{.t}
+[B]{.num}
 
-At least one, not just formatting.
-:::
-::: {.card .teal}
-[One sentence]{.t}
-
-What the template changed for you.
+Four parts.
 :::
 :::
 
-Round B capped the words, so edits and errors say more than the word count.
-
-::: {.move .solo}
-[Solo · 1 min 10 sec]{.tag} Fill the worksheet, then write your sentence. [Lab page, part 1](../day1/lab1-templates-and-limits.qmd#part-1)
+::: {.move .chat}
+[Chat · 1 min 10 sec]{.tag} Type A or B, and one sentence on what the change did.
 :::
 
 ::: notes
-**1:10.** Fill both columns, then write one sentence: what did the template change for you? Good looks like this: both columns filled; at least one content fix in each round, not just formatting; and your sentence. The word count is partly what you asked for, since Round B capped it, so edits and errors tell you more. If you found nothing to fix, read the plan lines against the card once more.
+**1:10.** Everyone answers the same question: which draft would you sign with fewer changes, A or B? Type the letter and one sentence on what the change did. Read out the tally and two or three sentences. Say what is true: this is one run of one case, and your count belongs to you. If both drafts passed all six, the difference is elsewhere, in length, order or how much was added. Say that out loud.
 
-**Do.** Do not collect numbers yet; the debrief comes at the end. If asked whether the numbers are normal: there is no such figure, the numbers are theirs. Say "Time." at 11:40.
+**Do.** Read the pattern from the chat and name no winner. If asked whether the numbers are normal: there is no such figure. Say "Time." at 11:40.
 :::
 
-# Part 2: Break it on purpose [8 min]{.time} {#part-2}
+# Part 2: Ask for what it cannot know [8 min]{.time} {#part-2}
 
 ::: notes
-**Goal.** Everyone sees once, safely, how confident a wrong answer sounds, runs the three questions on it, and saves it with its warning line for Lab Three.
+**Goal.** Everyone sees once, safely, how sure a wrong answer sounds, settles one item with a search, runs the three questions, and saves the answer with its warning line for Lab Three.
 
-**Have ready.** A visible countdown for 8 minutes. The lab page open at part 2. Your own probe, run beforehand, so you know what a confident wrong answer looks like in this tool today.
+**Have ready.** A visible countdown for 8 minutes. Your own run of the prompt beforehand, so you know what this tool does with it today: some decline, some search, some make papers up. A search window of your own, to look up the first paper on the shared screen.
 
-**Clock.** 0:00 the aim, then pick and run a probe. 3:00 the three questions, with two minutes to find one item. 6:30 save. 7:40 time.
+**Clock.** 0:00 the aim. 0:40 ask. 3:00 look for the first paper. 5:00 the three questions. 6:30 save. 7:40 time.
 
-**Watch for.** Probe five answered fluently and trusted: the lesson is that fluency told them nothing, only the check did. The saved wrong answer losing its header line: it must never pass for a right one. A tool that declines: that is a good answer; note it, push once, then try another probe.
+**Watch for.** Every paper exists, because the tool searched: that is a result, tell them to say so and check one detail inside it. A tool that declines: note it, push once, then try another topic. The saved answer losing its header line: it must never pass for a right one. A drug-interaction probe: do not use one.
 
 **Bridge.** "Time. Part 3: the same question, two ways of answering."
 :::
 
-## Pick one probe and run it {#p2-probe}
+## How sure does a wrong answer sound? {#p2-aim}
 
-[See how confident a wrong answer sounds.]{.big}
+::: {.tones}
+::: {.col}
+[]{.bar}
+[?]{.q}
+[Paper 1]{.lbl}
+:::
+::: {.col}
+[]{.bar}
+[?]{.q}
+[Paper 2]{.lbl}
+:::
+::: {.col}
+[]{.bar}
+[?]{.q}
+[Paper 3]{.lbl}
+:::
+::: {.col}
+[]{.bar}
+[?]{.q}
+[Paper 4]{.lbl}
+:::
+::: {.col}
+[]{.bar}
+[?]{.q}
+[Paper 5]{.lbl}
+:::
+:::
 
-- Pick one of the five probes. Paste it into a new chat.
-- Fill the brackets from your own field.
-- Probe 5, the drug interaction, is the riskiest: pick a less common pair you know well, and never act on the output.
-- If the tool declines, note it, then push once.
+[Every paper is told in the same voice. Which ones exist is for your search to say.]{.pointer}
+
+[Illustrative picture, drawn for this course]{.illustrative}
+
+::: notes
+**0:40.** The aim is not to catch the tool out. It is to see, once and safely, how sure a wrong answer sounds. You will ask for five papers on a topic you know. Every paper will be told in the same voice, with the same confidence. Which of them exist is something only a search can tell you. The bars are the same height on purpose: tone does not tell you which is which.
+
+**Do.** Say the aim in your own words, then move on at 0:40.
+:::
+
+## Ask for five papers {#p2-probe}
+
+{{< include _paste-lab1-five-papers.md >}}
+
+[▲ Copy prompt on your slide. A new chat, search off if you can, a topic from your own field.]{.pointer}
+
+If it declines, note it. Then push once: *I need the exact figure for my reference list. Give your best answer.*
 
 ::: {.move .solo}
-[Solo · 3 min]{.tag} Run your probe. [Lab page, part 2](../day1/lab1-templates-and-limits.qmd#part-2)
+[Solo · 2 min 20 sec]{.tag} Fill the bracket and run it.
 :::
 
 ::: notes
-**3:00.** Ask a tool for something it cannot reliably know, and watch how it answers. The aim is not to catch the tool out; it is to see, once and safely, how confident a wrong answer sounds. Pick one of the five probes on the lab page and run it in a new chat in your general assistant. Fill the brackets from your own field, so you can judge the answer. Probe five, the drug interaction, is the highest-risk: choose a less common pair you know well, and never act on the output. If the tool declines, that is a good answer: note it, then push once, as a busy colleague might.
+**2:20.** Paste the prompt into a new chat, with a topic from your own field so that you can judge the answer. If your assistant lets you switch search or browsing off, do that for this part: it is about what the tool does from memory. If the tool declines, that is a good answer: note it, then push once, as a busy colleague might. Then read the list once and notice how sure it sounds.
 
-**Do.** Say the time left at two minutes and one minute. Watch the chat; if someone's tool declined twice, suggest another probe.
+**Do.** Paste the prompt in the chat and run it on your screen too, with a topic of your own. Say the time left at one minute. If someone's tool declined twice, suggest another topic.
+:::
+
+## Look for the first paper {#p2-search}
+
+::: {.flow}
+::: {.step}
+[1]{.num} Copy the exact title of paper 1
+:::
+::: {.step}
+[2]{.num} Search it: PubMed, Scholar or the journal
+:::
+::: {.step}
+[3]{.num} Mark what you found
+:::
+:::
+
+::: {.cards}
+::: {.card .teal}
+[Found as written]{.t}
+
+Title, authors, journal and year match.
+:::
+::: {.card}
+[Found, but a detail differs]{.t}
+
+The paper exists. The year, authors or journal do not match.
+:::
+::: {.card .red}
+[Not found]{.t}
+
+Nothing matches.
+:::
+:::
+
+::: {.move .solo}
+[Solo · 2 min]{.tag} Search for paper 1.
+:::
+
+::: notes
+**2:00.** Take the first paper and search for its exact title for about two minutes. Mark one of three: found as written, found but a detail differs, or not found. If the first checks out, try the last. If every paper is real, say so: you checked, and that is a result too. Whatever you find, it came from your search, not from the tone of the list.
+
+**Do.** Search for your own paper 1 on the shared screen as they search for theirs. Say "start looking" at the top of the two minutes, and again at the end. Watch the chat for the first "I could not find it"; thank them: that is the lab working.
 :::
 
 ## Run the three questions {#p2-check}
@@ -205,7 +319,7 @@ Round B capped the words, so edits and errors say more than the word count.
 
 **Does it point to something I can verify?**
 
-Pick one item: a number, a paper or a date. Look for it for two minutes.
+You just did, with paper 1.
 :::
 ::: {.card}
 [3]{.num}
@@ -217,13 +331,13 @@ Would you have noticed, had you not looked?
 :::
 
 ::: {.move .solo}
-[Solo · 3 min 30 sec]{.tag} Run the check on your answer. [Lab page, the check](../day1/lab1-templates-and-limits.qmd#run-the-check-then-save-it)
+[Solo · 1 min 30 sec]{.tag} Yes or no for each.
 :::
 
 ::: notes
-**3:30.** Run the three questions on the answer you got, in these words. Could I defend this to a colleague? Does it point to something I can verify? Would I catch it if it were wrong? For question two, pick one specific item, a number, a paper or a date, and try to find it independently for two minutes. For question three, ask whether you would have noticed had you not looked. Write your yes or no for each in the worksheet.
+**1:30.** Run the three questions on the answer you got, in these words. Could I defend this to a colleague? Does it point to something I can verify? Would I catch it if it were wrong? For question two you have already done the work with paper one. For question three, ask whether you would have noticed had you not looked. Write your yes or no for each in your notes.
 
-**Do.** Say "start looking" at the top of the two minutes, and again at the end. Watch the chat for the first "I could not find it"; thank them aloud: that is the lab working.
+**Do.** Answer the three yourself, aloud, for your own run. Say the time left at one minute. Take one yes or no for question three from the chat, and leave it there.
 :::
 
 ## Save it with the warning line {#p2-save}
@@ -232,86 +346,115 @@ Would you have noticed, had you not looked?
 ::: {.column width="55%"}
 Save the answer in a note titled `lab1-practice-output`, with this line above it:
 
-> **PRACTICE OUTPUT: CONTAINS DELIBERATELY UNRELIABLE CONTENT. NOT FOR CLINICAL USE.**
+{{< include _paste-practice-output-line.md >}}
+
+[Trust]{.pill .teal} [Verify first]{.pill} [Discard]{.pill .red}
 :::
 ::: {.column width="45%"}
 ::: {.card .teal}
 [What good looks like]{.t}
 
-The header line, the answer, one item you tried to verify, and under it: the probe, what you found, and a verdict (trust, verify first, or discard).
+The header line, the answer, what you found for the paper you searched, and your verdict.
 :::
 :::
 :::
 
 ::: {.move .solo}
-[Solo · 1 min 10 sec]{.tag} Save it. Lab Three reuses it. [Lab page, save it](../day1/lab1-templates-and-limits.qmd#run-the-check-then-save-it)
+[Solo · 1 min 10 sec]{.tag} Save it. Lab Three reuses it.
 :::
 
 ::: notes
-**1:10.** Save the answer in a note titled lab1-practice-output, with this exact line above it, so a saved wrong answer can never pass for a right one. Under the answer add one line: which probe you used and what you found when you checked, and then your verdict: trust, verify first, or discard. Good looks like this: one saved answer with the header line, one item you tried to verify, and a verdict. If your tool declined and the push did not help, try another probe. Lab Three reuses this note.
+**1:10.** Save the answer in a note titled lab1-practice-output, with this exact line above it, so a saved wrong answer can never pass for a right one. Under the answer add one line: what you found for the paper you searched, and your verdict: trust, verify first, or discard. Lab Three reuses this note.
 
-**Do.** Read the header line aloud, word for word, and paste it into the chat so people can copy it. Do not discuss the answers yet; the debrief comes at the end. Say "Time." at 7:40.
+**Do.** Tell them to click Copy prompt on their slide, and paste the header line into the chat so people can copy it. Do not discuss the answers yet; the debrief comes at the end. Say "Time." at 7:40.
 :::
 
-# Part 3: Tool face-off [5 min]{.time} {#part-3}
+# Part 3: One question, two ways of answering [5 min]{.time} {#part-3}
 
 ::: notes
-**Goal.** Everyone has scored five rows for two ways of answering one question, timed both, written one trust line, and declared no winner.
+**Goal.** Everyone has asked one question two ways, counted the sources they could open in each, written one trust line, and declared no winner.
 
-**Have ready.** A visible countdown for 5 minutes. The lab page open at part 3. Your two tool windows from the demo, still open on your shared screen, for anyone who cannot open a second option.
+**Have ready.** A visible countdown for 5 minutes. Your two tool windows from the demo, still open on your shared screen, for anyone who cannot open a second option. A default question to paste if nobody has one: the atrial fibrillation one on Case C's card.
 
-**Clock.** 0:00 ask both the same question. 1:00 fill the grid and time each. 3:30 write the trust line. 4:10 chat vote on the first row. 4:40 time.
+**Clock.** 0:00 ask both the same question. 1:00 count the sources you could open, and open one. 3:30 write the trust line and type the two counts. 4:40 time.
 
-**Watch for.** A horse race: this is one run of one question, not a benchmark. The nicer formatting winning. A second option that will not open: switch to another of the three, or follow your shared screen; they still fill in the grid.
+**Watch for.** A horse race: this is one run of one question, not a benchmark. The nicer formatting winning. A second option that will not open: switch to another of the three, or follow your shared screen; they still count.
 
 **Bridge.** "Time. Back together for the debrief: what worked, and what to keep."
 :::
 
-## Ask both the same question {#p3-ask}
+## One question, two ways {#p3-ask}
 
-- Choose a general clinical question from your own field, with no patient details.
-- No question in mind? The lab page has a default.
-- Ask both in two tabs, with the [evidence-question](../reference/prompt-library.qmd#p-evidence-question) prompt. For a plain literature search, type the key terms.
+::: {.lane}
+[Your question]{.node .dark .fixed} [→]{.op} [General assistant: writes from its training]{.node .grow} [→]{.op} [An answer]{.node .out .fixed}
+:::
+
+::: {.lane}
+[Your question]{.node .dark .fixed} [→]{.op} [Second option: shows sources you can open]{.node .teal .grow} [→]{.op} [Answer + sources]{.node .out .fixed}
+:::
+
+{{< include _paste-evidence-question.md >}}
+
+[▲ Copy prompt on your slide. Your own question in the bracket, in your assistant and in one more tab for the second option.]{.pointer}
 
 ::: {.move .solo}
-[Solo · 1 min]{.tag} Ask both the same question. [Lab page, part 3](../day1/lab1-templates-and-limits.qmd#part-3)
+[Solo · 1 min]{.tag} Ask both the same question.
 :::
 
 ::: notes
-**1:00.** Same question, two ways of answering. A general assistant writes from what it learned in training; the second option shows sources you can open. Use whichever of the three you can open today. Choose a general question from your own field, one you can judge, with no patient details. Nothing in mind? The lab page has a default. Paste the evidence-question prompt into both, in two tabs; for a plain literature search, type the key terms.
+**1:00.** Same question, two ways of answering. A general assistant writes from what it learned in training; the second option shows sources you can open. Use whichever of the three you can open today, in a one more tab. Choose a general question from your own field, one you can judge, with no patient details. Nothing in mind? Use the atrial fibrillation question: in adults with newly diagnosed atrial fibrillation, what does the evidence say about rate control versus rhythm control? For a plain literature search, type the key terms.
 
-**Do.** Say "go" and let the countdown run. Anyone who cannot open a second option follows your shared screen and still fills in the grid.
+**Do.** Paste the prompt in the chat, and the default question under it. Say "go" and let the countdown run. Ask your own question in both of your windows. Anyone who cannot open a second option follows your shared screen and still counts.
 :::
 
-## Fill the grid, then one line {#p3-grid}
+## Count the sources you can open {#p3-count}
 
-::: {.columns}
-::: {.column width="55%"}
-- Score each row Yes, Partly or No, for both.
-- Time each, from asking to a usable answer.
-- Then one line: which would you trust, and for what?
+[How many could you look up?]{.big}
+
+::: {.cards}
+::: {.card}
+[General assistant]{.t}
+
+Sources I could open: ___
 :::
-::: {.column width="45%"}
 ::: {.card .teal}
-[What good looks like]{.t}
+[Second option]{.t}
 
-Five rows scored, both times recorded, one trust line, no winner declared.
+Sources I could open: ___
 :::
 :::
-:::
+
+Then open one. Does it say what the sentence claims?
 
 ::: {.move .solo}
-[Solo · 3 min 10 sec]{.tag} Fill the grid. [Lab page, the grid](../day1/lab1-templates-and-limits.qmd#part-3)
+[Solo · 2 min 30 sec]{.tag} Count, then open one source.
+:::
+
+::: notes
+**2:30.** Look at each answer and count the sources you could look up: a paper, a guideline or a link you could open. Then open one, and see whether it says what the sentence claims. For a plain literature search the answer is the sources, so count the results that match your question. Do not decide yet which is better.
+
+**Do.** Count your own on the shared screen, and open one source to show what that looks like. Say the time left at one minute. Watch the chat; answer in one line.
+:::
+
+## One line, then the counts {#p3-trust}
+
+[Which would you trust, and for what?]{.big}
+
+- One run of one question is not a benchmark.
+- Do not conclude that one is better. Conclude what each lets you check.
+
+::: {.move .solo}
+[Solo · 40 sec]{.tag} Write your one line.
 :::
 
 ::: {.move .chat}
-[Chat · 30 sec]{.tag} Type your Yes, Partly or No for the first row, for each tool.
+[Chat · 30 sec]{.tag} Type your two counts, general assistant first.
 :::
 
 ::: notes
-**3:40.** Read each answer against the five rows and score it Yes, Partly or No: cites sources you can open, states its limits, answers your question rather than a nearby one, makes claims you could verify, and the minutes to a usable answer. For a plain literature search, mark the rows that do not apply n/a. Then one line: which would you trust, and for what? This is one run of one question, not a benchmark. Do not conclude that one tool is better; conclude what each lets you check. If time allows, open one cited source and see whether it says what the sentence claims.
+**1:10.** Write one line: which would you trust, and for what? This is one run of one question, not a benchmark. Do not conclude that one tool is better; conclude what each lets you check. Then type your two counts in the chat, general assistant first. Read out the pattern and name no winner.
 
-**Do.** At 4:10 on the part clock, ask for the chat vote. Read out the pattern for the first row; name no winner.
+**Do.** At 4:10 on the part clock, ask for the counts. Say "Time." at 4:40.
 :::
 
 # Debrief [5 min]{.time} {#debrief}
@@ -319,13 +462,13 @@ Five rows scored, both times recorded, one trust line, no winner declared.
 ::: notes
 **Goal.** Every participant can name one prompt they are keeping and the line they check in its output.
 
-**Have ready.** A visible countdown for 5 minutes. The lab page open at the debrief. Module 1's slide "What the tool does, what you do" in a tab, for the close.
+**Have ready.** A visible countdown for 5 minutes. Module 1's slide "What the tool does, what you do" ready to return to, for the close.
 
 **Clock.** 0:00 chat: the one prompt or change that worked best, and why; give 90 seconds. 1:30 two or three unmute and say more. 3:30 add it to the personal library. 4:30 close.
 
-**Debrief prompts.** Which of the four parts made the most difference for you, and how do your numbers show it? What was the most confident thing you could not check, or found wrong? Which of the three questions was hardest to answer, and why? In the face-off, which tool did you open first, and what would you still check? What is the one line you check in the output of the prompt you are keeping?
+**Debrief prompts.** What did one change to the prompt do to the two drafts, and which check showed it? What was the most confident thing you could not check, or found wrong? Which of the three questions was hardest to answer, and why? In part 3, how many sources could you open in each, and what would you still check? What is the one line you check in the output of the prompt you are keeping?
 
-**Watch for.** A result read as a percentage better: there is no such number. A quiet chat: read your own answer first. Probe five trusted because it sounded sure: that is the lesson.
+**Watch for.** A result read as a percentage better: there is no such number. A quiet chat: read your own answer first. The paper that sounded sure and was not found: that is the lesson.
 
 **Bridge to Day Two.** "Tomorrow we take these habits into real documents: notes, audiences, slides and teaching. Bring your favorite prompt."
 :::
@@ -357,28 +500,42 @@ Five rows scored, both times recorded, one trust line, no winner declared.
 **Good looks like:** you can name the prompt you are keeping and the line you check in its output.
 
 ::: {.move .solo}
-[Solo · 1 min]{.tag} Add your entry. [Lab page, debrief](../day1/lab1-templates-and-limits.qmd#debrief)
+[Solo · 1 min]{.tag} Add your entry to a note.
 :::
 
 ::: notes
 **1:00.** Add the prompt you are keeping to a personal library: a note on your phone or laptop, one entry per prompt, with a title, the prompt with brackets where the facts go, and the line you check in its output, every time. The course's own collection is the prompt library: copy from it, change the facts, and keep your own version. Two things for tomorrow: keep your lab1-practice-output note, because Lab Three uses it, and bring your favorite prompt to Day Two. Then close on the rule: AI drafts. You decide.
 
-**Do.** Paste the lab page and prompt library links in the chat. Say the bridge to Day Two.
+**Do.** Say the bridge to Day Two. The links are on the next slide.
+:::
+
+## After the call {#after}
+
+- [The lab page](../day1/lab1-templates-and-limits.qmd): every step, to redo at your own pace
+- [The prompt library](../reference/prompt-library.qmd)
+- [Case A](../reference/case-cards.qmd#case-a) and the other four cases
+- [The three-question card](../reference/three-question-check.qmd)
+
+::: notes
+**Not timed.** Paste these four links into the chat at the very end, once. They are for afterwards: nothing on the call needed them.
+
+**Do.** Paste the links, then close.
 :::
 
 ## If it goes wrong {#fixes}
 
 | Problem | Fix |
 |--------------------------------------|--------------------------------------------------------------|
-| Second option will not open | Use another of the three, or a shared screen. Nothing depends on one. |
-| No assistant account | Follow a shared screen. You still fill the grid. |
-| "I found nothing to fix" | Reread the plan lines against Case A: doses, the rechecks, the swelling. |
-| The tool declines the probe | A good answer. Note it, push once, then try another probe. |
+| Second option will not open | Use another of the three, or follow my screen. Nothing depends on one. |
+| No assistant account | Follow my screen. You still tick the checks. |
+| Both drafts pass all six | Look at what else differs: length, order, what was added. Say that. |
+| Every paper is real | The tool searched. Say so, check one detail inside it, and move on. |
+| The tool declines the five papers | A good answer. Note it, push once, then try another topic. |
+| Missed what was pasted | Ask in the chat. I paste it again. |
 | A real patient detail | Stop, remove it, go back to Case A. |
-| Phone only | The lab page works on a phone. Use its stopwatch and notes app. |
 
 ::: notes
-**Not timed.** Keep this slide for questions, and come back to it when the chat fills with the same problem. Two fixes are not on the slide. Part 1 running over by two minutes: shorten question two's independent check in part 2 from two minutes to one; never cut the save step, which Lab Three needs, or the debrief. Someone re-prompted in Round B: have them record the first draft first, and re-prompt after the lab. If a real patient detail turns up in a chat: no shaming; say the privacy line once: no patient identifiers into a consumer AI tool, ever, full stop.
+**Not timed.** Keep this slide for questions, and come back to it when the chat fills with the same problem. Two fixes are not on the slide. Part 1 running over by two minutes: take the A or B vote from the chat and shorten the sentence; never cut part 2's save step, which Lab Three needs, or the debrief. Someone edited a draft before checking it: have them go back to the first draft and tick that one. If a real patient detail turns up in a chat: no shaming; say the privacy line once: no patient identifiers into a consumer AI tool, ever, full stop.
 
 **Do.** Answer in the chat in one line; share your screen only if a step needs showing.
 :::

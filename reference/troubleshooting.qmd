@@ -7,13 +7,14 @@ Almost every problem during the course is one of four things: the call, a missin
 
 ## The call is the problem
 
-- **I cannot see the shared screen, or it is too small to read.** Open the slides link from the chat in a window of your own. Every slide is there, and you can go at your own pace.
-- **I lost the link.** Ask in the chat. The instructor pastes the deck and the page again.
+- **I cannot see the shared screen, or it is too small to read.** Say so in the chat. Make the presentation fill your call tab, and ask the instructor for larger text if it still does not read.
+- **I cannot open the slides link, or Copy prompt does nothing.** Say so in the chat. The instructor pastes each prompt in the chat too, and you can copy it from there. On a phone, select the text and copy it by hand.
+- **I missed what was pasted in the chat.** Ask in the chat and the instructor pastes it again. Someone who joins late may not see earlier messages.
 - **The chat moves too fast.** Type your answer and send it; the instructor reads a few out. You do not need to follow every message.
 - **My breakout room did not open, or my partner did not join.** Tell the instructor in the chat. The step has a version that needs no partner: you do it on your own and type the result in the chat.
 - **I cannot talk or type in the chat right now.** Say so by any means you have. Nothing here is graded, and every answer you were asked for can be given later in the chat.
-- **I joined late.** Open the slides link, go to the slide the instructor is on (the slide number is in the corner), and carry on. Ask in the chat for anything you missed.
-- **My screen is too small for the call and my assistant.** Keep the call on one device and your assistant on another, or run the assistant in a window next to the call and rely on the slides link for what you miss.
+- **I joined late.** Ask in the chat for what was pasted so far, and carry on from the slide the instructor is on.
+- **My screen is too small for the call and my assistant.** Keep the call on one device and your assistant on another.
 
 ## The output is the problem
 

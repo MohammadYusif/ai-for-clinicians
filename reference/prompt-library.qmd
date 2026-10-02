@@ -20,7 +20,7 @@ It is built from the prompts in the day pages by `tools/build_prompt_library.py`
 | [Referral letter](#p-referral-letter) | Turn a clinic patient's facts into a short referral letter with one clear question | [Module 2, Same framework, three more jobs](../day1/m2-prompting.qmd#three-more-jobs) |
 | [Discharge summary](#p-discharge-summary) | Turn inpatient facts into a five-heading discharge summary with medicines copied exactly | [Module 2, Same framework, three more jobs](../day1/m2-prompting.qmd#three-more-jobs) |
 | [Plain-language patient handout](#p-patient-handout) | Turn a clinician's plan into a short handout a parent or patient can follow at home | [Module 2, Same framework, three more jobs](../day1/m2-prompting.qmd#three-more-jobs) |
-| [Evidence question with sources](#p-evidence-question) | Ask a general clinical question, with no patient details, and ask for sources you can open | [Lab 1, Tool face-off](../day1/lab1-templates-and-limits.qmd#part-3) |
+| [Evidence question with sources](#p-evidence-question) | Ask a general clinical question, with no patient details, and ask for sources you can open | [Lab 1, One question, two ways of answering](../day1/lab1-templates-and-limits.qmd#part-3) |
 | [Orient, then verify](#p-orient-and-verify) | A between-patients question that returns a short orientation plus what to confirm and where, never a decision | [Module 4, Four places AI already fits](../day2/m4-notes-and-audiences.qmd#four-places) |
 | [Source-of-truth fact sheet](#p-source-of-truth-sheet) | Turn your jotted facts about one clinical event into one fixed-layout sheet that the chart, patient and colleague prompts all draw from | [Module 4, Same note, three audiences](../day2/m4-notes-and-audiences.qmd#three-audiences) |
 | [Chart note from the sheet](#p-chart-note-from-sheet) | Draft the clinical-register note for the record from a checked fact sheet | [Module 4, Same note, three audiences](../day2/m4-notes-and-audiences.qmd#three-audiences) |
@@ -30,7 +30,7 @@ It is built from the prompts in the day pages by `tools/build_prompt_library.py`
 | [Slides from an outline](#p-full-talk-slides) | Turn an approved outline and your facts into slide text, one speaker note, and one visual idea per slide | [Module 5, Building a full talk, not just an outline](../day2/m5-talks-and-teaching.qmd#full-talk) |
 | [Quiz questions from a source](#p-quiz-from-source) | Write multiple-choice questions only from a text you paste, with balanced answer positions and option lengths | [Module 5, Teaching with AI](../day2/m5-talks-and-teaching.qmd#teaching-with-ai) |
 | [Answer key with quotations](#p-answer-key-with-quotes) | Add an answer key to a quiz, with the exact supporting words from the source for every answer | [Module 5, Grading yourself](../day2/m5-talks-and-teaching.qmd#grading-yourself) |
-| [Study summary from a source](#p-teaching-summary-from-source) | Turn a source text into a short, numbers-exact study summary for trainees | [Lab 2, Tool check, again](../day2/lab2-one-case-three-outputs.qmd#part-2) |
+| [Study summary from a source](#p-teaching-summary-from-source) | Turn a source text into a short, numbers-exact study summary for trainees | [Lab 2, Same source, two tools](../day2/lab2-one-case-three-outputs.qmd#part-2) |
 | [List the checkable claims](#p-claim-list) | Pull every number, name, date, dose and citation out of an AI answer so you can check each one against its source | [Module 6, Confidently wrong](../day3/m6-confidently-wrong.qmd#confidently-wrong) |
 
 ## Day One — Foundations
@@ -140,7 +140,7 @@ CONSTRAINTS: Write at a reading level a 12-year-old could follow: short sentence
 ### Evidence question with sources {#p-evidence-question}
 
 **Use when:** Ask a general clinical question, with no patient details, and ask for sources you can open  
-**Taught in:** [Lab 1, Tool face-off](../day1/lab1-templates-and-limits.qmd#part-3)
+**Taught in:** [Lab 1, One question, two ways of answering](../day1/lab1-templates-and-limits.qmd#part-3)
 
 ```text
 [A general clinical question from your own field.] Summarize the main options and how strong the evidence is for each. Cite sources I can open. If you cannot find a source, say so. This is a general question: no patient details.
@@ -289,7 +289,7 @@ CONSTRAINTS: Never paraphrase inside quotation marks. If no words in the SOURCE 
 ### Study summary from a source {#p-teaching-summary-from-source}
 
 **Use when:** Turn a source text into a short, numbers-exact study summary for trainees  
-**Taught in:** [Lab 2, Tool check, again](../day2/lab2-one-case-three-outputs.qmd#part-2)
+**Taught in:** [Lab 2, Same source, two tools](../day2/lab2-one-case-three-outputs.qmd#part-2)
 
 ```text
 ROLE: You are a medical educator writing a one-page study summary for [audience, e.g. family medicine residents].

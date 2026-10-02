@@ -11,11 +11,11 @@ A practical, hands-on course in using AI tools well: in daily practice, in docum
 **AI drafts. You decide.** Every tool. Every task. All three days.
 :::
 
-The course runs online. You do not need a technical background. You do need a device that can join the call, a second window for one AI assistant account, and the [setup page](setup.qmd), which takes ten minutes. Nothing in the course depends on any one tool. Every patient is fictional, on the [case cards](reference/case-cards.qmd), and nothing you do here puts a real patient's information into any tool.
+The course runs online, on Google Meet. You do not need a technical background. You do need a device that can join the call, a browser with a tab for one AI assistant account, and the [setup page](setup.qmd), which takes ten minutes. Nothing in the course depends on any one tool. Every patient is fictional, on the [case cards](reference/case-cards.qmd), and nothing you do here puts a real patient's information into any tool.
 
 ## The course
 
-Each module has **slides**, which your instructor shares on the call and you can open in a window of your own, and a **handout** with the prompts to copy. Each lab has slides and a **lab page**, which is where you work. Every day is two hours, a ten-minute break included.
+On the call you have three tabs: the call, the **slides** (your instructor pastes the link, and every prompt has a Copy prompt button), and your assistant. You do every step with the instructor. Afterwards, each module has a **handout** with the prompts and checks to keep, and each lab a **lab page** to redo at your own pace. Every day is two hours, a ten-minute break included.
 
 ::: {.course-grid}
 
@@ -23,7 +23,7 @@ Each module has **slides**, which your instructor shares on the call and you can
 [Start here]{.kicker} [10 min]{.mins-fixed}
 
 ### Setup, done once
-One AI assistant account, a second window, and how the call works.
+One AI assistant account, two browser tabs, and how the call works.
 
 ::: {.links}
 [Setup](setup.qmd){.btn .btn-primary .btn-sm}
@@ -77,7 +77,7 @@ Which type of tool for which job, who can use it, and one question put to two to
 [Lab 1]{.kicker} [30 min]{.mins}
 
 ### Templates and limits
-Time a templated note against an untemplated one, break a tool on purpose, and compare two ways of answering.
+Two prompts side by side on one case, a question the tool can only guess at, and one question answered two ways.
 
 ::: {.links}
 [Slides](slides/lab1-templates-and-limits.qmd){.btn .btn-primary .btn-sm}
@@ -119,7 +119,7 @@ A case turned into a checked slide deck, and an AI-made quiz graded before you u
 [Lab 2]{.kicker} [35 min]{.mins}
 
 ### One case, three outputs
-Build one fact sheet, write three outputs from it, and check that they agree.
+Build one fact sheet, make three outputs one at a time, and check the same three facts in each.
 
 ::: {.links}
 [Slides](slides/lab2-one-case-three-outputs.qmd){.btn .btn-primary .btn-sm}
@@ -216,7 +216,7 @@ What the quiz draws on, and a practice bank to find what you are unsure of.
 
 | | What you can do | How you will know |
 |---|---|---|
-| **A prompting method** | Write a prompt that gets a usable note, letter, or handout on the first pass, using *role, context, format, constraints* | You time and compare a templated draft against an untemplated one in [Lab 1](day1/lab1-templates-and-limits.qmd) |
+| **A prompting method** | Write a prompt that gets a usable note, letter, or handout on the first pass, using *role, context, format, constraints* | You put a templated draft beside an untemplated one and check both against the card in [Lab 1](day1/lab1-templates-and-limits.qmd) |
 | **A short list of tools** | Say which tool fits which job, which do not fit clinical work, and which you cannot use at all | You run the same question through two tools in Labs 1 and 2 and judge the result yourself |
 | **A working check** | Catch AI mistakes before they reach a chart, using three questions and a verification workflow | In [Lab 3](day3/lab3-spot-the-error.qmd) you find what is wrong in an output you did not write |
 | **A clear line** | State what never goes into a consumer AI tool, and what to do instead | You work through realistic slips on Day Three, then apply the check to your own output |

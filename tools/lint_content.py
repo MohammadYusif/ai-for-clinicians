@@ -102,6 +102,17 @@ ONLINE = [
     re.compile(r"whiteboard|flip ?chart|\bon paper\b|\bprojector\b|\bproject(s|ed)? (the|it|this|one|them|a)\b", re.I),
     re.compile(r"\bprint(ed|able)?\b|\bhand(ed)? out\b|in person|in-person|classroom", re.I),
 ]
+# The call is three tabs for a participant: the call, the slides (the trainer pastes the link; every prompt has a
+# Copy prompt button on its slide, and goes into the chat too) and one assistant (CLAUDE.md, rule 5). Nothing else is
+# needed during the call, so no page may tell them to keep a handout, lab page, card or the prompt library open.
+# The trainer's own windows are the trainer's business, so speaker notes and course/*.md are exempt.
+TWO_TABS_WHY = "the call is three tabs (the call, the slides, your assistant); nothing may ask a participant to keep a handout, lab page, card or the prompt library open (CLAUDE.md, rule 5)"
+TWO_TABS = [
+    re.compile(r"keep (the |this |your )?(lab page|handout|prompt library|case cards?)[^.]{0,40}open", re.I),
+    re.compile(r"(lab page|handout|prompt library|case cards?|practice source)[^.]{0,20}(open )?in (a|its own|another) (tab|window)", re.I),
+    re.compile(r"in tabs|in (two|three) (tabs|windows)", re.I),
+]
+SLIDE_LINK = re.compile(r"\]\(\.\./[^)]*\)")
 NOTES_OPEN = re.compile(r"^:::\s*notes\s*$")
 NOTES_LIMIT, TOPIC_NOTES_LIMIT = 900, 1600
 
@@ -155,6 +166,41 @@ def card_bullets(card: str) -> list[str]:
 CARD_COPIES = {"day1/lab1-templates-and-limits.qmd": "a"}
 
 
+INCLUDE = re.compile(r"\{\{<\s*include\s+(\S+)\s*>\}\}")
+SLIDE_ID = re.compile(r"^#{1,2}\s.*\{#([A-Za-z0-9_-]+)")
+
+
+def expanded(path: Path) -> str:
+    """The page's text with each include replaced by the file it names: a deck pulls its prompts in."""
+    def fill(m: re.Match) -> str:
+        target = path.parent / m.group(1)
+        return target.read_text(encoding="utf-8") if target.exists() else ""
+
+    return INCLUDE.sub(fill, path.read_text(encoding="utf-8"))
+
+
+def slide_prose(path: Path):
+    """(line_no, text, slide_id) for prose lines: outside code fences and outside a deck's ::: notes blocks."""
+    fenced, in_notes, slide = False, False, ""
+    for no, line in enumerate(path.read_text(encoding="utf-8").splitlines(), 1):
+        if line.lstrip().startswith(("```", "~~~")):
+            fenced = not fenced
+            continue
+        if fenced:
+            continue
+        if in_notes:
+            if DIV_CLOSE.match(line):
+                in_notes = False
+            continue
+        if NOTES_OPEN.match(line):
+            in_notes = True
+            continue
+        h = SLIDE_ID.match(line)
+        if h:
+            slide = h.group(1)
+        yield no, line, slide
+
+
 def prose_lines(path: Path):
     """(line_no, text) for lines outside code fences."""
     fenced = False
@@ -204,7 +250,7 @@ def main() -> int:
         path = ROOT / rel
         if not path.exists() or (only and path.resolve() not in only):
             continue
-        text = path.read_text(encoding="utf-8")
+        text = expanded(path)
         for needle in needles:
             if needle not in text:
                 errors.append(f"{rel}: missing the canonical wording: {needle!r}")
@@ -247,6 +293,17 @@ def main() -> int:
                     break
         if rel.startswith("slides/"):
             errors += deck_notes_errors(rel, lines)
+        if rel.startswith(("slides/", "day1/", "day2/", "day3/")) or rel in ("setup.qmd", "index.qmd"):
+            for no, line, slide in slide_prose(path):
+                for pattern in TWO_TABS:
+                    if pattern.search(line):
+                        errors.append(f"{rel}:{no}: {TWO_TABS_WHY}: {line.strip()[:110]}")
+                        break
+                if rel.startswith("slides/") and SLIDE_LINK.search(line) and not slide.startswith("after"):
+                    errors.append(
+                        f"{rel}:{no}: a slide links to another page; the live flow stays on the slides and the chat "
+                        f"(links belong on the 'after' slide): {line.strip()[:90]}"
+                    )
 
         for pattern, why in BANNED:
             for no, line in enumerate(lines, 1):

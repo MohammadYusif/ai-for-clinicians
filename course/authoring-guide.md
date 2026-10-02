@@ -252,7 +252,7 @@ announces it the same way every time, with a label and a time (for example "Chat
 | **Speak** | Two or three people unmute when asked | A short answer, a debrief |
 | **Share** | One person shares a screen when asked | An output shown beside its source |
 | **Pair** | A breakout room of two, three to six minutes | Checking each other's work, and only that |
-| **Solo** | Your own device, your own assistant, quietly | The labs |
+| **Solo** | Your own device, your own assistant, while the trainer does the same step on the shared screen | The labs, and every hands-on step |
 
 How to write for it:
 
@@ -265,6 +265,15 @@ How to write for it:
 - **Say the group.** Write "everyone", "the group" or "the call", and "have ready" in place of "bring".
 - **No platform feature beyond chat and screen sharing**, except breakout rooms for the pair steps. A tool the
   platform may not have is a dependency (rule 4).
+- **The call is three tabs.** A participant has the call, the slides (the trainer pastes the link; they can follow the
+  shared screen or their own tab) and one assistant, and nothing else: no handout, case card or prompt library open
+  beside them. Whatever a step needs, a prompt, a case or a source text, has a slide with a Copy prompt button, and the
+  trainer pastes it into the chat too for anyone without the deck. A handout is for afterwards, and says so. A tool
+  comparison adds one more tab for the second option, for those minutes only, and the slide names it.
+- **Do it with us.** A hands-on step is run twice at once: by the group on their own device, and by the trainer on the
+  shared screen. The trainer's run is the model and the fallback for anyone whose tool misbehaves.
+- **The course runs on Google Meet.** Say "the call" and "the chat" in prose; only the setup page and the trainer's guide
+  name the platform. Late joiners may not see earlier chat messages, so the trainer pastes again.
 
 Words that give a page away are blocked by `tools/lint_content.py` in pages, decks and the trainer's notes. Written
 here as an example of what not to put in front of participants, inside a fence so the lint skips it:
@@ -289,7 +298,9 @@ slides `## Title {#id}`. Slide ids are lowercase kebab, unique in the deck, and 
 
 **Speaker notes** are `::: notes` at the end of the slide, plain markdown, at most 900 characters (1,600 on a topic
 slide). A working slide's notes open with its time budget (`**1:30.**`, minutes and seconds, adding up to the topic's
-minutes), then **Say** in the voice of the trainer, then **Do** in terms of the five moves. A topic slide's notes are the
+minutes), then **Say** in the voice of the trainer, then **Do** in terms of the five moves. On a slide with something
+to paste, **Do.** opens with "Copy the block and paste it into the chat." and, on a hands-on step, says to run the step on
+the shared screen while the group runs it on theirs. A topic slide's notes are the
 topic's brief: **Goal.** **Have ready.** **Watch for.** **If asked.** **Bridge.** Never put a lab answer key in a
 note; never put `[TRAINER TO CONFIRM]` in one (an open decision goes in `instructor-guide.md`).
 
@@ -334,6 +345,67 @@ helpers: `[text]{.illustrative}` (the label every invented output carries), `[te
 `[text]{.big}`, `.muted`, `.small`, and `.vc` to push a short slide's content toward the middle. Tables,
 blockquotes, callouts and ```` ```text ```` prompt blocks (they get a "Copy prompt" button) are styled already.
 Reveals are `::: {.fragment}`.
+
+**The live flow stays on the slides.** A slide never links to another page (the lint blocks it), and
+never tells anyone to open one. Anything to paste, a prompt, a case or a source, has a slide of its own that pulls the block in
+from the handout (`tools/build_prompt_library.py` writes `slides/_paste-<slug>.md` from every `<!-- prompt: -->` and
+`<!-- paste: slug | What it is -->` marker, and from each case card), so a slide never retypes it:
+
+````markdown
+## Round B: paste this {#p1-round-b}
+
+{{< include _paste-lab1-round-b.md >}}
+
+[▲ Copy prompt on your slide. Paste it into your assistant.]{.pointer}
+````
+
+The case cards are `_paste-case-a.md` to `_paste-case-e.md`. The one place for links is the last slide, `## After the call
+{#after}`, which the trainer pastes into the chat.
+
+**Pictures.** A slide that teaches an idea shows it first and says it second. One idea, one picture, one line that
+names what to look at. Pictures are boxes, arrows, tick boxes and bars made from the same spans and divs (CSS in
+`theme.scss`), so they follow the palette, stay legible in the audit and need no image file:
+
+````markdown
+::: {.lane}
+[Case A facts]{.node .same .fixed} [+]{.op} [One line]{.node .change .grow} [→]{.op} [Draft A]{.node .out .fixed}
+:::
+[▲ The only thing that differs is the prompt.]{.pointer}
+
+::: {.lane .sm}                         <!-- a compact lane, for a list of five -->
+[A citation]{.node .same .fixed} [→]{.op} [Does it exist? Does it say that?]{.node .grow}
+:::
+
+[]{.chk} an empty tick box   []{.chk .on} ticked   []{.chk .no} crossed
+
+::: {.fan}
+[▼]{.a} [▼]{.a} [▼]{.a}                 <!-- arrows from one box to three cards below it -->
+:::
+
+::: {.tones}                            <!-- equal bars: how sure each answer sounds -->
+::: {.col}
+[]{.bar}
+[?]{.q}
+[Paper 1]{.lbl}
+:::
+:::
+
+::: {.nextword}                         <!-- bars of illustrative widths, in em, never numbers -->
+::: {.row}
+[star]{.w} []{.fill style="width:5em"}
+:::
+:::
+````
+
+`.node` takes `.same` (grey: unchanged), `.change` (ringed: the one thing that differs), `.out` or `.teal` (a result),
+`.dark` (the start), `.ghost` (dashed: missing) and `.red`. A picture of an invented output or of made-up odds carries
+`[Illustrative: drawn for this course]{.illustrative}`: never put a measured-looking number in a bar. Mermaid is for the
+handout pages, not the decks; give every node a fill and a dark text colour.
+
+**Labs: one change, two results side by side.** A lab part changes one thing and puts the two results next to each
+other (on a call: side by side in two windows, or two headings in one note), then asks for one thing to look at, not
+four. Tick boxes against the card (`Case A` has six checks) show a difference; minutes, word counts and edit tallies
+hide it. A part has at most three numbered steps, one prompt per step, and a table of at most nine boxes.
 
 **Never** write a `##` or `###` heading inside a `:::` div (pandoc turns it into a nested slide; use a `[Title]{.t}`
 paragraph), put a `::: notes` block before the first heading (it becomes an empty slide), or add an image. A slide's

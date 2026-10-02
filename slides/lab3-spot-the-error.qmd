@@ -8,76 +8,19 @@ format: revealjs
 
 {{< include _plan-lab3-spot-the-error.md >}}
 
-Your only tools: the five steps and the [verification card](../day3/m6-confidently-wrong.qmd#the-verification-card).
+[Underline the claims. Find three in a source you open. Mark each one.]{.big}
+
+Your only tool: the verification card from Module 6, on the next slide.
 
 ::: notes
-**Do.** Say what the lab is: you check output you did not write, with the verification card and a source you find yourself, and nothing else. The clock starts at Part 1.
+**Do.** Say what the lab is: you check output you did not write, with the verification card and a source you find yourself, and nothing else. The loop is short: underline the claims, find three of them in a source you open, mark each one. The clock starts at Part 1.
 :::
 
-## Have these open before the clock starts {#setup}
+## Three tabs, and the card {#setup}
 
-::: {.callout-warning appearance="simple"}
-## Your Lab One output: its first line must read
-PRACTICE OUTPUT: CONTAINS DELIBERATELY UNRELIABLE CONTENT. NOT FOR CLINICAL USE.
+::: {.lane}
+[Tab 1: the call]{.node .same .grow} [+]{.op} [Tab 2: these slides]{.node .grow} [+]{.op} [Tab 3: your assistant, and your saved output]{.node .teal .grow}
 :::
-
-::: {.cards}
-::: {.card .teal}
-[The verification card]{.t}
-
-[The end of Module 6](../day3/m6-confidently-wrong.qmd#the-verification-card).
-:::
-::: {.card}
-[The lab page]{.t}
-
-[Open it](../day3/lab3-spot-the-error.qmd) and keep the lab page open in another window.
-:::
-:::
-
-::: {.move .chat}
-[Chat · 30 sec]{.tag} Type 1 when all three are open.
-:::
-
-::: notes
-**Before the clock starts.** Read the three items out. The Lab One, part 2 output open, with the PRACTICE OUTPUT line at the top: anyone whose copy lacks the line types it in now. Anyone with no saved output makes a fresh one from Lab One's menu in the first minutes of Part 1, while their partner does the same. The verification card open. The lab page open in another window. Nothing about a real person goes in what you swap: a probe is a question, not a patient.
-
-**Do.** Chat · 30 sec: type 1 when all three are open. Paste the lab page link in the chat. Start Part 1 once most have typed 1.
-:::
-
-# Part 1: Trade and catch [15 min]{.time} {#part-1}
-
-::: notes
-**Goal.** Each doctor runs the five steps on an output they did not write, and names one habit that would have caught the error faster.
-
-**Have ready.** Breakout rooms set for pairs, with a trio for an odd number. A visible timer. The speaker view on your own screen, never the shared one. Two time calls on the part's clock: at 4:00, claims listed and sources next; at 8:00, mark, fix or discard, name the error. One fresh probe from Lab One's menu, to paste in the chat for anyone with no saved output.
-
-**Watch for.** Reading for sense instead of extracting claims: nobody has a written list. A "confirmed" with no "where", or a source that is another AI. The dip at 15:00: hold part 2 to its clock. Anything that looks like a real person's details: stop, do not swap it, use a fresh probe.
-
-**If asked.** Can I use an AI to help me check? Not to decide what is true. A tool may help list the claims; a second tool is not a source. What if I cannot find a source? That is the result: could-not-find, treated as wrong; say which source you would go to. Nothing seems wrong: did we fail? Not necessarily; list what you confirmed, and where. The tool refused or hedged: note what it said it could not do, then use an output that is not a refusal.
-
-**Bridge.** "That was your own Lab One output. Now the same five steps on a text we all see, with a source card to check it against."
-:::
-
-## Swap outputs {#p1-swap}
-
-::: {.callout-important appearance="simple"}
-## Nothing about a real person
-A probe is a question, not a patient. If yours holds anything about a real person, do not swap it.
-:::
-
-::: {.move .pair}
-[Pair · 1 min]{.tag} Paste your saved output and the question you asked into the breakout chat. Do not say what you found in Lab One.
-:::
-
-[Lab page: get your output ready](../day3/lab3-spot-the-error.qmd#get-your-output-ready)
-
-::: notes
-**1:00.** You did not write it, so read it the way a colleague would. Open breakout rooms of two, a trio if the number is odd. In the breakout room, each person pastes the saved output and the question that produced it into the breakout chat, and says nothing about what they found in Lab One. If someone has no output, they run a fresh probe now with the warning line on top, while their partner does the same. The verification card, a source you find yourself, nothing else.
-
-**Do.** Pair · 1 min. Open the rooms and look in on each. No breakout rooms: each person re-checks their own saved output cold with the five steps, then types in the chat the one kind of error they would have missed.
-:::
-
-## Check it cold {#p1-check}
 
 ::: {.flow}
 ::: {.step}
@@ -97,42 +40,121 @@ A probe is a question, not a patient. If yours holds anything about a real perso
 :::
 :::
 
-::: {.cards}
-::: {.card .dashed}
-[The rule for checking]{.t}
-
-Do not ask a tool whether the output is right, and do not ask its owner.
-:::
-::: {.card .teal}
-[Counts as wrong]{.t}
-
-Could-not-find, and anything you did not reach.
-:::
+::: {.callout-warning appearance="simple"}
+## Your Lab One output: its first line must read
+PRACTICE OUTPUT: CONTAINS DELIBERATELY UNRELIABLE CONTENT. NOT FOR CLINICAL USE.
 :::
 
-::: {.move .solo}
-[Solo · 9 min]{.tag} Work down the card on your partner's output. Fill in your table as you go.
+::: {.move .chat}
+[Chat · 30 sec]{.tag} Type 1 when your saved output is ready to copy.
 :::
-
-[Lab page: the protocol](../day3/lab3-spot-the-error.qmd#the-protocol) · [where to look first](../day3/lab3-spot-the-error.qmd#where-to-look-first) · [record what you find](../day3/lab3-spot-the-error.qmd#record-what-you-find)
 
 ::: notes
-**9:00.** Nine minutes, cold. Down the verification card: extract the claims, find each source yourself, mark each claim, fix or discard, name the kind of error, and record as you go. Start with the claims that would matter most if wrong; anything not reached counts as wrong. Do not ask a tool whether the output is right, and do not ask its owner. Say the two time calls before the rooms start: at 4:00, "claims listed, sources next"; at 8:00, "mark, fix or discard, name the error", both on the part's clock.
+**Before the clock starts.** Three tabs: the call, these slides (the link is in the chat), and the assistant, with your Lab One output ready to copy. The five words are the verification card from Module 6: extract every claim, find each source yourself, mark each one, fix it or discard the output, name the kind of error. Anyone whose copy lacks the PRACTICE OUTPUT line types it in now. Anyone with no saved output makes a fresh one in the first minutes of Part 1, while their partner does the same: I paste the five-papers prompt. Nothing about a real person goes in what you swap: a probe is a question, not a patient.
 
-**Do.** Solo · 9 min, inside the breakout rooms. At 4:00 and 8:00 look in on the rooms and ask: "Show me your claims list." "Where did you look: a source, or another tool?" "What is marked could-not-find, and what did you do with it?" Note two good marks and one error type for the debrief. Watch the main chat. No rooms: same nine minutes.
+**Do.** Chat · 30 sec: type 1 when ready. Have the five-papers prompt ready to paste for anyone with no saved output. Start Part 1 once most have typed 1.
+:::
+
+# Part 1: Trade and catch [15 min]{.time} {#part-1}
+
+::: notes
+**Goal.** Each doctor checks an output they did not write: claims underlined, three found in a source they opened, each marked, and one habit named that would have caught the error faster.
+
+**Have ready.** Breakout rooms set for pairs, with a trio for an odd number. A visible timer. The speaker view on your own screen, never the shared one. Two time calls on the part's clock: at 4:00, "pick your three and find them"; at 8:00, "mark each and name any error". One fresh probe from Lab One, to paste in the chat for anyone with no saved output.
+
+**Clock.** 0:00 swap. 1:00 underline, pick three. 4:00 find and mark. 10:00 compare. 13:00 one habit. 14:10 what good looks like. 15:00 time.
+
+**Watch for.** Reading for sense instead of underlining claims: nobody has a written list. A "confirmed" with no "where", or a source that is another AI. The dip at 15:00: hold part 2 to its clock. Anything that looks like a real person's details: stop, do not swap it, use a fresh probe.
+
+**If asked.** Can I use an AI to help me check? Not to decide what is true. A tool may help list the claims; a second tool is not a source. What if I cannot find a source? That is the result: could-not-find, treated as wrong; say which source you would go to. Nothing seems wrong: did we fail? Not necessarily; list what you confirmed, and where.
+
+**Bridge.** "That was your own Lab One output. Now the same loop on a text we all see, with a source card to check it against."
+:::
+
+## Swap outputs {#p1-swap}
+
+::: {.lane}
+[Your saved output]{.node .grow} [⇄]{.op} [Your partner's saved output]{.node .grow}
+:::
+
+[▲ Paste the output and the question you asked into the breakout chat. Do not say what you found in Lab One.]{.pointer}
+
+::: {.callout-important appearance="simple"}
+## Nothing about a real person
+A probe is a question, not a patient. If yours holds anything about a real person, do not swap it.
+:::
+
+::: {.move .pair}
+[Pair · 1 min]{.tag} Swap in your breakout room.
+:::
+
+::: notes
+**1:00.** You did not write it, so read it the way a colleague would. Open breakout rooms of two, a trio if the number is odd. In the breakout room, each person pastes the saved output and the question that produced it into the breakout chat, and says nothing about what they found in Lab One. If someone has no output, they run a fresh probe now with the warning line on top, while their partner does the same.
+
+**Do.** Pair · 1 min. Open the rooms and look in on each. No breakout rooms: each person re-checks their own saved output cold with the same loop, then types in the chat the one kind of error they would have missed.
+:::
+
+## Underline the claims, pick three {#p1-claims}
+
+::: {.lane}
+[Their output]{.node .same .fixed} [→]{.op} [Underline every number, name, date, citation]{.node .grow} [→]{.op} [Pick the three that matter most]{.node .change .grow}
+:::
+
+[▲ You will not reach every claim. Anything you do not reach counts as wrong.]{.pointer}
+
+::: {.move .solo}
+[Solo · 3 min]{.tag} Underline, then pick your three. Start the table.
+:::
+
+::: notes
+**3:00.** Step one of the card, and the step people skip because it is tedious: underline every checkable claim. A number, a name, a date, a dose, a citation, a guideline reference. Then pick the three that would matter most if they were wrong, and write them as rows one to three of your table, in the output's own words. You will not reach every claim; anything you do not reach counts as wrong. Do not ask a tool whether the output is right, and do not ask its owner.
+
+**Do.** Solo · 3 min. At 4:00 on the part clock say: "Pick your three and find them." Watch the chat.
+:::
+
+## Find each one yourself {#p1-find}
+
+::: {.lane .sm}
+[A guideline or a number]{.node .same .fixed} [→]{.op} [The guideline itself, not a summary]{.node .grow}
+:::
+::: {.lane .sm}
+[A dose or an interaction]{.node .same .fixed} [→]{.op} [The drug label, or your formulary]{.node .grow}
+:::
+::: {.lane .sm}
+[A study finding]{.node .same .fixed} [→]{.op} [The paper: abstract, then results]{.node .grow}
+:::
+::: {.lane .sm}
+[A citation]{.node .same .fixed} [→]{.op} [Does it exist? Does it say that?]{.node .grow}
+:::
+::: {.lane .sm}
+[A local policy]{.node .same .fixed} [→]{.op} [Your institution's own document]{.node .grow}
+:::
+
+[✓ confirmed]{.pill .teal} [✗ wrong: name the error]{.pill .red} [? could not find: counts as wrong]{.pill}
+
+::: {.move .solo}
+[Solo · 6 min]{.tag} Find each of your three, then mark it.
+:::
+
+::: notes
+**6:00.** Find each of your three claims yourself, in the place the claim points to, and mark each one: confirmed, wrong, or could-not-find. Could-not-find counts as wrong. For each wrong one, name the kind of error in the course's words: invented, omitted, altered, or a fabricated citation. Record where you looked. A second AI is not a source, and neither is the tool that wrote it.
+
+**Do.** Solo · 6 min, inside the breakout rooms. At 8:00 look in on the rooms and ask: "Show me your three claims." "Where did you look: a source, or another tool?" "What is marked could-not-find, and what did you do with it?" Note two good marks and one error type for the debrief. No rooms: same six minutes.
 :::
 
 ## Compare {#p1-compare}
 
-Where your findings differ from your partner's, each of you says how you checked.
+::: {.lane}
+[What I found in theirs]{.node .grow} [⇄]{.op} [What they found in mine]{.node .grow}
+:::
+
+[▲ Where your findings differ, each say how you checked.]{.pointer}
 
 [The disagreements are the useful part.]{.big}
 
 ::: {.move .pair}
 [Pair · 3 min]{.tag} Take turns telling each other what you found, and how you checked.
 :::
-
-[Lab page: the protocol](../day3/lab3-spot-the-error.qmd#the-protocol)
 
 ::: notes
 **3:00.** Compare, ninety seconds each way. Each person says what they found in the other's output. Where that differs from what the owner found in Lab One, each says how they checked: where they looked, and whether it was a source or another tool. The disagreements are the useful part. Close the breakout rooms at 13:00 on the clock, with a 30-second warning if your platform gives one.
@@ -144,14 +166,15 @@ Where your findings differ from your partner's, each of you says how you checked
 
 [A habit, not a tool.]{.big}
 
+- Which claim could you have checked in under a minute?
+- What would you change in your own prompt?
+
 ::: {.move .solo}
-[Solo · 1 min]{.tag} Write two or three lines in your notes.
+[Solo · 1 min 10 sec]{.tag} Write two or three lines in your notes.
 :::
 
-[Lab page: what would have caught it faster?](../day3/lab3-spot-the-error.qmd#what-would-have-caught-it-faster)
-
 ::: notes
-**1:10.** Bring everyone back to the main call. What would have caught it faster? The answer is a habit, not a tool: "I would list the numbers first", not "a better tool". Two or three lines in your notes. The starting points are on the lab page: the claim you could have checked in under a minute, the kind of error you saw last or missed, what the text looked like just before the error, and what you would change in your own prompt.
+**1:10.** Bring everyone back to the main call. What would have caught it faster? The answer is a habit, not a tool: "I would underline the numbers first", not "a better tool". Two or three lines in your notes. Two starting points: the claim you could have checked in under a minute, and what you would change in your own prompt.
 
 **Do.** Solo · 1 min. Paste the lab page link in the chat. Watch the chat for questions.
 :::
@@ -165,13 +188,13 @@ Where your findings differ from your partner's, each of you says how you checked
 - A habit to change, not a tool.
 
 ::: {.move .chat}
-[Chat · 30 sec]{.tag} Type the one habit that would have caught it faster.
+[Chat · 50 sec]{.tag} Type the one habit that would have caught it faster.
 :::
 
 ::: notes
-**0:50.** Read the five quickly: a good lab is these habits, not a count of errors. A written claims list before any lookup. Every "confirmed" naming what was opened; "I asked the tool" is not a source. At least one could-not-find, marked wrong, with what they did about it. Errors in the course's words. A habit, not a tool. Then read out two or three habits from the chat, and name the two good marks you noted. If time allows, ask one debrief prompt and do not answer it: did any "confirmed" rest on another AI, or on memory? Which of the five steps did you skip under time pressure?
+**0:50.** Read the five quickly: a good lab is these habits, not a count of errors. A written claims list before any lookup. Every "confirmed" naming what was opened; "I asked the tool" is not a source. At least one could-not-find, marked wrong, with what they did about it. Errors in the course's words. A habit, not a tool. Then read out two or three habits from the chat, and name the two good marks you noted.
 
-**Do.** Chat · 30 sec. Start part 2 at 15:00 on the clock.
+**Do.** Chat · 50 sec. Start part 2 at 15:00 on the clock.
 :::
 
 # Part 2: Instructor examples [10 min]{.time} {#part-2}
@@ -181,6 +204,8 @@ Where your findings differ from your partner's, each of you says how you checked
 
 **Have ready.** The prepared example in your private deck, one or two. The key stays with you: it is not on the site and not in these notes (it is in course/lab3-examples.md). Your screen share set up to show the example, then its source card. A timer. Decide at the start: one example at full timings, or two at half each; run two when the group was quick or part 1 surfaced little.
 
+**Clock.** 0:00 read it twice. 2:00 check against the card. 5:00 call it. 8:00 the key and your score. 9:15 what good looks like. 10:00 time.
+
 **Watch for.** Someone typing the answer in the chat early: ask which step found it and let them hold it for the call-it round. A "confirmed" with nothing opened. A flagged line that is not in your key: check it against the card; if the card supports it, it is confirmed; if the card is silent, could-not-find is a fair mark. The dip after part 1: hold part 2 to the clock.
 
 **If asked.** Can I use a tool to help check? Not to decide what is true. What if I cannot find a source? That is the result: could-not-find, treated as wrong; say which source you would go to. Is any of it real? No: the example is fictional and holds no patient information.
@@ -188,47 +213,37 @@ Where your findings differ from your partner's, each of you says how you checked
 **Bridge.** "You have felt what the habit costs and what it catches. The other way this goes wrong never looks like an error: the output is right and the input was the problem. That is Module 7."
 :::
 
-## List the claims {#p2-list}
+## Read it twice {#p2-list}
 
-Copy every checkable claim from the text on the shared screen into your table. This is step 1 of the card.
+::: {.lane}
+[Read 1: underline every claim]{.node .grow} [→]{.op} [Read 2: do its parts agree with each other?]{.node .change .grow}
+:::
+
+[▲ Hold your answer. Do not give it in the chat yet.]{.pointer}
 
 ::: {.move .solo}
-[Solo · 1 min]{.tag} List every number, name, date and citation in the text.
+[Solo · 2 min]{.tag} List every number, name, date and citation, then read it again.
 :::
-
-[Lab page: the procedure](../day3/lab3-spot-the-error.qmd#procedure)
 
 ::: notes
-**1:00.** Share your screen with the prepared example from your private deck; the key stays with you. Say it is fictional and holds no patient information. One minute to read it and list every checkable claim in the lab page's table: step 1 of the card.
+**2:00.** Share your screen with the prepared example from your private deck; the key stays with you. Say it is fictional and holds no patient information. Read it twice. First, list every checkable claim in the lab page's table: step one of the card. Then read the text against itself: do its parts agree with each other? Say that some answers will want to come out early, and that you want them held for the call-it round. If someone announces an error anyway, ask which step found it and ask them to hold the detail.
 
-**Do.** Share: the prepared example. Solo · 1 min. With two examples, run each step at half the time.
-:::
-
-## Read the text against itself {#p2-itself}
-
-[Do its parts agree with each other?]{.big}
-
-::: {.move .solo}
-[Solo · 1 min]{.tag} Read it again. Note any disagreement, and do not give the answer in the chat.
-:::
-
-[Lab page: the procedure](../day3/lab3-spot-the-error.qmd#procedure)
-
-::: notes
-**1:00.** A second read, this time of the text against itself: do its parts agree with each other? Say that some answers will want to come out early, and that you want them held for the call-it round. If someone announces an error anyway, ask which step found it and ask them to hold the detail.
-
-**Do.** Solo · 1 min. Keep the example on your shared screen. Watch the chat for early answers.
+**Do.** Share: the prepared example. Solo · 2 min. With two examples, run each step at half the time.
 :::
 
 ## Check against the card {#p2-card}
 
-The source card is on the shared screen. Mark each claim confirmed, wrong, or could-not-find.
+The source card is on the shared screen.
 
-::: {.move .solo}
-[Solo · 3 min]{.tag} Work down the card. Where it has no source for a claim, say which source you would go to and mark the claim could-not-find.
+::: {.lane}
+[Each claim]{.node .same .fixed} [→]{.op} [The card]{.node .teal .grow} [→]{.op} [✓ confirmed · ✗ wrong · ? could not find]{.node .out .grow}
 :::
 
-[Lab page: the procedure](../day3/lab3-spot-the-error.qmd#procedure)
+[▲ A claim with no source on the card: say which source you would go to, and mark it could-not-find.]{.pointer}
+
+::: {.move .solo}
+[Solo · 3 min]{.tag} Work down the card, claim by claim.
+:::
 
 ::: notes
 **3:00.** Now the source card. Switch your shared screen to the card for this example. It is the only source in this exercise, so a claim it does not support is could-not-find, and could-not-find counts as wrong. Where there is no source on the card, say which source you would go to. Three minutes to mark each claim confirmed, wrong or could-not-find. Do not reveal the key.
@@ -238,13 +253,15 @@ The source card is on the shared screen. Mark each claim confirmed, wrong, or co
 
 ## Call it {#p2-call}
 
-For each finding, give three things: the claim, how you would confirm it, and the kind of error.
+::: {.lane}
+[The claim]{.node .grow} [→]{.op} [How you would confirm it]{.node .grow} [→]{.op} [The kind of error]{.node .change .grow}
+:::
+
+[▲ "Looks wrong" is not a finding.]{.pointer}
 
 ::: {.move .chat}
 [Chat · 3 min]{.tag} Type each finding. A few of you will be asked to unmute and explain.
 :::
-
-[Lab page: the procedure](../day3/lab3-spot-the-error.qmd#procedure)
 
 ::: notes
 **3:00.** Ask for findings, in three parts each: the claim, how you would confirm it, and the kind of error: invented, omitted, altered, or a fabricated citation. "Looks wrong" is not a finding. Reveal by asking, not telling: read out several from the chat, then ask two people to unmute and say how they checked. Do not confirm or correct yet; the key comes next.
@@ -256,11 +273,22 @@ For each finding, give three things: the claim, how you would confirm it, and th
 
 The trainer reads out the key.
 
-::: {.move .solo}
-[Solo · 1 min]{.tag} Count what you found and what you missed. Write down the kind of error you missed.
+::: {.cards}
+::: {.card .teal}
+[Found]{.t}
+
+What you caught, and how.
+:::
+::: {.card .red}
+[Missed]{.t}
+
+Which kind of error you walked past.
+:::
 :::
 
-[Lab page: the procedure](../day3/lab3-spot-the-error.qmd#procedure)
+::: {.move .solo}
+[Solo · 1 min 15 sec]{.tag} Count what you found and what you missed. Write down the kind of error you missed.
+:::
 
 ::: notes
 **1:15.** Give the key from your private deck, one finding at a time. It is not on any slide and not in these notes. Each person counts what they found and what they missed, and writes down the kind of error they missed. With two examples, finish the call and the key for the first before you start the second.
@@ -275,15 +303,25 @@ The trainer reads out the key.
 - An omission shows only when you read the source against the output.
 
 ::: {.move .chat}
-[Chat · 30 sec]{.tag} Which kind of error did you find fastest, and which did you walk past?
+[Chat · 45 sec]{.tag} Which kind of error did you find fastest, and which did you walk past?
 :::
 
-[Lab page: run a peer-check at work](../day3/lab3-spot-the-error.qmd#run-a-peer-check-at-work)
+::: notes
+**0:45.** What good looks like: each finding with its how; the kind of error you walked past, named; and that an omission cannot be seen by checking what is on the page. Take one or two answers from the chat. The lab page has a five-minute peer-check to run at work: ask who their second pair of eyes would be. Then bridge: the other way this goes wrong never looks like an error, because the output is right and the input was the problem. That is Module 7.
+
+**Do.** Chat · 45 sec. Paste the lab page link in the chat, for the peer-check routine.
+:::
+
+## After the call {#after}
+
+- [The lab page](../day3/lab3-spot-the-error.qmd): every step, and the five-minute peer-check to run at work
+- [The verification card](../day3/m6-confidently-wrong.qmd#the-verification-card)
+- [The three-question card](../reference/three-question-check.qmd)
 
 ::: notes
-**0:45.** What good looks like: each finding with its how; the kind of error you walked past, named; and that an omission cannot be seen by checking what is on the page. Take one or two answers from the chat. If time allows, one debrief prompt: which errors were easiest to find, and which needed a source? The lab page has a five-minute peer-check to run at work: ask who their second pair of eyes would be. Then bridge: the other way this goes wrong never looks like an error, because the output is right and the input was the problem. That is Module 7.
+**Not timed.** Paste these links into the chat at the very end, once. They are for afterwards: nothing on the call needed them.
 
-**Do.** Chat · 30 sec. Paste the lab page link in the chat, for the peer-check routine.
+**Do.** Paste the links, then close.
 :::
 
 ## If it goes wrong {#fixes}
@@ -291,7 +329,7 @@ The trainer reads out the key.
 | If | Then |
 |----------|------------------------------|
 | Output looks clean | List what you confirmed, and where. If you cannot, that is the finding. |
-| No usable output | None saved, a refusal, or only opinion: run a fresh probe from Lab One's menu and type the warning line on top. |
+| No usable output | None saved, a refusal, or only opinion: run a fresh probe from Lab One and type the warning line on top. |
 | A second AI "confirmed" it | A second AI is not a source. Mark it could-not-find until you open a real one. |
 | No source in reach | Mark it could-not-find, count it wrong, and say which source you would go to. |
 | A real person's details | Stop. Do not swap it. Run a fresh probe. |

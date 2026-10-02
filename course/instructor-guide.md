@@ -6,19 +6,25 @@ roster, no participant names, no answer key for the scored quiz.
 ## How to run a session
 
 1. **Open the day's first deck** (the links are in the run-of-show below) and press `S`. The speaker view shows the
-   slide, the next slide, a clock and your notes. Keep it on a second screen or in a window you do not share. Share
-   the deck window, not your whole desktop.
-2. **Paste two links into the chat:** the deck, so people can open it in a window of their own, and the handout page.
+   slide, the next slide, a clock and your notes. Keep it on a second screen or in a window you do not share. In Google
+   Meet, present the deck's tab, not your whole desktop.
+2. **Paste the deck's link first.** Participants have three tabs: the call, the slides and their assistant. The link of
+   the deck you are teaching is in the run-of-show below (the site's address plus `slides/<name>.html`). Every prompt and
+   every case has a slide of its own with a **Copy prompt** button: say "Copy prompt on your slide", and paste the block
+   into the chat too, for anyone without the deck open. Say each slide's title when you move on, so people in their own
+   tab keep up. The handout links go in the chat once, at the end, from the "After the call" slide.
 3. **Follow the slides in order.** A topic slide (the dark one) carries the topic's brief in its notes: the goal, what to
    have ready, what to watch for, what people ask, and the line into the next topic. Every slide after it opens its notes
    with its own time budget (`1:30`), then what to say, then what to do. The budgets of a topic add up to its minutes.
-4. **Say which move it is.** Every activity is one of five (below), and the slide shows it as a label and a time. Say the
+4. **Do it with them.** Run each hands-on step on the shared screen while the group runs it on theirs. Your run is the
+   model, and the fallback for anyone whose tool misbehaves. **Say which move it is.** Every activity is one of five (below), and the slide shows it as a label and a time. Say the
    label out loud the first few times and people learn the rhythm.
 5. **Keep the clock on the plan slide.** Each deck opens with a table of its topics and their minutes, generated from
    `timing.json`, so the clock on the slide is always the clock in the repository.
 
-The handouts are the participants' reference: the prompts to copy and the tables to fill in. The decks are what you
-present. A lab has both: the deck is your driver and the lab page is where participants work.
+The handouts are for afterwards: the prompts and checks to keep, and a lab page to redo a lab at one's own pace. The
+decks are what you present, and everything the group needs during the call is on a slide or in the chat. If screen
+sharing fails, the handout is your fallback: paste its link and have people follow the page.
 
 ## The five moves
 
@@ -38,6 +44,11 @@ point of the step. Lab 3 part 1: each person checks their own saved output cold,
 types the kind of error they would most easily have missed. Module 8: each person types their decision (use, fix,
 discard) and the one mark they are least sure of, and the group asks "where did that come from?" about three of them.
 
+**Running it on Google Meet.** Present a tab (the deck), not the whole screen, and keep the speaker view and your own
+assistant in other windows. A participant who joins late may not see earlier chat messages, so paste again. Breakout
+rooms are set by the host before the call and depend on the host's Google Workspace plan: check yours; without them both
+pair steps use their fallbacks. A participant on a small screen runs the assistant on a second device.
+
 **A co-host is worth having** for the labs: someone to watch the chat, admit latecomers and look in on breakout rooms
 while you teach. The course does not depend on one.
 
@@ -48,7 +59,7 @@ and lab, 330 in total. The hands-on labs are 30 + 35 + 25 = 90 minutes, over a q
 
 | Day | Job of the day | Lab |
 |---|---|---|
-| **One** — Foundations | Get a better draft: why the tools sound sure, the four-part prompt, choosing a tool | Templates, limits, tool face-off |
+| **One** — Foundations | Get a better draft: why the tools sound sure, the four-part prompt, choosing a tool | Two prompts side by side, a question it can only guess at, one question two ways |
 | **Two** — Applications | Use it on real documents and teaching, and check that outputs agree | One case, three outputs |
 | **Three** — Safety & Ethics | Make the check and the privacy line automatic | Spot the error |
 
@@ -179,9 +190,9 @@ Generated from `course/timing.json`. Do not edit between the markers; change `ti
 | 1:10 | 5 | Live demo: same question, two tools | [m3-choosing-tools#live-demo](../slides/m3-choosing-tools.qmd#/live-demo) | [m3-choosing-tools#live-demo](../day1/m3-choosing-tools.qmd#live-demo) |
 | 1:15 | 5 | Spend your quota on purpose | [m3-choosing-tools#quota](../slides/m3-choosing-tools.qmd#/quota) | [m3-choosing-tools#quota](../day1/m3-choosing-tools.qmd#quota) |
 | 1:20 | 10 | Break | - | - |
-| 1:30 | 12 | Lab One, part 1 — Template test | [lab1-templates-and-limits#part-1](../slides/lab1-templates-and-limits.qmd#/part-1) | [lab1-templates-and-limits#part-1](../day1/lab1-templates-and-limits.qmd#part-1) |
-| 1:42 | 8 | Lab One, part 2 — Break it on purpose | [lab1-templates-and-limits#part-2](../slides/lab1-templates-and-limits.qmd#/part-2) | [lab1-templates-and-limits#part-2](../day1/lab1-templates-and-limits.qmd#part-2) |
-| 1:50 | 5 | Lab One, part 3 — Tool face-off | [lab1-templates-and-limits#part-3](../slides/lab1-templates-and-limits.qmd#/part-3) | [lab1-templates-and-limits#part-3](../day1/lab1-templates-and-limits.qmd#part-3) |
+| 1:30 | 12 | Lab One, part 1 — Same case, two prompts | [lab1-templates-and-limits#part-1](../slides/lab1-templates-and-limits.qmd#/part-1) | [lab1-templates-and-limits#part-1](../day1/lab1-templates-and-limits.qmd#part-1) |
+| 1:42 | 8 | Lab One, part 2 — Ask for what it cannot know | [lab1-templates-and-limits#part-2](../slides/lab1-templates-and-limits.qmd#/part-2) | [lab1-templates-and-limits#part-2](../day1/lab1-templates-and-limits.qmd#part-2) |
+| 1:50 | 5 | Lab One, part 3 — One question, two ways of answering | [lab1-templates-and-limits#part-3](../slides/lab1-templates-and-limits.qmd#/part-3) | [lab1-templates-and-limits#part-3](../day1/lab1-templates-and-limits.qmd#part-3) |
 | 1:55 | 5 | Lab One — Debrief | [lab1-templates-and-limits#debrief](../slides/lab1-templates-and-limits.qmd#/debrief) | [lab1-templates-and-limits#debrief](../day1/lab1-templates-and-limits.qmd#debrief) |
 
 Total 120 min.
@@ -199,8 +210,8 @@ Total 120 min.
 | 1:00 | 8 | Teaching with AI | [m5-talks-and-teaching#teaching-with-ai](../slides/m5-talks-and-teaching.qmd#/teaching-with-ai) | [m5-talks-and-teaching#teaching-with-ai](../day2/m5-talks-and-teaching.qmd#teaching-with-ai) |
 | 1:08 | 7 | Grading yourself | [m5-talks-and-teaching#grading-yourself](../slides/m5-talks-and-teaching.qmd#/grading-yourself) | [m5-talks-and-teaching#grading-yourself](../day2/m5-talks-and-teaching.qmd#grading-yourself) |
 | 1:15 | 10 | Break | - | - |
-| 1:25 | 20 | Lab Two, part 1 — One case, three outputs | [lab2-one-case-three-outputs#part-1](../slides/lab2-one-case-three-outputs.qmd#/part-1) | [lab2-one-case-three-outputs#part-1](../day2/lab2-one-case-three-outputs.qmd#part-1) |
-| 1:45 | 10 | Lab Two, part 2 — Tool check, again | [lab2-one-case-three-outputs#part-2](../slides/lab2-one-case-three-outputs.qmd#/part-2) | [lab2-one-case-three-outputs#part-2](../day2/lab2-one-case-three-outputs.qmd#part-2) |
+| 1:25 | 20 | Lab Two, part 1 — One sheet, three outputs | [lab2-one-case-three-outputs#part-1](../slides/lab2-one-case-three-outputs.qmd#/part-1) | [lab2-one-case-three-outputs#part-1](../day2/lab2-one-case-three-outputs.qmd#part-1) |
+| 1:45 | 10 | Lab Two, part 2 — Same source, two tools | [lab2-one-case-three-outputs#part-2](../slides/lab2-one-case-three-outputs.qmd#/part-2) | [lab2-one-case-three-outputs#part-2](../day2/lab2-one-case-three-outputs.qmd#part-2) |
 | 1:55 | 5 | Lab Two, part 3 — Share-out | [lab2-one-case-three-outputs#part-3](../slides/lab2-one-case-three-outputs.qmd#/part-3) | [lab2-one-case-three-outputs#part-3](../day2/lab2-one-case-three-outputs.qmd#part-3) |
 
 Total 120 min.
@@ -226,7 +237,8 @@ Total 120 min.
 
 **Every day.** A good connection, headphones, and a timer you can see. Share a single window, not your desktop. Your
 presenting machine signed in to a general assistant, plus your second option (see Module 3) in another window. The
-deck open with the speaker view on a second screen. The case cards page open. Test screen sharing and, for Day One and
+deck open with the speaker view on a second screen, and the prompt library open in a window of your own as a backup.
+Test screen sharing and, for Day One and
 Day Three, breakout rooms: enable them in the platform settings before the call, because most platforms need that
 done by the host in advance. Join ten minutes early.
 
@@ -238,17 +250,17 @@ verifying: anyone without a working second option uses another of the three, or 
 
 **Day Three.** Have the Lab 3 examples ready to share from a private copy (`lab3-examples.md`, or the private deck). Prepare
 the certificates and the quiz logistics outside the repository. Have a message ready to post on the morning of Day Three
-reminding people to keep their Lab One "break it on purpose" output open.
+reminding people to keep their Lab One saved answer open.
 
 ## The moments that carry the weekend
 
 Protect these, and let the others shrink if the clock forces it.
 
 **Day One.** (1) The chat filling with a plausible next word, and no two years agreeing: plausible is not
-correct. (2) Each participant seeing their own numbers for the templated versus untemplated note. (3) Someone
-saying "but it sounded so sure" after the break-it probe.
+correct. (2) Each participant putting the templated and the untemplated note side by side and ticking the same six checks. (3) Someone
+saying "but it sounded so sure" after searching for the first of the five papers.
 
-**Day Two.** (1) The group finding the three planted problems in an AI-drafted note. (2) A cross-output check
+**Day Two.** (1) The group finding the three planted problems in an AI-drafted note. (2) The three-fact check
 catching a follow-up interval that differs between the chart note and the patient instructions. (3) The
 "4.35 out of 5, is that good?" discussion, because it shows how to read a number.
 
@@ -279,11 +291,11 @@ own output and saying "no" to the third question, which is the outcome the whole
 | A tool is down or slow during the live demo | Show the screenshots of real outputs from your rehearsal; say they are a recorded run |
 | A participant cannot open a literature-grounded tool | Either of the other two second options works; nothing depends on it |
 | A participant hits the free-tier limit mid-lab | Switch to the other tool; never share a login |
-| A participant has no assistant account | They follow your shared screen and still fill in the grid; the setup page says so |
+| A participant has no assistant account | They follow your shared screen and still tick the boxes; the setup page says so |
 | Breakout rooms are not available | Use the fallbacks under "The five moves"; both pair steps have one |
-| Screen sharing fails | Paste the deck link and the page link in the chat and have people follow in their own window; present from the chat |
+| Screen sharing fails | Paste the handout's link in the chat and have people follow the page; paste each prompt as you reach it |
 | The chat is disabled or full | Ask for "1 / 2 / 3" by unmuting in turn, or use the platform's reactions for yes and no |
-| A participant joins late | A co-host sends the deck link and the lab page; they pick up at the current slide |
+| A participant joins late | Paste again what is on the current slide; they pick up from there |
 | Wi-Fi fails | Phones on mobile data, with synthetic cases only |
 | Hospital networks block a tool | Own device and connection, synthetic cases only; never bypass a control with real patient data |
 | Lab 3 part 1 surfaces nothing to catch | Move to the prepared examples in part 2 |
@@ -307,8 +319,8 @@ terms on sharing it.
 
 **Before Day One.** Your second option for the live demo. A literature-grounded tool such as Vera Health is for
 healthcare professionals, so if you are not one, use your assistant's search mode, a literature search, or a
-clinician's screen. The question for the live demo (topic 11). Which video platform, and whether breakout rooms and
-a co-host are available.
+clinician's screen. The question for the live demo (topic 11). The platform is Google Meet: confirm that your
+account's plan offers breakout rooms (without them both pair steps use their fallbacks) and whether a co-host is available.
 
 **Before Day Two.** The current status of Sahl AI and Augnito at the sites named. Read the Sahl AI paper's
 abstract yourself: its text could not be opened when this was written, so 42.2 of 45 and 4.35 of 5 are the
@@ -326,7 +338,8 @@ case cards as a clinician.
 | What | Where |
 |---|---|
 | The decks you present, with the script in the notes | `slides/`, one per module and lab, same file name as its handout |
-| The handouts, with the prompts to copy | `day1/`, `day2/`, `day3/` |
+| The handouts, with the prompts to copy (for afterwards) | `day1/`, `day2/`, `day3/` |
+| The blocks you paste into the chat, one per slide | generated into `slides/_paste-*.md` from the handouts and the case cards; click **Copy prompt** on the slide |
 | The clock, the single source of every minute | `course/timing.json`; the tables on the slides and the run-of-show above are generated from it |
 | The Lab 3 examples and answer keys, trainer only | `course/lab3-examples.md` |
 | How to write or change a page, a deck or a note | `course/authoring-guide.md` |
@@ -334,4 +347,5 @@ case cards as a clinician.
 
 **The claude.ai deck** (the link in `BRIEF.md`) is a copy for anyone who prefers editing slides in that tool. Its speaker
 notes were refreshed from these decks on 2 October 2026, and it holds the four Lab 3 example slides that the site
-decks deliberately leave out. It does not follow later edits to the site decks: when the two disagree, the site wins.
+decks deliberately leave out. It does not follow later edits to the site decks (it predates the pictures and the two-tab
+rewrite of 3 October 2026): when the two disagree, the site wins.

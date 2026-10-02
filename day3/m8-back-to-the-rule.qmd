@@ -19,6 +19,11 @@ You leave with
 :   Check one AI output against its source and defend your decision to use it, fix it, or discard it. Name one thing you will change when you are back at work. Say the four things to keep, and follow a plan for your first two weeks.
 :::
 
+::: {.callout-note appearance="simple"}
+## On the call
+You need three tabs: the call, the slides (your instructor pastes the link in the chat), and your general assistant, signed in, with the outputs you made on Day One and Day Two still in it. The slides carry everything. Your instructor checks one example on the shared screen while you check one of your own, and pastes a referral-letter prompt into the chat for anyone with no output. This page is the take-home version.
+:::
+
 ## 1. Back to the rule, applied to a real case [20 min]{.time} {#back-to-the-rule}
 
 On Day One the three questions were a card you were handed. Today they are a habit you either have or do not, and the only way to find out is to use them on something you made. You will check one output, defend your decision to a colleague, and write down what you will change.
